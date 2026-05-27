@@ -7,7 +7,7 @@
 .ring-container-card {
   background: linear-gradient(135deg, #181615 0%, #0d0c0c 100%);
   border-radius: 30px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+  /* box-shadow: 0 20px 45px rgba(0,0,0,0.2); */
   background:url(../../../assets/upgrade-fitze-ring.png);
   background-size: cover;
   background-repeat: no-repeat;
