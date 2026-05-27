@@ -1,10 +1,19 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './InclusionsSection.css';
-
+import getPaidToWalk from '../../../assets/getPaidtoWalk.svg';
+import IncreaseWinningChangce from '../../../assets/increaseWinningChances.svg';
+import UnlockBatter from '../../../assets/unlockBatterRewards.svg';
+import GetHelp from '../../../assets/getHelp.svg';
 // @ts-ignore
 import inclusionsImg from '../../../assets/fitzepro-inclusion.png';
-
+const FitzeProBlack = (<svg xmlns="http://www.w3.org/2000/svg" width="156" height="34" viewBox="0 0 156 34" fill="none">
+<path d="M31.3517 33.0782C29.7284 33.0782 28.3043 32.8332 27.0792 32.3431C25.8847 31.8225 24.9506 30.9802 24.2768 29.8164C23.603 28.622 23.2661 26.9987 23.2661 24.9467V4.00493C23.2661 3.79802 23.4339 3.63028 23.6408 3.63028L29.0934 3.63028C29.3004 3.63028 29.4681 3.79802 29.4681 4.00493V9.54949C29.4681 9.75641 29.6358 9.92414 29.8427 9.92414H34.836C35.0429 9.92414 35.2106 10.0919 35.2106 10.2988V14.7408C35.2106 14.9477 35.0429 15.1154 34.836 15.1154H29.8427C29.6358 15.1154 29.4681 15.2832 29.4681 15.4901V25.0386C29.4681 26.0799 29.6978 26.7997 30.1572 27.1978C30.6166 27.596 31.3976 27.795 32.5002 27.795H35.1576C35.3645 27.795 35.5323 27.9628 35.5323 28.1697V32.7035C35.5323 32.9105 35.3645 33.0782 35.1576 33.0782L31.3517 33.0782Z" fill="#1C1C1E"/>
+<path d="M71.591 25.4753C71.7254 25.3206 71.9526 25.2544 72.1336 25.3504L76.0105 27.4068C76.2018 27.5083 76.268 27.7463 76.1395 27.9207C75.0022 29.4637 70.5612 34.2896 63.3372 32.9749C58.8174 32.1524 54.7788 28.4289 53.8469 23.5431C53.543 22.1336 53.5351 20.6379 53.7983 19.1916C54.9745 12.7282 61.1183 8.47639 67.5816 9.65264C73.8641 10.796 78.0667 16.6973 77.1576 22.9758C77.1341 23.1048 77.128 23.2219 77.1126 23.3306C77.0919 23.4763 76.9561 23.5633 76.809 23.5634L60.3409 23.5646C60.0989 23.5646 59.9201 23.791 59.9961 24.0207C60.5929 25.8252 62.1216 27.3371 64.2914 27.7319C67.8003 28.3705 70.7003 26.5009 71.591 25.4753ZM60.1181 18.3338L60.0447 18.5257C59.9511 18.7705 60.1313 19.0333 60.3934 19.0342L70.5961 19.0694C70.8464 19.0703 71.027 18.8299 70.9375 18.5962C70.1212 16.4631 68.1495 14.8616 65.9207 14.6736C63.4923 14.4185 61.0595 15.9836 60.1181 18.3338Z" fill="#1C1C1E"/>
+<path d="M37.2937 33.0846C37.0867 33.0846 36.919 32.9169 36.919 32.71V28.2664C36.919 28.1741 36.9531 28.085 37.0147 28.0163L48.017 15.747C48.2333 15.5057 48.0621 15.1222 47.738 15.1222L37.309 15.1222C37.102 15.1222 36.9343 14.9545 36.9343 14.7475V10.3052C36.9343 10.0983 37.102 9.93056 37.309 9.93056L55.3341 9.93056C55.541 9.93056 55.7087 10.0983 55.7087 10.3052V14.9764C55.7087 15.0702 55.6735 15.1605 55.6101 15.2297L44.5241 27.3113C44.3037 27.5516 44.4741 27.9393 44.8002 27.9393H55.3187C55.5256 27.9393 55.6934 28.107 55.6934 28.3139V32.71C55.6934 32.9169 55.5256 33.0846 55.3187 33.0846H37.2937Z" fill="#1C1C1E"/>
+<path d="M3.54455 33.0781C3.33764 33.0781 3.1699 32.9103 3.1699 32.7034L3.1699 15.49C3.1699 15.283 3.00216 15.1153 2.79525 15.1153H0.374651C0.167737 15.1153 -1.8089e-08 14.9476 0 14.7407L3.88331e-07 10.2987C4.0642e-07 10.0918 0.167737 9.92402 0.374651 9.92402L2.79525 9.92402C3.00216 9.92402 3.1699 9.75628 3.1699 9.54937L3.1699 7.8567C3.1699 5.92719 3.49149 4.39584 4.13465 3.26264C4.77782 2.12943 5.69663 1.3025 6.89109 0.781845C8.11617 0.261184 9.54033 0.00085435 11.1636 0.000854492L13.3156 0.00085468C13.5226 0.000854698 13.6903 0.168592 13.6903 0.375505V4.90937C13.6903 5.11628 13.5226 5.28402 13.3156 5.28402H12.0824C11.1329 5.28402 10.4438 5.4831 10.015 5.88125C9.58627 6.24878 9.37188 6.89194 9.37188 7.81075V9.54937C9.37188 9.75629 9.53962 9.92402 9.74653 9.92402L20.4614 9.92402C20.6684 9.92402 20.8361 10.0918 20.8361 10.2987V32.7034C20.8361 32.9103 20.6684 33.0781 20.4614 33.0781H15.0088C14.8019 33.0781 14.6341 32.9103 14.6341 32.7034L14.6341 15.49C14.6341 15.283 14.4664 15.1153 14.2595 15.1153L9.74653 15.1153C9.53962 15.1153 9.37188 15.283 9.37188 15.49L9.37188 32.7034C9.37188 32.9103 9.20414 33.0781 8.99723 33.0781H3.54455Z" fill="#1C1C1E"/>
+<path d="M150.082 0.00878906C152.873 0.00878906 155.136 2.27143 155.136 5.0625V28.1377C155.136 30.9288 152.873 33.1914 150.082 33.1914H92.0029L93.2617 26.0166C93.9252 27.0251 94.841 27.8744 96.0088 28.5645C97.2032 29.228 98.6365 29.5596 100.309 29.5596C102.219 29.5596 104.038 29.0823 105.763 28.127C107.514 27.1449 108.988 25.7906 110.183 24.0654C111.403 22.3138 112.212 20.3365 112.61 18.1338C112.77 17.2845 112.85 16.4748 112.85 15.7051C112.85 13.9269 112.491 12.3739 111.774 11.0469C111.058 9.71998 110.049 8.698 108.749 7.98145C107.449 7.26485 105.962 6.90627 104.29 6.90625C102.618 6.90625 101.052 7.25133 99.5918 7.94141C98.1585 8.63149 96.9643 9.48166 96.0088 10.4902L96.5664 7.26465H92.0273L87.4668 33.1914H85.6533C82.8623 33.1913 80.5996 30.9287 80.5996 28.1377V5.0625C80.5996 2.27148 82.8623 0.00887876 85.6533 0.00878906H150.082ZM141.311 6.90625C138.816 6.90625 136.546 7.50387 134.502 8.69824C132.485 9.89261 130.892 11.512 129.725 13.5557C128.583 15.5992 128.013 17.8551 128.013 20.3232C128.013 22.128 128.397 23.734 129.167 25.1406C129.963 26.5473 131.065 27.6356 132.472 28.4053C133.878 29.175 135.511 29.5596 137.369 29.5596C139.864 29.5595 142.133 28.9763 144.177 27.8086C146.22 26.6142 147.84 24.9949 149.034 22.9512C150.229 20.9075 150.825 18.6509 150.825 16.1826C150.825 14.3514 150.414 12.7453 149.591 11.3652C148.795 9.95888 147.68 8.87116 146.247 8.10156C144.814 7.30537 143.168 6.90631 141.311 6.90625ZM128.87 6.90625C127.357 6.9063 125.977 7.27837 124.729 8.02148C123.509 8.76464 122.447 9.79998 121.545 11.127L122.222 7.26465H117.683L113.821 29.2012H118.359L120.43 17.457C120.854 15.3072 121.598 13.7938 122.659 12.918C123.721 12.0421 125.128 11.6045 126.88 11.6045H128.034L128.87 6.90625ZM140.673 10.7285C142.239 10.7285 143.54 11.2326 144.575 12.2412C145.61 13.2232 146.128 14.6306 146.128 16.4619C146.128 18.0808 145.769 19.6069 145.053 21.04C144.336 22.4467 143.34 23.588 142.066 24.4639C140.819 25.3132 139.439 25.7383 137.926 25.7383C136.386 25.7382 135.126 25.2466 134.144 24.2646C133.188 23.2826 132.711 21.9021 132.711 20.124C132.711 18.4786 133.043 16.939 133.706 15.5059C134.396 14.0464 135.338 12.8922 136.532 12.043C137.753 11.1672 139.134 10.7286 140.673 10.7285ZM102.618 10.8477C104.211 10.8477 105.525 11.3528 106.56 12.3613C107.621 13.3433 108.151 14.7238 108.151 16.502C108.151 17.0857 108.098 17.6296 107.992 18.1338C107.727 19.6466 107.183 20.974 106.36 22.1152C105.538 23.2564 104.555 24.1317 103.414 24.7422C102.299 25.3261 101.158 25.6181 99.9902 25.6182C98.4243 25.6182 97.1105 25.1006 96.0488 24.0654C95.0138 23.0303 94.4961 21.6239 94.4961 19.8457C94.4961 19.262 94.5492 18.718 94.6553 18.2139C94.9207 16.7012 95.4645 15.3871 96.2871 14.2725C97.1099 13.1577 98.0796 12.3075 99.1943 11.7236C100.335 11.1399 101.477 10.8477 102.618 10.8477Z" fill="#FE572A"/>
+</svg>);
 export const InclusionsSection: React.FC = () => {
   return (
     <section className="fitzepro-inclusions-wrapper" id="fitzepro-inclusions">
@@ -12,8 +21,7 @@ export const InclusionsSection: React.FC = () => {
         
         {/* Centered Brand Heading Block */}
         <div className="inclusions-heading-block text-center">
-          <span className="logo-brand-fitze-main">fitze</span>
-          <span className="badge-pro-main">pro</span>
+          {FitzeProBlack}
           <span className="inclusions-addon-text">Inclusions</span>
         </div>
 
@@ -26,35 +34,7 @@ export const InclusionsSection: React.FC = () => {
               {/* Item 1 */}
               <div className="inclusion-item-card d-flex align-items-center gap-4">
                 <div className="inclusion-3d-icon-frame flex-shrink-0">
-                  <svg width="52" height="52" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="shoeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ff7b5a" />
-                        <stop offset="100%" stop-color="#ff451d" />
-                      </linearGradient>
-                      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ffe259" />
-                        <stop offset="100%" stop-color="#ffa751" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="32" cy="32" r="28" fill="#ffece7" opacity="0.3"/>
-                    
-                    {/* Gold coins stack 1 */}
-                    <ellipse cx="46" cy="42" rx="7" ry="3.5" fill="url(#goldGrad)" stroke="#d98000" stroke-width="0.5" />
-                    <ellipse cx="46" cy="39" rx="7" ry="3.5" fill="url(#goldGrad)" stroke="#d98000" stroke-width="0.5" />
-                    <ellipse cx="46" cy="36" rx="7" ry="3.5" fill="url(#goldGrad)" stroke="#e49100" stroke-width="0.5" />
-                    
-                    {/* Gold coins stack 2 */}
-                    <ellipse cx="40" cy="45" rx="6" ry="3" fill="url(#goldGrad)" stroke="#d98000" stroke-width="0.5" />
-                    <ellipse cx="40" cy="42" rx="6" ry="3" fill="url(#goldGrad)" stroke="#e49100" stroke-width="0.5" />
-                    
-                    {/* Running Shoe */}
-                    <path d="M12 36C12 36 16 28 22 26C28 24 38 28 42 24C44 22 42 16 46 16C50 16 52 24 50 32C48 38 40 42 34 42C26 42 12 40 12 36Z" fill="url(#shoeGrad)" />
-                    <path d="M11 36C11 36 22 41 34 41C42 41 49 39 51 36C51 37.5 45 42.5 34 42.5C22 42.5 11 38.5 11 36Z" fill="#ffffff" />
-                    <path d="M14 37C22 41 34 41 45 39" stroke="#ff451d" stroke-width="1.2" stroke-linecap="round" />
-                    <path d="M28 26L32 29" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
-                    <path d="M31 24L35 27" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
-                  </svg>
+                  <img src={getPaidToWalk} alt="Get paid to walk"/>
                 </div>
                 <div className="inclusion-card-content text-start">
                   <h4 className="inclusion-card-title">Get paid to walk</h4>
@@ -67,30 +47,7 @@ export const InclusionsSection: React.FC = () => {
               {/* Item 2 */}
               <div className="inclusion-item-card d-flex align-items-center gap-4">
                 <div className="inclusion-3d-icon-frame flex-shrink-0">
-                  <svg width="52" height="52" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="trophyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ffe259" />
-                        <stop offset="100%" stop-color="#ffa751" />
-                      </linearGradient>
-                      <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ff7b5a" />
-                        <stop offset="100%" stop-color="#ff451d" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="32" cy="32" r="28" fill="#fff5ec" opacity="0.3"/>
-                    
-                    {/* Momentum rising bars and arrow */}
-                    <path d="M14 36L24 28L30 32L44 18" stroke="url(#arrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M38 18H44V24" stroke="url(#arrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    
-                    {/* Trophy cup */}
-                    <path d="M20 22V28C20 34.6 25.4 40 32 40C38.6 40 44 34.6 44 28V22H20Z" fill="url(#trophyGrad)" stroke="#e49100" stroke-width="0.5" />
-                    <rect x="25" y="44" width="14" height="3" rx="1" fill="#7d7d7d" />
-                    <path d="M30 40H34V44H30V40Z" fill="url(#trophyGrad)" />
-                    <path d="M20 25H16V31C16 33 18 35 20 35" stroke="url(#trophyGrad)" stroke-width="2" stroke-linecap="round" />
-                    <path d="M44 25H48V31C48 33 46 35 44 35" stroke="url(#trophyGrad)" stroke-width="2" stroke-linecap="round" />
-                  </svg>
+                  <img src={IncreaseWinningChangce} alt="Increase winning chances"/>
                 </div>
                 <div className="inclusion-card-content text-start">
                   <h4 className="inclusion-card-title">Increase winning chances</h4>
@@ -103,21 +60,7 @@ export const InclusionsSection: React.FC = () => {
               {/* Item 3 */}
               <div className="inclusion-item-card d-flex align-items-center gap-4">
                 <div className="inclusion-3d-icon-frame flex-shrink-0">
-                  <svg width="52" height="52" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ff7b5a" />
-                        <stop offset="100%" stop-color="#ff451d" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="32" cy="32" r="28" fill="#ffece7" opacity="0.3"/>
-                    <g transform="rotate(-15 32 32)">
-                      <rect x="18" y="22" width="28" height="20" rx="4" fill="url(#tagGrad)" />
-                      <path d="M18 22L12 32L18 42H18.5V22H18Z" fill="url(#tagGrad)" />
-                      <circle cx="16" cy="32" r="2.5" fill="#ffffff" />
-                      <text x="31" y="36.5" fill="#ffffff" font-family="'Poppins', sans-serif" font-weight="800" font-size="12px" text-anchor="middle" alignment-baseline="middle">%</text>
-                    </g>
-                  </svg>
+                   <img src={UnlockBatter} alt="Unlock better rewards"/>
                 </div>
                 <div className="inclusion-card-content text-start">
                   <h4 className="inclusion-card-title">Unlock better rewards</h4>
@@ -130,24 +73,7 @@ export const InclusionsSection: React.FC = () => {
               {/* Item 4 */}
               <div className="inclusion-item-card d-flex align-items-center gap-4">
                 <div className="inclusion-3d-icon-frame flex-shrink-0">
-                  <svg width="52" height="52" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ff7b5a" />
-                        <stop offset="100%" stop-color="#ff451d" />
-                      </linearGradient>
-                      <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ffe259" />
-                        <stop offset="100%" stop-color="#ffa751" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="32" cy="32" r="28" fill="#ffece7" opacity="0.3"/>
-                    <path d="M20 34C20 22 24 16 32 16C40 16 44 22 44 34" stroke="url(#goldGrad2)" stroke-width="3" stroke-linecap="round" />
-                    <rect x="16" y="28" width="8" height="12" rx="3" fill="url(#headGrad)" />
-                    <rect x="40" y="28" width="8" height="12" rx="3" fill="url(#headGrad)" />
-                    <path d="M20 36C20 41 25 45 29 45" stroke="#ffa751" stroke-width="2" stroke-linecap="round" />
-                    <circle cx="30" cy="45" r="1.5" fill="#ff451d" />
-                  </svg>
+                    <img src={GetHelp} alt="Get help when you need it"/>
                 </div>
                 <div className="inclusion-card-content text-start">
                   <h4 className="inclusion-card-title">Get help when you need it</h4>
@@ -177,7 +103,9 @@ export const InclusionsSection: React.FC = () => {
         {/* Bottom Centered Pills CTA */}
         <div className="inclusions-bottom-cta text-center">
           <button className="inclusions-orange-cta-btn" id="inclusions-upgrade-cta">
-            Upgrade to <span className="badge-pro-cta-white">pro</span>
+            Upgrade to <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 73 33" fill="none">
+<path d="M67.5273 0C70.2398 0 72.4383 2.19874 72.4385 4.91113V27.3379C72.4385 30.0504 70.2399 32.249 67.5273 32.249H11.082L12.3057 25.2764C12.9505 26.2566 13.8406 27.0823 14.9756 27.7529C16.1363 28.3978 17.5293 28.7197 19.1543 28.7197C21.0114 28.7197 22.7785 28.2556 24.4551 27.3271C26.1575 26.3727 27.5892 25.0566 28.75 23.3799C29.9365 21.6775 30.7234 19.7561 31.1104 17.6152C31.2651 16.7898 31.3428 16.0029 31.3428 15.2549C31.3428 13.5266 30.9943 12.0173 30.2979 10.7275C29.6014 9.43803 28.6212 8.44542 27.3574 7.74902C26.0935 7.05256 24.6485 6.7041 23.0234 6.7041C21.3985 6.70415 19.8766 7.03935 18.458 7.70996C17.0651 8.38062 15.9042 9.20634 14.9756 10.1865L15.5176 7.05176H11.1064L6.6748 32.249H4.91211C2.19958 32.249 1.23677e-05 30.0504 0 27.3379V4.91113C0.000177359 2.19874 2.19968 0 4.91211 0H67.5273ZM59.002 6.7041C56.5774 6.70415 54.3719 7.2846 52.3857 8.44531C50.4256 9.60597 48.8781 11.1792 47.7432 13.165C46.634 15.1512 46.0791 17.3443 46.0791 19.7432C46.0791 21.4972 46.4532 23.0577 47.2012 24.4248C47.9749 25.7918 49.0452 26.8496 50.4121 27.5977C51.7792 28.3457 53.3662 28.7197 55.1719 28.7197C57.5965 28.7197 59.8019 28.1525 61.7881 27.0176C63.7743 25.8568 65.348 24.2831 66.5088 22.2969C67.6695 20.3107 68.25 18.1176 68.25 15.7188C68.2499 13.9391 67.8504 12.3783 67.0508 11.0371C66.2769 9.67 65.1927 8.6123 63.7998 7.86426C62.407 7.09057 60.8074 6.7041 59.002 6.7041ZM46.9121 6.7041C45.442 6.70418 44.1009 7.06499 42.8887 7.78711C41.7021 8.50937 40.67 9.51592 39.793 10.8057L40.4512 7.05176H36.04L32.2871 28.3721H36.6982L38.71 16.957C39.1227 14.8678 39.8452 13.3981 40.877 12.5469C41.9087 11.6957 43.2753 11.2696 44.9775 11.2695H46.0996L46.9121 6.7041ZM58.3828 10.418C59.9047 10.418 61.1688 10.9085 62.1748 11.8887C63.1808 12.8431 63.6836 14.2104 63.6836 15.9902C63.6836 17.5635 63.336 19.0467 62.6396 20.4395C61.9432 21.8066 60.9755 22.9163 59.7373 23.7676C58.5251 24.5928 57.1839 25.0058 55.7139 25.0059C54.218 25.0059 52.9924 24.5283 52.0381 23.5742C51.1095 22.6198 50.6445 21.278 50.6445 19.5498C50.6445 17.9505 50.9674 16.4544 51.6123 15.0615C52.283 13.6428 53.1986 12.5207 54.3594 11.6953C55.5458 10.8442 56.8869 10.418 58.3828 10.418ZM21.3984 10.5342C22.9461 10.5342 24.2235 11.0247 25.2295 12.0049C26.2611 12.9592 26.7773 14.3004 26.7773 16.0283C26.7773 16.5958 26.7253 17.1251 26.6221 17.6152C26.3641 19.0854 25.8357 20.3753 25.0361 21.4844C24.2365 22.5935 23.282 23.4448 22.1729 24.0381C21.0895 24.6056 19.9797 24.8896 18.8447 24.8896C17.323 24.8896 16.0464 24.3858 15.0146 23.3799C14.0088 22.374 13.5059 21.0073 13.5059 19.2793C13.5059 18.7118 13.557 18.1825 13.6602 17.6924C13.9181 16.2221 14.4474 14.9457 15.2471 13.8623C16.0467 12.7789 16.9879 11.9532 18.0713 11.3857C19.1804 10.8183 20.2894 10.5342 21.3984 10.5342Z" fill="#ffffff"/>
+</svg>
           </button>
         </div>
 

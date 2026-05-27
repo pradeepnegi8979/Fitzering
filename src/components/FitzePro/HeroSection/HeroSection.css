@@ -56,7 +56,7 @@
 
 .fitzepro-hero-title .highlight-orange {
   color: #ff5f38; /* Exact matte coral red/orange */
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* WHY PRO rounded pill button style */
@@ -104,7 +104,13 @@
   gap: 6px;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
+.fitzepro-btn-upgrade-pill svg{
+  fill: #ff5f38;
+  
+  }
+  .fitzepro-btn-upgrade-pill:hover svg{
+    fill:#000;
+  }
 .fitzepro-btn-upgrade-pill:hover {
   background-color: #ff5f38;
   transform: translateY(-1px);

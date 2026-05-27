@@ -68,7 +68,7 @@
 
 .fitzepro-plan-title {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #121214;
   letter-spacing: -2.2px;
   line-height: 1.15;
@@ -77,7 +77,7 @@
 
 .fitzepro-plan-title .highlight-orange {
   color: #ff5f38; /* Exact brand orange/coral hue */
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .fitzepro-plan-support {
@@ -223,10 +223,13 @@
 
 .plan-showcase-card.is-white-theme .plan-pricing-amount {
   color: #121214;
+  opacity:60%;
 }
 
 .plan-showcase-card.is-orange-theme .plan-pricing-amount {
   color: #ffffff;
+    opacity:60%;
+
 }
 
 .coin-symbol {

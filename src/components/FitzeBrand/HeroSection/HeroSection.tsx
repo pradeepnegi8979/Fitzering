@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => {
           <Col lg={6} md={12} className="hero-text-col">
             <h1 className="hero-main-title" id="hero-heading">
               Turn movement <br />
-              into <span className="hero-title-italic-orange">real</span> <span className="hero-title-bold-orange">brand <br />engagement.</span>
+              into <span className="hero-title-italic-orange">real &nbsp;</span> <span className="hero-title-bold-orange">brand <br />engagement.</span>
             </h1>
             <p className="hero-description" id="hero-subheading">
               Create high-impact brand experiences powered by rewards, movement and real-world participation.
