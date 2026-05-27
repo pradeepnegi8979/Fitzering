@@ -641,6 +641,9 @@ z-index: 3;
 }
 
 @media (max-width: 767.98px) {
+  .fitzering-decor-mesh {display:none;}
+  .fitzering-main-headlines, .fitzering-video-bg-wrapper  {transform:translate(0px, 0px);}
+  .fitzering-hero-content-container {padding-top:100px;}
   .fitzering-hero-container {
     padding: 60px 0 80px;
   }

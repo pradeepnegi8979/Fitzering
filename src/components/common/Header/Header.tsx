@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Download } from 'lucide-react';
 import './Header.css';
-
+import logo from '../../../assets/logo-black.svg';
 export const Header: React.FC = () => {
   return (
     <Navbar expand="lg" className="navbar-fitze sticky-top bg-white">
@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <div className="brand-logo-container">
             
-            <img src="https://www.fitze.ae/wp-content/themes/Fitze/images/logo.svg" alt="fitze Logo" className="brand-logo" />
+            <img src={logo} alt="fitze Logo" className="brand-logo" />
             
           </div>
         </Navbar.Brand>
