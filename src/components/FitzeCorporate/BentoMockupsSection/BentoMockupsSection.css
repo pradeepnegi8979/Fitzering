@@ -1,0 +1,283 @@
+/* ==========================================================================
+   BentoMockupsSection.css - 100% Premium Design Accuracy Bento Layout
+   ========================================================================== */
+
+/* Outer Full Width Section Wrapper */
+.bento-mockups-section-wrapper {
+  width: 100%;
+  padding: 100px 0 110px 0;
+  background-color: #111113; /* Seamless, premium dark graphite black matching parent pages */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Internal Container constraints */
+.bento-mockups-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ==========================================================================
+   BENTO SHOWCASE CARDS COHESIVE SYSTEM
+   ========================================================================== */
+.bento-showcase-card {
+  border-radius: 40px; /* Sophisticated curved corners matching the uploaded mockups */
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px; /* Roomy, airy premium padding */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s ease;
+  height: 100%;
+}
+
+/* LEFT CARD: Slate Zinc Dark Theme */
+.bento-showcase-card.habits-card-theme {
+  background-color: #18181b; /* Zinc 900 charcoal base */
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.bento-showcase-card.habits-card-theme:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(255, 82, 38, 0.05), 0 20px 48px rgba(0,0,0,0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* RIGHT CARD: Rich Deep Cocoa Theme */
+.bento-showcase-card.enterprise-card-theme {
+  background-color: #1f1815; /* Elegant cocoa coffee charcoal background */
+  border: 1.5px solid rgba(255, 255, 255, 0.03);
+}
+
+.bento-showcase-card.enterprise-card-theme:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(255, 82, 38, 0.04), 0 20px 48px rgba(0,0,0,0.6);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY HIERARCHY
+   ========================================================================== */
+.bento-card-header {
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+/* Eyebrow Label */
+.bento-eyebrow-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff5226; /* Fitze Orange Accent */
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* Bold Display Titles */
+.bento-main-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -1.2px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* Balanced descriptive copy blocks */
+.bento-support-desc {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: #a1a1aa; /* Pewter alloy grey tint */
+  line-height: 1.6;
+  margin: 0;
+  max-width: 480px;
+}
+
+/* ==========================================================================
+   MOCKUP VISUAL CONTAINER FRAMES
+   ========================================================================== */
+.bento-visual-frame {
+  width: 100%;
+  /* height: 380px; */
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Frame 1: Vibrant Orange Container */
+.bento-visual-frame.mobile-orange-frame {
+  /* background: linear-gradient(135deg, #ff5226 0%, #fa4717 100%);
+  padding: 16px; */
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Frame 2: Dark Cocoa / Deep Earthy Container */
+.bento-visual-frame.dashboard-cocoa-frame {
+  /* background-color: #2b1f1a;
+  padding: 20px; */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image scaling with lazy hover triggers */
+.bento-mockup-fluid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.5s ease;
+}
+
+/* Screen bounds for ipad */
+.borderless-ipad-screen {
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* Stretches and zooms mockups slightly on hover card */
+.bento-showcase-card:hover .bento-mockup-fluid-image {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   BOTTOM MASTER PILL CALL-TO-ACTION (CTA)
+   ========================================================================== */
+.bento-section-cta-row {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.bento-callback-pill-button {
+  background-color: #ff5226; /* Fitze brand orange */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 16px 48px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(255, 82, 38, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.bento-callback-pill-button:hover {
+  background-color: #ffffff;
+  color: #111113;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+.bento-callback-pill-button:active {
+  transform: translateY(-1.5px);
+}
+
+/* ==========================================================================
+   RESPONSIVE SCALING - PRESERVING EXACT BENTO COMPOSITION
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .bento-showcase-card {
+    padding: 38px;
+    border-radius: 32px;
+  }
+  .bento-main-title {
+    font-size: 1.95rem;
+    letter-spacing: -1px;
+  }
+  /* .bento-visual-frame {
+    height: 330px;
+  } */
+}
+
+@media (max-width: 991px) {
+  .bento-mockups-section-wrapper {
+    padding: 70px 0 80px 0;
+  }
+  .bento-showcase-card {
+    padding: 32px;
+    border-radius: 28px;
+  }
+  .bento-main-title {
+    font-size: 1.7rem;
+    letter-spacing: -0.8px;
+  }
+  .bento-visual-frame {
+    /* height: 300px; */
+    border-radius: 20px;
+  }
+  .bento-section-cta-row {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-mockups-section-wrapper {
+    padding: 55px 0 65px 0;
+  }
+  .bento-main-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.6px;
+    line-height: 1.25;
+  }
+  .bento-support-desc {
+    font-size: 0.92rem;
+  }
+  .bento-card-header {
+    margin-bottom: 28px;
+  }
+  /* .bento-visual-frame {
+    height: 280px;
+  } */
+}
+
+@media (max-width: 576px) {
+  .bento-mockups-section-wrapper {
+    padding: 45px 0 55px 0;
+  }
+  .bento-showcase-card {height: 240px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .bento-main-title {
+    font-size: 1.38rem;
+    letter-spacing: -0.4px;
+  }
+  .bento-support-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .bento-card-header {
+    margin-bottom: 22px;
+  }
+  .bento-visual-frame {
+    /*  */
+    border-radius: 16px;
+  }
+  .bento-visual-frame.dashboard-cocoa-frame {
+    padding: 10px;
+  }
+  .bento-section-cta-row {
+    margin-top: 36px;
+  }
+  .bento-callback-pill-button {
+    width: 100%;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+}

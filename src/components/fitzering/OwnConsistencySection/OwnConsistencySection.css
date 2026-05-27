@@ -1,0 +1,372 @@
+/* ==========================================================================
+   OwnConsistencySection.css - High Fidelity Dark Luxury Value Section
+   ========================================================================== */
+
+.own-consistency-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #1e1c1b; /* Rich solid luxury warm charcoal matching uploaded design */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 1. SECTION COMPONENT HEADER */
+.own-consistency-container {
+  max-width: 1160px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.own-consistency-main-title {
+  font-size: 3.6rem;
+  font-weight: 400; /* Beautiful elegant thin typography */
+  color: #ffffff;
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+  margin: 0 0 36px 0; /* Exact spacing before photo starts */
+}
+
+/* 2. DYNAMIC INTERACTIVE LAYOUT GRID */
+.own-consistency-content-row {
+  margin-bottom: 75px;
+}
+
+/* Left Column: Traveling Roadtrip Cover Photo */
+.travel-photo-container {
+  position: relative;
+  width: 100%;
+  height: 480px; /* Exact design proportion */
+  border-radius: 40px; /* High fidelity matching rounded edges */
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.roadtrip-ring-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.travel-photo-container:hover .roadtrip-ring-photo {
+  transform: scale(1.03);
+}
+
+/* Elegant vignetting overlays on imagery */
+.photo-inner-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.25) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Right Column: Premium Pitch Box */
+.offer-premium-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+
+/* Purchase Status Badge */
+.one-time-badge-wrapper {
+  margin-bottom: 24px;
+}
+
+.one-time-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ff5e3a; /* Coral theme color */
+  border: 1px solid rgba(255, 94, 58, 0.45);
+  border-radius: 50px;
+  padding: 6px 18px;
+  background-color: rgba(255, 94, 58, 0.04);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Hero Pricing Display */
+.price-display-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.fitze-currency-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 52px;
+  height: 52px;
+}
+
+.manat-styled-svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 2.2;
+}
+
+.price-amount {
+  font-size: 5.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+/* Limited Time Discount Tag */
+.limited-badge-wrapper {
+  margin-bottom: 24px;
+}
+
+.limited-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ff5e3a;
+  border: 1px solid rgba(255, 94, 58, 0.35);
+  border-radius: 50px;
+  padding: 4px 14px;
+  background-color: rgba(255, 94, 58, 0.03);
+}
+
+/* Promo Title Text & Pro Pill Styling */
+.pro-promo-heading {
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.pro-promo-heading .fitze-text {
+  font-weight: 700;
+}
+
+.pro-badge-pill {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #ff5e3a; /* Solid vibrant brand pro accent */
+  padding: 2px 10px;
+  border-radius: 6px;
+  text-transform: lowercase;
+  margin-left: 2px;
+  margin-right: 4px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+/* Interactive Checklists */
+.perks-checklist-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.perk-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.checklist-bullet-container {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.check-svg-bullet {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.perk-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.perk-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 3px 0;
+  letter-spacing: -0.2px;
+}
+
+.perk-description {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #a0aec0; /* Subdued clean platinum gray */
+  margin: 0;
+  line-height: 1.45;
+  max-width: 440px;
+}
+
+/* Conditions Apply Footer Label */
+.conditions-label-text {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: #718096;
+  margin: 20px 0 0 0;
+}
+
+/* 3. SOLID ACTION BOTTOM CTAS */
+.own-consistency-booking-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.own-consistency-shop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5e3a; /* Brand high fidelity coral code */
+  color: #ffffff !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 16px 54px;
+  text-decoration: none !important;
+  box-shadow: 0 8px 24px rgba(255, 94, 58, 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.own-consistency-shop-btn:hover {
+  background-color: #fa4a23;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 94, 58, 0.38);
+}
+
+.own-consistency-guarantees {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #718096;
+  margin-top: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================================
+   Responsive Configuration & Breakpoint Sizing (Pixel Perfect)
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .own-consistency-main-title {
+    font-size: 2.8rem;
+  }
+  .travel-photo-container {
+    height: 420px;
+  }
+  .price-amount {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .own-consistency-section {
+    padding: 80px 0;
+  }
+  .own-consistency-main-title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .travel-photo-container {
+    height: 380px;
+    border-radius: 32px;
+  }
+  .offer-premium-box {
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  .perk-checklist-item {
+    text-align: left;
+  }
+  .own-consistency-content-row {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .own-consistency-section {
+    padding: 65px 0;
+  }
+  .own-consistency-main-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+  }
+  .travel-photo-container {
+    height: 320px;
+    border-radius: 28px;
+  }
+  .price-amount {
+    font-size: 4.2rem;
+  }
+  .pro-promo-heading {
+    font-size: 1.55rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .own-consistency-main-title {
+    font-size: 1.8rem;
+  }
+  .travel-photo-container {
+    height: 240px;
+    border-radius: 22px;
+  }
+  .price-amount {
+    font-size: 3.5rem;
+  }
+  .fitze-currency-symbol {
+    width: 40px;
+    height: 40px;
+  }
+  .pro-promo-heading {
+    font-size: 1.3rem;
+  }
+  .pro-badge-pill {
+    font-size: 0.85rem;
+    padding: 1px 8px;
+  }
+  .perk-title {
+    font-size: 0.95rem;
+  }
+  .perk-description {
+    font-size: 0.78rem;
+  }
+  .own-consistency-shop-btn {
+    font-size: 0.95rem;
+    padding: 14px 44px;
+    width: 100%;
+  }
+}

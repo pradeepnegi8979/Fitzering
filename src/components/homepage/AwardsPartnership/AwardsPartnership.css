@@ -1,0 +1,297 @@
+@import "../../../styles/variables.css";
+
+/* Base font setup forcing Poppins inside the Awards & Partnerships Section */
+.awards-partnership-section {
+  background-color: var(--color-white, #ffffff);
+  padding-top: 55px;
+  padding-bottom: 55px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.awards-partnership-section *,
+.awards-partnership-section span,
+.awards-partnership-section h3,
+.awards-partnership-section div {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Outer layout mapping static container and flex row */
+.ap-outer-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
+  gap: 40px;
+}
+
+/* LEFT SIDE FIXED BOX: This box stays 100% static and NEVER slides */
+.awards-partnership-left-box {
+  flex-shrink: 0;
+  width: 235px;
+  background-color: #f7f6f3; /* soft warm shaded cream off-white background */
+  border-radius: 20px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  z-index: 15;
+  position: relative;
+}
+
+.awards-partnership-title {
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: #1a1a1a;
+  line-height: 1.35;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* RIGHT SIDE AUTO-SCROLL AREA */
+.awards-partnership-right-scroll-area {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Continuous smooth scrolling track */
+.awards-partnership-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+  /* 28s duration keeps logo scroll smooth, calming, and highly readable */
+  animation: apContinuousMarquee 28s linear infinite;
+}
+
+/* Pause scroll ONLY on hovering over the scrolling container */
+.awards-partnership-right-scroll-area:hover .awards-partnership-track {
+  animation-play-state: paused;
+}
+
+/* Cells within track containing individual logos */
+.ap-track-cell {
+  padding: 0 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.
+/* NODE 1: e&amp;SMB Award block matching exact visual */
+.ap-award-node {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ap-ea-logo-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ap-award-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ap-award-title-main {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.ap-award-subtitle {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #777777;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+/* NODE 2: rakez geometric design */
+.ap-logo-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.rakez-node {
+  flex-direction: column;
+  gap: 1px;
+}
+
+.rakez-logo-text {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #162427;
+  letter-spacing: 0.8px;
+  text-transform: lowercase;
+  line-height: 1;
+}
+
+/* NODE 3: GB TECH logo node */
+.gbtech-node {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gbtech-logo-text {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+/* NODE 4: HUAWEI logo node */
+.huawei-node {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.huawei-logo-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 0.2px;
+}
+
+/* NODE 5: careem logo node */
+.careem-node {
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.careem-logo-text {
+  font-size: 1.15rem;
+  font-weight: 850;
+  color: #3ec060;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+/* Fade gradients on left &amp; right ends mimicking modern premium dashboard cards fading out */
+.ap-fade-overlay-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ap-fade-overlay-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0));
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Smooth linear auto-sliding frame keyframes */
+@keyframes apContinuousMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translates by exactly 50% matching our duplicated items setup */
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive constraints and styles */
+@media (max-width: 1199.98px) {
+  .ap-outer-wrapper {
+    padding: 0 25px;
+    gap: 30px;
+  }
+  .awards-partnership-left-box {
+    width: 215px;
+    padding: 20px 24px;
+  }
+  .awards-partnership-title {
+    font-size: 1.05rem;
+  }
+  .ap-track-cell {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .awards-partnership-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .ap-outer-wrapper {
+    gap: 20px;
+  }
+  .awards-partnership-left-box {
+    width: 195px;
+    padding: 16px 20px;
+  }
+  .awards-partnership-title {
+    font-size: 0.95rem;
+  }
+  .ap-track-cell {
+    padding: 0 22px;
+  }
+}
+
+/* Mobile &amp; Tablet devices stack the static left-side card neatly on top */
+@media (max-width: 767.98px) {
+  .ap-outer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 15px;
+  }
+  .awards-partnership-left-box {
+    width: 100%;
+    max-width: 260px;
+    margin-right: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 20px;
+  }
+  .awards-partnership-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .awards-partnership-right-scroll-area {
+    width: 100%;
+  }
+  .ap-track-cell {
+    padding: 0 18px;
+  }
+  .ap-fade-overlay-left,
+  .ap-fade-overlay-right {
+    width: 25px;
+  }
+}
+
+
+.ap-track-cell img {
+  max-width: 80px;
+}

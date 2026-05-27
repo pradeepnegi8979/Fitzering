@@ -1,0 +1,334 @@
+@import "../../../styles/variables.css";
+
+/* Footer Base styling matching exact colors and Google Fonts setup */
+.footer-fitze {
+  background-color: var(--color-primary); /* #ff5e3a */
+  color: #ffffff;
+  padding: 85px 0 35px 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Ensure Google Font Poppins load correctly inside the footer */
+.footer-fitze *,
+.footer-fitze span,
+.footer-fitze a,
+.footer-fitze h1,
+.footer-fitze h5 {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Main row custom spacing & layout */
+.footer-main-row {
+  margin-bottom: 20px;
+}
+
+/* Left side columns for the giant 'fitze' logo */
+.footer-logo-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 0px;
+}
+
+.brand-logo-huge {
+  font-size: clamp(6.2rem, 15vw, 13.5rem);
+  font-weight: 800;
+  letter-spacing: -6px;
+  color: #ffffff;
+  line-height: 0.75;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+/* Adjust layout alignment for sub navigation columns */
+.footer-links-col {
+  padding-top: 10px;
+}
+
+.links-subgrid {
+  margin-bottom: 35px;
+}
+
+.links-subcol {
+  padding-right: 15px;
+}
+
+.footer-link-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 22px;
+  letter-spacing: -0.2px;
+  text-transform: none;
+  line-height: 1.25;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link-list li {
+  margin-bottom: 12px;
+}
+
+.footer-link-list a {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: opacity 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.footer-link-list a:hover {
+  opacity: 1;
+}
+
+/* Download button container definitions */
+.footer-download-section {
+  width: 100%;
+}
+
+.footer-download-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  letter-spacing: -0.2px;
+}
+
+.footer-badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+
+/* .custom-app-badge-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 138px;
+  height: 40px;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-app-badge-btn:hover {
+  background-color: #161616;
+  border-color: rgba(255, 255, 255, 0.4);
+} */
+
+.badge-icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.badge-text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.1;
+}
+
+.badge-sub-text {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.85;
+  display: block;
+  white-space: nowrap;
+}
+
+.badge-main-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+}
+
+/* Clear visual breaker space */
+.footer-spacing-breaker {
+  height: 60px;
+  width: 100%;
+}
+
+/* Bottom Bar Alignment and Proportions */
+.footer-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: none;
+  padding-top: 0px;
+}
+
+.copyright-text-fitze {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.95;
+  letter-spacing: -0.1px;
+}
+
+/* Centered White Card Payment Providers Pill */
+.payment-providers-pill {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 6px 20px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.payment-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.visa-svg {
+  margin-top: 1px;
+}
+
+.mastercard-circles {
+  opacity: 0.95;
+}
+
+.unionpay-badge {
+  opacity: 0.95;
+}
+
+/* Right-aligned Solid cutout icons */
+.footer-cutout-social-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* .social-cutout-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+} */
+
+.social-cutout-btn:hover {
+  transform: scale(1.08);
+}
+
+.social-cutout-svg {
+  fill: var(--color-primary); /* Fills cutout with background orange color */
+  transition: fill 0.2s ease;
+}
+
+/* Responsive styles to ensure perfect adaptability across mobile & tablet devices */
+@media (max-width: 991.98px) {
+  .footer-fitze {
+    padding: 60px 0 40px 0;
+  }
+
+  .footer-logo-col {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  .brand-logo-huge {
+    text-align: center;
+    letter-spacing: -4px;
+  }
+
+  .footer-links-col {
+    padding-top: 0;
+  }
+
+  .links-subgrid {
+    margin-bottom: 25px;
+  }
+
+  .footer-link-title {
+    margin-bottom: 16px;
+  }
+
+  .footer-download-title {
+    margin-top: 20px;
+  }
+
+  .footer-badges-container {
+    justify-content: flex-start;
+  }
+
+  .footer-spacing-breaker {
+    height: 35px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .copyright-text-fitze {
+    display: block;
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-fitze {
+    padding: 50px 0 35px 0;
+  }
+
+  .brand-logo-huge {
+    font-size: 5rem;
+    letter-spacing: -2px;
+  }
+
+  .footer-badges-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-link-title {
+    font-size: 0.88rem;
+  }
+
+  .footer-link-list a {
+    font-size: 0.8rem;
+  }
+
+  .footer-download-title {
+    text-align: center;
+  }
+
+  .payment-providers-pill {
+    padding: 6px 16px;
+    gap: 12px;
+  }
+}

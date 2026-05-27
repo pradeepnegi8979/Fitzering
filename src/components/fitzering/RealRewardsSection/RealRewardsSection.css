@@ -1,0 +1,509 @@
+/* ==========================================================================
+   RealRewardsSection.css - Premium High-Fidelity Sizing Page Section Styling
+   ========================================================================== */
+
+.real-rewards-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 1. SECTION HEADER */
+.rewards-header {
+  margin-bottom: 50px;
+}
+
+.rewards-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.15;
+  color: #121212;
+}
+
+.rewards-title .highlight-coral {
+  color: #ff5e3a;
+}
+
+/* 2. STATS OUTLINE BOX BAR (Matches mockup exactly) */
+.stats-outline-bar {
+  border-top: 1px solid #eef1f6;
+  border-bottom: 1px solid #eef1f6;
+  padding: 35px 0;
+  margin-bottom: 60px;
+}
+
+.stat-column {
+  position: relative;
+}
+
+/* Vertical dividing line between statistics on desktop */
+.border-right-md {
+  border-right: 1px solid #eef1f6;
+}
+
+.stat-card-inner {
+  padding: 0 20px;
+}
+
+.stat-main-number {
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #121212;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.stat-main-number .coral-prefix,
+.stat-main-number .coral-suffix {
+  color: #ff5e3a;
+}
+
+.stat-caption {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #777d85;
+  margin: 0;
+}
+
+/* 3. PREMIUM TRIPLE PILLAR CARDS */
+.premium-cards-wrapper {
+  max-width: 1120px;
+  margin: 0 auto 60px auto;
+}
+
+.pill-premium-card {
+  position: relative;
+  border-radius: 36px;
+  background-color: #ffffff;
+  border: 1px solid #f1f3f7;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  width: 100%;
+}
+
+.pill-premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Visual Mockup Area inside Card */
+.card-visual-header {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pill-premium-card:hover .visual-bg {
+  transform: scale(1.05);
+}
+
+/* Dimmer gradient for phone contrast */
+.visual-gradient-dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 2;
+}
+
+/* 4. AMAZING PHONE LAYOUT CODES FOR HIGHEST FIDELITY LOOK */
+.phone-mockup-wrapper {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 185px;
+  height: 250px;
+  background-color: #121214;
+  border-radius: 28px 28px 0 0;
+  padding: 8px;
+  box-shadow: 0 -8px 30px rgba(0,0,0,0.3);
+  z-index: 5;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.pill-premium-card:hover .phone-mockup-wrapper {
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.mockup-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fafbfc;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-header-notch {
+  width: 75px;
+  height: 13px;
+  background-color: #121214;
+  border-radius: 0 0 10px 10px;
+  align-self: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.mockup-inner-content {
+  padding: 24px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Specific details for Streak Phone content */
+.mockup-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777d85;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.mockup-big-stat {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #121212;
+  margin-bottom: 8px;
+}
+
+.mockup-progress-small {
+  margin-bottom: 8px;
+}
+
+.p-bar-track {
+  width: 100%;
+  height: 5px;
+  background-color: #edf1f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.p-bar-fill {
+  height: 100%;
+  background-color: #ff5e3a;
+  border-radius: 4px;
+}
+
+.mockup-desc {
+  font-size: 0.52rem;
+  color: #5d6470;
+  font-weight: 600;
+}
+
+.mockup-alert-chip {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  right: 5%;
+  background-color: #ffffff;
+  border: 1px solid #edf1f6;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 0.52rem;
+  font-weight: 700;
+  color: #27ae60;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  z-index: 12;
+}
+
+.dot-green {
+  width: 6px;
+  height: 6px;
+  background-color: #27ae60;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Specific details for Rewards Phone content */
+.rewards-layout {
+  justify-content: flex-start;
+}
+
+.reward-offer-card {
+  margin-top: 10px;
+  background-color: #fff2ef;
+  border: 1px solid #ffd4cb;
+  border-radius: 14px;
+  padding: 10px;
+  text-align: left;
+}
+
+.offer-title {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #777d85;
+}
+
+.offer-discount {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #ff5e3a;
+  margin-bottom: 8px;
+  margin-top: 2px;
+}
+
+.offer-footer-btn {
+  background-color: #ff5e3a;
+  color: #ffffff;
+  font-size: 0.48rem;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Specific details for Challenges progress card view */
+.challenges-layout {
+  justify-content: center;
+}
+
+.challenge-tag-mock {
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: #3f51b5;
+  background-color: #eef1f6;
+  align-self: flex-start;
+  padding: 2px 6spx;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.challenge-progress-box {
+  background-color: #ffffff;
+  border: 1px solid #f1f3f7;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.comp-bar-outline {
+  width: 100%;
+  height: 4px;
+  background-color: #f1f3f7;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.comp-bar-fill {
+  height: 100%;
+  background-color: #2196f3;
+}
+
+.comp-steps-label {
+  font-size: 0.46rem;
+  font-weight: 700;
+  color: #777d85;
+}
+
+/* Orange Floating badge on third card */
+.orange-p-badge {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ff5e3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 6px 15px rgba(255, 94, 58, 0.3);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* Verbal details inside the cards */
+.card-verbal-footer {
+  padding: 30px;
+}
+
+.pillar-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #777d85;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.pillar-headline {
+  font-size: 1.7rem;
+  font-weight: 750;
+  color: #121212;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.pillar-description {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #5d6470;
+  margin: 0;
+}
+
+/* 5. BOTTOM CALL TO ACTION CONTAINER */
+.rewards-bottom-cta {
+  margin-top: 70px;
+}
+
+.cta-disclaimer-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #121212;
+  margin-bottom: 25px;
+}
+
+.cta-disclaimer-text .highlight-coral-bold {
+  font-weight: 700;
+  color: #ff5e3a;
+}
+
+/* Rounded gorgeous black CTA primary button */
+.premium-dark-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  background-color: #121214;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.premium-dark-btn:hover {
+  background-color: #202024;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn-arrow-coral {
+  color: #ff5e3a;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints - Fluid and Resilient
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .rewards-title {
+    font-size: 2.8rem;
+  }
+  .pillar-headline {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .rewards-title {
+    font-size: 2.4rem;
+  }
+  .stat-main-number {
+    font-size: 1.95rem;
+  }
+  /* Wrap outline stats borders clearly on tablets */
+  .border-right-md {
+    border-right: none;
+    border-bottom: 1px solid #eef1f6;
+  }
+  .stat-column {
+    padding: 20px 0;
+  }
+  .stats-outline-bar {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .real-rewards-section {
+    padding: 60px 0;
+  }
+  .rewards-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+  }
+  .stat-main-number {
+    font-size: 1.8rem;
+  }
+  .card-visual-header {
+    height: 260px;
+  }
+  .phone-mockup-wrapper {
+    width: 170px;
+    height: 220px;
+  }
+  .cta-disclaimer-text {
+    font-size: 1.05rem;
+  }
+  .premium-dark-btn {
+    padding: 14px 30px;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .rewards-title {
+    font-size: 1.75rem;
+  }
+  .stat-main-number {
+    font-size: 1.55rem;
+  }
+  .pillar-headline {
+    font-size: 1.35rem;
+  }
+  .pillar-description {
+    font-size: 0.82rem;
+  }
+  .card-verbal-footer {
+    padding: 20px;
+  }
+}

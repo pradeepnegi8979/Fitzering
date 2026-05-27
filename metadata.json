@@ -1,0 +1,6 @@
+{
+  "name": "Fitze Fitness Rewards Website",
+  "description": "Fitze is a fitness rewards platform in the UAE that turns daily movement and steps into rewards, challenges, streaks, and real payouts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

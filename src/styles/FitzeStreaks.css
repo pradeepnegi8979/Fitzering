@@ -1,0 +1,609 @@
+/* ==========================================================================
+   GLOBAL DESIGN SYSTEM
+========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+
+  /* COLORS */
+  --primary-orange:#ff5226;
+  --primary-green:#00E783;
+  --primary-green-dark:#00AD62;
+
+  --text-dark:#111111;
+  --text-muted:#64748b;
+  --text-light:#8c9ba5;
+
+  --white:#ffffff;
+  --black:#000000;
+
+  /* RADIUS */
+  --radius-xl:44px;
+  --radius-lg:36px;
+  --radius-md:28px;
+  --radius-sm:20px;
+  --radius-xs:14px;
+
+  /* SHADOWS */
+  --shadow-lg:0 25px 60px rgba(0,0,0,0.08);
+  --shadow-md:0 15px 35px rgba(0,0,0,0.05);
+  --shadow-sm:0 10px 30px rgba(0,0,0,0.03);
+
+  /* FONT */
+  --font-primary:'Poppins', sans-serif;
+  --font-heading:'Outfit', sans-serif;
+
+  /* TRANSITIONS */
+  --transition:all .3s cubic-bezier(0.16, 1, 0.3, 1);
+
+}
+
+
+/* ==========================================================================
+   COMMON RESET
+========================================================================== */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family:var(--font-primary);
+  color:var(--text-dark);
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+section{
+  position:relative;
+  width:100%;
+}
+
+
+/* ==========================================================================
+   COMMON UTILITIES
+========================================================================== */
+
+.fitze-section-title{
+  font-family:var(--font-heading);
+  font-weight:400;
+  line-height:1.1;
+  letter-spacing:-2px;
+  color:var(--text-dark);
+}
+
+.fitze-highlight{
+  color:var(--primary-orange);
+  font-weight:600;
+}
+
+.fitze-card{
+  background:#fff;
+  border-radius:var(--radius-sm);
+  border:1px solid #eff2f6;
+  box-shadow:var(--shadow-sm);
+}
+
+.fitze-pill{
+  border-radius:999px;
+}
+
+.fitze-btn{
+  border:none;
+  cursor:pointer;
+  transition:var(--transition);
+}
+
+.fitze-btn:hover{
+  transform:translateY(-2px);
+}
+
+
+/* ==========================================================================
+   HERO SECTION
+========================================================================== */
+
+.fitze-hero-section{
+  padding:70px 0;
+  background-color:#f8f9fa;
+  background-image:
+    linear-gradient(rgba(0,0,0,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.03) 1px, transparent 1px);
+  background-size:60px 60px;
+  overflow:hidden;
+}
+
+.fitze-page-header{
+  padding:28px 0;
+  position:relative;
+  z-index:10;
+}
+
+.fitze-logo-brand{
+  font-family:var(--font-heading);
+  font-size:2.1rem;
+  font-weight:800;
+  letter-spacing:-2px;
+  text-transform:lowercase;
+}
+
+.download-app-btn{
+  background:#fff;
+  color:var(--text-dark);
+  border:1.5px solid var(--text-dark);
+  padding:10px 24px;
+  border-radius:999px;
+  font-size:.92rem;
+  font-weight:600;
+  transition:var(--transition);
+}
+
+.download-app-btn:hover{
+  background:var(--text-dark);
+  color:#fff;
+}
+
+.hero-headline{
+  font-family:var(--font-heading);
+  font-size:4.8rem;
+  line-height:1.05;
+  letter-spacing:-3px;
+  margin-bottom:24px;
+}
+
+.orange-solid-text{
+  color:var(--primary-orange);
+  font-weight:600;
+}
+
+.hero-subtitle-desc{
+  font-size:1.2rem;
+  line-height:1.6;
+  color:#555;
+  max-width:520px;
+}
+
+.primary-streak-btn{
+  background:#111;
+  color:#fff;
+  padding:16px 36px;
+  border-radius:999px;
+  font-size:1rem;
+  font-weight:700;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.hero-image-wrapper{
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+
+
+/* ==========================================================================
+   HOW IT WORKS SECTION
+========================================================================== */
+
+.fitze-how-it-works-section{
+  padding:120px 0;
+  background:#fff;
+  overflow:hidden;
+}
+
+.how-it-works-title{
+  font-family:var(--font-heading);
+  font-size:3.4rem;
+  line-height:1.15;
+  letter-spacing:-1.8px;
+  text-align:center;
+}
+
+.bento-master-quad{
+  border:1px solid #f1f3f7;
+  border-radius:24px;
+  overflow:hidden;
+}
+
+.bento-quad-cell{
+  padding:55px 45px;
+}
+
+.fitze-step-title{
+  font-family:var(--font-heading);
+  font-size:1.95rem;
+  font-weight:600;
+  letter-spacing:-1px;
+}
+
+.fitze-step-subdesc{
+  font-size:.95rem;
+  color:#718096;
+  line-height:1.5;
+}
+
+.fitze-step-circle{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+
+/* ==========================================================================
+   WHY SECTION
+========================================================================== */
+
+.fitze-why-section{
+  padding:100px 0;
+  background:#fff;
+}
+
+.why-main-title{
+  font-family:var(--font-heading);
+  font-size:3.4rem;
+  line-height:1.1;
+  letter-spacing:-2px;
+}
+
+.why-card-box{
+  background:#f8fafc;
+  border:1px solid #f1f3f7;
+  border-radius:var(--radius-sm);
+  padding:38px 30px;
+  transition:var(--transition);
+}
+
+.why-card-box:hover{
+  background:#fff;
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+}
+
+.fitze-card-title{
+  font-family:var(--font-heading);
+  font-size:1.15rem;
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+.fitze-card-desc{
+  font-size:.85rem;
+  line-height:1.6;
+  color:var(--text-muted);
+}
+
+
+/* ==========================================================================
+   PAYOUT PARTNER SECTION
+========================================================================== */
+
+.fitze-payout-partner-section{
+  padding:100px 0;
+  background:linear-gradient(
+    100deg,
+    var(--primary-green) 0%,
+    var(--primary-green-dark) 100%
+  );
+}
+
+.payout-badge{
+  display:inline-block;
+  padding:6px 18px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.8);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.payout-main-title{
+  font-family:var(--font-heading);
+  font-size:3.35rem;
+  line-height:1.14;
+  letter-spacing:-1.5px;
+  margin-bottom:24px;
+}
+
+.payout-description{
+  max-width:530px;
+  line-height:1.6;
+}
+
+.payout-visual-container{
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:0 25px 55px rgba(5,42,19,.12);
+}
+
+
+/* ==========================================================================
+   RING PROMO SECTION
+========================================================================== */
+
+.ring-promo-section{
+  padding:85px 0;
+  background:#fff;
+}
+
+.ring-promo-box{
+  min-height:500px;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.ring-interactive-content{
+  padding:60px 70px;
+}
+
+.ring-pre-title{
+  font-family:var(--font-heading);
+  font-size:2.5rem;
+  color:#fff;
+}
+
+.brand-word-fitze{
+  color:var(--primary-orange);
+  font-size:4.5rem;
+  font-weight:700;
+}
+
+.brand-word-ring{
+  color:#fff;
+  font-size:4.5rem;
+}
+
+.premium-metric-badge{
+  background:rgba(18,18,18,.72);
+  border-radius:999px;
+  padding:8px 18px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  transition:var(--transition);
+}
+
+.premium-metric-badge:hover{
+  border-color:var(--primary-orange);
+  transform:translateY(-2px);
+}
+
+.explore-fitzering-btn{
+  background:#161618;
+  color:#fff;
+  padding:15px 36px;
+  border-radius:999px;
+  font-weight:600;
+  transition:var(--transition);
+}
+
+.explore-fitzering-btn:hover{
+  background:var(--primary-orange);
+}
+
+
+/* ==========================================================================
+   ORANGE SECTION
+========================================================================== */
+
+.orange-section{
+  background:#000;
+  padding:100px 0;
+}
+
+.oragene-greadient-text h2,
+.oragene-greadient-text h3{
+  text-align:center;
+  -webkit-background-clip:text !important;
+  -webkit-text-fill-color:transparent;
+  background:linear-gradient(
+    180deg,
+    #fff 39.44%,
+    rgba(255,255,255,.6) 77.78%
+  );
+}
+
+.oragene-greadient-text h2{
+  font-size:4.375rem;
+  font-weight:300;
+  line-height:90px;
+}
+
+.oragene-greadient-text h3{
+  font-size:4.375rem;
+  font-weight:500;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE SYSTEM
+========================================================================== */
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (max-width:1199px){
+
+  .hero-headline{
+    font-size:3.8rem;
+  }
+
+  .how-it-works-title,
+  .why-main-title,
+  .payout-main-title{
+    font-size:2.8rem;
+  }
+
+  .ring-pre-title{
+    font-size:2.2rem;
+  }
+
+  .brand-word-fitze,
+  .brand-word-ring{
+    font-size:3.8rem;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+  section{
+    padding:80px 0 !important;
+  }
+
+  .hero-headline{
+    font-size:3.4rem;
+    text-align:center;
+  }
+
+  .hero-subtitle-desc{
+    text-align:center;
+    margin:auto;
+  }
+
+  .hero-text-col{
+    text-align:center;
+    margin-bottom:40px;
+  }
+
+  .hero-actions-container{
+    align-items:center;
+  }
+
+  .how-it-works-title,
+  .why-main-title,
+  .payout-main-title{
+    font-size:2.4rem;
+  }
+
+  .bento-quad-cell{
+    padding:35px 25px;
+  }
+
+  .ring-interactive-content{
+    padding:40px;
+  }
+
+  .ring-footer-row{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .explore-fitzering-btn{
+    width:100%;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE LANDSCAPE
+===================================================== */
+
+@media (max-width:767px){
+
+  .hero-headline{
+    font-size:3rem;
+  }
+
+  .how-it-works-title,
+  .why-main-title,
+  .payout-main-title{
+    font-size:2.1rem;
+  }
+
+  .brand-word-fitze,
+  .brand-word-ring{
+    font-size:3.2rem;
+  }
+
+  .fitze-step-title{
+    font-size:1.7rem;
+  }
+
+  .ring-interactive-content{
+    padding:30px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE PORTRAIT
+===================================================== */
+
+@media (max-width:575px){
+
+  section{
+    padding:60px 0 !important;
+  }
+
+  .hero-headline{
+    font-size:2.4rem;
+    letter-spacing:-1px;
+  }
+
+  .hero-subtitle-desc{
+    font-size:1rem;
+  }
+
+  .hero-image-wrapper{
+    border-radius:32px;
+  }
+
+  .how-it-works-title,
+  .why-main-title,
+  .payout-main-title{
+    font-size:1.9rem;
+    letter-spacing:-1px;
+  }
+
+  .fitze-step-title{
+    font-size:1.4rem;
+  }
+
+  .fitze-step-subdesc,
+  .fitze-card-desc{
+    font-size:.85rem;
+  }
+
+  .bento-quad-cell{
+    padding:30px 15px;
+  }
+
+  .ring-promo-box{
+    border-radius:28px;
+  }
+
+  .ring-interactive-content{
+    padding:24px 18px;
+  }
+
+  .brand-word-fitze,
+  .brand-word-ring{
+    font-size:2.6rem;
+  }
+
+  .oragene-greadient-text h2,
+  .oragene-greadient-text h3{
+    font-size:2.5rem;
+    line-height:1.2;
+  }
+
+}

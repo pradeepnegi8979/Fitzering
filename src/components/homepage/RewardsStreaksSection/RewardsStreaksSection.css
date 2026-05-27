@@ -1,0 +1,802 @@
+@import "../../../styles/variables.css";
+
+/* Base structural styles of Rewards Streaks section */
+.rewards-streaks-main-section {
+  background-color: #ffffff;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.rewards-streaks-main-section *,
+.rewards-streaks-main-section span,
+.rewards-streaks-main-section h2,
+.rewards-streaks-main-section h3,
+.rewards-streaks-main-section p,
+.rewards-streaks-main-section div {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Base standard layout container */
+.rewards-streaks-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Badge tag on top */
+.rewards-badge-capsule {
+  display: inline-block;
+  background-color: #f7f6f4;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  padding: 5px 16px;
+  margin-bottom: 18px;
+}
+
+.rewards-badge-capsule span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #777777;
+}
+
+/* Display Typography */
+.rewards-title-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.rewards-title-heading .title-orange-text {
+  color: var(--color-primary, #ff5e3a);
+  font-weight: 600;
+}
+
+.rewards-subtitle-text {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 400;
+  margin-bottom: 60px;
+  letter-spacing: -0.15px;
+}
+
+/* Grid layout with 3 gorgeous columns matching pixel visual mapping */
+.rewards-grid-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+}
+
+.rewards-grid-card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.015);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.rewards-grid-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(255, 94, 58, 0.06);
+}
+
+/* Media wrapper for cover/phone combo */
+.rewards-card-media {
+  height: 446px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f6f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rewards-media-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.rewards-media-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+  filter: saturate(1.15) contrast(1.02);
+}
+
+/* ---------------------------------------------------------------- */
+/* REAL PHONE SIMULATED COVERAGE WORKSHOP */
+/* ---------------------------------------------------------------- */
+
+.rewards-phone-mockup {
+  width: 195px;
+  height: 300px;
+  background-color: #0d0e11;
+  border: 4.5px solid #282a32;
+  border-radius: 24px 24px 0 0;
+  border-bottom: none;
+  z-index: 5;
+  padding: 6px;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.rewards-phone-screen {
+  flex-grow: 1;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Light versus Dark theme simulation values inside phones */
+.bg-charcoal-screen {
+  background-color: #121316 !important;
+}
+
+.bg-light-screen {
+  background-color: #f8f9fc !important;
+}
+
+/* Header standard values and utilities */
+.rewards-phone-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 0 2px;
+}
+
+.font-dark-text {
+  color: #0d0d11 !important;
+}
+
+.text-dim-gray {
+  color: #8a8d9a !important;
+}
+
+.phone-time-label {
+  font-family: monospace !important;
+}
+
+.phone-right-icons {
+  display: flex;
+  align-items: center;
+}
+
+.phone-battery-cell {
+  width: 13px;
+  height: 7px;
+  background-color: #1a1a1a;
+  border-radius: 1.5px;
+  margin-left: 2px;
+}
+
+.bg-light-gray {
+  background-color: #8a8d9a !important;
+}
+
+.bg-dark-gray {
+  background-color: #1a1a1a !important;
+}
+
+/* PHONE CARD 1 SPECIFICS: FITZE REWARDS */
+.phone-app-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.app-logo-text-fitze {
+  font-size: 0.65rem;
+  font-weight: 950;
+  color: #3ec060;
+  letter-spacing: -0.3px;
+}
+
+.app-tab-active {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #111111;
+  border-bottom: 1.5px solid var(--color-primary, #ff5e3a);
+  padding-bottom: 1px;
+}
+
+.app-tab-inactive {
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: #777777;
+}
+
+.phone-filter-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.filter-tab {
+  font-size: 0.44rem;
+  font-weight: 600;
+  color: #888888;
+  background-color: #f1f2f5;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.filter-tab.active {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.phone-search-input {
+  display: flex;
+  align-items: center;
+  background-color: #f4f5f8;
+  border-radius: 6px;
+  padding: 3px 6px;
+  font-size: 0.4rem;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.search-icon-micro {
+  margin-right: 4px;
+  color: #999999;
+}
+
+/* KidZania promo details */
+.phone-kidzania-card {
+  background-color: #fbeadb; /* precise warm peach color */
+  border-radius: 10px;
+  padding: 6px 7px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.kidzania-exclusive-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 0.35rem;
+  font-weight: 850;
+  color: #ff5e3a;
+  background-color: rgba(255, 94, 58, 0.12);
+  text-transform: uppercase;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.kidzania-brand-name {
+  font-size: 0.55rem;
+  font-weight: 900;
+  color: #e1241a;
+  letter-spacing: -0.2px;
+}
+
+.kidzania-promotion-title {
+  font-size: 0.55rem;
+  font-weight: 800;
+  color: #111111;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  line-height: 1.25;
+}
+
+.kidzania-promotion-desc {
+  font-size: 0.40rem;
+  color: #555555;
+  line-height: 1.35;
+  margin: 0 0 5px 0;
+}
+
+.kidzania-action-row {
+  display: flex;
+  margin-top: auto;
+}
+
+.kidzania-redeem-pill {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  font-size: 0.4rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.kidzania-coin-symbol {
+  color: #ffae19;
+}
+
+/* PHONE CARD 2 SPECIFICS: CHALLENGES DETAILS */
+.phone-challenge-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.55rem;
+  margin-bottom: 10px;
+  padding: 0 2px;
+}
+
+.challenge-navbar-title {
+  font-weight: 600;
+}
+
+.micros-icon {
+  opacity: 0.8;
+}
+
+.phone-car-details-card {
+  background-color: #1c1d22;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+}
+
+.phone-car-visual-box {
+  background-color: #27282e;
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.phone-car-graphic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.car-vector-svg {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.car-top-tag {
+  font-size: 0.42rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.text-orange {
+  color: var(--color-primary, #ff5e3a);
+}
+
+.phone-car-stats-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.phone-car-stat-node {
+  flex: 1;
+  background-color: #27282e;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-node-label {
+  font-size: 0.36rem;
+  color: #8a8d9a;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stat-node-value {
+  font-size: 0.55rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.phone-car-rules-desc {
+  font-size: 0.38rem;
+  color: #b1b3bc;
+  line-height: 1.35;
+}
+
+.phone-car-rules-desc p {
+  margin: 0;
+}
+
+.p-readmore-accent {
+  color: var(--color-primary, #ff5e3a);
+  font-weight: 700;
+}
+
+.car-exclusive-badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 0.35rem;
+  font-weight: 850;
+  color: var(--color-primary, #ff5e3a);
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* PHONE CARD 3 SPECIFICS: STREAKS EARNINGS */
+.phone-streaks-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #111111;
+  font-size: 0.55rem;
+  margin-bottom: 8px;
+  padding: 0 2px;
+}
+
+.streaks-navbar-title {
+  font-weight: 700;
+}
+
+.phone-stats-orange-section {
+  background: linear-gradient(135deg, #ff5e3a 0%, #ff8359 100%);
+  border-radius: 12px;
+  padding: 8px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(255, 94, 58, 0.15);
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.orange-payout-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-payout-metric {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.payout-metric-label {
+  font-size: 0.36rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.payout-metric-value {
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin: 1px 0;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.payout-currency-label {
+  font-size: 0.36rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.right-payout-metrics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.micro-payout-block {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.micro-payout-label {
+  font-size: 0.32rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.micro-payout-val {
+  font-size: 0.44rem;
+  font-weight: 800;
+}
+
+.micro-payout-divider {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(255,255,255,0.25);
+}
+
+.know-more-payouts {
+  font-size: 0.38rem;
+  color: #777777;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.phone-earnings-payouts-header-label {
+  font-size: 0.44rem;
+  font-weight: 800;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+
+/* CAREEM PUSH NOTIFICATION ACCENT LAYOUT */
+.phone-payout-push-notification {
+  position: absolute;
+  bottom: 22px;
+  left: -20px;
+  right: -20px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  animation: bouncePushIn 2s ease infinite alternate;
+}
+
+@keyframes bouncePushIn {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+.careem-push-logo-wrapper {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+.careem-push-content-area {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.careem-push-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+.careem-push-brand {
+  font-size: 0.44rem;
+  font-weight: 900;
+  color: #111111;
+}
+
+.careem-push-time {
+  font-size: 0.35rem;
+  color: #999999;
+}
+
+.careem-push-body {
+  font-size: 0.36rem;
+  line-height: 1.25;
+  color: #333333;
+  font-weight: 550;
+  margin: 0;
+  letter-spacing: -0.1px;
+}
+
+.mock-obstructed-list-item {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  opacity: 0.35;
+  margin-top: 1px;
+}
+
+.obstructed-brand {
+  font-size: 0.44rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.obstructed-status {
+  font-size: 0.4rem;
+  font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* OTHER GRID SPECIFICS AND FOOTERS */
+/* ---------------------------------------------------------------- */
+
+.rewards-card-content {
+  padding: 30px 34px 34px 34px;
+}
+
+.rewards-section-mini-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #111111;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rewards-card-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #111111;
+  margin-bottom: 12px;
+  letter-spacing: -0.6px;
+}
+
+.rewards-card-description {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #555555;
+  margin-bottom: 0px;
+}
+
+/* ---------------------------------------------------------------- */
+/* RESPONSIVENESS AND TABLET/MOBILE GRIDS */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 1199.98px) {
+  .rewards-streaks-main-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .rewards-streaks-container {
+    padding: 0 30px;
+  }
+  .rewards-grid-row {
+    gap: 24px;
+  }
+  .rewards-grid-card {
+    border-radius: 32px;
+  }
+  .rewards-card-media {
+    height: 380px;
+  }
+  .rewards-phone-mockup {
+    width: 180px;
+    height: 275px;
+  }
+  .rewards-card-content {
+    padding: 26px 28px;
+  }
+  .rewards-card-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .rewards-streaks-main-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .rewards-subtitle-text {
+    margin-bottom: 45px;
+  }
+  .rewards-grid-row {
+    flex-direction: column;
+    gap: 35px;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .rewards-grid-card {
+    border-radius: 36px;
+  }
+  .rewards-card-media {
+    height: 400px;
+  }
+  .rewards-phone-mockup {
+    width: 200px;
+    height: 295px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rewards-streaks-main-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .rewards-streaks-container {
+    padding: 0 20px;
+  }
+  .rewards-title-heading {
+    margin-bottom: 10px;
+  }
+  .rewards-subtitle-text {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+  }
+  .rewards-grid-row {
+    gap: 25px;
+    width: 100%;
+  }
+  .rewards-grid-card {
+    width: 100%;
+    border-radius: 28px;
+  }
+  .rewards-card-media {
+    height: 330px;
+  }
+  .rewards-phone-mockup {
+    width: 170px;
+    height: 255px;
+  }
+  .rewards-card-content {
+    padding: 22px 24px;
+  }
+  .rewards-card-title {
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+  }
+  .rewards-card-description {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+}

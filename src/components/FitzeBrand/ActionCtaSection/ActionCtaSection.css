@@ -1,0 +1,179 @@
+/* src/components/FitzeBrand/ActionCtaSection.css */
+
+/* Full bleed, deep premium charcoal dark background matching image exactly */
+.fitze-action-cta-section {
+  padding: 110px 0;
+  background-color: #151313; /* Very rich dark background */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 5px solid #ff5e3a; /* Subtle bottom orange-red border visible in page transition */
+}
+
+/* Subtle warm background ambient glow to enrich layout context */
+.fitze-action-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 94, 58, 0.05) 0%, rgba(0,0,0,0) 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.action-cta-content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Parenthetical Tag Badge Row styled exactly like reference image */
+.action-badge-container {
+  margin-bottom: 24px;
+}
+
+.action-cta-badge {
+  font-size: 0.85rem;
+  font-weight: 550;
+  color: rgba(255, 255, 255, 0.45); /* Muted slate white color */
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding:6px 18px;
+  border-radius:50px;
+}
+
+/* Matching the thin parenthesis curves from the screenshot */
+.badge-paren-left {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.25);
+  margin-right: 10px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.badge-paren-right {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.25);
+  margin-left: 10px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+/* Exact typography sizing, colors, and line separation height matching the reference */
+.action-cta-title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  margin-bottom: 20px;
+}
+
+.action-title-muted {
+  color: rgba(255, 255, 255, 0.45); /* Sleek muted gray second line of title text */
+}
+
+/* Custom aligned description paragraph text */
+.action-cta-desc {
+  font-size: 1.02rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 550px;
+  margin: 0 auto 38px auto;
+}
+
+/* Pill trigger button styled in brand active orange color */
+.action-btn-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-plan-activation-pill {
+  background-color: #ff5e3a; /* Brilliant Fitze Orange-red brand color */
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 600;
+  border: none;
+  padding: 16px 42px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(255, 94, 58, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-plan-activation-pill:hover {
+  background-color: #ffffff;
+  color: #151313;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 94, 58, 0.3);
+}
+
+.btn-plan-activation-pill:active {
+  transform: translateY(-1px);
+}
+
+/* Full responsive adaptive layout and scaling layers */
+@media (max-width: 992px) {
+  .fitze-action-cta-section {
+    padding: 90px 0;
+  }
+  .action-cta-title {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+  .action-cta-desc {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitze-action-cta-section {
+    padding: 75px 0;
+  }
+  .action-cta-title {
+    font-size: 2.3rem;
+  }
+  .action-cta-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-action-cta-section {
+    padding: 60px 0;
+  }
+  .badge-paren-left,
+  .badge-paren-right {
+    font-size: 1.2rem;
+  }
+  .action-cta-badge {
+    font-size: 0.78rem;
+  }
+  .action-cta-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .action-cta-desc {
+    font-size: 0.92rem;
+    padding: 0 10px;
+  }
+  .btn-plan-activation-pill {
+    width: 100%;
+    padding: 14px 25px;
+    font-size: 0.94rem;
+  }
+}
+

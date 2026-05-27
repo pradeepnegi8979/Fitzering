@@ -1,0 +1,354 @@
+/* ==========================================================================
+   SocialHighlightsSection.css - 100% Verified Design Fidelity Carousel
+   ========================================================================== */
+
+/* Outer Section Layout */
+.corp-social-highlights-section {
+  width: 100%;
+  padding: 85px 0 95px 0;
+  background-color: #f5f3f0; /* Seamless, light premium off-white layout background */
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden; /* Guards against horizontal screen leaking */
+  position: relative;
+}
+
+/* Header Grid Constraints */
+.social-highlights-header-container {
+  max-width: 1200px;
+  margin: 0 auto 52px auto;
+  padding: 0 15px;
+}
+
+/* Pill badge label */
+.social-eyebrow-wrapper {
+  margin-bottom: 12px;
+}
+
+.social-eyebrow-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #71717a; /* Clean muted anthracite grey */
+  border: 1px solid #e4e4e7; /* Clean, ultrathin gray outline */
+  background-color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Headline Styling with explicit split coloring */
+.social-highlights-headline-text {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #111113;
+  letter-spacing: -1.6px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.social-highlights-headline-text .highlight-color {
+  color: #ff5226; /* Fitze brand orange */
+}
+
+/* Right side description positioning */
+.social-side-desc-col {
+  padding-top: 24px;
+}
+
+.social-side-description-text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #52525b; /* Soft slated anthracite gray */
+  line-height: 1.55;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* ==========================================================================
+   INFINITE CENTERED SLIDING CAROUSEL SYSTEM (EXACTLY 3 CARDS SEEN)
+   ========================================================================== */
+.social-carousel-viewport {
+  --card-width: 27vw; /* Controls widths globally to fit exactly 3 desktop cards */
+  --card-gap: 3.2vw;  /* Balanced spacing gap separating the units */
+  
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 45px 0 65px 0; /* Accommodates scaling heights and shadow overhangs safely */
+  user-select: none;
+}
+
+/* Soft side fading overlays to transition cards smoothly and hide any trailing 4th card */
+.social-carousel-viewport::before,
+.social-carousel-viewport::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 12vw;
+  height: 100%;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.social-carousel-viewport::before {
+  left: 0;
+  background: linear-gradient(to right, #fafafd 0%, rgba(250, 250, 253, 0.9) 30%, rgba(250, 250, 253, 0) 100%);
+}
+
+.social-carousel-viewport::after {
+  right: 0;
+  background: linear-gradient(to left, #fafafd 0%, rgba(250, 250, 253, 0.9) 30%, rgba(250, 250, 253, 0) 100%);
+}
+
+/* Elastic Track Container */
+.social-carousel-track {
+  display: flex;
+  width: max-content;
+  align-items: center; /* Beautifully vertically centers items of varying scales */
+  will-change: transform;
+}
+
+/* ==========================================================================
+   INSTAGRAM STYLED POST CARD
+   ========================================================================== */
+.instagram-styled-post-card {
+  width: var(--card-width);
+  background-color: #ffffff;
+  border: 1.2px solid #e4e4e7;
+  border-radius: 32px; /* Soft luxurious curves */
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.012);
+  flex-shrink: 0;
+  margin: 0 calc(var(--card-gap) / 2);
+  box-sizing: border-box;
+  text-align: left;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.8s ease;
+}
+
+/* FLANKING INACTIVE SIDE CARDS: Beautifully scaled down to draw eyes to centerpiece */
+.instagram-styled-post-card.side-inactive-card {
+  transform: scale(0.86);
+  opacity: 0.55;
+  filter: grayscale(0.1) blur(0.2px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.005);
+}
+
+/* ACTIVE DOMINANT CENTER PIECE: Visually prominent and highly striking */
+.instagram-styled-post-card.active-center-card {
+  transform: scale(1.08);
+  opacity: 1;
+  filter: none;
+  z-index: 10;
+  box-shadow: 0 24px 48px rgba(17, 17, 19, 0.05);
+  border-color: #efeff1;
+}
+
+/* Gentle premium pop on hovering the center card */
+.instagram-styled-post-card.active-center-card:hover {
+  transform: scale(1.10) translateY(-4px);
+  box-shadow: 0 28px 56px rgba(255, 82, 38, 0.07);
+}
+
+/* Instagram Header details */
+.insta-header {
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f4f4f5;
+}
+
+/* Circle Gradient Avatar Mimicry */
+.insta-avatar-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a00 0%, #ff5226 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(255, 82, 38, 0.15);
+}
+
+.avatar-brand-word {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+}
+
+.insta-user-meta {
+  line-height: 1.25;
+}
+
+.insta-username {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #111113;
+  letter-spacing: -0.2px;
+}
+
+.insta-location {
+  font-size: 0.72rem;
+  color: #71717a;
+  font-weight: 400;
+}
+
+/* Body visual image container */
+.insta-body-img-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Pure square format exactly matching layout design */
+  overflow: hidden;
+  background-color: #f7f7f9;
+  position: relative;
+}
+
+.insta-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+}
+
+/* Footer Interaction Rows */
+.insta-footer-action-row {
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border-top: 1px solid #f4f4f5;
+}
+
+.insta-icon-btn {
+  background: none;
+  border: none;
+  color: #111113;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.insta-lucide-icon {
+  transition: stroke 0.2s ease, fill 0.2s ease;
+}
+
+.insta-icon-btn:hover .insta-lucide-icon {
+  color: #ff5226;
+  stroke: #ff5226;
+  transform: scale(1.1);
+}
+
+.insta-icon-btn:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   STRICT RESPONSIVE ADAPTATIONS
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .social-highlights-headline-text {
+    font-size: 2.85rem;
+    letter-spacing: -1.2px;
+  }
+  .social-carousel-viewport {
+    --card-width: 32vw;
+    --card-gap: 3.5vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .corp-social-highlights-section {
+    padding: 60px 0;
+  }
+  .social-highlights-header-container {
+    margin-bottom: 35px;
+  }
+  .social-highlights-headline-text {
+    font-size: 2.35rem;
+    letter-spacing: -1px;
+  }
+  .social-side-desc-col {
+    padding-top: 0;
+  }
+  .social-side-description-text {
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+  .social-carousel-viewport {
+    --card-width: 44vw; /* Beautifully centers 1 major card and peeks side cards on small tablets */
+    --card-gap: 4vw;
+    padding: 30px 0 45px 0;
+  }
+  .instagram-styled-post-card {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-highlights-headline-text {
+    font-size: 1.95rem;
+    letter-spacing: -0.8px;
+  }
+  .social-carousel-viewport::before,
+  .social-carousel-viewport::after {
+    width: 6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-social-highlights-section {
+    padding: 45px 0;
+  }
+  .social-highlights-headline-text {
+    font-size: 1.68rem;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+  }
+  .social-carousel-viewport {
+    --card-width: 68vw; /* Takes maximum content spacing on smartphones, keeping sides subtly previewed */
+    --card-gap: 4vw;
+    padding: 20px 0 32px 0;
+  }
+  .instagram-styled-post-card {
+    border-radius: 18px;
+  }
+  .instagram-styled-post-card.side-inactive-card {
+    transform: scale(0.9);
+    opacity: 0.35;
+  }
+  .instagram-styled-post-card.active-center-card {
+    transform: scale(1.04);
+  }
+  .insta-header {
+    padding: 10px 14px;
+  }
+  .insta-avatar-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .avatar-brand-word {
+    font-size: 0.65rem;
+  }
+  .insta-username {
+    font-size: 0.8rem;
+  }
+  .insta-location {
+    font-size: 0.65rem;
+  }
+  .insta-footer-action-row {
+    padding: 10px 14px;
+  }
+  .social-carousel-viewport::before,
+  .social-carousel-viewport::after {
+    width: 3vw;
+  }
+}

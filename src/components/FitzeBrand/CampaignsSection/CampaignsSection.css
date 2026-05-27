@@ -1,0 +1,209 @@
+/* src/components/FitzeBrand/CampaignsSection.css */
+
+/* Entire background of section is warm off-white sand shade matching design */
+.fitze-campaigns-section {
+  padding: 100px 0;
+  background-color: #fcf9f5; /* Elegant custom linen/beige shade */
+  font-family: 'Poppins', sans-serif;
+  color: #121212;
+}
+
+.campaigns-header-row {
+  margin-bottom: 55px;
+}
+
+.campaigns-badge-container {
+  margin-bottom: 18px;
+}
+
+.campaigns-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #7c7c7c; /* Elegant grey text exactly as shown */
+  border: 1px solid #dcdcdc; /* Thin, clean continuous light silver border exactly as shown */
+  padding: 6px 20px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.campaigns-heading {
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #121212;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 18px;
+}
+
+.title-highlight-orange {
+  color: #ff5e3a; /* Bright energetic Fitze Orange accent */
+  font-weight: 700;
+}
+
+.campaigns-para {
+  font-size: 1.05rem;
+  color: rgba(18, 18, 18, 0.65);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0;
+}
+
+/* Right Aligned plain text anchor link */
+.link-view-all-campaigns {
+  color: #ff5e3a;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link-view-all-campaigns:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+/* Pastel Cards Layout */
+.campaign-pastel-card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.campaign-pastel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Solid pastel tops */
+.card-pastel-top {
+  height: 175px;
+  position: relative;
+  transition: background-color 0.25s ease;
+}
+
+.card-pastel-top.bg-peach {
+  background-color: #fdf0eb; /* Soft Warm Peach tint */
+}
+
+.card-pastel-top.bg-blue {
+  background-color: #eaf4ff; /* Cool soft blue tint */
+}
+
+.card-pastel-top.bg-green {
+  background-color: #edfbf2; /* Soft mint green tint */
+}
+
+/* Index Number: Micro styled on upper left to match design screenshot exactly */
+.card-step-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(18, 18, 18, 0.3); /* Subtle faint slate dark gray */
+  letter-spacing: -0.2px;
+}
+
+/* White Bottom Compartment Box */
+.card-white-bottom {
+  background-color: #ffffff;
+  padding: 38px 28px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Aligned red location identifier tags */
+.card-location-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #ff5e3a; /* Unifying orange-red color across all cards */
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.card-inner-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #121212;
+  letter-spacing: -0.4px;
+  margin-bottom: 12px;
+}
+
+.card-inner-desc {
+  font-size: 0.92rem;
+  color: rgba(18, 18, 18, 0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Scaling Viewports */
+@media (max-width: 1200px) {
+  .campaigns-heading {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .fitze-campaigns-section {
+    padding: 80px 0;
+  }
+  .campaigns-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitze-campaigns-section {
+    padding: 65px 0;
+  }
+  .campaigns-heading {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+  }
+  .campaigns-tag {
+    font-size: 0.78rem;
+  }
+  .campaigns-para {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-campaigns-section {
+    padding: 50px 0;
+  }
+  .campaigns-heading {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .campaigns-para {
+    font-size: 0.92rem;
+  }
+  .card-pastel-top {
+    height: 145px;
+  }
+  .card-white-bottom {
+    padding: 28px 22px;
+  }
+  .card-inner-title {
+    font-size: 1.2rem;
+  }
+  .card-inner-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+}

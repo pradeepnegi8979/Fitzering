@@ -1,0 +1,125 @@
+/* src/components/FitzeBrand/ProcessSection.css */
+
+.fitze-process-section {
+  padding: 85px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #f2f2ef;
+  border-bottom: 1px solid #f2f2ef;
+}
+
+.process-header-container {
+  margin-bottom: 60px;
+}
+
+.process-subtitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888888;
+  margin-bottom: 12px;
+}
+
+.process-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -1.5px;
+  margin-bottom: 15px;
+}
+
+.process-desc {
+  font-size: 1.05rem;
+  color: #666666;
+  margin: 0;
+}
+
+/* 3-Column Contiguous Grid block */
+.process-grid-container {
+  border: 1px solid #eaeae8;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.process-col-block {
+  border-right: 1px solid #eaeae8;
+}
+
+.process-col-block:last-child {
+  border-right: none;
+}
+
+.process-step-card {
+  padding: 50px 40px;
+  transition: background-color 0.3s ease;
+  height: 100%;
+}
+
+.process-step-card:hover {
+  background-color: #fcfbfa;
+}
+
+/* Badge tags style */
+.step-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.step-number {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ff5e3a;
+  letter-spacing: -0.5px;
+}
+
+.step-action {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ff5e3a;
+  letter-spacing: 1px;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.step-desc {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Responsive Scopes */
+@media (max-width: 992px) {
+  .process-heading {
+    font-size: 2.3rem;
+  }
+  .process-col-block {
+    border-right: none;
+    border-bottom: 1px solid #eaeae8;
+  }
+  .process-col-block:last-child {
+    border-bottom: none;
+  }
+  .process-step-card {
+    padding: 35px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .process-heading {
+    font-size: 1.9rem;
+  }
+  .step-title {
+    font-size: 1.3rem;
+  }
+}

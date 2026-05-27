@@ -1,0 +1,396 @@
+/* ==========================================================================
+   HeroSection.css - Fitze Corporate Reference Match Hero CSS
+   ========================================================================== */
+
+/* Outer Section Setup */
+.corp-hero-outer-section {
+  width: 100%;
+  padding: 16px 0 40px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* CARRIER CARD WITH ROUNDED CORNERS */
+.corp-hero-banner-card {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  border-radius: 44px;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.corp-hero-bg-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.corp-hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+}
+
+.corp-hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* Dark charcoal linear gradient overlay to optimize contrast and visibility of text elements */
+  background: linear-gradient(
+    105deg,
+    rgba(14, 15, 17, 0.94) 0%,
+    rgba(14, 15, 17, 0.88) 35%,
+    rgba(14, 15, 17, 0.72) 58%,
+    rgba(14, 15, 17, 0.45) 82%,
+    rgba(14, 14, 16, 0.28) 100%
+  );
+}
+
+/* HERO GRID CONTAINER */
+.corp-hero-content-row {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  min-height: 540px;
+  padding: 85px 80px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.corp-hero-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+/* HEADER DESCRIPTIVE TITLE */
+.corp-hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 0 0 24px 0;
+}
+
+.corp-title-highlight {
+  color: #ff5226; /* Dynamic corporate brand orange highlight */
+  font-weight: 600;
+}
+
+/* DESCRIPTION SUB-TEXT */
+.corp-hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 0 40px 0;
+}
+
+/* TRANSPARENT PILL CALL-TO-ACTION BUTTON WITH BORDER */
+.corp-hero-cta-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.8px solid rgba(255, 255, 255, 0.45);
+  font-size: 1.02rem;
+  font-weight: 600;
+  padding: 15px 38px;
+  border-radius: 50px;
+  width: fit-content;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.1px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.corp-hero-cta-btn:hover {
+  background-color: #ffffff;
+  color: #0e0f11;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.22);
+}
+
+/* CONCENTRIC CIRCLES ANCHORED CONTAINER */
+/* Binds exactly to the 100% height of the card, removing any unwanted top/bottom spacing */
+.concentric-circles-container {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  pointer-events: none;
+  z-index: 3; /* Placed cleanly behind nodes and text, but above background layout overlay */
+}
+
+.concentric-circle {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+/* Sized systematically to represent the orbital paths */
+.concentric-circle-1 {
+  width: 32%;
+  height: 32%;
+}
+
+.concentric-circle-2 {
+  width: 65%;
+  height: 65%;
+}
+
+/* Circle 3 has exactly 100% dimensions, which guarantees perfect alignment and Zero top/bottom spacing */
+.concentric-circle-3 {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.concentric-circle-4 {
+  width: 135%;
+  height: 135%;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* DIAGRAM VISUAL SANDBOX RECREATION */
+.corp-hero-visual-col {
+  position: relative;
+  height: 100%;
+}
+
+/* TRANSLUCENT FROSTED GLASS CAPSULE TAGS */
+.diagram-node {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+  padding: 7px 20px;
+  border-radius: 50px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 10;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+}
+
+.diagram-node:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* SHARP WHITE SQUARE INSIDE BADGES */
+.node-square-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: inline-block;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.node-text-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.70rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.1px;
+}
+
+/* DESKTOP-FIRST EXACT PIXEL PERFECT NODE COORDINATES & SPACING */
+@media (min-width: 992px) {
+  .corp-hero-visual-col {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+  }
+
+  .corp-diagram-sandbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .diagram-node {
+    position: absolute;
+  }
+
+  /* Node Coordinates: Distributed beautifully to form an orbit on the right quadrant */
+  .node-sports {
+    top: 85%;
+    left: 0%;
+  }
+
+  .node-wellness {
+    top: 34%;
+    left: 12%;
+  }
+
+  .node-funruns {
+    top: 90%;
+    left: 48%;
+  }
+
+  .node-mental {
+    top: 55%;
+    left: 34%;
+  }
+
+  .node-challenges {
+    top: 36%;
+    left: 55%;
+  }
+}
+
+/* ==========================================================================
+   STRICT BREAKPOINT RESPONSIVENESS AND COHESIVE LAYOUT TRANSITIONS
+   ========================================================================== */
+
+@media (max-width: 1400px) {
+  .corp-hero-title {
+    font-size: 3.7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .corp-hero-content-row {
+    padding: 60px 50px;
+  }
+  .corp-hero-title {
+    font-size: 3.2rem;
+    letter-spacing: -1.5px;
+  }
+  .corp-hero-description {
+    font-size: 1.08rem;
+    margin-bottom: 30px;
+  }
+  .concentric-circles-container {
+    left: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .corp-hero-banner-card {
+    min-height: auto;
+    border-radius: 36px;
+  }
+  .corp-hero-content-row {
+    padding: 55px 40px;
+  }
+  .corp-hero-title {
+    font-size: 3rem;
+  }
+  .corp-hero-text-col {
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+  .corp-hero-visual-col {
+    min-height: auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .corp-diagram-sandbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    min-height: auto;
+    overflow: visible;
+  }
+  .diagram-node {
+    position: static; /* Automatically flow into responsive inline widgets */
+    padding: 10px 20px;
+  }
+  .concentric-circles-container {
+    left: 85%;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-hero-title {
+    font-size: 2.6rem;
+    letter-spacing: -1.2px;
+  }
+  .corp-hero-description {
+    font-size: 1.02rem;
+    margin-bottom: 25px;
+  }
+  .corp-hero-cta-btn {
+    padding: 13px 32px;
+    font-size: 0.95rem;
+  }
+  .diagram-node {
+    padding: 8px 18px;
+    gap: 8px;
+  }
+  .node-text-label {
+    font-size: 0.60rem;
+  }
+  .node-square-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-hero-banner-card {
+    border-radius: 30px;
+  }
+  .corp-hero-content-row {
+    padding: 40px 24px;
+  }
+  .corp-hero-title {
+    font-size: 2.1rem;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+  }
+  .corp-hero-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .corp-hero-cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+  .corp-hero-text-col {
+    margin-bottom: 35px;
+  }
+}

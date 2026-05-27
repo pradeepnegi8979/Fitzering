@@ -1,0 +1,186 @@
+/* ==========================================================================
+   HeroSection.css - Fitze Pro Landing Hero Design Overhaul
+   ========================================================================== */
+
+.fitzepro-hero-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 125px 0 135px 0;
+  /* Top-down soft coral orange-red ambient radial glow matching mockup precisely */
+  background: radial-gradient(circle at top, rgba(255, 95, 56, 0.17) 0%, rgba(255, 95, 56, 0.05) 45%, rgba(255, 255, 255, 0) 75%), #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #121212;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.03);
+}
+
+/* 16-Column Visual Precision Alignment Grid */
+.fitzepro-hero-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-column-line {
+  border-right: 1px solid rgba(18, 18, 18, 0.035);
+  height: 100%;
+}
+
+.grid-column-line:last-child {
+  border-right: none;
+}
+
+/* Alignment and constraint container */
+.fitzepro-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+}
+
+/* Elegant display heading with regular contrast text and bold highlighted orange */
+.fitzepro-hero-title {
+  font-size: 4.1rem;
+  font-weight: 500;
+  color: #131315;
+  letter-spacing: -2.8px;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.fitzepro-hero-title .highlight-orange {
+  color: #ff5f38; /* Exact matte coral red/orange */
+  font-weight: 700;
+}
+
+/* WHY PRO rounded pill button style */
+.why-pro-pill-wrapper {
+  margin-bottom: 22px;
+}
+
+.why-pro-badge {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8e8e93;
+  padding: 5px 18px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* High readability description under badge */
+.fitzepro-hero-desc {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #8a8a93;
+  max-width: 580px;
+  margin: 0 auto 36px auto;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+
+/* Sleek minimalist upgrade button pill */
+.fitzepro-btn-upgrade-pill {
+  background-color: #121214;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fitzepro-btn-upgrade-pill:hover {
+  background-color: #ff5f38;
+  transform: translateY(-1px);
+}
+
+.fitzepro-btn-upgrade-pill:active {
+  transform: translateY(0);
+}
+
+.badge-pro-inline {
+  background-color: #ff5f38;
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-style: italic;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   PRODUCTION-LEVEL RESPONSIVENESS AT EVERY ASPECT RATIO
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .fitzepro-hero-wrapper {
+    padding: 100px 0 110px 0;
+  }
+  .fitzepro-hero-title {
+    font-size: 3.3rem;
+    letter-spacing: -1.8px;
+  }
+  .fitzepro-hero-desc {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-hero-wrapper {
+    padding: 85px 0 95px 0;
+  }
+  .fitzepro-hero-title {
+    font-size: 2.7rem;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+  }
+  .fitzepro-hero-desc {
+    font-size: 0.9rem;
+    padding: 0 15px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-hero-wrapper {
+    padding: 60px 0 70px 0;
+  }
+  .fitzepro-hero-title {
+    font-size: 2.05rem;
+    letter-spacing: -0.6px;
+  }
+  .why-pro-pill-wrapper {
+    margin-bottom: 18px;
+  }
+  .why-pro-badge {
+    font-size: 0.68rem;
+    padding: 4px 14px;
+  }
+  .fitzepro-hero-desc {
+    font-size: 0.85rem;
+  }
+  .fitzepro-btn-upgrade-pill {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

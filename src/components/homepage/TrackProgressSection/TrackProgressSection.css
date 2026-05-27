@@ -1,0 +1,89 @@
+@import "../../../styles/variables.css";
+
+.track-progress-banner {
+  background-color: #0b0b0d;
+}
+
+.backdrop-grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(255, 94, 58, 0.12) 0%, transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(0, 180, 216, 0.08) 0%, transparent 40%),
+              linear-gradient(rgba(11, 11, 13, 0.75), rgba(11, 11, 13, 0.9));
+  z-index: 1;
+}
+
+.overlay-tint {
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-image: 
+    radial-gradient(#ffffff 1px, transparent 1px), 
+    radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.badge-careem {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.progress-headline {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.progress-payout-text {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.payout-colored {
+  color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #ff8e53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-wallet-sub {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: -0.5px;
+}
+
+.wallet-brand {
+  color: #4caf50; /* Careem green color! */
+  text-transform: capitalize;
+}
+
+.btn-progress-download {
+  font-size: 1rem;
+  padding: 14px 38px;
+  box-shadow: 0 10px 25px rgba(255, 94, 58, 0.35);
+}
+
+@media (max-width: 767.98px) {
+  .progress-headline {
+    font-size: 1.95rem;
+  }
+  
+  .progress-payout-text {
+    font-size: 2.5rem;
+  }
+}

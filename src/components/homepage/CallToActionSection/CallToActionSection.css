@@ -1,0 +1,31 @@
+@import "../../../styles/variables.css";
+.bg-dark-custom {
+  background-color: var(--color-dark);
+  padding: 60px 0;
+}
+
+.cta-headline {
+  font-family: var(--font-primary);
+font-size: 4.375rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: -1.2px;
+  -webkit-background-clip: text!important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #FFFFFF 39.44%, rgba(255, 255, 255, 0.6) 77.78%);
+}
+
+.btn-cta {
+  font-size: 1rem;
+  padding: 12px 36px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(255, 94, 58, 0.3);
+}
+
+@media (max-width: 767.98px) {
+  .cta-headline {
+    font-size: 1.85rem;
+  }
+}

@@ -1,0 +1,279 @@
+/* ==========================================================================
+   GallerySection.css - Fitze Corporate Reference Match Slider Gallery CSS
+   ========================================================================== */
+
+/* Outer Section Layout */
+.corp-gallery-section {
+  width: 100%;
+  padding: 85px 0 95px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent horizontal scrollbars on entire page */
+}
+
+/* Header Elements (Inside standard Container) */
+.gallery-header-container {
+  max-width: 1200px;
+  margin: 0 auto 38px auto;
+}
+
+/* Eyebrow Label Pill Badge */
+.gallery-eyebrow-box {
+  margin-bottom: 14px;
+}
+
+.gallery-eyebrow {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #71717a; /* Clean premium grey match */
+  border: 1.2px solid #e4e4e7; /* Thin gray outline matching overall design styling */
+  background-color: #ffffff;
+  padding: 7px 18px;
+  border-radius: 50px;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Main Display Headline Typography */
+.gallery-headline {
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #111113;
+  letter-spacing: -1.6px;
+  line-height: 1.2;
+  margin: 0 auto 16px auto;
+  
+}
+
+.gallery-headline .highlight-color {
+  color: #ff5226; /* Dynamic Corporate Orange Highlight */
+  font-weight: 600;
+}
+
+/* Subtitle description */
+.gallery-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #52525b; /* High contrast reading grey */
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* ==========================================================================
+   AUTO-SCROLLING MARQUEE TRACK (100% VIEWPORT WIDTH)
+   ========================================================================== */
+.gallery-marquee-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding: 24px 0 95px 0; /* Updated padding to fully accommodate down-staggered cards and hovering offsets */
+  user-select: none;
+}
+
+/* Adding lateral fading overlays for ultra-premium visual transition */
+.gallery-marquee-container::before,
+.gallery-marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gallery-marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gallery-marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gallery-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeContinuous 32s linear infinite;
+}
+
+/* Smooth pausing when client gestures hover */
+.gallery-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-marquee-slide {
+  display: flex;
+  align-items: flex-start; /* Changed to flex-start to allow accurate downward staggered margins relative to baseline */
+  gap: 28px; /* Precise gap between physical cards */
+  padding-right: 28px; /* Essential gap boundary before duplicate carousel track begins */
+}
+
+/* Portrait Gallery Card dimensions representing design precisely */
+.gallery-marquee-card {
+  width: 290px;
+  height: 420px;
+  border-radius: 36px; /* High fidelity rounded curves matching uploaded image */
+  overflow: hidden;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.04);
+  background-color: #fafafa;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Stagger layout: Even-numbered cards/images are shifted slightly lower to create high-fidelity zigzag visual effect */
+.gallery-marquee-card:nth-child(even) {
+  margin-top: 48px;
+}
+
+.gallery-marquee-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-marquee-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Keyframes of continuous translation scroll */
+@keyframes marqueeContinuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   FOOTER CALL TO ACTION SECTOR (In container layout)
+   ========================================================================== */
+.gallery-footer-container {
+  max-width: 1200px;
+  margin: 12px auto 0 auto;
+}
+
+.gallery-cta-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Bright Orange High-Contrast Pill Button */
+.gallery-cta-btn {
+  background-color: #ff5226; /* Brand bright orange */
+  color: #ffffff;
+  border: none;
+  font-size: 1.02rem;
+  font-weight: 600;
+  padding: 15px 38px;
+  border-radius: 50px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.1px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(255, 82, 38, 0.22);
+  font-family: 'Poppins', sans-serif;
+}
+
+.gallery-cta-btn:hover {
+  background-color: #111113; /* Switches to solid high-density charcoal black on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(17, 17, 19, 0.2);
+}
+
+/* ==========================================================================
+   STRICT BREAKPOINT RESPONSIVENESS AND PROPORTIONAL SCALING
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .gallery-headline {
+    font-size: 2.85rem;
+    letter-spacing: -1.2px;
+  }
+  .gallery-marquee-container::before,
+  .gallery-marquee-container::after {
+    width: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .corp-gallery-section {
+    padding: 60px 0;
+  }
+  .gallery-headline {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+  }
+  .gallery-marquee-container {
+    padding: 24px 0 75px 0; /* Proportionally scaled padding */
+  }
+  .gallery-marquee-card {
+    width: 230px;
+    height: 330px;
+    border-radius: 28px;
+  }
+  .gallery-marquee-card:nth-child(even) {
+    margin-top: 36px; /* Proportionally scaled offset */
+  }
+  .gallery-marquee-slide {
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .gallery-marquee-container::before,
+  .gallery-marquee-container::after {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-headline {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+  }
+  .gallery-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-gallery-section {
+    padding: 45px 0;
+  }
+  .gallery-headline {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+  }
+  .gallery-marquee-container {
+    padding: 16px 0 60px 0; /* Proportionally scaled padding */
+  }
+  .gallery-marquee-card {
+    width: 180px;
+    height: 260px;
+    border-radius: 22px;
+  }
+  .gallery-marquee-card:nth-child(even) {
+    margin-top: 24px; /* Proportionally scaled offset */
+  }
+  .gallery-marquee-slide {
+    gap: 16px;
+    padding-right: 16px;
+  }
+  .gallery-marquee-container::before,
+  .gallery-marquee-container::after {
+    width: 30px;
+  }
+  .gallery-cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+}

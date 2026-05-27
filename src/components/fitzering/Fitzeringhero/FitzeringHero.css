@@ -1,0 +1,750 @@
+/* ==========================================================================
+   FitzeringHero.css - Pixel-Perfect Premium Video Hero for Sizing Page
+   ========================================================================== */
+
+.fitzering-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding: 100px 0 0px;
+  background-color: #ffffff;
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.fitzering-hero-container:before {
+  position:absolute;
+  width:100%;
+  height: 100%;
+  content:'';
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 54.01%, #00000012 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 68.9%, #FFFFFF 97.16%);
+z-index: 3;
+
+}
+/* 1. Background Video & Overlays */
+.fitzering-video-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+      transform: translate(0px, -60px);
+}
+
+.fitzering-video-bg-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Semi-translucent dark tint for depth & readability */
+.fitzering-hero-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255, 0.8) 100%); */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255, 0.8) 100%);
+
+  z-index: 2;
+}
+
+/* Vignette shadow to contain vertical aesthetics */
+.fitzering-hero-vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.05) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.2) 85%);
+  z-index: 2;
+}
+
+/* Bottom blend that guides into standard page background */
+.fitzering-hero-bottom-curve {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to top, #ffffff 15%, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%);
+  z-index: 3;
+}
+
+/* Decorative Wireframes / Mesh Waves in corners */
+.fitzering-decor-mesh {
+  position: absolute;
+  bottom:-25%;
+  width: 32vw;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.85;
+  z-index: 4;
+}
+
+.mesh-left {
+  left: 0;
+}
+
+.mesh-right {
+  right: 0;
+}
+
+.mesh-path {
+  animation: waveMesh 12s ease-in-out infinite alternate;
+}
+
+.mesh-path-2 {
+  animation: waveMesh2 16s ease-in-out infinite alternate;
+}
+
+.mesh-path-3 {
+  animation: waveMesh3 20s ease-in-out infinite alternate;
+}
+
+@keyframes waveMesh {
+  0% { transform: translateY(0) scale(1); opacity: 0.7; }
+  100% { transform: translateY(-15px) scale(1.05); opacity: 0.9; }
+}
+
+@keyframes waveMesh2 {
+  0% { transform: rotate(0deg) scale(0.98); }
+  100% { transform: rotate(3deg) scale(1.02); }
+}
+
+@keyframes waveMesh3 {
+  0% { transform: translateY(5px); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Content Container Grid Placement */
+.fitzering-hero-content-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+/* 2. Three Premium 3D Metallic Rings Showcase */
+.fitzering-rings-trio-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 55px;
+  width: 100%;
+  max-width: 850px;
+  perspective: 1200px;
+}
+
+/* Master 3D Ring Wrapper Setup */
+.fitzering-3d-ring-wrapper {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ring-outer-shield {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px; /* Band Thickness */
+  position: relative;
+  transition: transform 0.3s;
+}
+
+/* Inner Resin/Sensor Layer Inner core */
+.ring-inner-core {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #050505 10%, #151516 60%, #202022 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.9), 0 2px 4px rgba(255,255,255,0.05);
+}
+
+/* Embedded Micro Biometrics Sensor Circuit Card */
+.sensor-board {
+  position: absolute;
+  bottom: 12px;
+  width: 32px;
+  height: 14px;
+  background: #0f0f10;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+}
+
+.sensor-gold-pin {
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(135deg, #ffe066 0%, #b8921e 100%);
+  border-radius: 50%;
+  border: 0.5px solid rgba(0,0,0,0.3);
+}
+
+.sensor-led-indicator {
+  width: 6px;
+  height: 6px;
+  background-color: #00ff66;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(0, 255, 102, 0.4);
+}
+
+.active-glow {
+  animation: pulseGreenLed 1.6s infinite alternate;
+}
+
+@keyframes pulseGreenLed {
+  0% {
+    background-color: #00cc55;
+    box-shadow: 0 0 2px #00cc55;
+  }
+  100% {
+    background-color: #0dff75;
+    box-shadow: 0 0 12px #0dff75, 0 0 2px rgba(13, 255, 117, 0.8);
+  }
+}
+
+/* Reflection Soft Floor Overlay */
+.ring-floor-reflection {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.05) 60%, rgba(0,0,0,0) 100%);
+  filter: blur(2px);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+/* Metallics Texture Profiles */
+/* A. Silver Metallic */
+.metallic-silver .ring-outer-shield {
+  background: linear-gradient(135deg, #ffffff 0%, #dcdcdf 20%, #a3a3a9 45%, #ececed 70%, #757579 100%);
+  box-shadow: 
+    inset 0 -6px 14px rgba(255, 255, 255, 0.95), 
+    inset 0 6px 14px rgba(0, 0, 0, 0.7), 
+    0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* B. Obsidian Black */
+.metallic-obsidian .ring-outer-shield {
+  background: linear-gradient(135deg, #48484a 0%, #202022 25%, #121213 50%, #2c2c2e 75%, #050506 100%);
+  box-shadow: 
+    inset 0 -5px 12px rgba(255, 255, 255, 0.25), 
+    inset 0 5px 12px rgba(0, 0, 0, 0.9), 
+    0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* C. Champagne Gold */
+.metallic-gold .ring-outer-shield {
+  background: linear-gradient(135deg, #fce9bd 0%, #dab467 20%, #ae8738 45%, #f9e2ac 70%, #87621a 100%);
+  box-shadow: 
+    inset 0 -6px 14px rgba(255, 255, 255, 0.85), 
+    inset 0 6px 14px rgba(0, 0, 0, 0.65), 
+    0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Staggered Floating Keyframes */
+.hover-float-1 {
+  transform: rotate(-10deg) translateY(0px) translateZ(0);
+  animation: hoverFloatLeft 6s ease-in-out infinite alternate;
+}
+
+.hover-float-2 {
+  transform: scale(1.15) translateY(-5px) translateZ(10px);
+  animation: hoverFloatCenter 6.5s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+.hover-float-3 {
+  transform: rotate(10deg) translateY(0px) translateZ(0);
+  animation: hoverFloatRight 5.8s ease-in-out infinite alternate;
+}
+
+@keyframes hoverFloatLeft {
+  0% { transform: rotate(-12deg) translateY(5px); }
+  100% { transform: rotate(-8deg) translateY(-10px); }
+}
+
+@keyframes hoverFloatCenter {
+  0% { transform: scale(1.12) translateY(3px) translateZ(10px); }
+  100% { transform: scale(1.18) translateY(-14px) translateZ(15px); }
+}
+
+@keyframes hoverFloatRight {
+  0% { transform: rotate(8deg) translateY(-8px); }
+  100% { transform: rotate(12deg) translateY(7px); }
+}
+
+/* Dynamic Reflective Adjustment On Float */
+.hover-float-1:hover .ring-floor-reflection,
+.hover-float-3:hover .ring-floor-reflection {
+  transform: scale(0.85);
+  opacity: 0.4;
+}
+
+.hover-float-2:hover .ring-floor-reflection {
+  transform: scale(0.75);
+  opacity: 0.3;
+}
+
+/* 3. Designed for UAE Badge Pill */
+.fitzering-region-badge-wrapper {
+  margin-bottom: 22px;
+}
+
+.fitzering-region-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #333333;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s;
+}
+
+.fitzering-region-badge:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 94, 58, 0.3);
+  transform: translateY(-2px);
+}
+
+.badge-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981; /* UAE Green */
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulseBullet 2s infinite;
+}
+
+@keyframes pulseBullet {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.6; }
+}
+
+/* 4. Core Headings Layout */
+.fitzering-main-headlines {
+  width: 100%;
+  transform: translate(0px, -100px);
+}
+
+.fitzering-core-title {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  color: #fff;
+  margin: 0 auto 10px;
+  max-width: 950px;
+  transition: font-size 0.3s;
+}
+
+.fitzering-core-subtitle {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #222222;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  /* max-width: 900px; */
+}
+
+.fitzering-core-lead {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 5. Floating Shop Widget in Bottom Right */
+.fitzering-floating-shop-card {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, visibility 0.4s;
+}
+
+.visible-active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden-dismissed {
+  transform: translateY(40px) scale(0.9);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fitzering-shop-body {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.fitzering-shop-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #999999;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.fitzering-shop-close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333333;
+}
+
+.fitzering-shop-ring-avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background-color: #f7f7f9;
+  border: 1px solid rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-ring-3d {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 4.5px solid #1a1a1c;
+  background: radial-gradient(circle, transparent 40%, #444 70%, #151516 100%);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.6), 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.fitzering-shop-text-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.shop-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #121212;
+  margin: 0 0 2px 0;
+}
+
+.shop-subtitle {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #777777;
+  margin: 0 0 10px 0;
+}
+
+.fitzering-shop-buy-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 750;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff7e60 0%, #ff5e3a 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 8px 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255, 94, 58, 0.35);
+  transition: all 0.3s;
+}
+
+.fitzering-shop-buy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 94, 58, 0.5);
+  background: linear-gradient(135deg, #ff8c71 0%, #ee4b25 100%);
+  color: #ffffff;
+}
+
+/* Float Restore Trigger Badge */
+.fitzering-floating-restore-trigger {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ff5e3a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(255, 94, 58, 0.4);
+  z-index: 101;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fitzering-floating-restore-trigger:hover {
+  transform: scale(1.1) rotate(10deg);
+  background-color: #ee4b25;
+}
+
+.tooltip-restore {
+  position: absolute;
+  bottom: 58px;
+  right: 0;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fitzering-floating-restore-trigger:hover .tooltip-restore {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations */
+.animate-slow-y {
+  animation: keyShowY 0.8s ease-out;
+}
+
+@keyframes keyShowY {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-coral {
+  animation: pulseCoralShadow 2s infinite;
+}
+
+@keyframes pulseCoralShadow {
+  0% { box-shadow: 0 0 0 0 rgba(255, 94, 58, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 94, 58, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 94, 58, 0); }
+}
+
+/* ==========================================================================
+   Responsive View Breakpoints (Pixel-Perfect Matching)
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .fitzering-core-title {
+    font-size: 4.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fitzering-hero-container {
+    padding: 80px 0 100px;
+    min-height: auto;
+  }
+  .fitzering-core-title {
+    font-size: 3.5rem;
+  }
+  .fitzering-core-subtitle {
+    font-size: 2.2rem;
+  }
+  /* Scale rings slightly down */
+  .fitzering-3d-ring-wrapper {
+    width: 140px;
+    height: 160px;
+  }
+  .ring-outer-shield {
+    width: 125px;
+    height: 125px;
+    padding: 8px;
+  }
+  .sensor-board {
+    width: 26px;
+    height: 12px;
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fitzering-hero-container {
+    padding: 60px 0 80px;
+  }
+  .fitzering-decor-mesh {
+    width: 45vw;
+  }
+  .fitzering-rings-trio-showcase {
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  .fitzering-3d-ring-wrapper {
+    width: 100px;
+    height: 120px;
+  }
+  .ring-outer-shield {
+    width: 90px;
+    height: 90px;
+    padding: 6px;
+  }
+  .sensor-board {
+    width: 20px;
+    height: 10px;
+    bottom: 6px;
+    border-radius: 2px;
+  }
+  .sensor-gold-pin {
+    width: 2.5px;
+    height: 2.5px;
+  }
+  .sensor-led-indicator {
+    width: 4px;
+    height: 4px;
+  }
+  .ring-floor-reflection {
+    width: 60px;
+  }
+  .fitzering-core-title {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  .fitzering-core-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+  }
+  .fitzering-core-lead {
+    font-size: 0.95rem;
+  }
+  /* Floating card responsively stays on screen comfortably */
+  .fitzering-floating-shop-card {
+    right: 15px;
+    bottom: 15px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+  }
+  .fitzering-floating-restore-trigger {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .fitzering-rings-trio-showcase {
+    gap: 10px;
+  }
+  .fitzering-3d-ring-wrapper {
+    width: 85px;
+  }
+  .ring-outer-shield {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+  }
+  .fitzering-core-title {
+    font-size: 2rem;
+  }
+  .fitzering-core-subtitle {
+    font-size: 1.3rem;
+  }
+  .fitzering-region-badge {
+    font-size: 0.62rem;
+    padding: 6px 12px;
+  }
+  .fitzering-floating-shop-card {
+    padding: 12px;
+  }
+  .fitzering-shop-ring-avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .avatar-ring-3d {
+    width: 30px;
+    height: 30px;
+    border-width: 3px;
+  }
+  .shop-title {
+    font-size: 0.8rem;
+  }
+  .shop-subtitle {
+    font-size: 0.68rem;
+    margin-bottom: 6px;
+  }
+  .fitzering-shop-buy-button {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
+}

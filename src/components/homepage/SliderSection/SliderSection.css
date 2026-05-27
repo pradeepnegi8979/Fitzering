@@ -1,0 +1,368 @@
+@import "../../../styles/variables.css";
+
+/* Slider Base styles on Poppins typeface */
+.slider-section-community {
+  background-color: var(--color-white, #ffffff);
+  padding-top: 85px;
+  padding-bottom: 85px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-section-community *,
+.slider-section-community span,
+.slider-section-community h2,
+.slider-section-community h4,
+.slider-section-community p,
+.slider-section-community button {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Header style mirroring design pixel-for-pixel */
+.slider-header {
+  margin-bottom: 55px;
+}
+
+.slider-brand-heading {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 400;
+  /* letter-spacing: -1.2px; */
+  line-height: 1.1;
+  color: var(--color-dark, #111111);
+}
+
+.slider-brand-heading .brand-light {
+  color: var(--color-dark, #111111);
+}
+
+.slider-brand-heading .brand-coral {
+  color: var(--color-primary, #ff5e3a);
+  font-weight: 600;
+}
+
+/* Full Width Marquee container with zero margins */
+.slider-container-fluid {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Continuously running horizontally-translating flex-line */
+.slider-track-line {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  /* 32s allows balanced, smooth premium continuous velocity */
+  animation: continuousMarqueeScroll 35s linear infinite;
+}
+
+/* Loop interaction: pause only on hovering over the whole track */
+.slider-container-fluid:hover .slider-track-line {
+  animation-play-state: paused;
+}
+
+/* Balanced Card size layout matching the uploaded image precisely */
+.slider-card-cell {
+  width: 382px;
+  padding: 0 15px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* Custom rounded card with sleek shadows and subtle transitions */
+.slider-custom-card {
+  border-radius: 24px !important;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 480px; /* Constrains height to match perfectly with no visual layout shifting */
+}
+
+.slider-custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 94, 58, 0.08);
+  border-color: rgba(255, 94, 58, 0.25);
+}
+
+/* Smooth Image handling with Hover scale zoom */
+.slider-card-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 24px 24px 0 0;
+}
+
+.slider-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slider-custom-card:hover .slider-card-img {
+  transform: scale(1.05);
+}
+
+/* Glowing central circular Play trigger */
+.slider-play-overlay-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-play-overlay-trigger:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-play-icon-glow {
+  width: 54px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+.slider-play-overlay-trigger:hover .slider-play-icon-glow {
+  transform: scale(1.15);
+  background-color: var(--color-primary, #ff5e3a);
+  border-color: var(--color-primary, #ff5e3a);
+}
+
+.slider-play-icon-glow svg {
+  margin-left: 2px; /* Slight offset padding to align play arrow naturally centered */
+  color: #ffffff;
+}
+
+/* Bottom Body layout */
+.slider-card-body {
+  background-color: #ffffff;
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.slider-card-title {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.title-bold-prefix {
+  font-weight: 700;
+  color: #111111;
+  display: block;
+}
+
+.title-regular-suffix {
+  font-weight: 400;
+  color: #555555;
+  display: block;
+}
+
+.slider-card-desc {
+  font-size: 0.88rem;
+  color: #777777;
+  line-height: 1.55;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.read-more-accent {
+  font-weight: 700;
+  color: #111111;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.read-more-accent:hover {
+  color: var(--color-primary, #ff5e3a);
+}
+
+/* Actionable premium watch button */
+.btn-watch-video-action {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1.5px solid var(--color-primary, #ff5e3a);
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.btn-watch-video-action:hover {
+  background-color: var(--color-primary, #ff5e3a);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 94, 58, 0.25);
+}
+
+/* High-Impact CSS Keyframe Marquee:
+   Translates exactly -33.333333% (equal to exactly 1 complete set of 6 items)
+   resulting in a mathematically perfect continuous visual infinite loop. */
+@keyframes continuousMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333333%);
+  }
+}
+
+/* Overlay Video player Modal controls */
+.fitze-slider-video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2500;
+  backdrop-filter: blur(8px);
+}
+
+.slider-video-modal {
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  animation: modalSlideUp 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes modalSlideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slider-modal-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.slider-modal-close:hover {
+  transform: rotate(90deg);
+  color: var(--color-primary, #ff5e3a);
+}
+
+.modal-inner-card {
+  background-color: #0d0e10;
+  border-radius: 24px;
+}
+
+.modal-top-tag {
+  color: var(--color-primary, #ff5e3a);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.modal-video-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.slider-iframe-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+/* Media query adaptations keeping design proportions perfectly across viewports */
+@media (max-width: 991.98px) {
+  .slider-section-community {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .slider-card-cell {
+    width: 310px;
+    padding: 0 10px;
+  }
+  .slider-custom-card {
+    height: 430px;
+    border-radius: 20px !important;
+  }
+  .slider-card-img-wrapper {
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+  }
+  .slider-card-body {
+    padding: 20px;
+  }
+  .slider-card-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .slider-section-community {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .slider-card-cell {
+    width: 270px;
+    padding: 0 8px;
+  }
+  .slider-custom-card {
+    height: 390px;
+    border-radius: 16px !important;
+  }
+  .slider-card-img-wrapper {
+    height: 155px;
+    border-radius: 16px 16px 0 0;
+  }
+  .slider-card-body {
+    padding: 16px;
+  }
+  .slider-card-title {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .slider-card-desc {
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+  .btn-watch-video-action {
+    padding: 6px 18px;
+    font-size: 0.8rem;
+  }
+}

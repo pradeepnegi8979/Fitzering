@@ -1,0 +1,889 @@
+/* ==========================================================================
+   HowItWorksSection.module.css - Fitzestreaks Premium Bento Grid Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Main Section Frame */
+.fitze-how-it-works-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Outfit', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 1. DECORATIVE AMBIENT GENTLE BACKGROUND GLOWS */
+.fitze-ambient-glow-topLeft {
+  position: absolute;
+  top: 5%;
+  left: -8%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(255, 82, 38, 0.04) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fitze-ambient-glow-center {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, rgba(255, 82, 38, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fitze-ambient-glow-bottomRight {
+  position: absolute;
+  bottom: -5%;
+  right: -8%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 164, 255, 0.03) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 2. SYMMETRICAL CROSSHAIR LAYOUT DIVIDERS */
+.bento-divider-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.divider-h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f1f3f7; /* High fidelity crisp light separator */
+}
+
+.divider-v {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #f1f3f7;
+}
+
+.bento-content-container {
+  position: relative;
+  z-index: 5;
+}
+
+/* 3. MAIN SECTION TYPOGRAPHY HEADERS */
+.section-header-wrap {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.eyebrow-badge-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.eyebrow-badge {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #718096;
+  border: 1px solid #e2e8f0;
+  padding: 6px 18px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.015);
+}
+
+.how-it-works-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #111111;
+  letter-spacing: -1.8px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.highlight-coral-grad {
+  color: #ff5226; /* Specific signature red-orange color */
+  font-weight: 800;
+}
+
+/* 4. MASTER BENTO CONTAINER */
+.bento-master-quad {
+  width: 100%;
+  position: relative;
+  border: 1px solid #f1f3f7;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.bento-quad-cell {
+  padding: 55px 45px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alignments */
+.quad-cell-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.flex-align-right {
+  margin-left: auto;
+}
+
+/* 5. STEP HEADER BLOCKS WITH SYMMETRICAL WRAPS */
+.step-bar-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reverse-layout {
+  flex-direction: row-reverse !important;
+}
+
+.bento-step-num-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.grey-num-border {
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #4a5568;
+}
+
+.orange-num-solid {
+  background-color: #ff5226;
+  color: #ffffff;
+}
+
+.bento-heading-content {
+  flex: 1;
+}
+
+.bento-step-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.95rem;
+  font-weight: 800;
+  color: #111111;
+  margin: 0 0 4px 0;
+  letter-spacing: -1px;
+}
+
+.bento-step-subdesc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #718096;
+  margin: 0;
+  line-height: 1.42;
+  font-weight: 400;
+}
+
+.text-desktop-end {
+  text-align: right;
+}
+
+/* 6. GRAPHICS DECORATIVES CANVAS PANELS */
+.quad-visual-canvas {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+}
+
+/* STEP 1: PICK A STREAK CARDS OVERLAP */
+.picker-canvas-wrap {
+  height: 310px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.streak-overlap-card {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eff2f6;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-one-behind {
+  left: 0;
+  top: 10px;
+  width: 250px;
+  z-index: 2;
+  opacity: 0.65;
+  transform: rotate(-3.5deg) translateY(5px);
+}
+
+.card-one-behind .card-image-header {
+  height: 95px;
+}
+
+.card-two-foreground {
+  right: 0;
+  bottom: 0px;
+  width: 325px;
+  z-index: 4;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transform: rotate(1deg);
+}
+
+.card-two-foreground .card-image-header {
+  height: 110px;
+}
+
+.card-two-foreground:hover {
+  transform: scale(1.02) rotate(0deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+
+.image-nike-bg {
+  background-image: url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=400');
+  filter: saturate(0.9) contrast(1.01);
+}
+
+.image-summertime-bg {
+  background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=400');
+  filter: saturate(1.03) contrast(1.01);
+}
+
+.overlap-card-tags {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  gap: 6px;
+}
+
+.meta-info-pill {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(18, 18, 18, 0.72);
+  padding: 4px 10px;
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.card-brief-body {
+  padding: 16px;
+}
+
+.brief-card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #111111;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.card-calendar-duration {
+  font-size: 0.72rem;
+  color: #8c9ba5;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-detailed-paragraph {
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: #64748b;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.card-action-trigger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f3f6;
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.orange-action-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff5226;
+  text-transform: capitalize;
+}
+
+.orange-action-arrow {
+  color: #ff5226;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+/* STEP 2: GET CUSTOM GOALS SCHEDULE BOARD */
+.schedule-canvas-wrap {
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-inner-board {
+  width: 100%;
+  max-width: 440px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #eff2f6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.025);
+}
+
+.schedule-small-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #8c9ba5;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.schedule-rows-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #f1f3f5;
+  transition: all 0.25s ease;
+}
+
+.active-row-orange {
+  background-color: #ffffff;
+  border-color: #f1f3f5;
+}
+
+.active-row-orange .icon-circle {
+  background-color: rgba(255, 82, 38, 0.08);
+  color: #ff5226;
+  font-weight: 800;
+}
+
+.standout-beast-row {
+  background-color: #ffffff;
+  border-color: rgba(0, 164, 255, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(0, 164, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.active-row-blue .icon-circle {
+  background-color: rgba(0, 164, 255, 0.08);
+  color: #00a4ff;
+}
+
+.active-row-gray {
+  background-color: #fafbfb;
+  border-color: #f1f3f5;
+}
+
+.active-row-gray .icon-circle {
+  background-color: #edf2f6;
+  color: #8c9ba5;
+}
+
+.item-left-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.item-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.text-dark-bold {
+  color: #111111;
+  font-weight: 600;
+}
+
+.text-dark-bolder {
+  color: #111111;
+  font-weight: 700;
+}
+
+.text-muted-gray {
+  color: #8c9ba5;
+  font-weight: 500;
+}
+
+.item-steps-payout {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.text-blue-bold {
+  color: #00a4ff !important;
+}
+
+/* STEP 3: WALK DAILY WEEKLY CALENDAR PANEL */
+.daily-canvas-wrap {
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracker-weekly-panel {
+  width: 100%;
+  max-width: 440px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #eff2f6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.025);
+}
+
+.tracker-top-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.meta-week-banner {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #111111;
+}
+
+.meta-week-sub {
+  font-size: 0.72rem;
+  color: #8c9ba5;
+  font-weight: 500;
+}
+
+.meta-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.orange-nav-link {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ff5226;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.week-status-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.green-pills {
+  color: #019a58;
+  background-color: rgba(1, 154, 88, 0.08);
+}
+
+.tracker-days-grid {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f3f6;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
+}
+
+.day-cell-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.day-abbr-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #8c9ba5;
+}
+
+.status-bubble-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.bg-orange-bubble {
+  background-color: #ff5226;
+  color: #ffffff;
+}
+
+.bg-blue-bubble {
+  background-color: #00a4ff;
+  color: #ffffff;
+}
+
+.bg-rest-bubble {
+  background-color: #edf2f6;
+  color: #8c9ba5;
+}
+
+.day-steps-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.text-muted-steps {
+  color: #8c9ba5;
+}
+
+.congrats-floating-capsule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fffbeb;
+  border: 1px dashed #fcd34d;
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.congrats-medal-sticker {
+  font-size: 0.95rem;
+}
+
+.congrats-sticker-message {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #b45309;
+}
+
+/* STEP 4: EARN PAYOUT METRICS GRID PANEL */
+.payout-canvas-wrap {
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rewards-card-panel {
+  width: 100%;
+  max-width: 440px;
+  background-color: #f0fdf4; /* Light green base */
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #dcfce7;
+  box-shadow: 0 10px 30px rgba(1, 154, 88, 0.015);
+  position: relative;
+  overflow: hidden;
+}
+
+.rewards-banner-header {
+  margin-bottom: 22px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.checkmark-green {
+  color: #019a58;
+  font-weight: 800;
+}
+
+.conquered-top-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin: 0 0 4px 0;
+}
+
+.conquered-top-subtext {
+  font-size: 0.74rem;
+  color: #166534;
+  margin: 0;
+  font-weight: 500;
+}
+
+.metrics-staggered-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.metric-cell-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid #e2f4eb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.01);
+}
+
+.metric-icon-bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.bg-light-orange-tint {
+  background-color: rgba(255, 82, 38, 0.06);
+}
+
+.bg-light-gold-tint {
+  background-color: rgba(251, 211, 141, 0.16);
+}
+
+.bg-light-coral-tint {
+  background-color: rgba(255, 82, 38, 0.08);
+}
+
+.bg-light-blue-tint {
+  background-color: rgba(0, 164, 255, 0.06);
+}
+
+.metric-desc-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-score-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #111111;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.text-orange-bold {
+  color: #ff5226 !important;
+}
+
+.metric-axis-type {
+  font-size: 0.6rem;
+  color: #8c9ba5;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 2px 0 0 0;
+}
+
+/* DECORATIVE SPARKS / CONFETTI IN SUCCESS CARD */
+.celebrate-confetti-vibe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.confetti-dot-1 {
+  position: absolute;
+  top: 15px;
+  left: 12%;
+  width: 5px;
+  height: 5px;
+  background-color: #ff5226;
+  border-radius: 50%;
+}
+
+.confetti-dot-2 {
+  position: absolute;
+  top: 30px;
+  left: 88%;
+  width: 4px;
+  height: 4px;
+  background-color: #00a4ff;
+  border-radius: 50%;
+}
+
+.confetti-dot-3 {
+  position: absolute;
+  top: 10px;
+  right: 22%;
+  width: 6px;
+  height: 3px;
+  background-color: #f59e0b;
+}
+
+.confetti-dot-4 {
+  position: absolute;
+  bottom: 15px;
+  left: 18%;
+  width: 4px;
+  height: 6px;
+  background-color: #10b981;
+}
+
+
+/* ==========================================================================
+   HIGH-FIDELITY RESPONSIVE CALCULATED STYLES
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .how-it-works-title {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitze-how-it-works-section {
+    padding: 85px 0;
+  }
+  .bento-master-quad {
+    border-radius: 18px;
+  }
+  .bento-divider-lines {
+    display: none !important; /* Hide structural lines on full mobile vertical stacks */
+  }
+  .how-it-works-title {
+    font-size: 2.4rem;
+    letter-spacing: -1.2px;
+  }
+  .bento-quad-cell {
+    padding: 35px 25px !important;
+    border-bottom: 1px solid #f1f3f7;
+  }
+  .bento-quad-cell:last-child {
+    border-bottom: none;
+  }
+  .quad-cell-inner {
+    max-width: 100%;
+  }
+  .flex-align-right {
+    margin-left: 0;
+  }
+  
+  .reverse-layout {
+    flex-direction: row !important;
+  }
+  .text-desktop-end {
+    text-align: left !important;
+  }
+
+  .streak-overlap-card {
+    position: static;
+    margin-bottom: 12px;
+    width: 100% !important;
+    transform: none !important;
+  }
+  .picker-canvas-wrap {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-how-it-works-section {
+    padding: 60px 0;
+  }
+  .how-it-works-title {
+    font-size: 1.95rem;
+    letter-spacing: -1px;
+  }
+  .bento-quad-cell {
+    padding: 30px 15px !important;
+  }
+  .bento-step-title {
+    font-size: 1.5rem;
+  }
+  .bento-step-subdesc {
+    font-size: 0.88rem;
+  }
+  
+  .tracker-top-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .tracker-days-grid {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-around;
+  }
+  .day-cell-widget {
+    flex: 0 0 22%;
+  }
+  .metrics-staggered-quad-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-one-behind {
+    display: none; /* Strip overlapping elements in mobile layouts */
+  }
+}

@@ -1,0 +1,57 @@
+/* ==========================================================================
+   ReadyBannerSection.css - Fitze Corporate Orange Callout Banner
+   ========================================================================== */
+
+.ready-orange-full-banner {
+  background-color: #ff5226;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.orange-banner-title {
+  font-size: 2.85rem;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  margin: 0 0 14px 0;
+  line-height: 1.15;
+}
+
+.orange-banner-sub {
+  font-size: 1.15rem;
+  font-weight: 400;
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.94;
+}
+
+@media (max-width: 1200px) {
+  .orange-banner-title {
+    font-size: 2.45rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .orange-banner-title {
+    font-size: 2.1rem;
+    letter-spacing: -1.2px;
+  }
+  .orange-banner-sub {
+    font-size: 1.02rem;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .orange-banner-title {
+    font-size: 1.8rem;
+    letter-spacing: -0.8px;
+  }
+}

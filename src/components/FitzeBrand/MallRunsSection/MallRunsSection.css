@@ -1,0 +1,247 @@
+/* src/components/FitzeBrand/MallRunsSection.css */
+
+.fitze-mall-runs-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.row-mall-gap {
+  --bs-gutter-x: 3.5rem;
+}
+
+/* Left copywriting Segment */
+.mall-runs-orange-tag {
+  font-size: 0.72rem;
+  font-weight: 750;
+  color: #ff5e3a; /* High energetic red-orange tag */
+  letter-spacing: 1.8px;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.mall-runs-heading {
+  font-size: 3.9rem;
+  font-weight: 700;
+  color: #121212;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.mall-runs-description {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgba(18, 18, 18, 0.5); /* Perfect dimmed slate gray text */
+  line-height: 1.55;
+  max-width: 480px;
+  margin-bottom: 34px;
+}
+
+/* Left horizontal capsules flow */
+.mall-runs-badge-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mall-pill-badge {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5c5c5c;
+  background-color: #f7f6f4; /* Cozy warm light grey background */
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.015);
+  display: inline-block;
+}
+
+/* Right Premium Mockup device with embedded contents */
+.mall-gradient-frame-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  height: 380px;
+  border-radius: 36px; /* High-rounded corners */
+  border: 14px solid #151516; /* Clean rich black screen bezel frame */
+  background: linear-gradient(135deg, #442116 0%, #15100e 38%, #070505 100%); /* Perfect screenshot gradient matches */
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mall-gradient-frame-mockup:hover {
+  transform: translateY(-4px);
+}
+
+.mall-mockup-inset-content {
+  padding: 35px 40px;
+  width: 100%;
+  z-index: 5;
+}
+
+.mall-mockup-badge-container {
+  margin-bottom: 16px;
+}
+
+/* White capsule badge inside visual frame */
+.mall-mockup-orange-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #ff5e3a;
+  background-color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.mall-mockup-title {
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  margin: 0;
+  max-width: 480px;
+}
+
+/* Lower segment statistics section row styling */
+.mall-stats-row-grid {
+  margin-top: 55px;
+}
+
+.mall-stat-card {
+  background-color: #f7f6f4; /* Identical warm cream tone */
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
+}
+
+.mall-stat-card:hover {
+  transform: translateY(-3px);
+  background-color: #f0efe02; /* Seamless hover effect */
+}
+
+/* Giant statistics bold orange numbers */
+.mall-stat-number {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #ff5e3a; /* Vibrant orange active digits */
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+.text-smaller-uae {
+  font-size: 3.35rem; /* Marginally downscale word length to avoid wrapping errors */
+}
+
+.mall-stat-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #7c7c7c; /* Muted grey exact alignment uppercase */
+  letter-spacing: 1px;
+}
+
+/* Elegant Desktop Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .mall-runs-heading {
+    font-size: 3.1rem;
+    letter-spacing: -1.5px;
+  }
+  .mall-stat-number {
+    font-size: 3.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .fitze-mall-runs-section {
+    padding: 70px 0;
+  }
+  .mall-runs-info-col {
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mall-runs-description {
+    max-width: 600px;
+  }
+  .mall-runs-badge-pills {
+    justify-content: center;
+  }
+  .mall-gradient-frame-mockup {
+    max-width: 530px;
+    height: 340px;
+  }
+  .mall-mockup-title {
+    font-size: 1.8rem;
+  }
+  .mall-stats-row-grid {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-mall-runs-section {
+    padding: 50px 0;
+  }
+  .mall-runs-orange-tag {
+    font-size: 0.68rem;
+    margin-bottom: 14px;
+  }
+  .mall-runs-heading {
+    font-size: 2.15rem;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    margin-bottom: 18px;
+  }
+  .mall-runs-description {
+    font-size: 0.94rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .mall-pill-badge {
+    font-size: 0.76rem;
+    padding: 10px 18px;
+  }
+  .mall-gradient-frame-mockup {
+    height: 270px;
+    border-radius: 24px;
+    border-width: 10px;
+  }
+  .mall-mockup-inset-content {
+    padding: 24px 25px;
+  }
+  .mall-mockup-title {
+    font-size: 1.45rem;
+  }
+  .mall-stat-card {
+    min-height: 130px;
+    padding: 24px 15px;
+    border-radius: 16px;
+  }
+  .mall-stat-number {
+    font-size: 2.45rem;
+    margin-bottom: 6px;
+  }
+  .text-smaller-uae {
+    font-size: 2.45rem;
+  }
+  .mall-stat-label {
+    font-size: 0.65rem;
+  }
+}

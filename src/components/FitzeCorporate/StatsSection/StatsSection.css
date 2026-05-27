@@ -1,0 +1,129 @@
+/* ==========================================================================
+   StatsSection.css - Fitze Corporate Multi-Theme Stats Layout
+   ========================================================================== */
+
+.corp-stats-outer-section {
+  width: 100%;
+  padding: 10px 0 40px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 5. MULTI-THEME STAT CARDS */
+.corp-stats-row {
+  margin-top: 10px;
+}
+
+.corp-stat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 125px;
+}
+
+.corp-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Card Theme */
+.corp-stat-card-dark {
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.corp-stat-card-dark .corp-stat-value {
+  color: #ff5226;
+}
+
+.corp-stat-card-dark .corp-stat-label {
+  color: #ffffff;
+}
+
+.corp-stat-card-dark .corp-stat-icon-wrapper {
+  background-color: rgba(255, 82, 38, 0.15);
+}
+
+/* Light Card Theme */
+.corp-stat-card-light {
+  background-color: #f7f9fa;
+  border: 1.5px solid #eceff1;
+}
+
+.corp-stat-card-light .corp-stat-value {
+  color: #ff5226;
+}
+
+.corp-stat-card-light .corp-stat-label {
+  color: #1d252d;
+}
+
+.corp-stat-card-light .corp-stat-icon-wrapper {
+  background-color: rgba(18, 18, 18, 0.05);
+}
+
+/* Peach Card Theme */
+.corp-stat-card-peach {
+  background-color: #fff6f3;
+  border: 1.5px solid #ffe5db;
+}
+
+.corp-stat-card-peach .corp-stat-value {
+  color: #ff5226;
+}
+
+.corp-stat-card-peach .corp-stat-label {
+  color: #1d252d;
+}
+
+.corp-stat-card-peach .corp-stat-icon-wrapper {
+  background-color: rgba(255, 82, 38, 0.08);
+}
+
+/* Internals of stat cards */
+.corp-stat-content {
+  text-align: left;
+}
+
+.corp-stat-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.22rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -1.2px;
+}
+
+.corp-stat-label {
+  font-size: 0.95rem;
+  font-weight: 550;
+  margin: 6px 0 0 0;
+}
+
+.corp-stat-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .corp-stat-card {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-stat-card {
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+  }
+}

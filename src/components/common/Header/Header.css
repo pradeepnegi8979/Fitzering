@@ -1,0 +1,105 @@
+@import "../../../styles/variables.css";
+
+.navbar-fitze {
+  padding: 16px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: var(--transition-smooth);
+}
+
+.brand-logo-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-text {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--color-dark);
+}
+
+.brand-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-left: -2px;
+  margin-top: 10px;
+}
+
+.navbar-nav-links .nav-link {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-gray-dark) !important;
+  padding: 8px 16px !important;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.navbar-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 16px;
+  background-color: var(--color-primary);
+  transition: var(--transition-smooth);
+}
+
+.navbar-nav-links .nav-link:hover::after {
+  width: calc(100% - 32px);
+}
+
+.navbar-nav-links .nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+.btn-header-download {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: var(--transition-smooth);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-header-download:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 6px 15px rgba(255, 94, 58, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 991.98px) {
+  .navbar-nav-links {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .navbar-nav-links .nav-link::after {
+    display: none;
+  }
+  
+  .nav-action-btn {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .btn-header-download {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+}

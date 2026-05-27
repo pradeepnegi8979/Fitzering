@@ -1,0 +1,147 @@
+/* src/components/FitzeBrand/MallandBrandPartner.css */
+
+.mall-brand-partner-section {
+  padding: 50px 0;
+  background-color: #ffffff; /* Seamless clean page style context matching */
+}
+
+/* Beautiful boxed container replicating the screenshot proportions exactly */
+.mall-partners-boxed-container {
+  /* border: 1px solid #eaeaea; 
+  border-radius: 24px;  */
+  padding: 45px 0px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.012);
+}
+
+/* Centered heading title exactly as requested by the source design */
+.mall-partners-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #121212;
+  margin-top: 0;
+  margin-bottom: 35px;
+  text-align: center; /* Exactly centered alignment as shown in screenshot */
+  letter-spacing: -0.3px;
+}
+
+/* Slider Track Wrappers */
+.mall-partners-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Linear edge overlays to create a smooth fade effect on list borders */
+.mall-partners-slider-wrapper::before,
+.mall-partners-slider-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mall-partners-slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.mall-partners-slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+/* Continuous, seamless loop animation track */
+.mall-partners-track {
+  display: flex;
+  gap: 32px; /* Uniform exact item margins */
+  width: max-content;
+  animation: mall-partners-flow 44s linear infinite; /* Slightly distinct speed from core brand logo strip */
+}
+
+/* Pause animation on mouse active hover */
+.mall-partners-slider-wrapper:hover .mall-partners-track {
+  animation-play-state: paused;
+}
+
+/* Individual partner card block sizes */
+.mall-partner-card {
+  width: 180px;
+  height: 60px;
+  background-color: #eeeeee; /* Identical light-gray background of the graphic layout */
+  border-radius: 12px; /* Clean visual aspect ratio matching styling */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
+}
+
+.mall-partner-card:hover {
+  transform: translateY(-2px);
+  background-color: #e4e4e4;
+}
+
+/* Elegant partner representation text */
+.mall-partner-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.96rem;
+  font-weight: 550;
+  color: rgba(18, 18, 18, 0.4); /* Muted slate gray label text matches */
+  letter-spacing: 0.2px;
+}
+
+/* Pure CSS Smooth infinite Keyframe script */
+@keyframes mall-partners-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translate exactly one third of the tripled contents to align visual loop points cleanly */
+    transform: translateX(calc(-33.333% - 10.66px));
+  }
+}
+
+/* Mobile responsive media breakpoints */
+@media (max-width: 992px) {
+  .mall-partners-boxed-container {
+    padding: 35px 35px;
+  }
+  .mall-partners-heading {
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+  }
+  .mall-partner-card {
+    width: 150px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mall-brand-partner-section {
+    padding: 35px 0;
+  }
+  .mall-partners-boxed-container {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  .mall-partners-heading {
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+  }
+  .mall-partner-card {
+    width: 130px;
+    height: 46px;
+    border-radius: 8px;
+  }
+  .mall-partner-logo {
+    font-size: 0.8rem;
+  }
+  .mall-partners-track {
+    gap: 16px;
+  }
+}

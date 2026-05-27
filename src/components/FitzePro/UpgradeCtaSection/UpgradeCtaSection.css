@@ -1,0 +1,161 @@
+/* ==========================================================================
+   UpgradeCtaSection.css - Fitze Pro Footer CTA Trigger (Mockup Perfect)
+   ========================================================================== */
+
+.fitzepro-final-cta-wrapper {
+  background-color: #121214; /* Pure matte black background matching the mockup block */
+  padding: 100px 0 100px 0; /* Elegant vertical margins to perfectly center content */
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  border: none; /* Clean separation with no technical design lines or borders */
+}
+
+/* ==========================================================================
+   TITLE WITH HIGH FIDELITY GRADIENT FROM WHITE TO TRANSLUCENT SILVER
+   ========================================================================== */
+.final-cta-title {
+  font-size: 3.75rem; /* High resolution luxurious size */
+  font-weight: 600; /* Smooth elegant visual thickness */
+  letter-spacing: -2.3px; /* Slightly tighter display tracking matching mockup */
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+  text-align: center;
+  width: 100%;
+  
+  /* Smooth left-to-right gradient representing "Move through life with more." */
+  background: linear-gradient(90deg, #ffffff 45%, rgba(255, 255, 255, 0.45) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff; /* Fallback */
+}
+
+/* ==========================================================================
+   SUBTITLE - MORE MOVEMENT, MORE REWARDS, MORE FROM EVERY DAY
+   ========================================================================== */
+.final-cta-subtitle {
+  font-size: 0.98rem; /* Discreet elegance matching high-end spec */
+  font-weight: 400;
+  color: #c5c5c7; /* Polished soft zinc silver */
+  max-width: 600px;
+  margin: 0 auto 34px auto; /* Perfect layout breathing balance */
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+
+/* ==========================================================================
+   TRIGGERS AND ACTIONS - SOLID PILL SHAPED HERO BUTTON
+   ========================================================================== */
+.final-cta-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-orange-btn-huge {
+  background-color: #ff5f38; /* Crisp athletic custom brand orange-red */
+  color: #ffffff;
+  font-size: 1.02rem;
+  font-weight: 600;
+  padding: 13px 40px; /* Precise height and width pill capsule proportions */
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Perfectly aligns "Upgrade to" and "pro" badge */
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 24px rgba(255, 95, 56, 0.22);
+}
+
+.final-orange-btn-huge:hover {
+  background-color: #ff4c24;
+  box-shadow: 0 12px 28px rgba(255, 95, 56, 0.35);
+  transform: translateY(-2px);
+}
+
+.final-orange-btn-huge:active {
+  transform: translateY(0);
+}
+
+/* Hollow inline white badge matching fitze logo accentuation */
+.pro-pill-outline {
+  border: 1.5px solid #ffffff;
+  border-radius: 9px;
+  padding: 0px 8px 2px 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  font-style: italic; /* Italicized custom badge typography */
+  line-height: 1.15;
+  letter-spacing: -0.2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  text-transform: lowercase;
+}
+
+/* ==========================================================================
+   PRODUCTION GRADE RESPONSIBLENESS AND COMPOSITE SCALING
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  .final-cta-title {
+    font-size: 3.3rem;
+    letter-spacing: -1.8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .final-cta-title {
+    font-size: 2.8rem;
+    letter-spacing: -1.3px;
+  }
+  .fitzepro-final-cta-wrapper {
+    padding: 85px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-final-cta-wrapper {
+    padding: 70px 0;
+  }
+  .final-cta-title {
+    font-size: 2.25rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ffffff 60%, rgba(255, 255, 255, 0.55) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .final-cta-subtitle {
+    font-size: 0.94rem;
+    margin-bottom: 28px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-final-cta-wrapper {
+    padding: 55px 0;
+  }
+  .final-cta-title {
+    font-size: 1.75rem;
+    letter-spacing: -0.6px;
+    line-height: 1.25;
+  }
+  .final-cta-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  .final-orange-btn-huge {
+    width: 100%;
+    max-width: 320px; /* Keeps the capsule looking sharp and not bloated */
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+}
+    

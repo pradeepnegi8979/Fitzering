@@ -1,0 +1,49 @@
+/* ==========================================================================
+   TickerSection.css - Fitze Corporate Ticker Ribbon
+   ========================================================================== */
+
+.infinite-text-marquee-wrapper {
+  background-color: #fcfcfc;
+  border-top: 1.5px solid #f0f0f0;
+  border-bottom: 1.5px solid #f0f0f0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content-scroller {
+  display: flex;
+  width: max-content;
+}
+
+.marquee-slide-strip {
+  display: inline-flex;
+  align-items: center;
+  animation: scrollMarqueeTicker 25s linear infinite;
+  padding-right: 20px;
+}
+
+.marquee-slide-strip span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #c4ccd0;
+  letter-spacing: 1px;
+}
+
+.marquee-dot {
+  font-size: 1.50rem;
+  font-weight: 900;
+  color: #ff5226;
+  margin: 0 24px;
+}
+
+@keyframes scrollMarqueeTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}

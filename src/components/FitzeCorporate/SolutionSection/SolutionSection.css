@@ -1,0 +1,316 @@
+/* ==========================================================================
+   SolutionSection.css - Fitze Corporate Solutions & Tabs (Pixel-Perfect Match)
+   ========================================================================== */
+
+.corp-solution-section {
+  width: 100%;
+  padding: 85px 0 95px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.tab-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Eyebrow Pill Badge */
+.solution-eyebrow-box {
+  margin-bottom: 14px;
+}
+
+.solution-eyebrow {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #71717a; /* Clean premium charcoal gray */
+  border: 1.2px solid #e4e4e7; /* Thin gray outline */
+  background-color: #ffffff;
+  padding: 7px 18px;
+  border-radius: 50px;
+  letter-spacing: 0.8px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+}
+
+/* Main Heading Typography */
+.solution-headline {
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #111113;
+  letter-spacing: -1.6px;
+  line-height: 1.2;
+  margin: 0 auto 38px auto;
+  /* max-width: 800px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.highlight-color {
+  color: #ff5226; /* Dynamic Corporate Orange Highlight */
+  font-weight: 600;
+}
+
+/* Tab Switcher Layout */
+.tab-pills-horizontal-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 44px;
+}
+
+.tab-pills-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tab-switch-pill {
+  background-color: #ffffff;
+  color: #52525b;
+  border: 1.2px solid #e4e4e7;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 50px;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tab-switch-pill:hover {
+  border-color: #111113;
+  color: #111113;
+}
+
+.tab-switch-pill.active-pill {
+  background-color: #111113; /* Dark Charcoal/Black */
+  color: #ffffff;
+  border-color: #111113;
+}
+
+/* Interactive Display Showcase Card with Soft warm Ivory background */
+.tab-showcase-container-card {
+  background-color: #faf8f5; /* Warm off-white sand-ivory hue */
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.015);
+  box-sizing: border-box;
+}
+
+/* Perfect alignment & equal symmetric insetting inside the card */
+.showcase-content-col {
+  padding: 64px 48px 64px 64px !important;
+  box-sizing: border-box;
+}
+
+.showcase-image-col {
+  padding: 48px 64px 48px 24px !important;
+  box-sizing: border-box;
+}
+
+/* Showcase Text elements */
+.tab-showcase-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #111113;
+  letter-spacing: -1px;
+  margin: 0 0 20px 0;
+  line-height: 1.25;
+}
+
+.tab-showcase-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #52525b; /* High-contrast clean text */
+  line-height: 1.65;
+  margin: 0 0 32px 0;
+  max-width: 480px;
+}
+
+/* Explore Capsule Pill Button */
+.tab-showcase-explore-btn {
+  background-color: #111113;
+  color: #ffffff;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 34px;
+  border-radius: 50px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(17, 17, 19, 0.15);
+}
+
+.tab-showcase-explore-btn:hover {
+  background-color: #ff5226; /* Glow brand orange on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 82, 38, 0.25);
+}
+
+/* Island Image Wrapper */
+.tab-showcase-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px; /* Perfect desktop standard dimension */
+  overflow: hidden;
+  border-radius: 32px; /* Perfect match of curve corners in design */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.tab-showcase-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Smooth Fade/Scale tab transition effects */
+.animate-fade-in {
+  animation: solutionFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes solutionFadeIn {
+  0% {
+    opacity: 0.4;
+    transform: scale(1.015);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   STRICT RESPONDENT BREAKPOINT COHESION
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .solution-headline {
+    font-size: 2.85rem;
+    letter-spacing: -1.2px;
+  }
+  .tab-showcase-title {
+    font-size: 2.25rem;
+  }
+  .showcase-content-col {
+    padding: 48px 32px 48px 48px !important;
+  }
+  .showcase-image-col {
+    padding: 32px 48px 32px 16px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .corp-solution-section {
+    padding: 60px 0;
+  }
+  .solution-headline {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+  }
+  .tab-pills-horizontal-grid {
+    margin-bottom: 35px;
+  }
+  .tab-showcase-container-card {
+    border-radius: 32px;
+  }
+  
+  /* Proper Responsive Stacking */
+  .showcase-content-col {
+    padding: 35px 32px 40px 32px !important;
+  }
+  .showcase-image-col {
+    padding: 32px 32px 0 32px !important; /* Stacked layout padding */
+  }
+  .tab-showcase-image-wrapper {
+    height: 320px;
+  }
+  .tab-showcase-title {
+    font-size: 1.95rem;
+  }
+  .tab-showcase-desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-headline {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+  }
+  .tab-switch-pill {
+    font-size: 0.85rem;
+    padding: 8px 20px;
+  }
+  .tab-pills-row {
+    gap: 8px;
+  }
+  .tab-pills-horizontal-grid {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-solution-section {
+    padding: 45px 0;
+  }
+  .solution-headline {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    line-height: 1.25;
+  }
+  .tab-switch-pill {
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+  .tab-pills-horizontal-grid {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .tab-pills-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .tab-row-2 {
+    margin-top: 0;
+  }
+  .tab-showcase-container-card {
+    border-radius: 24px;
+  }
+  .showcase-image-col {
+    padding: 20px 20px 0 20px !important;
+  }
+  .showcase-content-col {
+    padding: 24px 20px 24px 20px !important;
+  }
+  .tab-showcase-image-wrapper {
+    height: 220px;
+    border-radius: 16px;
+  }
+  .tab-showcase-title {
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+  }
+  .tab-showcase-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+  .tab-showcase-explore-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}

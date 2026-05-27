@@ -1,0 +1,265 @@
+/* src/components/FitzeBrand/PlatformSection.css */
+
+.fitze-platform-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* Section Header Segment */
+.platform-header-text {
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.platform-subtitle-container {
+  margin-bottom: 20px;
+}
+
+.platform-subtitle-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #7c7c7c; /* Muted grey text naturally fitting the look */
+  border: 1px solid #dcdcdc; /* Clean thin continuous light border */
+  padding: 6px 20px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.platform-title {
+  font-size: 3.25rem;
+  font-weight: 600;
+  color: #121212;
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.platform-title-orange {
+  color: #ff5e3a; /* Crisp active orange accent */
+}
+
+.platform-desc-para {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgba(18, 18, 18, 0.5); /* Semi-transparent aesthetic dark */
+  line-height: 1.55;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Rounded Pill Tabs Switcher Row */
+.platform-tabs-pills-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.tab-filter-btn {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #121212;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 50px;
+  padding: 12px 28px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.tab-filter-btn:hover {
+  background-color: #eaeaea;
+  border-color: #bbbbbb;
+}
+
+.tab-filter-btn.active {
+  background-color: #121212;
+  color: #ffffff;
+  border-color: #121212;
+}
+
+/* iOS Styled Showcase Card (Inside container styling) */
+.active-tab-container-card {
+  background-color: #f7f6f4; /* Elegant warm-toned light sandy container background */
+  border: 1px solid rgba(18, 18, 18, 0.015);
+  border-radius: 36px; /* Smooth extra-rounded custom edges */
+  padding: 60px 70px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.active-tab-container-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Left details layout column */
+.tab-details-col {
+  padding-right: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.tab-context-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-inner-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #121212;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+
+.tab-inner-desc {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: #5c5c5c; /* Highly readable anthracite body grey */
+  line-height: 1.6;
+  max-width: 440px;
+  margin-bottom: 34px;
+}
+
+/* High-contrast solid charcoal primary action link */
+.btn-tab-cta {
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border: none;
+  padding: 15px 36px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-tab-cta:hover {
+  background-color: #ff5e3a;
+  box-shadow: 0 8px 25px rgba(255, 94, 58, 0.22);
+}
+
+/* Right visual frame column styling */
+.tab-visual-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tab-image-frame {
+  width: 100%;
+  height: 410px;
+  border-radius: 28px; /* Smooth frame borders enclosing mockup */
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+.tab-responsive-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-image-frame:hover .tab-responsive-image {
+  transform: scale(1.025);
+}
+
+/* Seamless Desktop Responsive breakpoints */
+@media (max-width: 1200px) {
+  .platform-title {
+    font-size: 2.8rem;
+  }
+  .tab-inner-title {
+    font-size: 2.22rem;
+  }
+  .active-tab-container-card {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fitze-platform-section {
+    padding: 75px 0;
+  }
+  .platform-title {
+    font-size: 2.45rem;
+    letter-spacing: -1.2px;
+  }
+  .active-tab-container-card {
+    padding: 40px 30px;
+    border-radius: 28px;
+  }
+  .tab-details-col {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .tab-context-block {
+    align-items: center;
+    text-align: center;
+  }
+  .tab-inner-desc {
+    max-width: 580px;
+  }
+  .tab-visual-col {
+    justify-content: center;
+  }
+  .tab-image-frame {
+    height: 330px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-platform-section {
+    padding: 55px 0;
+  }
+  .platform-title {
+    font-size: 1.95rem;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+  .platform-subtitle-badge {
+    font-size: 0.68rem;
+    padding: 5px 16px;
+  }
+  .tab-filter-btn {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .platform-tabs-pills-row {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+  .active-tab-container-card {
+    padding: 30px 20px;
+    border-radius: 24px;
+  }
+  .tab-inner-title {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+  .tab-inner-desc {
+    font-size: 0.92rem;
+    margin-bottom: 25px;
+  }
+  .btn-tab-cta {
+    font-size: 0.88rem;
+    padding: 13px 28px;
+  }
+  .tab-image-frame {
+    height: 230px;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,445 @@
+/* ==========================================================================
+   FindYourPerfectFitSection.css - High Fidelity Sizing Process UI Design
+   ========================================================================== */
+
+.find-perfect-fit-section {
+  position: relative;
+  width: 100%;
+  padding: 110px 0;
+  background-color: #ffffff; /* Bright pristine white background */
+  font-family: 'Poppins', sans-serif;
+  color: #121212;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 1. CONTAINER BOUNDARIES */
+.find-perfect-fit-container {
+  max-width: 1160px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Left block content styling */
+.find-fit-meta-wrap {
+  margin-bottom: 22px;
+}
+
+/* Rounded, clean, light-gray bordered badge matching standard sizing cards */
+.no-guesswork-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #718096;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 6px 18px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Large Section Title */
+.find-fit-title {
+  font-size: 3.5rem;
+  font-weight: 500; /* Medium sleek weight */
+  color: #121212;
+  letter-spacing: -2px;
+  line-height: 1.15;
+  margin: 0 0 45px 0;
+}
+
+.find-fit-title .highlight-coral {
+  color: #ff5e3a; /* Coral theme color */
+  font-weight: 700; /* Extra contrast */
+}
+
+/* Step list stacked structure */
+.sizing-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.sizing-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a0aec0; /* Balanced medium gray label */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-content {
+  font-size: 1.1rem;
+  font-weight: 600; /* Semi-bold layout */
+  color: #1a202c;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+/* CTA Pill button styling */
+.find-fit-action-wrap {
+  margin-top: 10px;
+}
+
+.btn-find-fit-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5e3a; /* Coral brand tone */
+  color: #ffffff !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 16px 54px;
+  text-decoration: none !important;
+  box-shadow: 0 8px 24px rgba(255, 94, 58, 0.22);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-find-fit-action:hover {
+  background-color: #fa4a23;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 94, 58, 0.35);
+}
+
+/* 2. RIGHT PANEL: HIGH-FIDELITY TRAY CARD */
+.sizing-tray-card {
+  position: relative;
+  width: 100%;
+  height: 480px; /* Exact height matching design proportion */
+  background-color: #f6f5f2; /* Beautiful warm sand off-white tray */
+  border-radius: 40px; /* Generous soft corners perfect matching design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.8), 
+              0 10px 40px rgba(0, 0, 0, 0.02);
+}
+
+/* Composited premium smart rings arrangement */
+.staggered-rings-composition {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 15px; /* Spacings between structural ring templates */
+  padding-bottom: 20px;
+  z-index: 5;
+}
+
+/* CSS Smart Ring Engine */
+.composited-ring {
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 50%, #11141a 100%);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 
+              inset 0 4px 8px rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Sizing variations (Large, Medium, Small Staggered cascade) */
+.ring-large {
+  width: 165px;
+  height: 165px;
+  transform: rotateY(-32deg) rotateX(10deg);
+  z-index: 10;
+}
+
+.ring-medium {
+  width: 125px;
+  height: 125px;
+  transform: rotateY(-28deg) rotateX(8deg) translateZ(-10px);
+  z-index: 9;
+}
+
+.ring-small {
+  width: 95px;
+  height: 95px;
+  transform: rotateY(-24deg) rotateX(6deg) translateZ(-20px);
+  z-index: 8;
+}
+
+/* Hover dynamic micro-interactions */
+.sizing-tray-card:hover .ring-large {
+  transform: rotateY(-25deg) rotateX(12deg) scale(1.03);
+}
+
+.sizing-tray-card:hover .ring-medium {
+  transform: rotateY(-22deg) rotateX(10deg) scale(1.02);
+}
+
+.sizing-tray-card:hover .ring-small {
+  transform: rotateY(-18deg) rotateX(8deg) scale(1.02);
+}
+
+/* Outer titanium frame bevel */
+.ring-outer-rim {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 40%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.8);
+}
+
+/* Cavity of the interior displaying electronic sensors */
+.ring-inner-cavity {
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+  background-color: #0b0c10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #4a5568;
+}
+
+/* Sensor circuitry integration strip */
+.sensor-strip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.sensor-node {
+  position: absolute;
+  background-color: #2c5282;
+  border-radius: 2px;
+}
+
+/* Large Ring inner circuit node alignment */
+.ring-large .sensor-1 {
+  width: 14px;
+  height: 6px;
+  top: 45%;
+  left: 6%;
+  transform: rotate(5deg);
+  background-color: #4a5568;
+}
+
+.ring-large .sensor-2 {
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 3%;
+  border-radius: 50%;
+}
+
+/* Vibrant glowing green custom heart-rate laser LED matching design */
+.glowing-green-led {
+  background-color: #48bb78 !important;
+  box-shadow: 0 0 14px #48bb78, 0 0 3px #48bb78;
+  animation: pulse-led 2s infinite alternate;
+}
+
+@keyframes pulse-led {
+  0% {
+    opacity: 0.75;
+    box-shadow: 0 0 10px #48bb78;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 18px #48bb78, 0 0 4px #48bb78;
+  }
+}
+
+.ring-large .sensor-3 {
+  width: 10px;
+  height: 8px;
+  top: 60%;
+  left: 10%;
+  background-color: #2d3748;
+}
+
+/* Medium Ring Circuit placement */
+.ring-medium .sensor-1 {
+  width: 10px;
+  height: 5px;
+  top: 48%;
+  left: 5%;
+  background-color: #2d3748;
+}
+
+.ring-medium .sensor-2 {
+  width: 8px;
+  height: 8px;
+  top: 56%;
+  left: 7%;
+  background-color: #a0aec0;
+}
+
+/* Specular specular gleam overlay */
+.ring-reflection-glare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
+}
+
+/* Realistic Ground Drop Shadow matching uploaded mockup */
+.composition-ground-shadow {
+  position: absolute;
+  bottom: 85px;
+  width: 75%;
+  height: 24px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* ==========================================================================
+   Responsive Configuration (Pixel Perfect Breakpoints)
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .find-fit-title {
+    font-size: 3.0rem;
+    margin-bottom: 35px;
+  }
+  .sizing-tray-card {
+    height: 420px;
+  }
+  .ring-large {
+    width: 145px;
+    height: 145px;
+  }
+  .ring-medium {
+    width: 110px;
+    height: 110px;
+  }
+  .ring-small {
+    width: 85px;
+    height: 85px;
+  }
+  .composition-ground-shadow {
+    bottom: 75px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .find-perfect-fit-section {
+    padding: 80px 0;
+  }
+  .find-fit-title {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .find-fit-meta-wrap {
+    text-align: center;
+  }
+  .sizing-steps-list {
+    align-items: center;
+    text-align: center;
+  }
+  .find-fit-action-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sizing-tray-card {
+    height: 380px;
+    border-radius: 32px;
+  }
+  .composition-ground-shadow {
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .find-perfect-fit-section {
+    padding: 65px 0;
+  }
+  .find-fit-title {
+    font-size: 2.1rem;
+    letter-spacing: -1.2px;
+  }
+  .step-content {
+    font-size: 1.0rem;
+  }
+  .sizing-tray-card {
+    height: 320px;
+    border-radius: 28px;
+  }
+  .ring-large {
+    width: 120px;
+    height: 120px;
+  }
+  .ring-medium {
+    width: 90px;
+    height: 90px;
+  }
+  .ring-small {
+    width: 70px;
+    height: 70px;
+  }
+  .composition-ground-shadow {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .find-fit-title {
+    font-size: 1.85rem;
+    letter-spacing: -0.8px;
+  }
+  .no-guesswork-badge {
+    font-size: 0.68rem;
+    padding: 5px 14px;
+  }
+  .sizing-tray-card {
+    height: 250px;
+    border-radius: 22px;
+  }
+  .ring-large {
+    width: 95px;
+    height: 95px;
+  }
+  .ring-medium {
+    width: 75px;
+    height: 75px;
+  }
+  .ring-small {
+    width: 58px;
+    height: 58px;
+  }
+  .staggered-rings-composition {
+    gap: 8px;
+  }
+  .composition-ground-shadow {
+    bottom: 35px;
+  }
+  .btn-find-fit-action {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 14px 44px;
+  }
+}

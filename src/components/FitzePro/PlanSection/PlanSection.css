@@ -1,0 +1,342 @@
+/* ==========================================================================
+   PlanSection.css - Fitze Pro Plan Section UI Polish
+   ========================================================================== */
+
+.fitzepro-plan-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 115px 0;
+  background-color: #fcfcfd; /* Clean premium grid-friendly grey-tint canvas */
+  font-family: 'Poppins', sans-serif;
+  color: #121214;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Subtle architectural vertical lines in plan background to tie visual system */
+.fitzepro-plan-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  opacity: 0.95;
+}
+
+.plan-grid-column-line {
+  border-right: 1px solid rgba(18, 18, 18, 0.02);
+  height: 100%;
+}
+
+.plan-grid-column-line:last-child {
+  border-right: none;
+}
+
+.fitzepro-plan-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1140px;
+}
+
+/* Section Header Styles */
+.fitzepro-plan-header {
+  margin-bottom: 54px;
+}
+
+/* CHOOSE YOUR PLAN badge style match with WHY PRO pill */
+.choose-plan-pill-wrapper {
+  margin-bottom: 20px;
+}
+
+.choose-plan-badge {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8e8e93;
+  padding: 5px 18px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.fitzepro-plan-title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #121214;
+  letter-spacing: -2.2px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.fitzepro-plan-title .highlight-orange {
+  color: #ff5f38; /* Exact brand orange/coral hue */
+  font-weight: 700;
+}
+
+.fitzepro-plan-support {
+  font-size: 0.95rem;
+  color: #8a8a93;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.55;
+  letter-spacing: -0.1px;
+}
+
+/* ==========================================================================
+   PLAN CARDS CONTAINER & ALIGNMENT
+   ========================================================================== */
+.plan-cards-row {
+  margin-top: 10px;
+}
+
+.plan-showcase-card {
+  border-radius: 36px;
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 385px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+/* WHITE THEMED CARDS (Peak & Starter) */
+.plan-showcase-card.is-white-theme {
+  background-color: #ffffff;
+  border: 1.2px solid rgba(18, 18, 18, 0.07);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+}
+
+.plan-showcase-card.is-white-theme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(18, 18, 18, 0.06);
+  border-color: rgba(18, 18, 18, 0.12);
+}
+
+/* ORANGE HIGHLY VIBRANT THEMED CARD (Momentum) */
+.plan-showcase-card.is-orange-theme {
+  background-color: #ff5f38; /* Bold matte energy coral orange red */
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 20px 45px rgba(255, 95, 56, 0.2);
+}
+
+.plan-showcase-card.is-orange-theme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 55px rgba(255, 95, 56, 0.3);
+}
+
+/* ==========================================================================
+   TOP HALF: BADGE, BRAND ICON, PLAN TITLE
+   ========================================================================== */
+.plan-card-top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Badges styling */
+.plan-badge-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.plan-badge-pill.is-primary-badge {
+  background-color: rgba(255, 95, 56, 0.08);
+  color: #ff5f38;
+}
+
+.plan-badge-pill.is-white-badge {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+/* Large Icon below Badge */
+.plan-icon-container {
+  margin-top: 36px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Lucide React icons */
+.plan-react-icon.is-black {
+  color: #121214;
+  fill: #121214;
+}
+
+.plan-react-icon.is-white {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+/* Heavy display card titles */
+.plan-card-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.plan-showcase-card.is-white-theme .plan-card-name {
+  color: #121214;
+}
+
+.plan-showcase-card.is-orange-theme .plan-card-name {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   BOTTOM HALF: PRICING DETAILS ALIGNED RIGHT
+   ========================================================================== */
+.plan-card-bottom-pricing {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+}
+
+.plan-pricing-amount {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.plan-showcase-card.is-white-theme .plan-pricing-amount {
+  color: #121214;
+}
+
+.plan-showcase-card.is-orange-theme .plan-pricing-amount {
+  color: #ffffff;
+}
+
+.coin-symbol {
+  font-size: 1.8rem;
+  font-weight: 400;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.plan-billing-interval {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-top: 6px;
+  letter-spacing: -0.1px;
+}
+
+.plan-showcase-card.is-white-theme .plan-billing-interval {
+  color: #8e8e93;
+}
+
+.plan-showcase-card.is-orange-theme .plan-billing-interval {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================================================
+   PRODUCTION GRADE RESPONSIVENESS
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  .plan-showcase-card {
+    padding: 38px;
+    min-height: 360px;
+  }
+  .plan-card-name {
+    font-size: 2rem;
+  }
+  .plan-pricing-amount {
+    font-size: 2.3rem;
+  }
+  .coin-symbol {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitzepro-plan-wrapper {
+    padding: 80px 0 95px 0;
+  }
+  .fitzepro-plan-title {
+    font-size: 2.7rem;
+    letter-spacing: -1.8px;
+  }
+  .card-col {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .plan-showcase-card {
+    min-height: 330px;
+    padding: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-plan-wrapper {
+    padding: 70px 0 85px 0;
+  }
+  .fitzepro-plan-title {
+    font-size: 2.3rem;
+    letter-spacing: -1.2px;
+  }
+  .fitzepro-plan-support {
+    font-size: 0.92rem;
+  }
+  .plan-showcase-card {
+    padding: 32px;
+    border-radius: 28px;
+  }
+  .plan-icon-container {
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-plan-wrapper {
+    padding: 60px 0 75px 0;
+  }
+  .fitzepro-plan-title {
+    font-size: 1.95rem;
+    letter-spacing: -0.8px;
+  }
+  .choose-plan-badge {
+    font-size: 0.68rem;
+    padding: 4px 14px;
+    letter-spacing: 1px;
+  }
+  .plan-showcase-card {
+    padding: 24px;
+  }
+  .plan-card-name {
+    font-size: 1.8rem;
+  }
+  .plan-pricing-amount {
+    font-size: 2.1rem;
+  }
+  .coin-symbol {
+    font-size: 1.4rem;
+  }
+  .plan-billing-interval {
+    font-size: 0.8rem;
+  }
+}

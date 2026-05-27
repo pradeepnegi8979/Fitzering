@@ -1,0 +1,43 @@
+import React from 'react';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Download } from 'lucide-react';
+import './Header.css';
+
+export const Header: React.FC = () => {
+  return (
+    <Navbar expand="lg" className="navbar-fitze sticky-top bg-white">
+      <Container>
+        <Navbar.Brand href="/" className="d-flex align-items-center">
+          <div className="brand-logo-container">
+            
+            <img src="https://www.fitze.ae/wp-content/themes/Fitze/images/logo.svg" alt="fitze Logo" className="brand-logo" />
+            
+          </div>
+        </Navbar.Brand>
+        
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+          <Nav className="mx-auto navbar-nav-links">
+            {/* <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#how-it-works">How It Works</Nav.Link>
+            <Nav.Link href="#fitze-ring">Fitze Ring</Nav.Link>
+            <Nav.Link href="#compatibility">Compatibility</Nav.Link>*/}
+            <Nav.Link href="/fitzering">Fitze Ring</Nav.Link> 
+            <Nav.Link href="/fitzestreaks">Fitze Streaks</Nav.Link> 
+            <Nav.Link href="/fitzecorporate">Fitze Corporate</Nav.Link> 
+            <Nav.Link href="/fitzepro">Fitze Pro</Nav.Link> 
+            <Nav.Link href="/fitzebrand">Fitze Brand</Nav.Link> 
+          </Nav>
+          <div className="nav-action-btn">
+            <a href="#download" className="btn-header-download">
+              Download the app
+            </a>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Header;

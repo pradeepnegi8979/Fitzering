@@ -1,0 +1,690 @@
+/* ==========================================================================
+   HeroSection.css - Fitzestreaks Premium Design System stylesheet
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.fitze-hero-section {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  padding: 70px 0 70px 0;
+  /* Premium architectural grid background */
+  background-color: #f8f9fa;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  font-family: 'Poppins', 'Outfit', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. DECORATIVE LAYOUT GRID LINES */
+.decor-grid-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  pointer-events: none;
+  z-index: 1;
+  padding: 0 24px;
+}
+
+.grid-line {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Figma Center Guide Blue Line (Subtle premium design layout indicator) */
+/* .decor-grid-lines::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed rgba(0, 164, 255, 0.35);
+  z-index: 3;
+  pointer-events: none;
+} */
+
+/* 2. HEADER NAVIGATION ROW */
+.fitze-page-header {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  padding: 28px 0;
+  z-index: 10;
+}
+
+.fitze-logo-brand {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -2px;
+  text-transform: lowercase;
+}
+
+.download-app-btn {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1.5px solid #111111;
+  padding: 10px 24px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  font-family: 'Poppins', sans-serif;
+}
+
+.download-app-btn:hover {
+  background-color: #111111;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. HERO CONTENT WRITING & TEXT HIERARCHY */
+.fitze-hero-content-container {
+  position: relative;
+  z-index: 5;
+  margin-top: 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.hero-headline {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #111111;
+  letter-spacing: -3px;
+  margin-bottom: 24px;
+}
+
+.orange-solid-text {
+  color: #ff5226; /* Deep vibrant red-orange from design */
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: -2.5px;
+}
+
+.hero-subtitle-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555555;
+  max-width: 500px;
+  margin-bottom: 40px;
+  letter-spacing: -0.2px;
+}
+
+/* CTA ACTIONS */
+.hero-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.primary-streak-btn {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 9999px; /* Pill-shape */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-streak-btn:hover {
+  background-color: #222222;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.free-badge {
+  color: #ff5226; /* Bright brand orange-red highlight */
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+.hero-caption-note {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #7a7a7a;
+  padding-left: 12px;
+  font-weight: 400;
+}
+
+/* 4. VISUAL COMPOSITION: BANNER IMAGE & FLOATERS */
+.hero-visuals-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  /* max-width: 580px;
+  aspect-ratio: 16 / 10.5; */
+  border-radius: 44px; /* Perfectly structured giant rounded corners */
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08); /* Sleek backdrop block shading */
+  z-index: 2;
+  background-color: #f0f0f0;
+}
+
+.hero-main-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 44px;
+  display: block;
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.hero-image-glare {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 60%);
+  border-radius: 44px;
+  pointer-events: none;
+}
+
+/* ABSOLUTE BADGE: BLUE OUTLINE PIN */
+.floating-badge-pin {
+  position: absolute;
+  left: 32%;
+  top: 48%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 8px 16px rgba(0, 164, 255, 0.25));
+  animation: floatPin 4s ease-in-out infinite alternate;
+}
+
+/* ABSOLUTE BADGE: iOS LIVELY NOTIFICATION WINDOW */
+.live-notification-card {
+  position: absolute;
+  left: -24px;
+  bottom: 24px;
+  width: 330px;
+  /* Glossy modern translucent frosted glass */
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 20px;
+  padding: 14px 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  z-index: 15;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  animation: floatNotification 6s ease-in-out infinite alternate;
+}
+
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.notif-app-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.careem-notif-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-app-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: -0.1px;
+}
+
+.notif-time {
+  font-size: 0.68rem;
+  color: #8c8c8c;
+}
+
+.notif-body {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #2c2c2c;
+  font-weight: 400;
+}
+
+.notif-bold {
+  font-weight: 700;
+  color: #00E676; /* Vibrant emerald green Careem payout text */
+}
+
+/* 5. IPS PHONE MOCKUP */
+.hero-smartphone-mockup {
+  position: absolute;
+  right: -36px;
+  top: -46px;
+  width: 235px;
+  height: 470px;
+  background-color: #000000;
+  border-radius: 38px;
+  padding: 8px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+  z-index: 12;
+}
+
+.phone-bezel {
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* TOP STATUS BAR & DYNAMIC ISLAND */
+.phone-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px 4px 14px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  z-index: 20;
+}
+
+.phone-time {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.phone-dynamic-island {
+  width: 58px;
+  height: 14px;
+  background-color: #000000;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.phone-status-icons {
+  display: flex;
+  gap: 4px;
+  font-size: 0.55rem;
+}
+
+/* APP PANEL HEADER */
+.phone-brand-header {
+  padding: 6px 12px 6px 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 18;
+}
+
+.phone-brand-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fitze-brand-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #111111;
+  letter-spacing: -0.8px;
+}
+
+.streaks-brand-badge {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.52rem;
+  font-weight: 700;
+  color: #ff5226;
+  background-color: rgba(255, 82, 38, 0.08);
+  padding: 1px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.phone-header-metrics {
+  display: flex;
+  gap: 8px;
+  font-size: 0.52rem;
+  font-weight: 600;
+  color: #718096;
+}
+
+.phone-header-points {
+  color: #e53e3e;
+}
+
+/* INNER SCROLLABLE PREVIEW */
+.phone-scrollable-content {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f8f9fa;
+}
+
+/* Hide scrollbar of phone app */
+.phone-scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* HIGH FIDELITY WIDGET: WALK TO EARN RED-ORANGE BANNER */
+.phone-widget.walk-to-earn {
+  background: linear-gradient(135deg, #ff5226 0%, #fe3107 100%);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 82, 38, 0.2);
+}
+
+.widget-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-details {
+  flex: 1;
+  padding-right: 8px;
+}
+
+.widget-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1px;
+}
+
+.widget-payout-text {
+  font-size: 0.52rem;
+  line-height: 1.25;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.widget-coin {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta-coin {
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, #fbd38d 0%, #ed8936 100%);
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* TITLE SEGMENT */
+.phone-scroll-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 2px 0 -4px 0;
+}
+
+/* CARD DETAILS IN MOCKUP App Dashboard */
+.phone-streak-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #edf2f7;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.phone-streak-card.secondary {
+  background-color: #ffffff;
+}
+
+.card-top-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-essential {
+  flex: 1;
+}
+
+.card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.56rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-schedule {
+  font-size: 0.44rem;
+  color: #718096;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 0.44rem;
+  line-height: 1.3;
+  color: #4a5568;
+  margin: 0;
+}
+
+.card-action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f3f5;
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+.action-txt {
+  font-size: 0.46rem;
+  font-weight: 700;
+  color: #ff5226;
+}
+
+.action-arrow {
+  font-size: 0.46rem;
+  font-weight: 700;
+  color: #ff5226;
+}
+
+
+/* 6. ANIMATION KEYFRAMES */
+@keyframes floatPin {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+}
+
+@keyframes floatNotification {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* 7. HIGHLY ACCURATE BREAKPOINT RESPONSIVENESS */
+@media (max-width: 1200px) {
+  .hero-headline {
+    font-size: 3.8rem;
+  }
+  .hero-smartphone-mockup {
+    right: -24px;
+    width: 210px;
+    height: 420px;
+  }
+  .floating-badge-pin {
+    left: 31%;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitze-hero-section {
+    padding: 0 0 100px 0;
+  }
+  .hero-text-col {
+    text-align: center;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .hero-headline {
+    font-size: 3.6rem;
+  }
+  .hero-subtitle-desc {
+    max-width: 100%;
+    font-size: 1.15rem;
+  }
+  .hero-actions-container {
+    align-items: center;
+    width: 100%;
+  }
+  .hero-visuals-col {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-hero-section {
+    padding: 0 0 60px 0;
+    background-size: 40px 40px; /* Symmetrical scaling down */
+  }
+  .decor-grid-lines::after {
+    display: none; /* Strip out guide marker on active mobile columns */
+  }
+  .hero-headline {
+    font-size: 2.6rem;
+    letter-spacing: -1.5px;
+  }
+  .hero-subtitle-desc {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .hero-image-wrapper {
+    border-radius: 32px;
+  }
+  .hero-main-banner-img {
+    border-radius: 32px;
+  }
+  .live-notification-card {
+    width: 240px;
+    left: -12px;
+    bottom: -16px;
+    padding: 10px 14px;
+  }
+  .notif-body {
+    font-size: 0.68rem;
+  }
+  .hero-smartphone-mockup {
+    right: -12px;
+    top: -50px;
+    width: 155px;
+    height: 310px;
+    border-radius: 28px;
+  }
+  .phone-screen {
+    border-radius: 22px;
+  }
+  .phone-statusbar {
+    font-size: 0.5rem;
+    padding: 4px 10px;
+  }
+  .phone-dynamic-island {
+    width: 40px;
+    height: 10px;
+    top: 4px;
+  }
+}

@@ -1,0 +1,200 @@
+@import "../../../styles/variables.css";
+/* Base section wrapper settings */
+.join-movement-section {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.join-movement-section *,
+.join-movement-section span,
+.join-movement-section h2,
+.join-movement-section h3,
+.join-movement-section p,
+.join-movement-section div {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Custom width alignment for layout */
+.join-movement-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Section Header styling */
+.join-movement-header {
+  margin-bottom: 65px;
+}
+
+.movement-overline {
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 2px;
+  color: var(--color-primary, #ff5e3a);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.movement-heading {
+  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+
+.movement-subtext {
+  font-size: 1.15rem;
+  color: #6e6e73;
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: -0.1px;
+}
+
+/* --------------------------------------------------------- */
+/* STATISTICS HORIZONTAL & VERTICAL BORDER GRIDWORK */
+/* --------------------------------------------------------- */
+
+.stats-showcase-wrapper {
+  border-top: 1.2px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.06);
+  padding: 45px 0;
+  background-color: #ffffff;
+}
+
+/* Column block spacing and details */
+.stat-col {
+  position: relative;
+}
+
+.stat-content-box {
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add vertical borders specifically to separate middle column on md and larger screens */
+@media (min-width: 768px) {
+  .stat-col:not(:last-child) .stat-content-box {
+    border-right: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Icon Container */
+.stat-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.movement-stat-icon {
+  color: var(--color-primary, #ff5e3a) !important;
+  stroke-width: 1.5px;
+}
+
+/* Stat Value display values (Numbers & Magnitudes) */
+.stat-value-display {
+  font-size: clamp(2.3rem, 4.5vw, 2.9rem);
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: -1.2px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+}
+
+/* Coral coloring for K, Million, Trillion */
+.stat-value-highlight {
+  color: var(--color-primary, #ff5e3a) !important;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+/* Brand Token unique double-cross SVG icon styling */
+.fitze-token-symbol {
+  width: clamp(28px, 4.2vw, 36px);
+  height: clamp(28px, 4.2vw, 36px);
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Bottom Label */
+.stat-label-text {
+  font-size: 1.02rem;
+  color: #6e6e73;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}
+
+/* --------------------------------------------------------- */
+/* RESPONSIVENESS AND DEVICE SCALING OVERRIDES */
+/* --------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+  .join-movement-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .join-movement-header {
+    margin-bottom: 50px;
+  }
+  .stats-showcase-wrapper {
+    padding: 35px 0;
+  }
+  .stat-value-display {
+    margin-bottom: 6px;
+  }
+  .stat-label-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .join-movement-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .join-movement-header {
+    margin-bottom: 40px;
+  }
+  .stats-showcase-wrapper {
+    border-bottom: none;
+    padding: 0;
+  }
+  /* On mobile/tablet, make columns look like stacked distinct cards or separated bands */
+  .stat-col {
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.06);
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .stat-col:last-child {
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
+  .stat-content-box {
+    padding: 0;
+  }
+  .movement-heading {
+    letter-spacing: -1px;
+  }
+  .movement-subtext {
+    font-size: 1.05rem;
+  }
+  .fitze-token-symbol {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+}

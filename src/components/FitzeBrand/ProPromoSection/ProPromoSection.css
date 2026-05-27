@@ -1,0 +1,216 @@
+/* src/components/FitzeBrand/ProPromoSection.css */
+
+/* Full bleed orange-red theme container matching design exactly */
+.fitze-propromo-section {
+  background-color: #ff5e3a;
+  padding: 100px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Badge Container & custom badge label */
+.promo-badge-container {
+  margin-bottom: 24px;
+}
+
+.promo-badge-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 6px 18px;
+  border-radius: 50px;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+/* Mixed colors Typography Hierarchy */
+.promo-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.promo-title-dark {
+  color: #121212;
+  font-weight: 800;
+}
+
+.promo-logo-fitze {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.promo-logo-ring {
+  font-weight: 800;
+  color: #103b49; /* Deep contrast dark teal-slate */
+}
+
+/* Subtitle description paragraph */
+.promo-description {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 500px;
+  margin-bottom: 35px;
+}
+
+/* Left-aligned Flex-wrap Capsule Pill list matching the layout of image */
+.promo-pills-grid-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 580px;
+}
+
+.promo-capsule-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(18, 18, 18, 0.45); /* Blends perfectly over orange to give the dark-tint capsule feel */
+  border: none;
+  padding: 10px 18px;
+  border-radius: 50px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.promo-capsule-item:hover {
+  background-color: rgba(18, 18, 18, 0.6);
+  transform: translateY(-2px);
+}
+
+.promo-pill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-pill-icon-svg {
+  color: #ffffff;
+  stroke-width: 2.2px;
+}
+
+.promo-pill-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.1px;
+}
+
+/* Right Column: Rounded Image Mockup Frame */
+.ring-promo-visual-frame {
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
+  aspect-ratio: 16 / 10;
+  width: 100%;
+}
+
+.ring-photo-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ring-promo-visual-frame:hover .ring-photo-visual {
+  transform: scale(1.03);
+}
+
+/* Main Center Bottom Activation Button */
+.promo-cta-footer-band {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start-streak-pill {
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 16px 45px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-start-streak-pill:hover {
+  background-color: #ffffff;
+  color: #ff5e3a;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Scaling Constraints & Mobile Adaptability */
+@media (max-width: 1200px) {
+  .promo-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .fitze-propromo-section {
+    padding: 75px 0;
+  }
+  .promo-info-col {
+    order: 1; /* Retains natural hierarchy order */
+  }
+  .promo-image-col {
+    order: 2;
+    margin-top: 25px;
+  }
+  .promo-title {
+    font-size: 2.6rem;
+  }
+  .ring-promo-visual-frame {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-propromo-section {
+    padding: 55px 0;
+  }
+  .promo-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+  }
+  .promo-description {
+    font-size: 0.95rem;
+  }
+  .promo-pills-grid-wrap {
+    gap: 8px;
+  }
+  .promo-capsule-item {
+    padding: 8px 14px;
+  }
+  .promo-pill-text {
+    font-size: 0.8rem;
+  }
+  .ring-promo-visual-frame {
+    border-radius: 24px;
+  }
+  .btn-start-streak-pill {
+    width: 100%;
+    text-align: center;
+    padding: 14px 25px;
+    font-size: 0.94rem;
+  }
+}
+

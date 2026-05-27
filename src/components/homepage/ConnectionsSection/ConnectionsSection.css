@@ -1,0 +1,678 @@
+/* Feature Compatibility Section styling variables & custom structure */
+.compatibility-feature-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compatibility-outer-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Master card containing content following user layout mock */
+.compatibility-container-card {
+  background-color: #FAF9FA;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  border-radius: 40px;
+  padding: 85px 85px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.01);
+  overflow: hidden;
+}
+
+/* Header badge of Compatibility uppercase capsule */
+.compatibility-badge-capsule {
+  display: inline-block;
+  background-color: #EDEDEE;
+  color: #79787c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.compatibility-title {
+  color: #111112;
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.compatibility-paragraph-desc {
+  font-size: 1.05rem;
+  color: #656468;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/* Rounded Brand Capsules grid to align with screen layout */
+.compatibility-badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 550px;
+}
+
+/* Interactive custom styled badge capsules buttons */
+.brand-pill-button {
+  background: #ffffff;
+  border: 1.5px solid #eae9ea;
+  border-radius: 50px;
+  padding: 11px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c2b30;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.brand-pill-button:hover {
+  background: #ffffff;
+  border-color: #cacaca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Selected active pill states - styled statically in CSS instead of inline style attributes */
+.brand-pill-button.pill-fitze-ring.active {
+  background: #fe572a;
+  color: #ffffff;
+  border-color: #fe572a;
+  box-shadow: 0 10px 25px rgba(254, 87, 42, 0.25);
+}
+
+.brand-pill-button.pill-apple-watch.active {
+  background: #111112;
+  color: #ffffff;
+  border-color: #111112;
+  box-shadow: 0 10px 25px rgba(17, 17, 18, 0.25);
+}
+
+.brand-pill-button.pill-apple-health.active {
+  background: #FF2D55;
+  color: #ffffff;
+  border-color: #FF2D55;
+  box-shadow: 0 10px 25px rgba(255, 45, 85, 0.25);
+}
+
+.brand-pill-button.pill-samsung-health.active {
+  background: #24B2C9;
+  color: #ffffff;
+  border-color: #24B2C9;
+  box-shadow: 0 10px 25px rgba(36, 178, 201, 0.25);
+}
+
+.brand-pill-button.pill-health-connect.active {
+  background: #4285F4;
+  color: #ffffff;
+  border-color: #4285F4;
+  box-shadow: 0 10px 25px rgba(66, 133, 244, 0.25);
+}
+
+.brand-pill-button.pill-garmin.active {
+  background: #1A1D20;
+  color: #ffffff;
+  border-color: #1A1D20;
+  box-shadow: 0 10px 25px rgba(26, 29, 32, 0.25);
+}
+
+.brand-pill-button.pill-fitbit.active {
+  background: #00B4B4;
+  color: #ffffff;
+  border-color: #00B4B4;
+  box-shadow: 0 10px 25px rgba(0, 180, 180, 0.25);
+}
+
+.brand-pill-button.pill-huawei-watch.active {
+  background: #FF4D4D;
+  color: #ffffff;
+  border-color: #FF4D4D;
+  box-shadow: 0 10px 25px rgba(255, 77, 77, 0.25);
+}
+
+.badge-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand-pill-button:hover .badge-brand-icon {
+  transform: scale(1.1);
+}
+
+/* Wrap the layout block perfectly to center screen and waves */
+.mockup-column-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mockup-relative-field {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* ---------------------------------------------------------------- */
+/* PURE #fe572a HIGH-FIDELITY CIRCULAR MOTION SIGNAL BACKDROP      */
+/* ---------------------------------------------------------------- */
+
+.sync-ripples-animation-underlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 620px;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Single class template for all concentric #fe572a rings */
+.radial-compatibility-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #fe572a !important; /* STRICT REQUIREMENT: Only #fe572a */
+  pointer-events: none;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 0 6px rgba(254, 87, 42, 0.08));
+}
+
+/* Six concentric rings matching the reference design layout image */
+.ring-1 {
+  width: 32%;
+  height: 32%;
+  border-width: 14px;
+  opacity: 0.95;
+  animation: pulse-ring-1 8s ease-in-out infinite;
+}
+
+.ring-2 {
+  width: 45%;
+  height: 45%;
+  border-width: 20px;
+  opacity: 0.82;
+  animation: pulse-ring-2 9s ease-in-out infinite;
+}
+
+.ring-3 {
+  width: 58%;
+  height: 58%;
+  border-width: 26px;
+  opacity: 0.65;
+  animation: pulse-ring-3 10s ease-in-out infinite;
+}
+
+.ring-4 {
+  width: 71%;
+  height: 71%;
+  border-width: 34px;
+  opacity: 0.44;
+  animation: pulse-ring-4 11s ease-in-out infinite;
+}
+
+.ring-5 {
+  width: 85%;
+  height: 85%;
+  border-width: 44px;
+  opacity: 0.24;
+  animation: pulse-ring-5 12s ease-in-out infinite;
+}
+
+.ring-6 {
+  width: 100%;
+  height: 100%;
+  border-width: 54px;
+  opacity: 0.11;
+  animation: pulse-ring-6 13s ease-in-out infinite;
+}
+
+/* 
+   SMOOTH FLOATING ORBITAL MOTION PATHS AND BREATHING SCALE LOOPS:
+   Formulated as a closed, seamless, lag-free 360-degree floating cycle,
+   centered perfectly with absolute container boundaries (zero translate shifting jitter).
+*/
+@keyframes pulse-ring-1 {
+  0% {
+    transform: scale(0.97) rotate(0deg);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.03) rotate(180deg);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(0.97) rotate(360deg);
+    opacity: 0.92;
+  }
+}
+
+@keyframes pulse-ring-2 {
+  0% {
+    transform: scale(1.02) rotate(120deg);
+    opacity: 0.84;
+  }
+  50% {
+    transform: scale(0.98) rotate(300deg);
+    opacity: 0.74;
+  }
+  100% {
+    transform: scale(1.02) rotate(480deg);
+    opacity: 0.84;
+  }
+}
+
+@keyframes pulse-ring-3 {
+  0% {
+    transform: scale(0.98) rotate(240deg);
+    opacity: 0.60;
+  }
+  50% {
+    transform: scale(1.02) rotate(420deg);
+    opacity: 0.70;
+  }
+  100% {
+    transform: scale(0.98) rotate(600deg);
+    opacity: 0.60;
+  }
+}
+
+@keyframes pulse-ring-4 {
+  0% {
+    transform: scale(1.02) rotate(0deg);
+    opacity: 0.46;
+  }
+  50% {
+    transform: scale(0.97) rotate(-180deg);
+    opacity: 0.38;
+  }
+  100% {
+    transform: scale(1.02) rotate(-360deg);
+    opacity: 0.46;
+  }
+}
+
+@keyframes pulse-ring-5 {
+  0% {
+    transform: scale(0.98) rotate(180deg);
+    opacity: 0.22;
+  }
+  50% {
+    transform: scale(1.02) rotate(0deg);
+    opacity: 0.28;
+  }
+  100% {
+    transform: scale(0.98) rotate(-180deg);
+    opacity: 0.22;
+  }
+}
+
+@keyframes pulse-ring-6 {
+  0% {
+    transform: scale(1.01) rotate(270deg);
+    opacity: 0.12;
+  }
+  50% {
+    transform: scale(0.99) rotate(90deg);
+    opacity: 0.08;
+  }
+  100% {
+    transform: scale(1.01) rotate(-90deg);
+    opacity: 0.12;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* IPHONE DEVICE BODY FRAME HARDWARE MOCKUP */
+/* ---------------------------------------------------------------- */
+
+.iphone-hardware-bezel {
+  width: 255px;
+  height: 510px;
+  background-color: #0b0c0d;
+  border: 11px solid #1c1d1f;
+  border-radius: 46px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.18), 
+              inset 0 0 4px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dynamic Island black pill space at the top */
+.iphone-dynamic-island {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78px;
+  height: 22px;
+  background-color: #000000;
+  border-radius: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+
+.island-inner-camera {
+  width: 7.5px;
+  height: 7.5px;
+  background-color: #1a1b1d;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+/* iOS Main inner screen port viewport bounds */
+.iphone-screen-port {
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.iphone-screen-canvas {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fcfcfc;
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+
+/* Top corner bar signals simulations */
+.iphone-top-bar-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1a1b1d;
+  padding: 4px 12px 0;
+  z-index: 80;
+}
+
+/* Centered high-fidelity logo viewer inside */
+.iphone-screen-internal-logo-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.inner-screen-brand-logo-wrap {
+  animation: zoom-fade-image-preview 0.6s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+@keyframes zoom-fade-image-preview {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Custom themed internal graphics representations */
+.google-fit-heart-icon {
+  filter: drop-shadow(0 12px 24px rgba(66, 133, 244, 0.16));
+}
+
+.iphone-screen-status-block {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Label status Connected pill inside screen */
+.app-dynamic-badge-badge {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #e5f7ed;
+  color: #2db362;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.app-dynamic-title {
+  font-family: 'Poppins', 'Inter', sans-serif !important;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111112;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.5px;
+}
+
+.app-dynamic-description {
+  font-size: 0.82rem;
+  color: #79787c;
+  margin: 0;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+/* Syncing interactive bottom banner mockup */
+.iphone-bottom-sync-action-strip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.sync-button-bezel-pill {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background-color: #111112;
+  padding: 9px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+/* iOS typical screen handle at bottom center */
+.ios-home-indicator-handle {
+  width: 85px;
+  height: 4px;
+  background-color: #CACACA;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Theme integrations details styling customization */
+.iphone-screen-canvas.theme-fitze { background-color: #fff9f6; }
+.iphone-screen-canvas.theme-apple-watch { background-color: #fafafa; }
+.iphone-screen-canvas.theme-apple-health { background-color: #fff5f6; }
+.iphone-screen-canvas.theme-samsung-health { background-color: #f4fcfe; }
+.iphone-screen-canvas.theme-health-connect { background-color: #f1f7fc; }
+.iphone-screen-canvas.theme-garmin { background-color: #eeeeee; }
+.iphone-screen-canvas.theme-fitbit { background-color: #f0fbfb; }
+.iphone-screen-canvas.theme-huawei { background-color: #fff5f5; }
+
+/* ---------------------------------------------------------------- */
+/* RESPONSIVENESS AND DEVICE BREAKPOINTS RULES */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 1199.98px) {
+  .compatibility-outer-wrapper {
+    padding: 0 24px;
+  }
+  .compatibility-container-card {
+    padding: 60px 45px;
+    border-radius: 32px;
+  }
+  .sync-ripples-animation-underlay {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .compatibility-feature-section {
+    padding: 40px 0;
+  }
+  .compatibility-container-card {
+    padding: 50px 30px;
+    border-radius: 28px;
+  }
+  .compatibility-title {
+    margin-bottom: 15px;
+  }
+  .compatibility-paragraph-desc {
+    margin-bottom: 30px;
+  }
+
+  .mockup-relative-field {
+    height: 520px;
+  }
+  .sync-ripples-animation-underlay {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mockup-relative-field {margin-top:50px;}
+  .compatibility-outer-wrapper {
+    padding: 0 16px;
+  }
+  .compatibility-container-card {
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .compatibility-paragraph-desc {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .compatibility-badges-grid {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .text-column {
+    order: 1;
+    position: relative;
+    z-index: 10;
+  }
+  .mockup-column-wrapper {
+    order: 2;
+    margin-top: 0px;
+  }
+  
+  .mockup-relative-field {
+    height: 480px;
+  }
+  /* Scale down thick borders for mobile view */
+  .ring-1 { border-width: 7px; }
+  .ring-2 { border-width: 10px; }
+  .ring-3 { border-width: 13px; }
+  .ring-4 { border-width: 17px; }
+  .ring-5 { border-width: 22px; }
+  .ring-6 { border-width: 27px; }
+
+  .iphone-hardware-bezel {
+    width: 215px;
+    height: 430px;
+    border-radius: 38px;
+  }
+  .iphone-dynamic-island {
+    width: 68px;
+    height: 18px;
+    top: 10px;
+  }
+  .iphone-screen-port {
+    border-radius: 28px;
+  }
+  .app-dynamic-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .compatibility-container-card {
+    padding: 30px 16px;
+    border-radius: 24px;
+  }
+  .compatibility-title {
+    font-size: 1.85rem;
+    letter-spacing: -1px;
+  }
+  .brand-pill-button {
+    font-size: 0.85rem;
+    padding: 9px 15px;
+  }
+  
+  .mockup-relative-field {
+    height: 420px;
+  }
+  .sync-ripples-animation-underlay {
+    width: 350px;
+    height: 350px;
+  }
+  .ring-1 { border-width: 5px; }
+  .ring-2 { border-width: 7px; }
+  .ring-3 { border-width: 10px; }
+  .ring-4 { border-width: 13px; }
+  .ring-5 { border-width: 17px; }
+  .ring-6 { border-width: 21px; }
+
+  .iphone-hardware-bezel {
+    width: 195px;
+    height: 390px;
+  }
+}

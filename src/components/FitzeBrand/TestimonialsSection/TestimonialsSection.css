@@ -1,0 +1,249 @@
+/* ==========================================================================
+   TestimonialsSection.css - Clean Auto-Sliding Premium Custom Carousel
+   ========================================================================== */
+
+.fitze-testimonials-section {
+  padding: 110px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 1. SECTION HEADER BRAND BADGES AND TYPOGRAPHY */
+.testimonials-header {
+  margin-bottom: 55px;
+}
+
+.testi-subtitle-capsule-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testi-subtitle-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #7c7c7c;
+  border: 1px solid #dcdcdc;
+  padding: 6px 20px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.testi-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -1.8px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* 2. INFINITE AUTO-SLIDING MARQUEE VIEWPORT */
+.testimonials-slider-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0 25px 0; /* Extra bottom padding to allow card shadows on hover to not clip */
+}
+
+/* Gradient shadow overlays for soft faded edges styling */
+.testimonials-slider-viewport::before,
+.testimonials-slider-viewport::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.testimonials-slider-viewport::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 15%, rgba(255, 255, 255, 0));
+}
+
+.testimonials-slider-viewport::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 15%, rgba(255, 255, 255, 0));
+}
+
+/* Infinite Flex Marquee Track */
+.testimonials-infinite-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: testimonials-infinite-scroll 42s linear infinite;
+  will-change: transform;
+}
+
+/* Pause scroll when cursor hovers over the slider viewport */
+.testimonials-slider-viewport:hover .testimonials-infinite-track {
+  animation-play-state: paused;
+}
+
+/* 3. TESTIMONIAL CARDS SCHEMATICS styling */
+.testimonials-carousel-card {
+  width: 440px;
+  min-height: 295px;
+  background-color: #ffffff;
+  border: 1.5px solid #f1f3f7;
+  border-radius: 20px;
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  flex-shrink: 0;
+}
+
+/* Smooth lift and glow transition on individual card hover */
+.testimonials-carousel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  border-color: #e2e8f0;
+}
+
+/* Rounded light grey logo box header */
+.testimonial-logo-box {
+  width: 125px;
+  height: 46px;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+
+/* Testimonial body quote styling */
+.testimonial-quote-body {
+  font-size: 0.94rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #334155;
+  line-height: 1.6;
+  margin: 0 0 22px 0;
+  flex-grow: 1;
+}
+
+/* Divider link separator split */
+.testimonial-divider-line {
+  height: 1px;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Profile Row Block */
+.testimonial-profile-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonial-profile-photo-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.testimonial-profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-profile-name {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 1px 0;
+}
+
+.testimonial-profile-role {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: #8fa0b5;
+  letter-spacing: 0.2px;
+}
+
+
+/* ==========================================================================
+   MATHEMATICALLY CALCULATED LOOP TRANSLATION
+   Formula: calc(-25% - (G/4)) to perfectly offset the gap-spaced repeats.
+   For gap 24px and 4 subsets -> G/4 = 6px.
+   ========================================================================== */
+@keyframes testimonials-infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-25% - 6px));
+  }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT AND RESPONSIVENESS ADJUSTMENTS
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .testi-heading {
+    font-size: 2.8rem;
+  }
+  .testimonials-carousel-card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitze-testimonials-section {
+    padding: 85px 0;
+  }
+  .testi-heading {
+    font-size: 2.4rem;
+    letter-spacing: -1.2px;
+  }
+  .testimonials-carousel-card {
+    width: 360px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-testimonials-section {
+    padding: 60px 0;
+  }
+  .testi-heading {
+    font-size: 1.95rem;
+    letter-spacing: -1px;
+  }
+  .testimonials-carousel-card {
+    width: 310px;
+    padding: 22px 20px;
+    min-height: 280px;
+  }
+  .testimonial-quote-body {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+  .testimonial-logo-box {
+    width: 115px;
+    height: 40px;
+    margin-bottom: 18px;
+  }
+}

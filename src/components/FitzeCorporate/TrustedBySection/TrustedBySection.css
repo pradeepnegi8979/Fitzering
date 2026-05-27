@@ -1,0 +1,50 @@
+/* ==========================================================================
+   TrustedBySection.css - Fitze Corporate Brand Partner Styles
+   ========================================================================== */
+
+.trusted-by-block {
+  width: 100%;
+}
+
+.trusted-by-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #121212;
+  letter-spacing: -0.2px;
+}
+
+.trusted-logo-bar {
+  width: 100%;
+}
+
+.trusted-logo-pill {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6f7;
+  color: #a0aec0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 12px;
+  min-width: 130px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  cursor: default;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.trusted-logo-pill:hover {
+  background-color: #ff5226;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+@media (max-width: 576px) {
+  .trusted-logo-pill {
+    padding: 10px 20px;
+    min-width: 110px;
+    font-size: 0.88rem;
+  }
+}

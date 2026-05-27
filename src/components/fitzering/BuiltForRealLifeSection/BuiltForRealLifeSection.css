@@ -1,0 +1,260 @@
+/* ==========================================================================
+   BuiltForRealLifeSection.css - High-Fidelity UI Styling (Corrected)
+   ========================================================================== */
+
+.built-for-real-life-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #f6f5f2; /* Beautiful desert/sand off-white background matching design */
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 1. CONTAINER & HEADINGS - EXACT PAGE BOUNDS */
+.built-for-real-life-container {
+  max-width: 1160px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-meta-wrap {
+  margin-bottom: 20px;
+}
+
+/* Capsule-like clean gray badge matching mockup */
+.forget-it-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #718096;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 6px 18px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.real-life-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #121212;
+  letter-spacing: -2px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.real-life-title .highlight-coral {
+  color: #ff5e3a; /* Coral theme color */
+}
+
+/* 2. APP DOWNLOAD BADGES ROW */
+.app-download-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.download-badge-btn {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-badge-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.badge-svg-icon {
+  width: 135px;
+  height: auto;
+  display: block;
+}
+
+/* 3. SEAMLESS RECTANGULAR FEATURES RIBBON (NO GAPS, CONTAINER MATCHED WIDTH) */
+.seamless-features-viewport {
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 24px; /* Unified outer border rounding */
+  overflow: hidden; /* Mask out interior box sharp corners */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04);
+}
+
+/* Column item resets to ensure pixel-to-pixel stitching */
+.feat-col-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.seamless-feature-card {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Long rectangular proportion */
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.seamless-feature-card:hover {
+  filter: brightness(1.05);
+}
+
+.feature-bg-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.seamless-feature-card:hover .feature-bg-photo {
+  transform: scale(1.04);
+}
+
+/* Horizontal linear overlay vignette for visual safety & readable titles */
+.feature-gradient-vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 2;
+  pointer-events: none;
+  transition: background 0.4s ease;
+}
+
+.seamless-feature-card:hover .feature-gradient-vignette {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+/* 4. TEXT OVERLAYS */
+.feature-text-block {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  z-index: 5;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.seamless-feature-card:hover .feature-text-block {
+  transform: translateY(-2px);
+}
+
+.feature-card-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+}
+
+.feature-card-subheading {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints - Rigid & Fluid Stacking
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .real-life-title {
+    font-size: 3.0rem;
+    letter-spacing: -1.5px;
+  }
+  .seamless-feature-card {
+    height: 340px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .built-for-real-life-section {
+    padding: 80px 0;
+  }
+  .real-life-title {
+    font-size: 2.6rem;
+  }
+  .app-download-badges {
+    margin-top: 10px;
+  }
+  .badge-svg-icon {
+    width: 120px;
+  }
+  .seamless-feature-card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .built-for-real-life-section {
+    padding: 60px 0;
+  }
+  .real-life-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+  }
+  
+  .seamless-features-viewport {
+    margin-top: 35px;
+  }
+  
+  .seamless-feature-card {
+    height: 280px;
+  }
+
+  .feat-col-item:not(:last-child) {
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.12); /* Stitch separator */
+  }
+
+  .feature-text-block {
+    bottom: 24px;
+    left: 24px;
+  }
+  
+  .app-download-badges {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .real-life-title {
+    font-size: 1.85rem;
+  }
+  .forget-it-badge {
+    font-size: 0.68rem;
+    padding: 5px 14px;
+  }
+  .seamless-feature-card {
+    height: 240px;
+  }
+  .feature-card-heading {
+    font-size: 1.15rem;
+  }
+  .feature-card-subheading {
+    font-size: 0.78rem;
+  }
+  .badge-svg-icon {
+    width: 110px;
+  }
+}

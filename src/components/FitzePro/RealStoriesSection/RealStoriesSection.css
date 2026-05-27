@@ -1,0 +1,214 @@
+/* ==========================================================================
+   RealStoriesSection.css - Fitze Pro Testimonials Track
+   ========================================================================== */
+
+.fitzepro-stories-wrapper {
+  background-color: #fafafa;
+  padding: 90px 0 100px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.fitzepro-stories-container {
+  max-width: 1140px;
+}
+
+/* Stories header styles */
+.fitzepro-stories-header {
+  margin-bottom: 48px;
+}
+
+.fitzepro-stories-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #a1a1aa;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.fitzepro-stories-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #121212;
+  letter-spacing: -1.8px;
+  line-height: 1.25;
+}
+
+.logo-text-fitze {
+  font-weight: 850;
+  letter-spacing: -2px;
+  color: #121212;
+}
+
+.badge-pro-inline-orange {
+  background-color: #ff5226;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 9px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  line-height: 1.25;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   HORIZONTAL SCROLLABLE COMPONENT TRACK
+   ========================================================================== */
+
+.stories-scroll-track-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 5px 35px 5px;
+  cursor: grab;
+}
+
+/* Hide scrollbar completely across all engines */
+.stories-scroll-track-container::-webkit-scrollbar {
+  display: none;
+}
+.stories-scroll-track-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.stories-cards-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+/* TESTIMONIAL CARD ELEMENTS */
+.story-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.05);
+  border-radius: 28px;
+  padding: 36px;
+  width: 360px; /* Locked elegant card width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 82, 38, 0.15);
+}
+
+/* 5 Stars styling */
+.story-star-fill {
+  color: #ff5226;
+  fill: #ff5226;
+}
+
+/* Quote Text formatting */
+.story-quote-text {
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #52525b; /* Zinc dark soft grey */
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* User identity header */
+.story-avatar-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.story-user-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 2px;
+}
+
+.story-user-title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #a1a1aa;
+}
+
+/* BOTTOM OUTCOME ACHIEVEMENT BADGES */
+.story-achieve-badge-container {
+  width: 100%;
+  text-align: left;
+}
+
+.story-achieve-badge-pill {
+  display: inline-block;
+  background-color: #f4f4f5; /* Light soft grey background */
+  color: #3f3f46;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 1px solid rgba(18, 18, 18, 0.03);
+}
+
+.story-card:hover .story-achieve-badge-pill {
+  background-color: rgba(255, 82, 38, 0.05);
+  color: #ff5226;
+  border-color: rgba(255, 82, 38, 0.1);
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUTS
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .fitzepro-stories-title {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-stories-wrapper {
+    padding: 70px 0 80px 0;
+  }
+  .story-card {
+    width: 310px;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-stories-title {
+    font-size: 1.8rem;
+    letter-spacing: -0.8px;
+  }
+  .badge-pro-inline-orange {
+    font-size: 0.82rem;
+    padding: 2px 10px;
+  }
+  .story-card {
+    width: 280px;
+    padding: 22px;
+  }
+  .story-quote-text {
+    font-size: 0.88rem;
+  }
+  .story-achieve-badge-pill {
+    font-size: 0.66rem;
+    padding: 6px 12px;
+  }
+}

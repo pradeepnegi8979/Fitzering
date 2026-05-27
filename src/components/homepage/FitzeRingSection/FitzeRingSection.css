@@ -1,0 +1,167 @@
+@import "../../../styles/variables.css";
+
+.fitze-ring-section {
+  background-color: var(--color-white);
+}
+
+.ring-container-card {
+  background: linear-gradient(135deg, #181615 0%, #0d0c0c 100%);
+  border-radius: 30px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+  background:url(../../../assets/upgrade-fitze-ring.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 100%;
+  min-height:800px;
+  display:flex;
+  justify-content: space-between;
+  flex-flow:column;
+}
+.ring-tag {
+  color: #cda270; /* warm metallic shade */
+}
+
+.ring-title {
+  font-size: 3.375rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.ring-logo-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+.ring-logo-wordmark .part-fitze {
+  color: var(--color-primary);
+}
+.ring-action {
+  margin-top:150px;
+}
+/* Rings replications in pure custom CSS with glorious metallic gradients */
+.ring-mesh-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.ring-3d-replica {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.8), 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Midnight Dune Titanium Ring Look */
+.ring-3d-replica.midnight {
+  border: 14px solid #1c1c1f;
+  background: radial-gradient(circle, transparent 40%, #3a3a3c 70%, #111 100%);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}
+
+/* Arabian Silver Premium Look */
+.ring-3d-replica.silver {
+  border: 14px solid #d1d5db;
+  background: radial-gradient(circle, transparent 40%, #f3f4f6 70%, #9ca3af 100%);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
+}
+
+/* Desert Rose Premium Look */
+.ring-3d-replica.rose {
+  border: 14px solid #fca5a5;
+  background: radial-gradient(circle, transparent 40%, #fecaca 70%, #f87171 100%);
+  filter: drop-shadow(0 0 15px rgba(251, 113, 133, 0.2));
+}
+
+/* Interactive focus and hovers */
+.ring-interactive-node {
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.ring-interactive-node:hover .ring-mesh-wrapper {
+  transform: scale(1.15);
+}
+
+.ring-interactive-node.active .ring-mesh-wrapper {
+  background-color: rgba(255,255,255,0.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+/* Pointer links matching original design visual cues */
+.pointer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dot-link {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.line-link {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255,255,255,0.3);
+  margin-top: 2px;
+}
+
+.ring-flavor {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+}
+
+.ring-interactive-node:hover .ring-flavor,
+.ring-interactive-node.active .ring-flavor {
+  opacity: 1;
+  color: var(--color-primary) !important;
+}
+
+@media (max-width: 991.98px) {
+  .ring-title {
+    font-size: 2rem;
+  }
+  
+  .ring-logo-wordmark {
+    font-size: 2rem;
+  }
+}
+@media(max-width:767px){
+   .ring-container-card {
+     background:url(../../../assets/ring-for-mobile.png);
+     background-size:100%;
+     min-height:600px;
+    }
+    .ring-action {
+      margin-top:0px;
+    }
+    .compatibility-device-mockup.theme-health-connect{
+      max-width:100%;
+    }
+    .mockup-relative-field {
+      height:auto!important;
+    }
+
+ }

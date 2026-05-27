@@ -1,0 +1,173 @@
+/* ==========================================================================
+   WhySection.css - Premium High-Fidelity Bento/Grid System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.fitze-why-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Outfit', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.why-section-container {
+  max-width: 1200px;
+  position: relative;
+  z-index: 5;
+}
+
+/* 1. LEFT-ALIGNED HEADER BLOCK */
+.why-header-block {
+  margin-bottom: 55px;
+}
+
+.why-eyebrow {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: #ff5226; /* Brilliant Orange-Red */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.why-main-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 1.12;
+  color: #111111; /* Clean high contrast black */
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Force block separate lines */
+}
+
+.why-highlight-orange {
+  color: #ff5226; /* Vibrant Orange-Red */
+  font-weight: 600;
+  display: block;
+}
+
+/* 2. DYNAMIC CARDS LINE */
+.why-cards-row {
+  margin-top: 10px;
+}
+
+.why-card-col {
+  display: flex;
+}
+
+.why-card-box-premium {
+  background-color: #f8fafc; /* Beautiful premium cool light-grey card */
+  border: 1px solid #f1f3f7; /* Very subtle light border line */
+  border-radius: 20px;
+  padding: 38px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.why-card-box-premium:hover {
+  background-color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.035);
+  border-color: #e2e8f0;
+}
+
+.why-card-index {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 750;
+  color: #c1cbd7; /* Very stylish muted slate numbers */
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.why-card-box-premium:hover .why-card-index {
+  color: #ff5226; /* Hover highlight match orange */
+}
+
+.why-card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.35;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.4px;
+}
+
+.why-card-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #64748b; /* Soft slate charcoal gray */
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   HIGH-FIDELITY RESPONSIVE STYLING CORRECTIONS
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .why-main-title {
+    font-size: 2.9rem;
+    letter-spacing: -1.5px;
+  }
+  .why-card-box-premium {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitze-why-section {
+    padding: 80px 0;
+  }
+  .why-main-title {
+    font-size: 2.40rem;
+    letter-spacing: -1.2px;
+  }
+  .why-header-block {
+    margin-bottom: 40px;
+  }
+  .why-card-box-premium {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fitze-why-section {
+    padding: 60px 0;
+  }
+  .why-main-title {
+    font-size: 1.95rem;
+    letter-spacing: -0.8px;
+    line-height: 1.15;
+  }
+  .why-card-box-premium {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  .why-card-index {
+    margin-bottom: 14px;
+    font-size: 0.75rem;
+  }
+  .why-card-title {
+    font-size: 1.05rem;
+  }
+  .why-card-desc {
+    font-size: 0.82rem;
+  }
+}
+

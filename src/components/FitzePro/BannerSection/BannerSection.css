@@ -1,0 +1,154 @@
+/* ==========================================================================
+   BannerSection.css - Fitze Pro Middle Banner Accent Row (Pixel Perfect)
+   ========================================================================== */
+
+.fitzepro-banner-wrapper {
+  background-color: #121214; /* Pure matte dark-gray space charcoal matching the mockup */
+  padding: 58px 0 60px 0; /* Elegant vertical margins to perfectly center content */
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  border: none; /* Seamless, premium aesthetic transition of sections */
+}
+
+/* ==========================================================================
+   TOP MINI PILL SPEC EXTRA Badge
+   ========================================================================== */
+.banner-eyebrow-capsule-wrapper {
+  margin-bottom: 20px;
+}
+
+.banner-eyebrow-capsule {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28); /* Thin transparent silver border */
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #c5c5c7; /* Light silver polished text */
+  padding: 5px 18px; /* Clean proportional pill shape sizing */
+  border-radius: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  user-select: none;
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+   MAIN BANNER HEADLINE ACCENTS
+   ========================================================================== */
+.fitzepro-banner-text {
+  font-size: 2.35rem; /* Dynamic display size */
+  font-weight: 600; /* Regular to bold layout weight */
+  color: #ffffff;
+  letter-spacing: -1.2px; /* Smooth tight tracking matching source layout */
+  margin: 0;
+  line-height: 1.25;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px; /* Precise gap behavior managed below */
+}
+
+/* Bold orange lowercase logo element */
+.banner-brand-fitze {
+  font-weight: 800;
+  color: #ff5f38; /* Branding custom warm orange-red */
+  text-transform: lowercase;
+  margin-left: 10px; /* Separates naturally from "with" keyword text */
+  letter-spacing: -1.3px;
+}
+
+/* Filled solid brand rectangle with italic lowercase text inside */
+.banner-pro-badge {
+  background-color: #ff5f38; /* Crisp athletic custom brand orange-red bg */
+  color: #ffffff;
+  font-size: 1.35rem; /* Proportionally balanced logo suffix */
+  font-weight: 800;
+  font-style: italic; /* Italicized custom badge typography */
+  padding: 1px 11px 4px 11px; /* Custom padding to frame lowercase text gracefully */
+  border-radius: 9px; /* Rounded card corner */
+  margin-left: 6px;
+  line-height: 1.15;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: lowercase;
+  letter-spacing: -0.2px;
+}
+
+/* ==========================================================================
+   DEEPLY TUNED AND SCALABLE RESPONSIVE WIDTH SYSTEM
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  .fitzepro-banner-text {
+    font-size: 2.1rem;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitzepro-banner-wrapper {
+    padding: 50px 0;
+  }
+  .fitzepro-banner-text {
+    font-size: 1.85rem;
+    letter-spacing: -0.7px;
+  }
+  .banner-pro-badge {
+    font-size: 1.15rem;
+    padding: 1px 9px 3px 9px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-banner-wrapper {
+    padding: 42px 0;
+  }
+  .fitzepro-banner-text {
+    font-size: 1.55rem;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+  .banner-pro-badge {
+    font-size: 1.05rem;
+    padding: 0px 8px 3px 8px;
+    border-radius: 7px;
+    margin-left: 4px;
+  }
+  .banner-eyebrow-capsule {
+    font-size: 0.6rem;
+    padding: 4px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-banner-wrapper {
+    padding: 34px 0;
+  }
+  .fitzepro-banner-text {
+    font-size: 1.22rem;
+    letter-spacing: -0.3px;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+  .banner-brand-fitze {
+    margin-left: 6px;
+  }
+  .banner-pro-badge {
+    font-size: 0.88rem;
+    padding: 0px 6px 2px 6px;
+    border-radius: 6px;
+    margin-left: 3px;
+  }
+  .banner-eyebrow-capsule {
+    font-size: 0.55rem;
+    padding: 3px 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+}

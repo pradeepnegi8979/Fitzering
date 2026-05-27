@@ -1,0 +1,371 @@
+@import "../../../styles/variables.css";
+
+/* Base structural slider section settings */
+.hero-slider-section {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Ensure Poppins applies gracefully to everything inside (fallback to Inter) */
+.hero-slider-section *,
+.hero-slider-section span,
+.hero-slider-section h1,
+.hero-slider-section p,
+.hero-slider-section div,
+.hero-slider-section a {
+  font-family: 'Poppins', 'Inter', sans-serif !important;
+}
+
+/* Page nested card wrapper padding */
+.hero-slider-outer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Rounded main hero frame mimicking premium interface card */
+.hero-slider-main-card {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  background-color: #111112;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.16);
+}
+
+/* Slide Base absolute stack - guarantees crossfade overlays with zero white flashes */
+.hero-slide-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.2s;
+  display: flex;
+  align-items: center;
+}
+
+.hero-slide-frame.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* Slow scale backwards panning on focus */
+.hero-slide-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-slide-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.05) brightness(0.9);
+  transition: transform 6.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: scale(1.08);
+}
+
+.hero-slide-frame.active .hero-slide-bg-img {
+  transform: scale(1);
+}
+
+/* Linear-to-radial dark background masking to keep headings premium */
+.hero-slide-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(16, 17, 20, 0.9) 0%, rgba(16, 17, 20, 0.6) 50%, rgba(16, 17, 20, 0.1) 100%),
+              radial-gradient(circle at bottom left, rgba(255, 94, 58, 0.08) 0%, rgba(0,0,0,0) 60%);
+  z-index: 2;
+}
+
+/* Core Content alignment inside */
+.hero-slide-body-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 780px;
+  padding: 80px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Heading Sizes and letter-spacing */
+.hero-slide-big-heading {
+  color: #ffffff;
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.hero-slide-title-accent {
+  color: #ff5e3a;
+  background: linear-gradient(135deg, #ff5e3a 0%, #ff8359 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Slogans block descriptions */
+.hero-slide-subtitles-stack {
+  margin-bottom: 45px;
+  max-width: 550px;
+}
+
+.hero-slide-sub-line {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: -0.15px;
+}
+
+.hero-slide-sub-line:not(:last-child) {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Buttons and store Badges line */
+.hero-slide-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.hero-slide-primary-button {
+  display: inline-block;
+  background-color: rgba(25, 26, 30, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(8px);
+  letter-spacing: -0.1px;
+}
+
+.hero-slide-primary-button:hover {
+  background-color: #ffffff;
+  color: #111112;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Store apps links container */
+.hero-stores-badges-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.store-badge-anchor {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.store-badge-anchor:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+.store-badge-svg {
+  display: block;
+}
+
+/* ---------------------------------------------------------------- */
+/* NAVIGATION INDICATOR DOTS (VERTICAL MIDDLE RIGHT ON DESKTOP) */
+/* ---------------------------------------------------------------- */
+
+.hero-right-navigation {
+  position: absolute;
+  right: 60px;
+  bottom: 150px;
+  display: flex;
+  flex-direction: row; /* Horizontal alignment only */
+  gap: 12px;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Rounded dot custom navigation button */
+.hero-right-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), height 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease;
+}
+
+.hero-right-circle:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Highlight active slide as a horizontal sleek pill like the screenshot */
+.hero-right-circle.active {
+  background-color: #ff5e3a;
+  width: 30px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------------- */
+/* RESPONSIVENESS SCALING AND LAYOUT BREAKPOINTS */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 1199.98px) {
+  .hero-slider-outer-container {
+    padding: 24px;
+  }
+  .hero-slider-main-card {
+    border-radius: 32px;
+    height: 75vh;
+  }
+  .hero-slide-body-content {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-slider-section {
+    min-height: auto;
+    padding-top: 100px; /* Offset standard navigation bar */
+  }
+  .hero-slider-main-card {
+    height: 65vh;
+    min-height: 520px;
+    border-radius: 28px;
+  }
+  .hero-slide-body-content {
+    padding: 45px;
+  }
+  .hero-slide-big-heading {
+    margin-bottom: 18px;
+  }
+  .hero-slide-subtitles-stack {
+    margin-bottom: 35px;
+  }
+  .hero-right-navigation {
+    right: 40px;
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-slider-outer-container {
+    padding: 16px;
+  }
+  .hero-slider-main-card {
+    height: auto;
+    min-height: 580px;
+    border-radius: 24px;
+  }
+  .hero-slide-body-content {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .hero-slide-big-heading {
+    margin-bottom: 15px;
+  }
+  .hero-slide-subtitles-stack {
+    margin-bottom: 30px;
+  }
+  .hero-slide-actions-row {
+    gap: 24px;
+    width: 100%;
+  }
+  .hero-slide-primary-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+  }
+  .hero-stores-badges-container {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Position indicator dots on the bottom-right for mobile screen sizes as well */
+  .hero-right-navigation {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    left: calc(50% - 28px);
+    top: auto;
+    transform: none;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .hero-right-circle {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .hero-right-circle.active {
+    width: 24px;
+    height: 6px;
+    border-radius: 6px;
+  }
+  .hero-slider-section {
+    padding-top:30px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .hero-slider-main-card {
+    min-height: 550px;
+  }
+  .hero-slide-body-content {
+    padding: 30px 16px;
+  }
+  .hero-slide-big-heading {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+  }
+  .hero-slide-sub-line {
+    font-size: 0.9rem;
+  }
+  .hero-stores-badges-container {
+    gap: 8px;
+  }
+  .store-badge-anchor svg {
+    width: 110px;
+    height: 33px;
+  }
+}

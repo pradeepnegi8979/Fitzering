@@ -1,0 +1,218 @@
+/* ==========================================================================
+   WhyProSection.css - Fitze Pro Core Value Strip
+   ========================================================================== */
+
+.fitzepro-why-section-wrapper {
+  background-color: #ff4d24; /* Vibrant brand coral orange-red field */
+  padding: 85px 0 95px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.fitzepro-why-content-container {
+  max-width: 1140px;
+}
+
+/* ==========================================================================
+   GET STARTED EYEBLOW BADGE
+   ========================================================================== */
+.why-top-badge-wrapper {
+  margin-bottom: 24px;
+}
+
+.why-get-started-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 4px 18px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* ==========================================================================
+   DISPLAY HEADING WITH LOGO EMBED
+   ========================================================================== */
+.why-display-headline {
+  font-size: 2.85rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -1.8px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.logo-brand-white {
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1.8px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.badge-pro-inside-title {
+  background-color: #ffffff;
+  color: #ff4d24;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 1px 13px;
+  border-radius: 8px;
+  font-style: italic;
+  display: inline-block;
+  line-height: 1.35;
+  text-transform: lowercase;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* ==========================================================================
+   HORIZONTAL PILLS FLOW SYSTEM
+   ========================================================================== */
+.why-pills-row-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.why-flow-pill-card {
+  background-color: rgba(18, 18, 18, 0.08); /* Sophisticated darker blend */
+  padding: 22px 52px;
+  border-radius: 24px;
+  flex: 1;
+  max-width: 290px;
+  text-align: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
+  user-select: none;
+}
+
+.why-flow-pill-card:hover {
+  transform: scale(1.02);
+  background-color: rgba(18, 18, 18, 0.12);
+}
+
+.flow-pill-text {
+  font-size: 1.38rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+}
+
+/* Elegant minimalist arrow divider */
+.why-flow-arrow-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #121214; /* Dark clean arrow from design image */
+  opacity: 0.85;
+}
+
+.flow-arrow-icon {
+  display: block;
+}
+
+/* ==========================================================================
+   ELITE HIGH-DENSITY DEVICE RESPONSIVENESS
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  .why-display-headline {
+    font-size: 2.5rem;
+    letter-spacing: -1.2px;
+  }
+  .flow-pill-text {
+    font-size: 1.2rem;
+  }
+  .why-flow-pill-card {
+    padding: 18px 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fitzepro-why-section-wrapper {
+    padding: 70px 0 80px 0;
+  }
+  .why-display-headline {
+    font-size: 2.2rem;
+    margin-bottom: 38px;
+  }
+  .why-pills-row-flow {
+    gap: 15px;
+  }
+  .why-flow-pill-card {
+    padding: 15px 28px;
+    border-radius: 20px;
+  }
+  .flow-pill-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-why-section-wrapper {
+    padding: 60px 0 70px 0;
+  }
+  .why-display-headline {
+    font-size: 1.9rem;
+    letter-spacing: -0.8px;
+  }
+  .badge-pro-inside-title {
+    font-size: 1rem;
+    padding: 1px 11px;
+  }
+  /* Elegant Stack layout on smaller profiles */
+  .why-pills-row-flow {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .why-flow-pill-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 18px 32px;
+  }
+  .why-flow-arrow-separator {
+    transform: rotate(90deg); /* Turn divider downwards for stacked context */
+    margin: 4px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-why-section-wrapper {
+    padding: 55px 0 65px 0;
+  }
+  .why-display-headline {
+    font-size: 1.55rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+  .logo-brand-white {
+    margin-left: 4px;
+  }
+  .badge-pro-inside-title {
+    font-size: 0.88rem;
+    padding: 0 9px;
+  }
+  .why-flow-pill-card {
+    padding: 14px 24px;
+    border-radius: 16px;
+  }
+  .flow-pill-text {
+    font-size: 0.98rem;
+  }
+  .why-flow-arrow-separator {
+    margin: 2px 0;
+  }
+}

@@ -1,0 +1,314 @@
+/* ==========================================================================
+   RingPromoSection.css - Fitze Pro Smart Ring Promotion (Elite Design)
+   ========================================================================== */
+
+.fitzepro-ring-wrapper {
+  background-color: #ffffff; /* White outer backdrop screen as instructed */
+  padding: 60px 0 70px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.fitzepro-ring-container-fluid {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   PANORAMIC DUNE BOARD CARD
+   ========================================================================== */
+.ring-promo-dune-card {
+  position: relative;
+  border-radius: 44px; /* Giant luxury rounding matching mockup */
+  /* Elegant triple gradient layer + copper fitness ring desert background image from assets folder */
+  background: 
+    linear-gradient(180deg, rgba(29, 21, 18, 0.55) 0%, rgba(29, 21, 18, 0.18) 45%, rgba(18, 11, 8, 0.65) 100%),
+    url('../../../assets/FitzeSmartRing.png') no-repeat center center;
+  background-size: cover;
+  padding: 82px 40px 92px 40px;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 25px 55px rgba(25, 18, 15, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 520px; /* Generous height for deep visual impact */
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: box-shadow 0.35s ease;
+}
+
+.ring-promo-dune-card:hover {
+  box-shadow: 0 35px 75px rgba(25, 18, 15, 0.18);
+}
+
+/* ==========================================================================
+   GET STARTED EYEBROW CAPSULE
+   ========================================================================== */
+.ring-top-capsule-badge-wrapper {
+  margin-bottom: 24px;
+}
+
+.ring-top-capsule-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 18px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* ==========================================================================
+   DISPLAY HEADING WITH LOGO EMBEDS
+   ========================================================================== */
+.ring-display-main-headline {
+  font-size: 3.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -2.1px;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.logo-brand-f {
+  font-weight: 800;
+  letter-spacing: -2.3px;
+}
+
+.logo-brand-r {
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+/* Elegant high-readability subdescription paragraph */
+.ring-display-subdescription {
+  font-size: 1.02rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 52px auto;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+/* ==========================================================================
+   HORIZONTAL METRICS PILLS ROW
+   ========================================================================== */
+.ring-metrics-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1040px;
+  margin-bottom: 82px; /* Leaves clear breathing space for the background ring visual */
+  z-index: 2;
+}
+
+/* Metric Pill shape with ultra premium dark translucent frosting */
+.metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(18, 12, 10, 0.62); /* Warm translucent space black */
+  border: 1.2px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 22px;
+  border-radius: 50px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.metric-pill:hover {
+  transform: translateY(-2px) scale(1.02);
+  background-color: rgba(18, 12, 10, 0.85);
+  border-color: rgba(255, 95, 56, 0.45);
+  box-shadow: 0 8px 24px rgba(255, 95, 56, 0.08);
+}
+
+/* Icon Frame inside pill */
+.metric-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.9);
+  flex-shrink: 0;
+}
+
+/* Warm glow copper brand label from the original design mockup */
+.metric-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ff5f38; /* Branding custom warm orange-red */
+  letter-spacing: -0.3px;
+}
+
+/* ==========================================================================
+   CENTERED LAYERED EXPLORE PILL CTA
+   ========================================================================== */
+.ring-explore-action-block {
+  margin-top: auto; /* Sinks perfectly to the bottom-center on desktop templates */
+  position: relative;
+  z-index: 5;
+}
+
+.ring-explore-brand-btn {
+  background-color: #121214; /* Super deep rich obsidian matte black */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.ring-explore-brand-btn:hover {
+  background-color: #1b1b1e;
+  border-color: rgba(255, 95, 56, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(255, 95, 56, 0.12);
+}
+
+.ring-explore-brand-btn:active {
+  transform: translateY(0);
+}
+
+/* Bold orange lowercase logo element */
+.explore-brand-fitze {
+  font-weight: 900;
+  color: #ff5f38; /* brand orange red */
+  text-transform: lowercase;
+  margin-left: 2px;
+  margin-right: 1px;
+}
+
+/* Light weight logo suffix element */
+.explore-brand-ring {
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+
+/* ==========================================================================
+   PRODUCTION GRADE RESPONSIVENESS AND DEVICE SCALABILITY
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  .ring-display-main-headline {
+    font-size: 2.7rem;
+    letter-spacing: -1.6px;
+  }
+  .ring-display-subdescription {
+    font-size: 0.98rem;
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ring-promo-dune-card {
+    padding: 68px 30px 76px 30px;
+    min-height: 480px;
+    border-radius: 36px;
+  }
+  .ring-display-main-headline {
+    font-size: 2.3rem;
+  }
+  .ring-metrics-pills-row {
+    margin-bottom: 60px;
+  }
+  .metric-pill {
+    padding: 9px 18px;
+  }
+  .metric-label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitzepro-ring-wrapper {
+    padding: 45px 0 55px 0;
+  }
+  .ring-promo-dune-card {
+    padding: 55px 24px 62px 24px;
+    border-radius: 32px;
+    min-height: auto;
+    background-position: center bottom; /* Ensures the ring stays beautifully visible */
+  }
+  .ring-display-main-headline {
+    font-size: 1.9rem;
+    letter-spacing: -1px;
+  }
+  .ring-display-subdescription {
+    font-size: 0.92rem;
+    margin-bottom: 36px;
+  }
+  .ring-metrics-pills-row {
+    margin-bottom: 50px;
+    gap: 10px;
+  }
+  .metric-pill {
+    padding: 8px 16px;
+    border-radius: 12px;
+  }
+  .ring-explore-brand-btn {
+    padding: 13px 38px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitzepro-ring-wrapper {
+    padding: 30px 0 40px 0;
+  }
+  .ring-promo-dune-card {
+    padding: 44px 16px 52px 16px;
+    border-radius: 24px;
+  }
+  .ring-display-main-headline {
+    font-size: 1.55rem;
+    letter-spacing: -0.6px;
+    line-height: 1.3;
+  }
+  .ring-display-subdescription {
+    font-size: 0.86rem;
+    margin-bottom: 30px;
+  }
+  .ring-metrics-pills-row {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+  .metric-pill {
+    padding: 7px 12px;
+    border-radius: 10px;
+    gap: 6px;
+  }
+  .metric-label {
+    font-size: 0.8rem;
+  }
+  .ring-explore-brand-btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}

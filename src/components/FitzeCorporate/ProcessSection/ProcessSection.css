@@ -1,0 +1,256 @@
+/* ==========================================================================
+   ProcessSection.css - Fitze Corporate Shape Steps (100% Match)
+   ========================================================================== */
+
+/* Outer Section Layout */
+.corp-process-section {
+  width: 100%;
+  padding: 85px 0 95px 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.process-header-container {
+  max-width: 1200px;
+  margin: 0 auto 52px auto;
+}
+
+/* Red Eyebrow Label */
+.section-eyebrow-container {
+  margin-bottom: 12px;
+}
+
+.section-eyebrow-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ff5226; /* Brand vibrant red-orange text */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* Headline Typography */
+.section-headline-text {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #111113;
+  letter-spacing: -1.6px;
+  line-height: 1.2;
+  margin: 0 auto 16px auto;
+  max-width: 850px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Subdescription text */
+.section-subtitle-text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #52525b; /* Slated gray */
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+/* ==========================================================================
+   INTEGRATED PROCESS COMBINED FLOW CARD DESIGN (100% FIDELITY)
+   ========================================================================== */
+.process-flow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-flow-mega-card {
+  /* background-color: #ffffff;
+  border: 1.2px solid #e4e4e7; 
+  border-radius: 28px; */
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+  box-sizing: border-box;
+}
+
+/* Grid columns & padding settings */
+.process-card-content {
+  padding: 48px 44px 52px 44px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Internal vertical divider borders on Desktop */
+.process-flow-col {
+  /* border-right: 1.2px solid #e4e4e7; */
+  box-sizing: border-box;
+  transition: background-color 0.25s ease;
+}
+
+.process-flow-col:last-child {
+  border-right: none;
+}
+
+/* Hover highlight on individual columns */
+.process-flow-col:hover {
+  background-color: #faf8f5; /* Warm subtle sand-ivory hue highlights on hover */
+}
+
+/* ==========================================================================
+   PROGRESS SECTOR TOP BARS (STRETCHES WITH CONTENT HORIZONTALLY)
+   ========================================================================== */
+.process-top-line-container {
+  width: 100%;
+  height: 2.5px;
+  background-color: #e4e4e7; /* Light inactive gray fill */
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.process-card-content:hover .process-top-line-active {
+  height: 100%;
+  background-color: #ff5226; /* Brand bright orange accent line */
+  border-radius: 50px;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+}
+
+/* ==========================================================================
+   CARD BODY CONTENTS
+   ========================================================================== */
+
+/* Step Badge Code */
+.step-badge-indicator {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ff5226;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.step-number {
+  font-weight: 700;
+}
+
+.step-badge-separator {
+  margin: 0 8px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.step-badge-label {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Step Card Heading */
+.step-headline-title {
+  font-size: 1.48rem;
+  font-weight: 700;
+  color: #111113;
+  letter-spacing: -0.6px;
+  margin: 0 0 16px 0;
+  line-height: 1.25;
+}
+
+/* Step Card Paragraph Description */
+.step-description-paragraph {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #52525b;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ==========================================================================
+   STRICT BREAKPOINT COHESION & RESPONSIVENESS
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .section-headline-text {
+    font-size: 2.85rem;
+    letter-spacing: -1.2px;
+  }
+  .process-card-content {
+    padding: 38px 32px 42px 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .corp-process-section {
+    padding: 60px 0;
+  }
+  
+  .section-headline-text {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+  }
+
+  .process-flow-mega-card {
+    border-radius: 20px;
+  }
+
+  /* Stacking border behavior toggler: columns stack vertically */
+  .process-flow-col {
+    border-right: none;
+    border-bottom: 1.2px solid #e4e4e7;
+  }
+
+  .process-flow-col:last-child {
+    border-bottom: none;
+  }
+
+  .process-card-content {
+    padding: 34px 28px 38px 28px;
+  }
+
+  .process-top-line-container {
+    margin-bottom: 24px;
+  }
+
+  .step-badge-indicator {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-headline-text {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+  }
+  .section-subtitle-text {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-process-section {
+    padding: 45px 0;
+  }
+  .section-headline-text {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+  .section-subtitle-text {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .process-flow-mega-card {
+    border-radius: 16px;
+  }
+  .process-card-content {
+    padding: 28px 20px 30px 20px;
+  }
+  .step-headline-title {
+    font-size: 1.28rem;
+    margin-bottom: 12px;
+  }
+  .step-description-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.58;
+  }
+}
