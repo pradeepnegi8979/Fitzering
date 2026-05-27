@@ -15,7 +15,7 @@
     linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
-  font-family: 'Poppins', 'Outfit', sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif !important;
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
@@ -68,7 +68,7 @@
 }
 
 .fitze-logo-brand {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 2.1rem;
   font-weight: 800;
   color: #111111;
@@ -114,7 +114,7 @@
 }
 
 .hero-headline {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 4.8rem;
   font-weight: 400;
   line-height: 1.05;
@@ -386,7 +386,7 @@
 }
 
 .fitze-brand-text {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 0.95rem;
   font-weight: 900;
   color: #111111;
@@ -453,7 +453,7 @@
 }
 
 .widget-label {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 0.65rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -487,7 +487,7 @@
 
 /* TITLE SEGMENT */
 .phone-scroll-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 0.72rem;
   font-weight: 700;
   color: #2d3748;
@@ -534,7 +534,7 @@
 }
 
 .card-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 0.56rem;
   font-weight: 700;
   color: #1a202c;

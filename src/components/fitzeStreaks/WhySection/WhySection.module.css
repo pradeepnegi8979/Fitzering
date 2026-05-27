@@ -9,7 +9,7 @@
   width: 100%;
   padding: 100px 0;
   background-color: #ffffff;
-  font-family: 'Poppins', 'Outfit', sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif !important;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -37,7 +37,7 @@
 }
 
 .why-main-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 3.4rem;
   font-weight: 400;
   line-height: 1.12;
@@ -99,7 +99,7 @@
 }
 
 .why-card-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.15rem;
   font-weight: 800;
   color: #111111;
