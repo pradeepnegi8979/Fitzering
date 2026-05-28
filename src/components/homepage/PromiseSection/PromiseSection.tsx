@@ -23,7 +23,7 @@ export const PromiseSection: React.FC = () => {
               </div>
               
               <h3 className="promise-headline text-white mb-3">
-                Effort = Reward. Always.
+                Show up. Move. Earn.
               </h3>
                <p className="promise-desc-text text-white">
                 Show up. Move. Earn. No spins. No hidden tricks.

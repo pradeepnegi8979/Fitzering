@@ -21,19 +21,19 @@ export const FindYourPerfectFitSection: React.FC = () => {
               {/* Step 1 */}
               <div className="sizing-step-item">
                 <span className="step-label">Step 1</span>
-                <p className="step-content">Receive your complimentary Ring sizing kit.</p>
+                <p className="step-content">Place your fitze Ring order</p>
               </div>
 
               {/* Step 2 */}
               <div className="sizing-step-item">
                 <span className="step-label">Step 2</span>
-                <p className="step-content">Wear the sample for 24 - 48 hours.</p>
+                <p className="step-content">Receive your complimentary Ring sizing kit.</p>
               </div>
 
               {/* Step 3 */}
               <div className="sizing-step-item">
                 <span className="step-label">Step 3</span>
-                <p className="step-content">Confirm your size and get your Ring.</p>
+                <p className="step-content">Confirm your size and receive your Ring.</p>
               </div>
             </div>
 

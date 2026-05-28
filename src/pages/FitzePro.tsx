@@ -1,4 +1,4 @@
-import FaqSection from "../components/common/FaqSection/FaqSection";
+import FaqSection from "../components/FitzePro/FaqSection/FaqSection";
 import Footer from "../components/common/Footer/Footer";
 import Header from "../components/common/Header/Header";
 import BannerSection from "../components/FitzePro/BannerSection/BannerSection";

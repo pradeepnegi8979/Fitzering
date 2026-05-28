@@ -6,6 +6,7 @@ interface TabItem {
   id: string;
   pillLabel: string;
   title: string;
+  btnText: string;
   description: string;
   imageUrl: string;
 }
@@ -13,40 +14,50 @@ interface TabItem {
 
 const tabData: TabItem[] = [
   {
-    id: 'Reward-Led-Experiences',
-    pillLabel: 'Reward-Led Experiences',
-    title: 'Reward-Led Experiences',
-    description: 'Turn rewards into real engagement. Offer exclusive discounts, vouchers and experiences that users unlock through movement and participation on fitze.',
+    id: 'App-Based-Step-Challenges',
+    pillLabel: 'App-Based Step Challenges',
+    title: 'App-Based Step Challenges',
+    btnText: 'Activate Your Teams',
+    description: 'Bring teams together through gamified walking challenges across local, regional and global teams on the fitze app.',
     imageUrl: TeamBuilding
   },
   {
-    id: 'Movement-Challenges',
-    pillLabel: 'Movement Challenges',
-    title: 'Movement Challenges',
-    description: "Launch step challenges people actually commit to. Create branded activations on the app designed around consistency, motivation and community participation.",
+    id: 'Corporate-Sports-Tournaments',
+    pillLabel: 'Corporate Sports Tournaments',
+    title: 'Corporate Sports Tournaments',
+    btnText: 'Explore Sports Experiences',
+    description: "High-energy sports experiences designed to strengthen culture, connection and team morale.",
     imageUrl:TeamBuilding
   },
   {
-    id: 'Integrated-Campaigns',
-    pillLabel: 'Integrated Campaigns',
-    title: 'Integrated Campaigns',
-    description: 'Extend your campaign beyond a single touchpoint. Bring your brand across the fitze ecosystem through the app, on-ground activations, mall runs and real-world experiences.',
+    id: 'Wellness-Workshops',
+    pillLabel: 'Wellness Workshops',
+    title: 'Wellness Workshops',
+    btnText: 'Launch Wellness at Your Workplace',
+    description: 'Mental wellbeing sessions, first-aiders programs, EAP support and workplace wellness experiences.',
     imageUrl: TeamBuilding
   },
   {
-    id: 'Community-Experiences',
-    pillLabel: 'Community Experiences',
-    title: 'Community Experiences',
-    description: 'Build moments people show up for together. From mall runs to wellness activations, create high-energy community experiences powered by movement.',
+    id: 'Team-Building-&-Off-sites',
+    pillLabel: 'Team Building & Off-sites',
+    title: 'Team Building & Off-sites',
+    btnText: 'Explore Team Experiences',
+    description: 'Outdoor activations, bootcamps, retreats, movement-led team bonding experiences and more.',
+    imageUrl:TeamBuilding
+  },
+  {
+    id: 'Curated-Corporate-Events',
+    pillLabel: 'Curated Corporate Events',
+    title: 'Curated Corporate Events',
+    btnText: 'Bring Your Teams Together',
+    description: 'Employee-first experiences including family fun days, carnivals and large-scale corporate activations.',
     imageUrl:TeamBuilding
   }
 ];
 
 export const SolutionSection: React.FC = () => {
   const [activeTabId, setActiveTabId] = useState<string>('team-building');
-
   const activeTab = tabData.find(tab => tab.id === activeTabId) || tabData[1];
-
   return (
     <section className="corp-solution-section" id="corp-solution">
       <Container className="tab-section-container">
@@ -64,7 +75,7 @@ export const SolutionSection: React.FC = () => {
         {/* Categories Tab Switches - Grouped beautifully on multiple rows on smaller/medium screens */}
         <div className="tab-pills-horizontal-grid">
           <div className="tab-pills-row">
-            {tabData.slice(0, 4).map((tab) => (
+            {tabData.slice(0, 5).map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTabId(tab.id)}
@@ -98,7 +109,7 @@ export const SolutionSection: React.FC = () => {
               <p className="tab-showcase-desc">{activeTab.description}</p>
               <div>
                 <button className="tab-showcase-explore-btn" id="explore-activation-btn">
-                  Explore this activation
+                  {activeTab.btnText}
                 </button>
               </div>
             </Col>

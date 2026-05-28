@@ -11,14 +11,14 @@ export const HowItWorksSection: React.FC = () => {
         <div className="consistency-wrapper-card">
           {/* Section Heading */}
           <div className="text-center mb-5">
-            <span className="consistency-badge-pill mb-3">
+            <span className="consistency-badge-pill mb-3 text-white-50">
               HOW IT WORKS
             </span>
             <h2 className="consistency-main-title font-sans">
               Make consistency <span className="highlight-coral-gradient">worth more.</span>
             </h2>
             <p className="consistency-main-subtitle">
-              Built to help you stay active, stay consistent and earn from every step.
+              Built to help you stay active and earn from every step.
             </p>
           </div>
 
@@ -32,8 +32,8 @@ export const HowItWorksSection: React.FC = () => {
                 </div>
                 <h3 className="step-box-title font-sans">Download</h3>
                 <p className="step-box-desc">
-                  Free to join. Get started in just a few seconds.
-                </p>
+                  Get started for free in just a few seconds.
+                  </p>
               </div>
             </div>
 

@@ -26,25 +26,23 @@ export const HeroSection: React.FC = () => {
       title: "Movement",
       titleAccent: "Rewarded",
       subtitles: ["Turn your everyday movement into rewards, experiences and real payouts."],
-      buttonText: "Start for FREE",
+      buttonText: "Download the App",
       buttonLink: "#download"
     },
     {
       image: banner2,
       title: "Get Paid to Walk",
       subtitles: [
-        "Turn consistency into guaranteed payouts.",
-        "No luck. Just commitment."
+        "Join Streaks and earn through consistency."
       ],
-      buttonText: "Join Your First Streak Free",
+      buttonText: "Start Your First Streak FREE",
       buttonLink: "#streaks"
     },
     {
       image: banner3,
-      title: "The easiest way to stay consistent",
+      title: "The Smart Ring That Rewards Consistency.",
       subtitles: [
-        "Not just a tracker.",
-        "A smarter way to move, recover and earn more."
+        "Track sleep, stress, activity and more."
       ],
       buttonText: "Discover fitze Ring",
       buttonLink: "#fitze-ring"

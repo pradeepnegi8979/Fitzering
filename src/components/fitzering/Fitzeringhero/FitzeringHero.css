@@ -451,11 +451,11 @@ z-index: 3;
 
 .fitzering-shop-close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
+  top: -10px;
+  right: -10px;
+  background:#000;
   border: none;
-  color: #999999;
+  color: #ffffff;
   cursor: pointer;
   padding: 4px;
   border-radius: 50%;
@@ -465,18 +465,18 @@ z-index: 3;
   transition: all 0.2s;
 }
 
-.fitzering-shop-close-btn:hover {
+/* .fitzering-shop-close-btn:hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: #333333;
-}
+} */
 
 .fitzering-shop-ring-avatar {
   flex-shrink: 0;
   width: 64px;
   height: 64px;
   border-radius: 16px;
-  background-color: #f7f7f9;
-  border: 1px solid rgba(0,0,0,0.03);
+  /* background-color: #f7f7f9;
+  border: 1px solid rgba(0,0,0,0.03); */
   display: flex;
   align-items: center;
   justify-content: center;

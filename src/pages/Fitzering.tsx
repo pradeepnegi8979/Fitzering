@@ -16,7 +16,7 @@ import OwnConsistencySection  from '../components/fitzering/OwnConsistencySectio
 import FindYourPerfectFitSection  from '../components/fitzering/FindYourPerfectFitSection/FindYourPerfectFitSection';
 import FinerDetailsSection  from '../components/fitzering/FinerDetailsSection/FinerDetailsSection';
 import '../styles/FitzeringProcess.css';
-import FaqSection from '../components/common/FaqSection/FaqSection';
+import FaqSection from '../components/fitzering/FaqSection/FaqSection';
 export const FitzeringProcess: React.FC = () => {
   return (
     <div className="fitzering-process-page">

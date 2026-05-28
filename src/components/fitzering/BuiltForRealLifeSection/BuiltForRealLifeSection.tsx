@@ -10,30 +10,25 @@ import googleAppStore from '../../../assets/google-play-store-white.svg';
 import huaweiAppStore from '../../../assets/HuaweiAppGallerywhite.svg';
 interface FeatureCard {
   title: string;
-  subtitle: string;
   imageUrl: string;
 }
 
 export const BuiltForRealLifeSection: React.FC = () => {
   const features: FeatureCard[] = [
     {
-      title: 'Lightweight: 3g',
-      subtitle: 'placeholder',
+      title: 'Lightweight',
       imageUrl: reallifeimg1,
     },
     {
       title: 'Titanium body',
-      subtitle: 'placeholder',
       imageUrl: reallifeimg2,
     },
     {
       title: '4-6 days battery',
-      subtitle: 'placeholder',
       imageUrl: reallifeimg3,
     },
     {
       title: 'Waterproof',
-      subtitle: 'placeholder',
       imageUrl: reallifeimg4,
     },
   ];
@@ -111,7 +106,6 @@ export const BuiltForRealLifeSection: React.FC = () => {
                   {/* Bottom Text Overlays */}
                   <div className="feature-text-block">
                     <h3 className="feature-card-heading">{feature.title}</h3>
-                    <p className="feature-card-subheading">{feature.subtitle}</p>
                   </div>
                 </div>
               </Col>

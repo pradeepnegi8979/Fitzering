@@ -11,8 +11,8 @@ export const StatsSection: React.FC = () => {
         {/* Header Block matching the upload design */}
         <div className="join-movement-header text-center">
           {/* <span className="movement-overline">TRACK WHAT MATTERS</span> */}
-          <h2 className="movement-heading">Join The Movement.</h2>
-          <p className="movement-subtext">UAE's most engaging fitness rewards app.</p>
+          <h2 className="movement-heading">The app that rewards you for walking.</h2>
+          <p className="movement-subtext">Join the movement.</p>
         </div>
 
         {/* Flat grid containing statistics with horizontal borders and vertical dividers */}

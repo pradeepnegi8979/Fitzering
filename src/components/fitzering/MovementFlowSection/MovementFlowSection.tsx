@@ -16,7 +16,7 @@ export const MovementFlowSection: React.FC = () => {
             Turn movement into <span className="highlight-coral">more</span>
           </h2>
           <p className="flow-lead">
-            Built for your everyday. Designed to help you stay aware, stay consistent and get rewarded for showing up.
+            Designed to help you stay aware, stay consistent and get rewarded for showing up.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export const MovementFlowSection: React.FC = () => {
                 
                 {/* Stage Caption */}
                 <p className="stage-caption">
-                  Stay connected to your movement, recovery and wellbeing.
+                  Stay connected to your wellbeing. 
                 </p>
               </div>
             </Col>

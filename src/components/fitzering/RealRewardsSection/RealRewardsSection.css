@@ -19,7 +19,7 @@
 
 .rewards-title {
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -2px;
   line-height: 1.15;
   color: #121212;
@@ -27,6 +27,7 @@
 
 .rewards-title .highlight-coral {
   color: #ff5e3a;
+  font-weight: 600;
 }
 
 /* 2. STATS OUTLINE BOX BAR (Matches mockup exactly) */
@@ -52,7 +53,7 @@
 
 .stat-main-number {
   font-size: 2.3rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -1px;
   color: #121212;
   margin-bottom: 6px;

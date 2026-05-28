@@ -7,7 +7,7 @@ import CareemPartnershipSection from '../components/fitzeStreaks/CareemPartnersh
 import RealPeopleSection from '../components/homepage/RealPeopleSection/RealPeopleSection';
 import WhySection from '../components/fitzeStreaks/WhySection/WhySection';
 import FitzeRingPromoSection from '../components/fitzeStreaks/FitzeRingPromoSection/FitzeRingPromoSection';
-import FaqSection from '../components/common/FaqSection/FaqSection';
+import FaqSection from '../components/fitzeStreaks/FaqSection/FaqSection';
 import OrangeSectionB from '../components/fitzeStreaks/OrangeSectionB/OrangeSectionB';
 
 
