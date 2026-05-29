@@ -216,6 +216,7 @@
 }
 
 @media (max-width: 768px) {
+  .process-top-line-container{display:None;}
   .section-headline-text {
     font-size: 2rem;
     letter-spacing: -0.8px;
