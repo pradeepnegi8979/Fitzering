@@ -33,7 +33,7 @@
 /* Headline Typography */
 .section-headline-text {
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #111113;
   letter-spacing: -1.6px;
   line-height: 1.2;
@@ -148,7 +148,7 @@
 /* Step Card Heading */
 .step-headline-title {
   font-size: 1.48rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #111113;
   letter-spacing: -0.6px;
   margin: 0 0 16px 0;

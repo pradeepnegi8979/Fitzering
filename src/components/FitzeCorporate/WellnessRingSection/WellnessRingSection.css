@@ -42,7 +42,7 @@
 /* 2. Headline with Split Highlights and Breaklines */
 .ring-headline-title {
   font-size: 3.8rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   letter-spacing: -1.8px;
   line-height: 1.15;
@@ -51,6 +51,7 @@
 
 .ring-headline-title .highlight-color {
   color: #ff5226; /* Dynamic Fitze brand orange text color */
+  font-weight: 600;
 }
 
 /* 3. Description sub-text */
