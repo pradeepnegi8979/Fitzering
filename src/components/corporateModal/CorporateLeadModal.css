@@ -1,0 +1,401 @@
+/* Spacing structure & modal positioning */
+.corp-lead-modal-root {
+  z-index: 1060 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Remove default bootstrap modal outlines and background */
+.corp-lead-modal-root .modal-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Reusable pixel-perfect card container */
+.corp-lead-modal-content-container {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  width: 100%;
+  max-width: 630px;
+  max-height: 90vh;
+  margin: 0 auto;
+  overflow-y: auto;
+  position: relative;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Dark elegant backdrop with subtle blur */
+.corp-lead-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: -1;
+}
+
+/* Custom Close Icon styled orange inside the card area */
+.corp-lead-modal-close-btn {
+  background: none;
+  border: none;
+  color: #FE5226;
+  font-size: 2.2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.corp-lead-modal-close-btn:hover {
+  transform: scale(1.15);
+  color: #E03E14;
+}
+
+/* Typography Hierarchy matching the reference */
+.corp-lead-modal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FE5226;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.corp-lead-modal-description {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+/* Error/Alert box */
+.corp-lead-modal-alert-message {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #ef4444;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Form element labeling */
+.corp-select-label-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  text-align: left;
+  display: block;
+}
+
+/* Form Fields Styled elegantly with heavy rounded borders */
+.corp-lead-input-element,
+.corp-lead-select-element,
+.corp-lead-textarea-element {
+  border-radius: 18px !important;
+  border: 1.5px solid #d1d5db !important;
+  height: 46px !important;
+  padding: 8px 18px !important;
+  font-size: 0.9rem !important;
+  color: #1f2937 !important;
+  background-color: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.corp-lead-input-element:focus,
+.corp-lead-select-element:focus,
+.corp-lead-textarea-element:focus {
+  border-color: #FE5226 !important;
+  box-shadow: 0 0 0 3px rgba(254, 82, 38, 0.15) !important;
+  outline: none !important;
+}
+
+/* Multi-line comments box formatting */
+.corp-lead-textarea-element {
+  height: auto !important;
+  padding-top: 14px !important;
+  border-radius: 18px !important;
+}
+
+/* Custom dropdown selector arrow logic */
+.corp-custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.corp-lead-select-element {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  padding-right: 36px !important;
+}
+
+.corp-custom-select-arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 8px;
+  color: #4b5563;
+}
+
+/* Mock google reCAPTCHA section layout */
+.recaptcha-mockup-wrapper {
+  width: 302px;
+  height: 76px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 28px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.recaptcha-left-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recaptcha-custom-checkbox-box {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.recaptcha-custom-checkbox-box:hover {
+  border-color: #9a9a9a;
+}
+
+.recaptcha-is-checked {
+  border-color: #009688;
+}
+
+.recaptcha-checkmark-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.recaptcha-not-a-robot-text {
+  font-family: Roboto, -apple-system, sans-serif;
+  font-size: 14px;
+  color: #2c2c2c;
+  line-height: 1;
+}
+
+.recaptcha-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+}
+
+.recaptcha-logo-visual {
+  margin-bottom: 1px;
+}
+
+.recaptcha-spinner-arrows {
+  width: 24px;
+  height: 24px;
+}
+
+.recaptcha-title-brand {
+  font-family: Roboto, -apple-system, sans-serif;
+  font-size: 8px;
+  color: #555555;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.recaptcha-sub-terms-row {
+  display: flex;
+  gap: 2px;
+  font-family: Roboto, -apple-system, sans-serif;
+  font-size: 7px;
+  color: #9b9b9b;
+  line-height: 1.2;
+}
+
+.recaptcha-anchor-link {
+  cursor: pointer;
+}
+
+.recaptcha-anchor-link:hover {
+  text-decoration: underline;
+}
+
+.recaptcha-divider-dot {
+  color: #9b9b9b;
+}
+
+/* Submit CTAs customized perfectly */
+.corp-lead-submit-btn-pill {
+  width: 100%;
+  height: 48px;
+  background-color: #fe5226 !important;
+  border: none !important;
+  border-radius: 50px !important;
+  color: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  transition: background-color 0.2s ease, transform 0.1s ease !important;
+}
+
+.corp-lead-submit-btn-pill:hover {
+  background-color: #e03e14 !important;
+}
+
+.corp-lead-submit-btn-pill:active {
+  transform: scale(0.995) !important;
+}
+
+/* Success panel animation and rendering details */
+.success-circle-checkmark-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.success-checkmark-draw-svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #10b981;
+  animation: success-fill .4s ease-in-out .4s forwards, success-scale .3s ease-in-out .9s both;
+}
+
+.success-checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #10b981;
+  fill: none;
+  animation: success-stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke: #ffffff;
+  stroke-width: 3.5;
+  animation: success-stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes success-stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes success-scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes success-fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 40px #10b981;
+  }
+}
+
+.corp-lead-success-header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.corp-lead-success-subtext {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.corp-lead-success-dismiss-btn {
+  background-color: #27272a !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  padding: 10px 24px !important;
+  border-radius: 50px !important;
+  transition: opacity 0.2s !important;
+}
+
+.corp-lead-success-dismiss-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsiveness layouts detail */
+@media (max-width: 768px) {
+  .corp-lead-modal-content-container {
+    padding: 25px 20px;
+    border-radius: 18px;
+    max-height: 95vh;
+  }
+
+  .corp-lead-modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    padding-right: 15px;
+  }
+
+  .corp-lead-modal-description {
+    font-size: 0.86rem;
+    margin-bottom: 20px;
+  }
+
+  .recaptcha-mockup-wrapper {
+    width: 100%;
+    max-width: 302px;
+  }
+
+  .corp-lead-submit-btn-pill {
+    height: 44px;
+    font-size: 0.92rem;
+  }
+}

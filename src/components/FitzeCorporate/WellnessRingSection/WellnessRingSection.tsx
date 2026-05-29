@@ -2,7 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './WellnessRingSection.css';
 // @ts-ignore
+
 import threeRingsImage from '../../../assets/threeringframe.png';
+import CorporateLeadModal from '../../corporateModal/CorporateLeadModal';
 
 export const WellnessRingSection: React.FC = () => {
   return (
