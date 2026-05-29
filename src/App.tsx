@@ -26,8 +26,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fitzering" element={<Fitzering />} />
-        <Route path="/fitzestreaks" element={<FitzeStreaks />} />
-        <Route path="/fitzecorporate" element={<FitzeCorporate />} />
+        <Route path="/streaks" element={<FitzeStreaks />} />
+        <Route path="/corporates" element={<FitzeCorporate />} />
         <Route path="/fitzepro" element={<FitzePro />} />
         <Route path="/fitzebrand" element={<FitzeBrand/>} />
         <Route path="/term&condition" element={<TermsConditon/>} />
