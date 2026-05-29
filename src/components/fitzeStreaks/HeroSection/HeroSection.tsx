@@ -81,7 +81,7 @@ export const HeroSection: React.FC = () => {
               <div className={styles['hero-image-glare']}></div>
 
               {/* Notification Card */}
-              <div className={styles['live-notification-card']}>
+              {/* <div className={styles['live-notification-card']}>
 
                 <div className={styles['notif-header']}>
 
@@ -142,8 +142,8 @@ export const HeroSection: React.FC = () => {
                   </span>{' '}
                   has been successfully credited into your Careem
                   account!
-                </div>
-              </div>
+                </div> 
+              </div> */}
 
             </div>
           </Col>

@@ -6,13 +6,16 @@ import pickaStreak from '../../../assets/pickastreak.png';
 import getCustomGoals from '../../../assets/get-custom-goals.png';
 import walkDaily from '../../../assets/walk-daily.png';
 import EarnYourPayout from '../../../assets/earnyour-payout.png';
-
+import bgImg from '../../../assets/bg-img.png';
 export const HowItWorksSection: React.FC = () => {
   return (
     <section
       className={styles['fitze-how-it-works-section']}
       id="how-it-works"
     >
+      <div className={styles['greadingImg']}>
+               <img src={bgImg} alt="background-image" style={{maxWidth:'100%'}}/>
+              </div>
       {/* Ambient Background */}
       <div className={styles['fitze-ambient-glow-topLeft']}></div>
       <div className={styles['fitze-ambient-glow-center']}></div>
@@ -48,7 +51,7 @@ export const HowItWorksSection: React.FC = () => {
           </div>
 
           <Row className="g-0" style={{ zIndex: '9' }}>
-
+              
             {/* STEP 01 */}
             <Col lg={6} md={12} className={styles['bento-quad-cell']}>
               <div className={styles['quad-cell-inner']}>
@@ -93,7 +96,7 @@ export const HowItWorksSection: React.FC = () => {
                   className={`${styles['step-bar-heading']} ${styles['reverse-layout']}`}
                 >
                   <div
-                    className={`${styles['bento-step-num-circle']} ${styles['orange-num-solid']}`}
+                    className={`${styles['bento-step-num-circle']} ${styles['grey-num-border']}`}
                   >
                     02.
                   </div>
