@@ -9,9 +9,7 @@ export const Header: React.FC = () => {
       <Container>
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <div className="brand-logo-container">
-            
             <img src={logo} alt="fitze Logo" className="brand-logo" />
-            
           </div>
         </Navbar.Brand>
         

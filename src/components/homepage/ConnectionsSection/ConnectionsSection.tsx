@@ -20,6 +20,8 @@ import garminIcon from '../../../assets/garminicon.svg';
 import fitbitIcon from '../../../assets/fitbiticon.svg';
 import huaweiWatch from '../../../assets/huaweiwatch.svg';
 import FitzeStepTracker from '../../../assets/fitze-step-tracker.svg';
+import fitzeStepImage from '../../../assets/fitze-steps-tracker.svg';
+
 import { AppleIcon } from 'lucide-react';
 // Exact brand list from the design
 const BRANDS = [
@@ -276,7 +278,7 @@ export const ConnectionsSection: React.FC = () => {
                       </div>
                        {/* SCREEN 2: Apple Watch */}
                       <div className={`screen-content-layout default-device-card ${activeIndex === 1 ? 'active' : ''}`}>
-                         <img src={AppleWatchMockup} alt="Apple Watch"/>
+                         <img src={fitzeStepImage} alt="Fitze Steps Tracker"/>
                       </div>
                       {/* SCREEN 3: Apple Watch */}
                       <div className={`screen-content-layout default-device-card ${activeIndex === 2 ? 'active' : ''}`}>
