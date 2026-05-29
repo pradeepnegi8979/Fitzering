@@ -25,12 +25,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/fitzering" element={<Fitzering />} />
+        <Route path="/ring" element={<Fitzering />} />
         <Route path="/streaks" element={<FitzeStreaks />} />
         <Route path="/corporates" element={<FitzeCorporate />} />
-        <Route path="/fitzepro" element={<FitzePro />} />
-        <Route path="/fitzebrand" element={<FitzeBrand/>} />
-        <Route path="/term&condition" element={<TermsConditon/>} />
+        <Route path="/pro" element={<FitzePro />} />
+        <Route path="/brand" element={<FitzeBrand/>} />
+        <Route path="/term-and-condition" element={<TermsConditon/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
       </Routes>

@@ -23,11 +23,11 @@ export const Header: React.FC = () => {
             <Nav.Link href="#how-it-works">How It Works</Nav.Link>
             <Nav.Link href="#fitze-ring">Fitze Ring</Nav.Link>
             <Nav.Link href="#compatibility">Compatibility</Nav.Link>*/}
-            <Nav.Link href="/fitzering">Fitze Ring</Nav.Link> 
+            <Nav.Link href="/ring">Fitze Ring</Nav.Link> 
             <Nav.Link href="/streaks">Fitze Streaks</Nav.Link> 
             <Nav.Link href="/corporates">Fitze Corporate</Nav.Link> 
-            <Nav.Link href="/fitzepro">Fitze Pro</Nav.Link> 
-            <Nav.Link href="/fitzebrand">Fitze Brand</Nav.Link> 
+            <Nav.Link href="/pro">Fitze Pro</Nav.Link> 
+            <Nav.Link href="/brand">Fitze Brand</Nav.Link> 
           </Nav>
           <div className="nav-action-btn">
             <a href="#download" className="btn-header-download">
