@@ -19,10 +19,12 @@ import healthConnect from '../../../assets/healthconnect.svg';
 import garminIcon from '../../../assets/garminicon.svg';
 import fitbitIcon from '../../../assets/fitbiticon.svg';
 import huaweiWatch from '../../../assets/huaweiwatch.svg';
+import FitzeStepTracker from '../../../assets/fitze-step-tracker.svg';
 import { AppleIcon } from 'lucide-react';
 // Exact brand list from the design
 const BRANDS = [
   { id: 'ring', name: 'fitze Ring' },
+  { id: 'FitzeStepTracker', name: 'Fitze Step Tracker' },
   { id: 'apple-watch', name: 'Apple Watch' },
   { id: 'apple-health', name: 'Apple Health' },
   { id: 'samsung-health', name: 'Samsung Health' },
@@ -118,7 +120,11 @@ export const ConnectionsSection: React.FC = () => {
         return (
           <img src={fitzering} alt="ring icon"/>
         );
-      case 'apple-watch':
+        case 'Fitze-Steps-Tracker':
+        return (
+          <img src={FitzeStepTracker} alt="Fitze Steps Tracker"/>
+        );
+        case 'apple-watch':
         return (
           <img src={iconApple} alt="Apple icon"/>
         );
@@ -173,6 +179,7 @@ export const ConnectionsSection: React.FC = () => {
                 <div className="hp-connect-brands-deck mt-5">
                   {/* Row 1: fitze Ring (Single) */}
                   <div className="hp-brands-grid-row">
+                    <div className="hp-brands-grid-row gap-3"> 
                     <button 
                       onClick={() => handleBrandClick(0)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 0 ? 'active' : ''}`}
@@ -180,69 +187,73 @@ export const ConnectionsSection: React.FC = () => {
                       {renderBrandIcon('ring', activeIndex === 0)}
                       <span className="tag-inner-text">fitze Ring</span>
                     </button>
-                  </div>
-
-                  {/* Row 2: Apple Watch & Apple Health */}
-                  <div className="hp-brands-grid-row gap-3">
                     <button 
                       onClick={() => handleBrandClick(1)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 1 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('apple-watch', activeIndex === 1)}
-                      <span className="tag-inner-text">Apple Watch</span>
+                      {renderBrandIcon('Fitze-Steps-Tracker', activeIndex === 1)}
+                      <span className="tag-inner-text">fitze Steps Tracker</span>
                     </button>
-                    <button 
+                  
+                    
+                    </div>
+                    </div>
+                    <p className="otherText">Other</p>
+                    <div className="hp-brands-grid-row">
+                      <button 
                       onClick={() => handleBrandClick(2)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 2 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('apple-health', activeIndex === 2)}
-                      <span className="tag-inner-text">Apple Health</span>
+                      {renderBrandIcon('apple-watch', activeIndex === 2)}
+                      <span className="tag-inner-text">Apple Watch</span>
                     </button>
-                  </div>
-
-                  {/* Row 3: Samsung Health & Health Connect */}
-                  <div className="hp-brands-grid-row gap-3">
                     <button 
                       onClick={() => handleBrandClick(3)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 3 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('samsung-health', activeIndex === 3)}
-                      <span className="tag-inner-text">Samsung Health</span>
+                      {renderBrandIcon('apple-health', activeIndex === 3)}
+                      <span className="tag-inner-text">Apple Health</span>
                     </button>
+                  
                     <button 
                       onClick={() => handleBrandClick(4)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 4 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('health-connect', activeIndex === 4)}
-                      <span className="tag-inner-text">Health Connect</span>
+                      {renderBrandIcon('samsung-health', activeIndex === 4)}
+                      <span className="tag-inner-text">Samsung Health</span>
                     </button>
-                  </div>
-
-                  {/* Row 4: Garmin, Fitbit & Huawei Watch */}
-                  <div className="hp-brands-grid-row gap-3">
                     <button 
                       onClick={() => handleBrandClick(5)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 5 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('garmin', activeIndex === 5)}
-                      <span className="tag-inner-text">Garmin</span>
+                      {renderBrandIcon('health-connect', activeIndex === 5)}
+                      <span className="tag-inner-text">Health Connect</span>
                     </button>
+                  
                     <button 
                       onClick={() => handleBrandClick(6)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 6 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('fitbit', activeIndex === 6)}
-                      <span className="tag-inner-text">Fitbit</span>
+                      {renderBrandIcon('garmin', activeIndex === 6)}
+                      <span className="tag-inner-text">Garmin</span>
                     </button>
                     <button 
                       onClick={() => handleBrandClick(7)}
                       className={`hp-brand-tag-btn font-sans ${activeIndex === 7 ? 'active' : ''}`}
                     >
-                      {renderBrandIcon('huawei-watch', activeIndex === 7)}
+                      {renderBrandIcon('fitbit', activeIndex === 7)}
+                      <span className="tag-inner-text">Fitbit</span>
+                    </button>
+                    <button 
+                      onClick={() => handleBrandClick(8)}
+                      className={`hp-brand-tag-btn font-sans ${activeIndex === 8 ? 'active' : ''}`}
+                    >
+                      {renderBrandIcon('huawei-watch', activeIndex === 8)}
                       <span className="tag-inner-text">Huawei Watch</span>
                     </button>
                   </div>
                 </div>
+                <div className="connects-cta-action"><a href="#download-link" class="btn-fitze btn-promise-download px-5">Download The App</a></div>
               </Col>
 
               {/* Right Column: Mobile mockup + ripple concentric waves */}
@@ -252,11 +263,6 @@ export const ConnectionsSection: React.FC = () => {
                   {/* Glowing Concentric Rings Background (Centered behind device) */}
                   <div className="concentric-orange-ripple-background">
                     <img src={CircleImage} alt="bg-image" className="bgCircle img-fluid"/>
-                    {/* <div className="ripple-radial-ring ring-level-1"></div>
-                    <div className="ripple-radial-ring ring-level-2"></div>
-                    <div className="ripple-radial-ring ring-level-3"></div>
-                    <div className="ripple-radial-ring ring-level-4"></div>
-                    <div className="ripple-radial-ring ring-level-5 font-mono"></div> */}
                   </div>
 
                   {/* iPhone Bezel shell container */}
@@ -268,41 +274,45 @@ export const ConnectionsSection: React.FC = () => {
                       <div className={`screen-content-layout fitze-ring-screen ${activeIndex === 0 ? 'active' : ''}`}>
                        <img src={FitzeRingMockup} alt="Fitze Ring"/>
                       </div>
-
-                      {/* SCREEN 2: Apple Watch */}
+                       {/* SCREEN 2: Apple Watch */}
                       <div className={`screen-content-layout default-device-card ${activeIndex === 1 ? 'active' : ''}`}>
                          <img src={AppleWatchMockup} alt="Apple Watch"/>
                       </div>
-
-                      {/* SCREEN 3: Apple Health */}
+                      {/* SCREEN 3: Apple Watch */}
                       <div className={`screen-content-layout default-device-card ${activeIndex === 2 ? 'active' : ''}`}>
+                         <img src={AppleWatchMockup} alt="Apple Watch"/>
+                      </div>
+
+                      {/* SCREEN 4: Apple Health */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 3 ? 'active' : ''}`}>
                         <img src={AppleHealthMockup} alt="Apple Health"/>
                       </div>
 
-                      {/* SCREEN 4: Samsung Health */}
-                      <div className={`screen-content-layout default-device-card ${activeIndex === 3 ? 'active' : ''}`}>
+                      {/* SCREEN 5: Samsung Health */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 4 ? 'active' : ''}`}>
                          <img src={SamsungHealthMockup} alt="Samsung Health"/>
                       </div>
 
-                      {/* SCREEN 5: Health Connect */}
-                      <div className={`screen-content-layout default-device-card ${activeIndex === 4 ? 'active' : ''}`}>
+                      {/* SCREEN 6: Health Connect */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 5 ? 'active' : ''}`}>
                         <img src={HealthConenctMockup} alt="Health Connect"/>
                       </div>
 
-                      {/* SCREEN 6: Garmin */}
-                      <div className={`screen-content-layout default-device-card ${activeIndex === 5 ? 'active' : ''}`}>
+                      {/* SCREEN 7: Garmin */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 6 ? 'active' : ''}`}>
                            <img src={GarminMockup} alt="Garmin Connect"/>
                       </div>
 
-                      {/* SCREEN 7: Fitbit */}
-                      <div className={`screen-content-layout default-device-card ${activeIndex === 6 ? 'active' : ''}`}>
+                      {/* SCREEN 8: Fitbit */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 7 ? 'active' : ''}`}>
                        <img src={Fitbitockup} alt="Fitbit"/>
                       </div>
 
-                      {/* SCREEN 8: Huawei Watch */}
-                      <div className={`screen-content-layout default-device-card ${activeIndex === 7 ? 'active' : ''}`}>
+                      {/* SCREEN 9: Huawei Watch */}
+                      <div className={`screen-content-layout default-device-card ${activeIndex === 8 ? 'active' : ''}`}>
                         <img src={HuaweiMockup} alt="Huawei"/>
                       </div>
+                      
 
                 </div>
               </Col>

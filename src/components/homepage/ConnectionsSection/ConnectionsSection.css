@@ -606,6 +606,18 @@
 }
 
 @media (max-width: 767px) {
+  .hp-connect-brands-deck {
+    display: flex;
+    flex-flow: unset;
+    flex-wrap: wrap;
+  }
+  .hp-brands-grid-row .hp-brand-tag-btn img{
+    max-width:15px;
+  }
+  .screen-content-layout img{
+    max-width:100%;
+    padding:30px;
+  }
   .hp-connect-section-premium {
     padding: 65px 0;
   }
@@ -654,13 +666,16 @@
 }
 
 @media (max-width: 575px) {
+  .concentric-ripples-and-device-wrap {
+    margin-top:50px;
+  }
   .hp-connect-main-headline {
     font-size: 1.95rem;
     letter-spacing: -0.5px;
   }
 
   .hp-brand-tag-btn {
-    padding: 8px 18px;
+    padding: 8px 10px;
     font-size: 0.8rem;
     gap: 7px;
   }
@@ -789,4 +804,15 @@
   .garmin-metric-digit {
     font-size: 1.05rem;
   }
+}
+
+.otherText {
+  margin-bottom:0px;
+  margin-top:15px;
+  color:#000;
+  font-weight:600;
+}
+
+.connects-cta-action{
+  margin-top:25px;
 }

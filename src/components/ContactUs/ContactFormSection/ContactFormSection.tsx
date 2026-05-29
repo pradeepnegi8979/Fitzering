@@ -79,10 +79,10 @@ export const ContactFormSection: React.FC = () => {
             required
           >
             <option value="" disabled hidden>Select a topic</option>
-            <option value="partnership">Partnership Opportunities</option>
-            <option value="corporate">Corporate Challenges</option>
-            <option value="support">Fitze Ring Tech Support</option>
-            <option value="general">General Feedback</option>
+            <option value="Inquiry">Inquiry</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Corporate Programs">Corporate Programs</option>
+            <option value="List your Brand">List your Brand</option>
             <option value="other">Other Queries</option>
           </Form.Select>
         </Form.Group>

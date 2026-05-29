@@ -283,6 +283,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .hero-slide-big-heading, .hero-slide-subtitles-stack{
+    text-align: center;
+  }
   .hero-slider-outer-container {
     padding: 16px;
   }

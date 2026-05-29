@@ -87,6 +87,8 @@
 
 .footer-link-list a:hover {
   opacity: 1;
+    color: #ffffff;
+
 }
 
 /* Download button container definitions */

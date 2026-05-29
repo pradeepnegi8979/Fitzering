@@ -123,6 +123,11 @@
     padding: 30px 20px !important;
   }
 }
+@media(max-width:767.98px){
+  .fitze-promise-img {
+    transform: translate(0px, 54px)!important;
+  }
+}
 
 @media (max-width: 575.98px) {
   .dual-phone-visualizer {
