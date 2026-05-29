@@ -1,0 +1,130 @@
+.contact-form-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  color: #111111;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+}
+
+/* Red/orange form label tracking */
+.contact-form-badge {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #FE5226;
+  margin-bottom: 6px;
+}
+
+.contact-form-title {
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.contact-form-subtitle {
+  font-size: 13.5px;
+  color: #718096;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Individual form controls */
+.contact-lbl {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #A0AEC0;
+  margin-bottom: 8px;
+}
+
+.contact-inp {
+  background-color: #F7F7F9 !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
+  padding: 13px 18px !important;
+  transition: all 0.2s ease !important;
+  box-shadow: none !important;
+}
+
+.contact-inp::placeholder {
+  color: #A0AEC0 !important;
+  opacity: 0.8;
+}
+
+.contact-inp:focus {
+  background-color: #ffffff !important;
+  border-color: rgba(254, 82, 38, 0.4) !important;
+  box-shadow: 0 0 0 3px rgba(254, 82, 38, 0.15) !important;
+}
+
+/* Dropdown select customized indicators */
+.custom-select-style {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23718096' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 18px center !important;
+  background-size: 14px !important;
+  padding-right: 45px !important;
+}
+
+.textarea-inp {
+  resize: none !important;
+  min-height: 120px;
+  line-height: 1.6 !important;
+}
+
+/* CTA Submit Button styling */
+.contact-action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  background-color: #FE5226;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 15px;
+}
+
+.contact-action-btn:hover {
+  background-color: #E03E14;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(254, 82, 38, 0.25);
+}
+
+.contact-action-btn:active {
+  transform: translateY(0);
+}
+
+.button-arrow {
+  transition: transform 0.2s ease;
+}
+
+.contact-action-btn:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Scaling details */
+@media (max-width: 576px) {
+  .contact-form-card {
+    padding: 25px 20px;
+  }
+}

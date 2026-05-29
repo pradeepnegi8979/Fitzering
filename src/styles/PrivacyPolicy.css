@@ -1,0 +1,630 @@
+/* ==========================================================================
+   PrivacyPolicyContent.css - SaaS Digital Trust Legal Layout stylesheet
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.privacy-policy-view-root {
+  background-color: #f8fafc;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  color: #334155;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+
+/* 1. HERO BANNER REGION */
+.privacy-hero-bg {
+  position: relative;
+  /* background: linear-gradient(135deg, #0b0f19 0%, #172554 100%); */
+  background:#ff5e3a;
+  padding: 100px 0 120px 0;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.privacy-hero-bg .grain-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.privacy-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px !important;
+  margin: 0 auto;
+}
+
+.privacy-badge {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fe5226;
+  background-color: rgba(254, 82, 38, 0.09);
+  border: 1px solid rgba(254, 82, 38, 0.25);
+  border-radius: 50px;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(254, 82, 38, 0.15);
+}
+
+.privacy-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.privacy-subtitle {
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.privacy-meta-row {
+  font-family: 'Poppins', sans-serif;
+}
+
+.meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+.meta-tag svg {
+  color: #fff;
+}
+
+/* 2. OVERVIEW HIGHLIGHTS CARDS */
+.privacy-highlights-container {
+  margin-top: -60px;
+  position: relative;
+  z-index: 10;
+  max-width: 1140px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.highlight-metric-card {
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(11, 15, 25, 0.04);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.highlight-metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(11, 15, 25, 0.1);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.circle-orange { background-color: rgba(254, 82, 38, 0.08); }
+.circle-purple { background-color: rgba(139, 92, 246, 0.08); }
+.circle-teal { background-color: rgba(45, 212, 191, 0.08); }
+.circle-blue { background-color: rgba(59, 130, 246, 0.08); }
+
+.highlight-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.highlight-desc {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* 3. DUAL-COLUMN WORKSPACE */
+.privacy-workspace-container {
+  max-width: 1140px !important;
+  margin: 60px auto 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sticky-sidebar-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+.sidebar-group-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+/* Sidebar Search flex widget */
+.sidebar-search-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  color: #94a3b8;
+}
+
+.custom-search-input {
+  padding-left: 44px;
+  padding-right: 30px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.88rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.custom-search-input:focus {
+  border-color: #fe5226;
+  box-shadow: 0 0 0 3px rgba(254, 82, 38, 0.15);
+  background-color: #ffffff;
+}
+
+.clear-search-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.clear-search-btn:hover {
+  color: #fe5226;
+}
+
+/* Category Filter Grid */
+.category-pill-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid transparent;
+  padding: 6px 14px;
+  border-radius: 30px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.category-pill-btn:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.category-pill-btn.active {
+  background-color: #fe5226;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(254, 82, 38, 0.2);
+}
+
+/* Sidebar Table of Contents link list */
+.nav-bullets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* Customize scrollbars for readability */
+.nav-bullets-list::-webkit-scrollbar {
+  width: 4px;
+}
+.nav-bullets-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.nav-bullets-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.nav-bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.bullet-indicator-circle {
+  width: 8px;
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.bullet-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bullet-title-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+  line-height: 1.35;
+  transition: color 0.2s ease;
+}
+
+.bullet-tag {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+}
+
+.nav-bullet-item:hover {
+  background-color: #f8fafc;
+}
+
+.nav-bullet-item:hover .bullet-indicator-circle {
+  background-color: #fe5226;
+  transform: scale(1.2);
+}
+
+.nav-bullet-item:hover .bullet-title-text {
+  color: #0f172a;
+}
+
+.nav-bullet-item.active {
+  background-color: rgba(254, 82, 38, 0.05);
+}
+
+.nav-bullet-item.active .bullet-indicator-circle {
+  background-color: #fe5226;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 8px rgba(254, 82, 38, 0.6);
+}
+
+.nav-bullet-item.active .bullet-title-text {
+  font-weight: 600;
+  color: #fe5226;
+}
+
+.nav-bullet-item.active .bullet-tag {
+  color: #fe5226;
+  opacity: 0.8;
+}
+
+.nav-bullet-item.muted-by-filter {
+  opacity: 0.25;
+}
+
+/* 4. CONTENT COLUMN ARTICLES */
+.policy-articles-grid {
+  margin-bottom: 50px;
+}
+
+.search-feedback-bar {
+  background-color: #cbd5e1;
+  background-clip: padding-box;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.policy-card-block {
+  padding: 35px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.01);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.policy-card-block.is-highlighted-focus {
+  border-color: rgba(254, 82, 38, 0.4);
+  box-shadow: 0 10px 30px rgba(254, 82, 38, 0.04);
+}
+
+.policy-block-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 15px;
+}
+
+.section-category-icon-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.policy-block-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.policy-block-body-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.policy-block-body-text p {
+  margin-bottom: 16px;
+}
+
+.policy-block-body-text p:last-child {
+  margin-bottom: 0;
+}
+
+.sub-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.policy-block-body-text ul, .policy-block-body-text ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.policy-block-body-text li {
+  margin-bottom: 8px;
+}
+
+.policy-block-body-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* Callouts */
+.policy-callout-box {
+  padding: 18px 22px;
+  border-radius: 14px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 20px 0;
+  border-left: 4px solid;
+}
+
+.policy-callout-box.info {
+  background-color: #f0fdf4;
+  border-color: #10b981;
+  color: #166534;
+}
+
+/* Health Badge Grid */
+.health-apps-badge-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.health-app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid;
+}
+
+.health-app-badge.apple {
+  background-color: #fff5f5;
+  border-color: #fecaca;
+  color: #e11d48;
+}
+
+.health-app-badge.google {
+  background-color: #f0f6ff;
+  border-color: #dbeafe;
+  color: #2563eb;
+}
+
+.health-app-badge .app-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* Account delete Box */
+.account-delete-box {
+  background-color: rgba(244, 63, 94, 0.03) !important;
+  border: 1.5px dashed rgba(244, 63, 94, 0.3) !important;
+}
+
+.dpo-contact-card {
+  border-radius: 16px;
+  border: 1.5px solid #e2e8f0;
+}
+
+/* FAQ accordion overrides */
+.faq-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.custom-policy-accordion .accordion-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  padding: 18px 24px;
+}
+
+.custom-policy-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(254, 82, 38, 0.04);
+  color: #fe5226;
+  box-shadow: none;
+}
+
+.custom-policy-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* 5. CONTACT INTERACTION FORM */
+.privacy-contact-card {
+  position: relative;
+  background-color: #1e293b !important;
+  color: #f8fafc;
+}
+
+.card-warm-badge-tint {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #fe5226, #8b5cf6, #2dd4bf);
+}
+
+.privacy-contact-card h4 {
+  color: #ffffff;
+}
+
+.form-control-custom {
+  background-color: #0f172a !important;
+  border: 1.5px solid #334155 !important;
+  color: #f1f5f9 !important;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.form-control-custom:focus {
+  border-color: #fe5226 !important;
+  box-shadow: 0 0 0 3px rgba(254, 82, 38, 0.2) !important;
+}
+
+.form-control-custom option {
+  background-color: #0f172a;
+}
+
+.privacy-submit-btn {
+  background-color: #fe5226;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.privacy-submit-btn:hover {
+  background-color: #e0431b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(254, 82, 38, 0.3);
+}
+
+/* ==========================================================================
+   RESPONSIVENESS CODES
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  .privacy-hero-bg {
+    padding: 80px 0 100px 0;
+  }
+  .privacy-title {
+    font-size: 2.80rem;
+  }
+  .sticky-sidebar-nav {
+    position: relative;
+    top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .privacy-hero-bg {
+    padding: 60px 0 80px 0;
+  }
+  .privacy-title {
+    font-size: 2.20rem;
+    letter-spacing: -1px;
+  }
+  .privacy-subtitle {
+    font-size: 0.95rem;
+  }
+  .policy-card-block {
+    padding: 24px;
+    border-radius: 18px;
+  }
+  .policy-block-title {
+    font-size: 1.15rem;
+  }
+}

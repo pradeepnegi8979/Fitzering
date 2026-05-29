@@ -1,0 +1,51 @@
+.contact-stats-section {
+  background-color: #F3F3F5;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 24px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-stats-inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-item-box {
+  padding: 10px 15px;
+}
+
+.stat-number {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #FE5226;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #718096;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* Vertical dividers on columns */
+.stat-col {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .border-col {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 767px) {
+  .stat-col {
+    padding: 15px 0;
+  }
+  .stat-col:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}
