@@ -339,13 +339,13 @@ z-index: 3;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: #333333;
+  color: rgba(255,255,255, 0.5);
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   padding: 8px 18px;
@@ -354,16 +354,16 @@ z-index: 3;
   transition: all 0.3s;
 }
 
-.fitzering-region-badge:hover {
+/* .fitzering-region-badge:hover {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 94, 58, 0.3);
   transform: translateY(-2px);
-}
+} */
 
-.badge-bullet {
+/* .badge-bullet {
   width: 6px;
   height: 6px;
-  background-color: #10b981; /* UAE Green */
+  background-color: #10b981;
   border-radius: 50%;
   display: inline-block;
   animation: pulseBullet 2s infinite;
@@ -373,7 +373,7 @@ z-index: 3;
   0% { transform: scale(0.8); opacity: 0.6; }
   50% { transform: scale(1.2); opacity: 1; }
   100% { transform: scale(0.8); opacity: 0.6; }
-}
+} */
 
 /* 4. Core Headings Layout */
 .fitzering-main-headlines {
@@ -386,7 +386,7 @@ z-index: 3;
   font-weight: 600;
   letter-spacing: -2px;
   line-height: 1.05;
-  color: #fff;
+  color: #000;
   margin: 0 auto 10px;
   max-width: 950px;
   transition: font-size 0.3s;

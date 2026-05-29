@@ -27,8 +27,9 @@ export const Footer: React.FC = () => {
                 <h5 className="footer-link-title">About us</h5>
                 <ul className="footer-link-list">
                   <li><a href="#how-it-works">How it works</a></li>
-                  <li><a href="#terms">T&Cs</a></li>
-                  <li><a href="#privacy">Privacy Policy</a></li>
+                  <li><a href="/term&condition">T&Cs</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
                   <li><a href="#faqs">FAQs</a></li>
                 </ul>
               </Col>

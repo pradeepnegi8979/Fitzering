@@ -9,6 +9,7 @@ import sevenSignals4 from '../../../assets/oneRingimg4.png';
 import sevenSignals5 from '../../../assets/oneRingimg5.png';
 import sevenSignals6 from '../../../assets/oneRingimg6.png';
 import sevenSignals7 from '../../../assets/oneRingimg7.png';
+import VideoPage from '../../../assets/fitze-ring-move.mp4';
 interface BentoCard {
   id: number;
   badge: string;
@@ -595,34 +596,38 @@ export const SevenSignalsSection: React.FC = () => {
                     </p>
                   </div>
                 </div>
-
+                 
                 {/* Concentric Signal Rings with exact Red, Purple, Teal Color dots representing sleep, activity, readiness */}
                 <div className="fitze-rings-container">
-                  <div className="concentric-radar-widget">
+<video
+  src={VideoPage}
+  autoPlay
+  muted
+  loop
+  playsInline
+  style={{ maxWidth: "100%" }}
+>
+</video>                  {/* <div className="concentric-radar-widget">
                     
-                    {/* Ring 1 (Outer - Sleep/Red dot) */}
                     <div className="radar-ring rim-outer">
                       <span className="indicator-dot dot-red"></span>
                     </div>
 
-                    {/* Ring 2 (Middle - Activity/Purple dot) */}
                     <div className="radar-ring rim-middle">
                       <span className="indicator-dot dot-purple"></span>
                     </div>
 
-                    {/* Ring 3 (Inner - Readiness/Teal dot) */}
                     <div className="radar-ring rim-inner">
                       <span className="indicator-dot dot-teal"></span>
                     </div>
 
-                    {/* Central Score readout */}
                     <div className="radar-center-bubble">
                       <span className="score-number-lbl">
                         {hoveredCard === 8 ? scoreVal : 88}
                       </span>
                     </div>
 
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

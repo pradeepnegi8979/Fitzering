@@ -1,0 +1,24 @@
+import React from 'react';
+import Header from '../components/common/Header/Header';
+import { Container } from 'react-bootstrap';
+
+import Footer from '../components/common/Footer/Footer';
+
+export const ContactUs: React.FC = () => {
+  return (
+    <div className="home-page-container">
+      {/* Header */}
+      <Header />
+      
+       <section className="faq-section">
+      <Container className="faq-container">
+        
+      </Container>
+      </section>
+      
+      <Footer />
+    </div>
+  );
+};
+
+export default ContactUs;

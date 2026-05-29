@@ -17,6 +17,9 @@ import FitzeStreaks from "./pages/FitzeStreaks"
 import FitzeCorporate from "./pages/FitzeCorporate";
 import FitzePro from "./pages/FitzePro";
 import FitzeBrand from "./pages/FitzeBrand";
+import TermsConditon from "./pages/TermsCondition";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +30,9 @@ function App() {
         <Route path="/fitzecorporate" element={<FitzeCorporate />} />
         <Route path="/fitzepro" element={<FitzePro />} />
         <Route path="/fitzebrand" element={<FitzeBrand/>} />
+        <Route path="/term&condition" element={<TermsConditon/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/contact-us" element={<ContactUs/>} />
       </Routes>
     </BrowserRouter>
   );

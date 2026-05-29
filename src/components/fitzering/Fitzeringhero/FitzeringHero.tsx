@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { ShoppingBag, X } from 'lucide-react';
 import './FitzeringHero.css';
 import BannerVideo from '../../../assets/ring-video.mp4';
+import posterImage from '../../../assets/poster-image.png';
 import LeftElement from '../../../assets/left-element.svg';
 import rightElement from '../../../assets/right-element.svg';
 import ShopRing from '../../../assets/shop-ring-image.png';
@@ -19,7 +20,7 @@ export const FitzeringHero: React.FC = () => {
           loop
           playsInline
           className="fitzering-video-bg-element"
-          poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600"
+          poster={posterImage}
         >
           {/* Loopable premium abstract/tech light-leak backdrops */}
           <source 
@@ -52,10 +53,10 @@ export const FitzeringHero: React.FC = () => {
         
         <div className="fitzering-main-headlines text-center">
           <div className="fitzering-region-badge-wrapper animate-slow-y">
-          <div className="fitzering-region-badge">
+          {/* <div className="fitzering-region-badge ">
             <span className="badge-bullet"></span>
             DESIGNED FOR THE UAE
-          </div>
+          </div> */}
         </div>
           <h1 className="fitzering-core-title">
             The first smart ring
