@@ -253,12 +253,25 @@
 
 /* Responsive styles to ensure perfect adaptability across mobile & tablet devices */
 @media (max-width: 991.98px) {
+  .footer-logo-col img{max-width:157px!important;}
+  .footer-badges-container img{max-width:105px;}
+  .footer-bottom-row.row{flex-direction:unset!important;} 
+  .footer-bottom-row.row .col-sm-6{width:50%!important; max-width:50%!important;}
+  .change-order{
+    order:2;
+    margin-top:30px!important;
+    text-align: left!important;
+  }
+  .mobile_block {
+    display:block!important;
+    
+  }
   .footer-fitze {
     padding: 60px 0 40px 0;
   }
 
   .footer-logo-col {
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 45px;
   }
 
@@ -286,6 +299,7 @@
   .footer-badges-container {
     justify-content: flex-start;
   }
+  
 
   .footer-spacing-breaker {
     height: 35px;
@@ -313,7 +327,7 @@
   }
 
   .footer-badges-container {
-    justify-content: center;
+   
     gap: 10px;
   }
 
@@ -325,9 +339,7 @@
     font-size: 0.8rem;
   }
 
-  .footer-download-title {
-    text-align: center;
-  }
+  
 
   .payment-providers-pill {
     padding: 6px 16px;

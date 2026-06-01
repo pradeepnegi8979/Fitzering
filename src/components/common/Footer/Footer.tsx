@@ -104,14 +104,14 @@ export const Footer: React.FC = () => {
         {/* Bottom Section containing Copyright, Payment Pill, and Social Icons */}
         <Row className="footer-bottom-row align-items-center">
           {/* Left: Copyright text */}
-          <Col lg={5} md={12} className="text-lg-start text-center mb-4 mb-lg-0">
+          <Col lg={7} md={12} className="text-lg-start text-md-center mb-md-4 mb-lg-0 change-order">
             <span className="copyright-text-fitze">
-              © Copyright 2026. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;Hub71 Member.
+              © Copyright 2026. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;<span className="mobile_block">Hub71 Member.</span>
             </span>
           </Col>
 
           {/* Center-Right: White Card Payment Pill */}
-          <Col lg={4} md={12} className="text-center d-flex justify-content-center mb-4 mb-lg-0">
+          <Col lg={5} md={12} sm={12} className="text-center d-flex justify-content-between mb-md-4 mb-lg-0">
             <div className="payment-providers-pill">
               
 
@@ -122,10 +122,6 @@ export const Footer: React.FC = () => {
                 <img src={paymentIcon} alt="Payment Gateway" className="unionpay-svg" />
               </div>
             </div>
-          </Col>
-
-          {/* Right: Solid cutout icons */}
-          <Col lg={3} md={12} className="text-lg-end text-center d-flex justify-content-center justify-content-lg-end">
             <div className="footer-cutout-social-links d-flex gap-2">
               {/* LinkedIn Cutout Icon */}
               <a href="https://www.linkedin.com/company/fitzeuae" target="_blank" rel="noopener noreferrer" className="social-cutout-btn" aria-label="LinkedIn">
@@ -138,6 +134,8 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </Col>
+
+          
         </Row>
       </Container>
     </footer>
