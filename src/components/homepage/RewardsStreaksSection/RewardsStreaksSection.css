@@ -756,6 +756,7 @@
     width: 200px;
     height: 295px;
   }
+  .rewards-card-content{text-align:center;}
 }
 
 @media (max-width: 575.98px) {

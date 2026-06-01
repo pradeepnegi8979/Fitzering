@@ -606,6 +606,7 @@
 }
 
 @media (max-width: 767px) {
+  .otherText {text-align: center;}
   .hp-connect-brands-deck {
     display: flex;
     flex-flow: unset;

@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
             <Nav.Link href="/brand"> Brand</Nav.Link> 
           </Nav>
           <div className="nav-action-btn">
-            <a href="#download" className="btn-header-download">
+            <a href="https://www.fitze.ae/share/" target="_blank" className="btn-header-download">
               Download the app
             </a>
           </div>

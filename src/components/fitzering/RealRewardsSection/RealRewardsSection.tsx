@@ -141,7 +141,7 @@ export const RealRewardsSection: React.FC = () => {
           <p className="cta-disclaimer-text"><span className="highlight-coral-bold"> consistency, rewarded.</span>
           </p>
           <div className="cta-btn-wrapper">
-            <a href="javascript:void(0);" className="premium-dark-btn">
+            <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="premium-dark-btn">
               Explore on the fitze app
  
             </a>

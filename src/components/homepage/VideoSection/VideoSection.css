@@ -132,6 +132,7 @@
 }
 
 @media (max-width: 991.98px) {
+  .text-start.col-md-12 {text-align: center!important;}
   .video-sec-title {
     font-size: 2rem;
   }

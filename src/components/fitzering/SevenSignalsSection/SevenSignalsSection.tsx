@@ -396,7 +396,7 @@ export const SevenSignalsSection: React.FC = () => {
 
           </div>
  <div className="cta-btn-wrapper text-center">
-  <a href="javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')" className="premium-dark-btn">
+  <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="premium-dark-btn">
     Get Your &nbsp;{fitzePro}&nbsp;{iconAed}&nbsp;699</a></div>
         </div>
       </Container>

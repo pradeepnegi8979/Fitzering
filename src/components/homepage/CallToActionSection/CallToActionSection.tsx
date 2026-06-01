@@ -9,7 +9,7 @@ export const CallToActionSection: React.FC = () => {
         <Row className="justify-content-center text-center">
           <Col lg={12} md={12}>
             <h2 className="cta-headline mb-4">Be the next success story.</h2>
-            <a href="#download" className="btn-fitze btn-cta">
+            <a href="https://www.fitze.ae/share/" className="btn-fitze btn-cta" target="_blank" rel="noopener noreferrer">
               Get the app now
             </a>
           </Col>

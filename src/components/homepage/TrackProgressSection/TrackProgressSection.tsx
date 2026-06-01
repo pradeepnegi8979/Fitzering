@@ -34,7 +34,7 @@ export const TrackProgressSection: React.FC = () => {
             </p>
             
             <div className="d-flex justify-content-center">
-              <a href="#download" className="btn-fitze btn-progress-download">
+              <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="btn-fitze btn-progress-download">
                 Download The App
                 <ArrowRight size={18} />
               </a>

@@ -31,7 +31,7 @@ export const PromiseSection: React.FC = () => {
              
               
               <div className="promise-cta-action">
-                <a href="#download-link" className="btn-fitze btn-promise-download px-5">
+                <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="btn-fitze btn-promise-download px-5">
                   Download The App
                 </a>
               </div>

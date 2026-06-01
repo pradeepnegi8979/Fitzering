@@ -27,7 +27,7 @@ export const HeroSection: React.FC = () => {
       titleAccent: "Rewarded",
       subtitles: ["Turn your everyday movement into rewards, experiences and real payouts."],
       buttonText: "Download the App",
-      buttonLink: "#download"
+      buttonLink: "https://www.fitze.ae/share/"
     },
     {
       image: banner2,
@@ -36,7 +36,7 @@ export const HeroSection: React.FC = () => {
         "Join Streaks and earn through consistency."
       ],
       buttonText: "Start Your First Streak FREE",
-      buttonLink: "#streaks"
+      buttonLink: "https://www.fitze.ae/share/"
     },
     {
       image: banner3,
@@ -45,7 +45,7 @@ export const HeroSection: React.FC = () => {
         "Track sleep, stress, activity and more."
       ],
       buttonText: "Discover fitze Ring",
-      buttonLink: "#fitze-ring"
+      buttonLink: "https://www.fitze.ae/share/"
     }
   ];
 
@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
 
                 <div className="hero-slide-actions-row">
                   {/* Premium customized visual pill buttons */}
-                  <a href={slide.buttonLink} className="hero-slide-primary-button">
+                  <a href={slide.buttonLink} className="hero-slide-primary-button" target="_blank" rel="noopener noreferrer">
                     {slide.buttonText}
                   </a>
 
@@ -131,17 +131,17 @@ export const HeroSection: React.FC = () => {
                   <div className="hero-stores-badges-container">
                     
                     {/* App Store */}
-                    <a href="#appstore" className="store-badge-anchor" aria-label="Download on App Store">
+                    <a href="https://apps.apple.com/us/app/fitze/id1497718755" className="store-badge-anchor" aria-label="Download on App Store">
                       <img src={appleStore} alt="Download on App Store" className="store-badge-svg" />
                     </a>
 
                     {/* Google Play */}
-                    <a href="#googleplay" className="store-badge-anchor" aria-label="Get it on Google Play">
+                    <a href="https://play.google.com/store/apps/details?id=com.fitze" className="store-badge-anchor" aria-label="Get it on Google Play">
                        <img src={googleStore} alt="Get it on Google Play" className="store-badge-svg" />
                     </a>
 
                     {/* Huawei AppGallery */}
-                    <a href="#appgallery" className="store-badge-anchor" aria-label="Explore it on AppGallery">
+                    <a href="https://appgallery.huawei.com/#/app/C102494237" className="store-badge-anchor" aria-label="Explore it on AppGallery">
                       <img src={huaweiStore} alt="Explore it on AppGallery" className="store-badge-svg" />
                     </a>
 

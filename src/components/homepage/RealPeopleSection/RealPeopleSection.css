@@ -320,6 +320,8 @@
   .real-people-left-col,
   .real-people-right-col {
     max-width: 100%;
+    width:100%;
+    align-items:center;
   }
   .real-people-right-col {
     padding-top: 0;
@@ -332,6 +334,7 @@
     padding: 26px;
     height: 300px;
   }
+  .real-people-top-row {text-align:center;}
 }
 
 @media (max-width: 767.98px) {

@@ -255,7 +255,7 @@ export const ConnectionsSection: React.FC = () => {
                     </button>
                   </div>
                 </div>
-                <div className="connects-cta-action"><a href="#download-link" class="btn-fitze btn-promise-download px-5">Download The App</a></div>
+                <div className="connects-cta-action"><a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="btn-fitze btn-promise-download px-5">Download The App</a></div>
               </Col>
 
               {/* Right Column: Mobile mockup + ripple concentric waves */}
