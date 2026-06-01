@@ -91,11 +91,15 @@
 
 /* Mobile responsive fixes */
 @media (max-width: 991.98px) {
+
   .navbar-nav-links {
     padding: 20px 0;
-    text-align: center;
+    /* text-align: center; */
   }
-  
+  .navbar-nav-links .nav-link{
+    padding:8px 0px!important;
+    border-bottom:solid 1px #d9d4d469;
+  }
   .navbar-nav-links .nav-link::after {
     display: none;
   }
