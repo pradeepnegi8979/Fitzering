@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './MallRunsSection.css';
-
+import SideImg from '../../../assets/brand-side-img.png';
 export const MallRunsSection: React.FC = () => {
   return (
     <section className="fitze-mall-runs-section" id="fitze-mall-runs">
@@ -25,7 +25,8 @@ export const MallRunsSection: React.FC = () => {
 
           {/* Right Column Gradient Device visual */}
           <Col lg={7} md={12} className="mall-runs-visual-col d-flex justify-content-lg-end justify-content-center">
-            <div className="mall-gradient-frame-mockup" id="mall-visual-mockup">
+          <img src={SideImg} alt="Mall Runs Visual" className="mall-runs-side-img img-fluid" id="mall-runs-visual"/>
+            {/* <div className="mall-gradient-frame-mockup" id="mall-visual-mockup">
               <div className="mall-mockup-inset-content">
                 <div className="mall-mockup-badge-container">
                   <span className="mall-mockup-orange-badge">WIDE EVENT VISUAL</span>
@@ -34,7 +35,7 @@ export const MallRunsSection: React.FC = () => {
                   Crowds. Jerseys. Brand energy. Big community moments.
                 </h3>
               </div>
-            </div>
+            </div> */}
           </Col>
         </Row>
 

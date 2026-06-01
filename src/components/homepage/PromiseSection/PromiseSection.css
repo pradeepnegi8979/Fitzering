@@ -119,6 +119,11 @@
 }
 
 @media (max-width: 991.98px) {
+  .promise-container-card.px-5{
+    padding-left:15px!important;
+    padding-right:15px!important;
+  }
+  .promise-headline,.promise-desc-text, .promise-brand-title , .promise-title-group,.promise-cta-action {text-align: center; justify-content: center;}
   .promise-container-card {
     padding: 30px 20px !important;
   }
@@ -130,6 +135,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .btn-fitze, .btn-fitze-dark, .btn-fitze-outline {
+ width:unset!important;
+  }
   .dual-phone-visualizer {
     width: 170px;
     height: 280px;

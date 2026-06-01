@@ -1124,6 +1124,8 @@
 }
 
 @media (max-width: 991.98px) {
+  .bento-row  .bento-card.card-heart .card-top-bar  {height:200px;}
+  .bento-card{height:200px;}
   .seven-signals-section {
     padding: 70px 0;
   }

@@ -10,6 +10,16 @@ import sevenSignals5 from '../../../assets/oneRingimg5.png';
 import sevenSignals6 from '../../../assets/oneRingimg6.png';
 import sevenSignals7 from '../../../assets/oneRingimg7.png';
 import VideoPage from '../../../assets/fitze-ring-move.mp4';
+
+import chart1 from '../../../assets/chart1.png';
+import chart2 from '../../../assets/chart2.png';
+import chart3 from '../../../assets/chart3.png';
+import chart4 from '../../../assets/chart4.png';
+import chart5 from '../../../assets/chart5.png';
+import chart6 from '../../../assets/chart6.png';
+import chart7 from '../../../assets/chart7.png';
+
+
 const fitzePro = (
   <svg xmlns="http://www.w3.org/2000/svg" width="67" height="21" viewBox="0 0 67 21" fill="none">
 <path d="M14.4714 15.268C13.7222 15.268 13.0648 15.1549 12.4993 14.9287C11.948 14.6883 11.5168 14.2996 11.2058 13.7624C10.8948 13.211 10.7393 12.4618 10.7393 11.5146V1.84822C10.7393 1.75271 10.8167 1.67528 10.9122 1.67528L13.4291 1.67528C13.5246 1.67528 13.602 1.75271 13.602 1.84822V4.40749C13.602 4.503 13.6794 4.58043 13.7749 4.58043H16.0797C16.1752 4.58043 16.2526 4.65785 16.2526 4.75336V6.80371C16.2526 6.89921 16.1752 6.97664 16.0797 6.97664H13.7749C13.6794 6.97664 13.602 7.05406 13.602 7.14957V11.557C13.602 12.0377 13.708 12.3699 13.9201 12.5537C14.1321 12.7374 14.4926 12.8293 15.0015 12.8293H16.2282C16.3237 12.8293 16.4011 12.9068 16.4011 13.0023V15.095C16.4011 15.1905 16.3237 15.268 16.2282 15.268L14.4714 15.268Z" fill="white"/>
@@ -171,63 +181,10 @@ export const SevenSignalsSection: React.FC = () => {
               {/* Hover Overlay: Circular Steps Progress Arch with Stats */}
               <div className="hover-overlay-container overlay-activity">
                 <div className="steps-arch-widget">
-                  {/* Step Goal label positioned exactly on top of the circle curve */}
-                  <div className="steps-goal-label text-center" style={{ fontSize: '0.58rem', fontWeight: 700, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.8px', marginBottom: '-4px' }}>
-                    STEP GOAL: 10,975
-                  </div>
-                  <div className="steps-svg-box">
-                    <svg viewBox="0 0 200 120" className="radial-arch-svg">
-                      <line x1="10" y1="110" x2="190" y2="110" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
-                      {/* Background Arch Track */}
-                      <path 
-                        d="M 30,110 A 70,70 0 0,1 170,110" 
-                        fill="none" 
-                        stroke="rgba(255, 255, 255, 0.12)" 
-                        strokeWidth="12" 
-                        strokeLinecap="round" 
-                      />
-                      {/* Colored Active Arch Fill */}
-                      <path 
-                        d="M 30,110 A 70,70 0 0,1 170,110" 
-                        fill="none" 
-                        stroke="url(#orange-grad)" 
-                        strokeWidth="12" 
-                        strokeLinecap="round" 
-                        strokeDasharray="219.9" 
-                        strokeDashoffset="22" /* 90% progress */
-                        className="arch-svg-fill"
-                      />
-                      <defs>
-                        <linearGradient id="orange-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#FE5226" />
-                          <stop offset="100%" stopColor="#FF8F3D" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    
-                    <div className="arch-text-content">
-                      <span className="arch-main">10,328</span>
-                      <span className="arch-small">Total Steps</span>
-                    </div>
-                  </div>
 
-                  {/* Below Arch Metric Row */}
-                  <div className="arch-metrics-footer">
-                    <div className="metric-col">
-                      <span className="metric-icon-wrap"><MapPin size={15} color="#FE5226" /></span>
-                      <div className="metric-info">
-                        <span className="metric-val">6.2 kms</span>
-                        <span className="metric-lbl">Distance</span>
-                      </div>
-                    </div>
-                    <div className="metric-col">
-                      <span className="metric-icon-wrap"><Flame size={15} color="#FF8F3D" /></span>
-                      <div className="metric-info">
-                        <span className="metric-val">1,200</span>
-                        <span className="metric-lbl">Calories</span>
-                      </div>
-                    </div>
-                  </div>
+                  
+                <img src={chart1} alt="Steps Progress Chart" className="steps-chart img-fluid" />
+                  
                 </div>
               </div>
             </div>
@@ -254,40 +211,7 @@ export const SevenSignalsSection: React.FC = () => {
               {/* Hover Overlay: Sleep Hypnogram visual stage bars */}
               <div className="hover-overlay-container overlay-sleep">
                 <div className="sleep-hypnogram">
-                  <div className="hypnogram-bars">
-                    {/* Simulated Sleep stages blocks (Deep, light, REM, Awake) */}
-                    <div className="hypno-col awake" style={{ height: '70%', animationDelay: '0.05s' }}></div>
-                    <div className="hypno-col rem" style={{ height: '45%', animationDelay: '0.1s' }}></div>
-                    <div className="hypno-col light" style={{ height: '30%', animationDelay: '0.15s' }}></div>
-                    <div className="hypno-col deep" style={{ height: '15%', animationDelay: '0.2s' }}></div>
-                    <div className="hypno-col light" style={{ height: '35%', animationDelay: '0.25s' }}></div>
-                    <div className="hypno-col deep" style={{ height: '18%', animationDelay: '0.3s' }}></div>
-                    <div className="hypno-col rem" style={{ height: '50%', animationDelay: '0.35s' }}></div>
-                    <div className="hypno-col light" style={{ height: '32%', animationDelay: '0.4s' }}></div>
-                    <div className="hypno-col awake" style={{ height: '75%', animationDelay: '0.45s' }}></div>
-                    <div className="hypno-col light" style={{ height: '28%', animationDelay: '0.5s' }}></div>
-                    <div className="hypno-col deep" style={{ height: '12%', animationDelay: '0.55s' }}></div>
-                    <div className="hypno-col rem" style={{ height: '48%', animationDelay: '0.6s' }}></div>
-                    <div className="hypno-col awake" style={{ height: '65%', animationDelay: '0.65s' }}></div>
-                  </div>
-                  
-                  {/* Overlaid line trend graph inside sleep blocks */}
-                  <svg className="sleep-trend-svg" viewBox="0 0 300 100" preserveAspectRatio="none">
-                    <path 
-                      d="M10,80 Q 40,55 70,75 T 130,85 T 190,60 T 250,70 T 290,40" 
-                      fill="none" 
-                      stroke="#A78BFA" 
-                      strokeWidth="2.5" 
-                      strokeLinecap="round"
-                    />
-                    <circle cx="190" cy="60" r="4.5" fill="#ffffff" stroke="#8B5CF6" strokeWidth="2.5" className="pulsing-hypno-dot" />
-                  </svg>
-
-                  <div className="hypno-timeline">
-                    <span className="timeline-stamp">22:32</span>
-                    <span className="timeline-stamp text-center" style={{ flex: 1, color: '#A78BFA', fontWeight: 500 }}>RESTORATIVE FLOW</span>
-                    <span className="timeline-stamp text-end">07:01</span>
-                  </div>
+                  <img src={chart2} alt="Better Nights. Better Days" className="steps-chart img-fluid" />  
                 </div>
               </div>
             </div>
@@ -318,28 +242,7 @@ export const SevenSignalsSection: React.FC = () => {
               {/* Hover Overlay: Stress Timeline Equalizer representation */}
               <div className="hover-overlay-container overlay-stress">
                 <div className="equalizer-stress-widget">
-                  <div className="equalizer-bars-group">
-                    {/* Series of bars with colored hints based on diurnal cycle in image.png */}
-                    <div className="eq-bar state-calm" style={{ height: '42%' }}></div>
-                    <div className="eq-bar state-calm" style={{ height: '35%' }}></div>
-                    <div className="eq-bar state-calm" style={{ height: '48%' }}></div>
-                    <div className="eq-bar state-calm" style={{ height: '22%' }}></div>
-                    <div className="eq-bar state-normal" style={{ height: '55%' }}></div>
-                    <div className="eq-bar state-normal" style={{ height: '62%' }}></div>
-                    <div className="eq-bar state-stress" style={{ height: '78%' }}></div>
-                    <div className="eq-bar state-stress" style={{ height: '85%' }}></div>
-                    <div className="eq-bar state-stress" style={{ height: '70%' }}></div>
-                    <div className="eq-bar state-normal" style={{ height: '45%' }}></div>
-                    <div className="eq-bar state-calm" style={{ height: '28%' }}></div>
-                    <div className="eq-bar state-calm" style={{ height: '18%' }}></div>
-                  </div>
-                  
-                  <div className="equalizer-axis">
-                    <span className="axis-point">00:00</span>
-                    <span className="axis-point">12:00</span>
-                    <span className="axis-point">18:00</span>
-                    <span className="axis-point text-end">23:59</span>
-                  </div>
+                   <img src={chart3} alt="Know When to Slow Down" className="steps-chart img-fluid" /> 
                 </div>
               </div>
             </div>
@@ -364,56 +267,7 @@ export const SevenSignalsSection: React.FC = () => {
 
               {/* Hover Overlay: Heart Rate magenta pulse wave line graph */}
               <div className="hover-overlay-container overlay-heart">
-                <div className="cardiac-wave-widget">
-                  <div className="cardiac-viewport">
-                    <svg className="cardiac-curve-svg" viewBox="0 0 450 140" preserveAspectRatio="none">
-                      <defs>
-                        <linearGradient id="magenta-fade" x1="0%" y1="0%" x2="0%" y2="100%">
-                          <stop offset="0%" stopColor="rgba(236, 72, 153, 0.45)" />
-                          <stop offset="100%" stopColor="rgba(236, 72, 153, 0)" />
-                        </linearGradient>
-                      </defs>
-                      
-                      {/* Grid guideline reference */}
-                      <line x1="0" y1="35" x2="450" y2="35" stroke="rgba(255, 255, 255, 0.05)" strokeDasharray="5,5" />
-                      <line x1="0" y1="70" x2="450" y2="70" stroke="rgba(255, 255, 255, 0.08)" />
-                      <line x1="0" y1="105" x2="450" y2="105" stroke="rgba(255, 255, 255, 0.05)" strokeDasharray="5,5" />
-                      
-                      {/* Gradient Fill under path */}
-                      <path 
-                        d="M 0,110 L 0,100 Q 30,95 50,110 T 100,60 T 140,115 T 180,95 T 210,105 T 250,55 T 280,120 T 320,75 T 380,100 T 430,90 L 450,90 L 450,140 L 0,140 Z" 
-                        fill="url(#magenta-fade)" 
-                      />
-                      
-                      {/* Glowing stroke path representing HRV pulse line */}
-                      <path 
-                        d="M 0,100 Q 30,95 50,110 T 100,60 T 140,115 T 180,95 T 210,105 T 250,55 T 280,120 T 320,75 T 380,100 T 430,90 L 450,90" 
-                        fill="none" 
-                        stroke="#EC4899" 
-                        strokeWidth="3.5" 
-                        strokeLinecap="round"
-                        className="cardiac-live-path"
-                      />
-                      <circle cx="250" cy="55" r="5" fill="#ffffff" stroke="#EC4899" strokeWidth="3" className="cardiac-pulse-node" />
-                    </svg>
-                    
-                    {/* Ticks on the right */}
-                    <div className="cardiac-ticks">
-                      <span className="tick-node">140</span>
-                      <span className="tick-node">70</span>
-                      <span className="tick-node">0</span>
-                    </div>
-                  </div>
-
-                  <div className="cardiac-timeline">
-                    <span className="timeline-point">00:00</span>
-                    <span className="timeline-point">06:00</span>
-                    <span className="timeline-point font-bold text-pink-400">NORMAL FLOW</span>
-                    <span className="timeline-point">12:00</span>
-                    <span className="timeline-point">18:00</span>
-                    <span className="timeline-point text-end">23:59</span>
-                  </div>
-                </div>
+                <img src={chart4} alt="Understand Your Effort" className="steps-chart img-fluid" /> 
               </div>
             </div>
 
@@ -442,43 +296,8 @@ export const SevenSignalsSection: React.FC = () => {
 
               {/* Hover Overlay: Cyan vertical bars for Heart Rate Variability */}
               <div className="hover-overlay-container overlay-hrv">
-                <div className="hrv-chart-widget">
-                  <div className="hrv-viewport">
-                    <div className="hrv-bars-grid">
-                      <div className="hrv-column" style={{ height: '45%' }}></div>
-                      <div className="hrv-column" style={{ height: '52%' }}></div>
-                      <div className="hrv-column" style={{ height: '38%' }}></div>
-                      <div className="hrv-column" style={{ height: '60%' }}></div>
-                      <div className="hrv-column active-pulse" style={{ height: '75%' }}></div>
-                      <div className="hrv-column" style={{ height: '65%' }}></div>
-                      <div className="hrv-column" style={{ height: '82%' }}></div>
-                      <div className="hrv-column" style={{ height: '70%' }}></div>
-                      <div className="hrv-column" style={{ height: '58%' }}></div>
-                      <div className="hrv-column" style={{ height: '48%' }}></div>
-                      <div className="hrv-column" style={{ height: '66%' }}></div>
-                      <div className="hrv-column" style={{ height: '78%' }}></div>
-                      <div className="hrv-column" style={{ height: '90%' }}></div>
-                      <div className="hrv-column" style={{ height: '80%' }}></div>
-                      <div className="hrv-column" style={{ height: '55%' }}></div>
-                      <div className="hrv-column" style={{ height: '42%' }}></div>
-                    </div>
+                 <img src={chart5} alt="Your Readiness, Revealed" className="steps-chart img-fluid" /> 
 
-                    <div className="hrv-ticks-legend">
-                      <span className="legend-val">100</span>
-                      <span className="legend-val">95</span>
-                      <span className="legend-val">90</span>
-                    </div>
-                  </div>
-
-                  <div className="hrv-timeline">
-                    <span className="timeline-point">00:00</span>
-                    <span className="timeline-point">06:00</span>
-                    <span className="timeline-point text-center" style={{ flex: 1, color: '#2DD4BF' }}>92ms AVG VARIABILITY</span>
-                    <span className="timeline-point">12:00</span>
-                    <span className="timeline-point">18:00</span>
-                    <span className="timeline-point text-end">23:59</span>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -502,37 +321,8 @@ export const SevenSignalsSection: React.FC = () => {
 
               {/* Hover Overlay: Green rounded columns illustrating blood oxygen */}
               <div className="hover-overlay-container overlay-oxygen">
-                <div className="oxygen-chart-widget">
-                  <div className="oxygen-viewport">
-                    <div className="oxygen-bars-grid">
-                      <div className="oxy-col" style={{ height: '88%' }}></div>
-                      <div className="oxy-col" style={{ height: '92%' }}></div>
-                      <div className="oxy-col" style={{ height: '90%' }}></div>
-                      <div className="oxy-col" style={{ height: '95%' }}></div>
-                      <div className="oxy-col peak" style={{ height: '99%' }}></div>
-                      <div className="oxy-col" style={{ height: '97%' }}></div>
-                      <div className="oxy-col" style={{ height: '94%' }}></div>
-                      <div className="oxy-col" style={{ height: '91%' }}></div>
-                      <div className="oxy-col" style={{ height: '89%' }}></div>
-                      <div className="oxy-col" style={{ height: '93%' }}></div>
-                      <div className="oxy-col" style={{ height: '96%' }}></div>
-                    </div>
+                <img src={chart6} alt="Know When Energy Drops" className="steps-chart img-fluid" /> 
 
-                    <div className="oxygen-ticks">
-                      <span className="tick">100</span>
-                      <span className="tick">95</span>
-                      <span className="tick">90</span>
-                    </div>
-                  </div>
-
-                  <div className="oxygen-timeline">
-                    <span className="timeline-col">00:00</span>
-                    <span className="timeline-col">06:00</span>
-                    <span className="timeline-col">12:00</span>
-                    <span className="timeline-col">18:00</span>
-                    <span className="timeline-col text-end">23:59</span>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -561,37 +351,7 @@ export const SevenSignalsSection: React.FC = () => {
 
               {/* Hover Overlay: Temperature cool wave chart */}
               <div className="hover-overlay-container overlay-temp">
-                <div className="temp-chart-widget">
-                  <div className="temp-viewport">
-                    <div className="temp-bars-trend">
-                      <div className="temp-bar cool" style={{ height: '40%' }}></div>
-                      <div className="temp-bar cool" style={{ height: '48%' }}></div>
-                      <div className="temp-bar neutral" style={{ height: '50%' }}></div>
-                      <div className="temp-bar warm" style={{ height: '62%' }}></div>
-                      <div className="temp-bar neutral" style={{ height: '51%' }}></div>
-                      <div className="temp-bar cool" style={{ height: '35%' }}></div>
-                      <div className="temp-bar cool" style={{ height: '28%' }}></div>
-                      <div className="temp-bar warm" style={{ height: '58%' }}></div>
-                      <div className="temp-bar warm" style={{ height: '65%' }}></div>
-                      <div className="temp-bar neutral" style={{ height: '50%' }}></div>
-                      <div className="temp-bar cool" style={{ height: '44%' }}></div>
-                    </div>
-
-                    <div className="temp-ticks">
-                      <span className="tick">+0.5°</span>
-                      <span className="tick">0.0°</span>
-                      <span className="tick">-0.5°</span>
-                    </div>
-                  </div>
-
-                  <div className="temp-timeline">
-                    <span className="timeline-col">00:00</span>
-                    <span className="timeline-col">08:00</span>
-                    <span className="timeline-col">12:00</span>
-                    <span className="timeline-col">18:00</span>
-                    <span className="timeline-col text-end">23:59</span>
-                  </div>
-                </div>
+                <img src={chart7} alt="Your Body's Subtle Signals" className="steps-chart img-fluid" />
               </div>
             </div>
 
