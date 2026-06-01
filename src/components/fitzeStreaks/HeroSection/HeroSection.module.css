@@ -1,9 +1,6 @@
 /* ==========================================================================
    HeroSection.css - Fitzestreaks Premium Design System stylesheet
    ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 .fitze-hero-section {
   position: relative;
   width: 100%;
@@ -209,9 +206,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 44px;
+  /* border-radius: 44px; */
   display: block;
-  filter: saturate(1.04) contrast(1.02);
+  /* filter: saturate(1.04) contrast(1.02); */
 }
 
 .hero-image-glare {
