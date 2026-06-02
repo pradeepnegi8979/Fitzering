@@ -115,18 +115,19 @@
 .hero-slide-big-heading {
   color: #ffffff;
   font-size: clamp(2.4rem, 5.5vw, 4.4rem);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -2px;
   margin-bottom: 24px;
 }
 
 .hero-slide-title-accent {
-  color: #ff5e3a;
-  background: linear-gradient(135deg, #ff5e3a 0%, #ff8359 100%);
+  font-weight:600;
+  /*color: #ff5e3a;
+   background: linear-gradient(135deg, #ff5e3a 0%, #ff8359 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
+  display: inline-block; */
 }
 
 /* Slogans block descriptions */
@@ -283,8 +284,9 @@
 }
 
 @media (max-width: 767.98px) {
+  
   .hero-slide-big-heading, .hero-slide-subtitles-stack{
-    text-align: center;
+    text-align: left;
   }
   .hero-slider-outer-container {
     padding: 16px;
@@ -305,24 +307,26 @@
     margin-bottom: 15px;
   }
   .hero-slide-subtitles-stack {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .hero-slide-actions-row {
-    gap: 24px;
+    gap: 60px;
     width: 100%;
   }
   .hero-slide-primary-button {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding: 12px 24px;
   }
   .hero-stores-badges-container {
     width: 100%;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
   }
-  
+  .hero-stores-badges-container img{
+    max-width:109px;
+  }
   /* Position indicator dots on the bottom-right for mobile screen sizes as well */
   .hero-right-navigation {
     position: absolute;
