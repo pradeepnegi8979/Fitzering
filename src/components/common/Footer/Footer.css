@@ -253,7 +253,7 @@
 
 /* Responsive styles to ensure perfect adaptability across mobile & tablet devices */
 @media (max-width: 991.98px) {
-  .footer-logo-col img{max-width:157px!important;}
+  /* .footer-logo-col img{max-width:157px!important;} */
   .footer-badges-container img{max-width:105px;}
   .footer-bottom-row.row{flex-direction:unset!important;} 
   .footer-bottom-row.row .col-sm-6{width:50%!important; max-width:50%!important;}
