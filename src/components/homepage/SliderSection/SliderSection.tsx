@@ -3,6 +3,8 @@ import { Play, X } from 'lucide-react';
 import './SliderSection.css';
 import videoBg1 from '../../../assets/video-bg1.png';
 import videoBg2 from '../../../assets/video-bg2.png';
+import videoPlaceholder from '../../../assets/video-image.png';
+
 
 interface SliderItem {
   id: number;
@@ -162,13 +164,14 @@ export const SliderSection: React.FC = () => {
             </button>
             <div className="modal-inner-card p-4">
               <span className="modal-top-tag mb-1 d-block">fitze Community Guide</span>
-              <h3 className="modal-video-title mb-4">{activeVideo}</h3>
+              {/* <h3 className="modal-video-title mb-4">{activeVideo}</h3> */}
               <div className="ratio ratio-16x9 slider-iframe-wrapper">
-                <iframe 
+                <img src={videoPlaceholder} alt="Video Placeholder" style={{maxWidth:'100%'}} />
+                {/* <iframe 
                   src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
                   title="fitze Community Overview" 
                   allowFullScreen
-                ></iframe>
+                ></iframe> */}
               </div>
             </div>
           </div>

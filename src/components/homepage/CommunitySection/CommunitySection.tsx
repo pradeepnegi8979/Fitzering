@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Play, Film, X } from 'lucide-react';
 import './CommunitySection.css';
-
+import videoPlaceholder from '../../../assets/video-image.png';
 interface CommunityVlog {
   id: number;
   title: string;
@@ -98,12 +98,13 @@ export const CommunitySection: React.FC = () => {
                 <span className="section-tag">fitze Community Vlog</span>
                 <h3 className="mb-4 text-white">{activeVideo}</h3>
                 <div className="ratio ratio-16x9">
-                  <iframe 
+                  <img src={videoPlaceholder} alt="Video Placeholder" style={{maxWidth:'100%'}} />
+                  {/* <iframe 
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
                     title="fitze Community Guide" 
                     allowFullScreen
-                  ></iframe>
-                </div>
+                  ></iframe>*/}
+                </div> 
               </div>
             </div>
           </div>
