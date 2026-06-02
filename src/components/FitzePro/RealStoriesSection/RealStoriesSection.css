@@ -1,214 +1,215 @@
 /* ==========================================================================
-   RealStoriesSection.css - Fitze Pro Testimonials Track
+   RealStoriesSection.css - Fitze Pro Testimonials Auto Marquee
    ========================================================================== */
 
-.fitzepro-stories-wrapper {
-  background-color: #fafafa;
-  padding: 90px 0 100px 0;
+.fitzepro-real-stories-section-wrapper {
+  background-color: #ffffff;
+  padding: 100px 0 110px 0;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   overflow: hidden;
+  position: relative;
 }
 
-.fitzepro-stories-container {
-  max-width: 1140px;
+/* Badge Title Styling */
+.real-stories-pill-container {
+  margin-bottom: 20px;
 }
 
-/* Stories header styles */
-.fitzepro-stories-header {
-  margin-bottom: 48px;
-}
-
-.fitzepro-stories-eyebrow {
+.real-stories-badge-pill {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #e4e4e7;
+  color: #71717a;
   font-size: 0.72rem;
-  font-weight: 700;
-  color: #a1a1aa;
-  letter-spacing: 2px;
-  display: block;
-  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
-.fitzepro-stories-title {
-  font-size: 2.6rem;
+/* Dynamic Bold Title Styling */
+.real-stories-main-title {
+  font-size: 2.85rem;
   font-weight: 400;
   color: #121212;
-  letter-spacing: -1.8px;
-  line-height: 1.25;
+  letter-spacing: -1.2px;
+  line-height: 1.2;
+  margin-bottom: 50px;
 }
 
-.logo-text-fitze {
-  font-weight: 850;
-  letter-spacing: -2px;
-  color: #121212;
-}
-
-.badge-pro-inline-orange {
-  background-color: #ff5226;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 800;
-  padding: 3px 12px;
-  border-radius: 9px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  line-height: 1.25;
-  margin-left: 6px;
-  vertical-align: middle;
+.real-stories-title-pro {
+  color: #FE5226; /* Fitze Orange-red brand color */
+  font-weight: 600;
 }
 
 /* ==========================================================================
-   HORIZONTAL SCROLLABLE COMPONENT TRACK
+   INFINITE MARQUEE SLIDER SECTIONS
    ========================================================================== */
 
-.stories-scroll-track-container {
+/* Outer scroll viewport context spanning edge to edge */
+.real-stories-slider-outer-container {
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 15px 5px 35px 5px;
-  cursor: grab;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
 }
 
-/* Hide scrollbar completely across all engines */
-.stories-scroll-track-container::-webkit-scrollbar {
-  display: none;
-}
-.stories-scroll-track-container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.stories-cards-track {
-  display: flex;
+/* Row wrapper containing duplicated lists of panels */
+.real-stories-slider-inner-marquee {
+  display: flex !important;
   gap: 24px;
   width: max-content;
+  animation: slideMarqueeRightToLeft 45s linear infinite;
 }
 
-/* TESTIMONIAL CARD ELEMENTS */
-.story-card {
+/* Pause scroll when cursor drifts on top */
+.real-stories-slider-outer-container:hover .real-stories-slider-inner-marquee {
+  animation-play-state: paused;
+}
+
+/* TESTIMONIAL INDIVIDUAL CARDS */
+.real-stories-single-card {
   background-color: #ffffff;
-  border: 1px solid rgba(18, 18, 18, 0.05);
-  border-radius: 28px;
+  border: 1.5px solid rgba(18, 18, 18, 0.05);
+  border-radius: 24px;
   padding: 36px;
-  width: 360px; /* Locked elegant card width */
-  display: flex;
+  width: 380px; /* Locked pixel proportional width */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.012);
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.story-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  border-color: rgba(255, 82, 38, 0.15);
+.real-stories-single-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(254, 82, 38, 0.15);
+  box-shadow: 0 16px 40px rgba(254, 82, 38, 0.04);
 }
 
-/* 5 Stars styling */
-.story-star-fill {
-  color: #ff5226;
-  fill: #ff5226;
+/* Stars rating design details */
+.real-stories-rating-stars-row {
+  margin-bottom: 22px;
 }
 
-/* Quote Text formatting */
-.story-quote-text {
-  font-size: 0.92rem;
+.real-stories-custom-star-fill {
+  color: #FE5226;
+  fill: #FE5226;
+}
+
+/* Quote formatting - Elegant light grey italic */
+.real-stories-quote-paragraph {
+  font-size: 0.94rem;
+  font-style: italic;
   font-weight: 400;
-  color: #52525b; /* Zinc dark soft grey */
+  color: #4b5563; /* soft charcoal zinc tone */
   line-height: 1.6;
-  margin: 0;
   text-align: left;
+  margin: 0 !important;
   flex-grow: 1;
 }
 
-/* User identity header */
-.story-avatar-img {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* Custom subtle card line separator */
+.real-stories-divider-line {
+  border: 0;
+  border-top: 1px solid rgba(18, 18, 18, 0.06);
+  margin: 24px 0 20px 0 !important;
+  opacity: 1;
 }
 
-.story-user-name {
-  font-size: 0.95rem;
+/* ID Frame Footers */
+.real-stories-avatar-circle-frame {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.real-stories-avatar-img-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.real-stories-name-bold {
+  font-size: 0.98rem;
   font-weight: 700;
   color: #121212;
-  margin-bottom: 2px;
+  margin: 0 0 2px 0 !important;
+  line-height: 1.2;
 }
 
-.story-user-title {
+.real-stories-subtext-light {
   font-size: 0.78rem;
   font-weight: 500;
-  color: #a1a1aa;
-}
-
-/* BOTTOM OUTCOME ACHIEVEMENT BADGES */
-.story-achieve-badge-container {
-  width: 100%;
-  text-align: left;
-}
-
-.story-achieve-badge-pill {
-  display: inline-block;
-  background-color: #f4f4f5; /* Light soft grey background */
-  color: #3f3f46;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  padding: 8px 16px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  border: 1px solid rgba(18, 18, 18, 0.03);
-}
-
-.story-card:hover .story-achieve-badge-pill {
-  background-color: rgba(255, 82, 38, 0.05);
-  color: #ff5226;
-  border-color: rgba(255, 82, 38, 0.1);
+  color: #8a8a93; /* light zinc */
+  display: block;
 }
 
 /* ==========================================================================
-   RESPONSIVE LAYOUTS
+   CSS SEAMLESS KEYFRAME SLIDING ACCELERATION
    ========================================================================== */
 
-@media (max-width: 991px) {
-  .fitzepro-stories-title {
-    font-size: 2.2rem;
-    letter-spacing: -1px;
+@keyframes slideMarqueeRightToLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-33.3333%, 0, 0);
   }
 }
 
-@media (max-width: 768px) {
-  .fitzepro-stories-wrapper {
-    padding: 70px 0 80px 0;
+/* ==========================================================================
+   RESPONSIVE DESIGN ADAPTIVENESS
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .real-stories-main-title {
+    font-size: 2.3rem;
+    letter-spacing: -0.8px;
+    margin-bottom: 35px;
   }
-  .story-card {
-    width: 310px;
+  
+  .fitzepro-real-stories-section-wrapper {
+    padding: 80px 0 90px 0;
+  }
+
+  .real-stories-single-card {
+    width: 340px;
     padding: 28px;
   }
 }
 
-@media (max-width: 480px) {
-  .fitzepro-stories-title {
-    font-size: 1.8rem;
-    letter-spacing: -0.8px;
+@media (max-width: 768px) {
+  .real-stories-main-title {
+    font-size: 1.95rem;
+    letter-spacing: -0.6px;
   }
-  .badge-pro-inline-orange {
-    font-size: 0.82rem;
-    padding: 2px 10px;
+
+  .real-stories-single-card {
+    width: 300px;
+    padding: 24px;
   }
-  .story-card {
-    width: 280px;
-    padding: 22px;
-  }
-  .story-quote-text {
+
+  .real-stories-quote-paragraph {
     font-size: 0.88rem;
+    line-height: 1.5;
   }
-  .story-achieve-badge-pill {
-    font-size: 0.66rem;
-    padding: 6px 12px;
+}
+
+@media (max-width: 480px) {
+  .real-stories-main-title {
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+  }
+
+  .real-stories-single-card {
+    width: 270px;
+    padding: 20px;
   }
 }

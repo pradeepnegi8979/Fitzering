@@ -1,9 +1,6 @@
 /* ==========================================================================
    PayoutPartnerSection.css - High Fidelity Careem Co-Marketing Payout Banner
    ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;750&display=swap');
-
 .fitze-payout-partner-section {
   position: relative;
   width: 100%;
@@ -24,7 +21,11 @@
 .payout-badge-wrapper {
   margin-bottom: 24px;
 }
-
+.careem-pay-logo-text{
+ max-width: 170px!important;
+ transform: 'translate(0px, -4px)',
+                
+}
 .payout-badge {
   display: inline-block;
   font-family: 'Poppins', sans-serif;
@@ -126,6 +127,11 @@
 }
 
 @media (max-width: 991px) {
+  .careem-pay-logo-text{
+ max-width: 118px!important;
+ 
+                
+}
   .fitze-payout-partner-section {
     padding: 80px 0;
   }

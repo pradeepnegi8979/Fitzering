@@ -37,10 +37,7 @@ export const CareemPartnershipSection: React.FC = () => {
                 <img
                   src={IconCareem}
                   alt="Careem Pay"
-                  style={{
-                    maxWidth: '170px',
-                    transform: 'translate(0px, -4px)',
-                  }}
+                  className={styles['careem-pay-logo-text']} 
                 />{' '}
                 wallet
               </span>

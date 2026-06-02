@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .fitzepro-why-section-wrapper {
-  background-color: #ff4d24; /* Vibrant brand coral orange-red field */
+  background-color: #FE572A; /* Vibrant brand coral orange-red field */
   padding: 85px 0 95px 0;
   width: 100%;
   box-sizing: border-box;
@@ -43,7 +43,7 @@
    ========================================================================== */
 .why-display-headline {
   font-size: 2.85rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   letter-spacing: -1.8px;
   line-height: 1.2;
@@ -87,7 +87,7 @@
 }
 
 .why-flow-pill-card {
-  background-color: rgba(18, 18, 18, 0.08); /* Sophisticated darker blend */
+  background-color:#EF4314; /* Sophisticated darker blend */
   padding: 22px 52px;
   border-radius: 24px;
   flex: 1;

@@ -1124,8 +1124,8 @@
 }
 
 @media (max-width: 991.98px) {
-  .bento-row  .bento-card.card-heart .card-top-bar  {height:200px;}
-  .bento-card{height:200px;}
+  /* .bento-row  .bento-card.card-heart .card-top-bar  {height:200px;}
+  .bento-card{height:200px;} */
   .seven-signals-section {
     padding: 70px 0;
   }
@@ -1152,9 +1152,9 @@
     width: 100%;
   }
 
-  .bento-card {
+  /* .bento-card {
     height: 330px;
-  }
+  } */
   
   .desc-activity, .desc-sleep-top, .desc-stress-top, .desc-heart, .desc-hrv, .desc-oxygen, .desc-temp {
     max-width: 100%;
@@ -1207,6 +1207,12 @@
   .steps-arch-widget {
     width: 55%;
   }
+  
+  .hover-overlay-container
+  {display:none;}
+  .bento-card-title, .card-stress.bento-card-title, .card-content-heart {max-width: 100%!important;}
+  .bento-badge{padding:3px 8px!important;}
+  .bento-card {min-height:400px!important;}
 }
 
 @media (max-width: 479.98px) {
@@ -1220,7 +1226,7 @@
     font-size: 0.9rem;
   }
   .bento-card {
-    height: 280px;
+    /* height: 280px; */
     padding: 16px;
   }
   .bento-card-title {
