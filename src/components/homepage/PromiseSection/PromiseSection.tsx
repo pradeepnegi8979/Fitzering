@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Flame, CheckCircle, TrendingUp } from 'lucide-react';
 import './PromiseSection.css';
-import fitzePromiseImg from '../../../assets/fitze-promise.png';
+import fitzePromiseImg from '../../../assets/fitze-promise-mobile.png';
 export const PromiseSection: React.FC = () => {
   return (
     <section className="promise-section py-4" id="download">

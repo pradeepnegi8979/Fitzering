@@ -41,7 +41,7 @@
 
 .real-life-title {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 400;
   color: #121212;
   letter-spacing: -2px;
   line-height: 1.15;
@@ -50,6 +50,7 @@
 
 .real-life-title .highlight-coral {
   color: #ff5e3a; /* Coral theme color */
+  font-weight: 600;
 }
 
 /* 2. APP DOWNLOAD BADGES ROW */

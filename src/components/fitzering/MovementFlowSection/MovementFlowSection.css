@@ -19,17 +19,21 @@
 
 .flow-category {
   display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #777d85;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(28 28 30 / 50%);
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 .flow-title {
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -1.5px;
   line-height: 1.15;
   color: #121212;
@@ -39,6 +43,7 @@
 .flow-title .highlight-coral {
   color: #ff5e3a;
   position: relative;
+  font-weight: 600;
 }
 
 .flow-lead {
@@ -56,7 +61,7 @@
   border-radius: 36px;
   padding: 60px 45px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
-  max-width: 1120px;
+  
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -125,7 +130,7 @@
 .stage-photo-wrapper {
   position: relative;
   width: 100%;
-  max-width: 260px; /* Symmetrical exact fit */
+  max-width: 310px; /* Symmetrical exact fit */
   aspect-ratio: 1 / 1;
   border-radius: 36px; /* High fidelity smooth roundings */
   overflow: hidden;
