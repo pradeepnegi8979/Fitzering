@@ -4,7 +4,6 @@ import './WellnessRingSection.css';
 // @ts-ignore
 
 import threeRingsImage from '../../../assets/threeringframe.png';
-import CorporateLeadModal from '../../corporateModal/CorporateLeadModal';
 
 export const WellnessRingSection: React.FC = () => {
   return (

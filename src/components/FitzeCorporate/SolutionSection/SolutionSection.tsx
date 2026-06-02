@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './SolutionSection.css';
-import TeamBuilding from '../../../assets/TeamBuilding1.png';
+import AppBasedStepChallenge from '../../../assets/AppBasedChallenges.png';
+import TeamBuilding from '../../../assets/TeamBuilding&Off-sites.png';
+import WellnessWordshops from '../../../assets/WellnessWorkshops.png';
+import CorporateSportTournament from '../../../assets/CorporateSporttournament.png';
+import CuratedCorporateEvents from '../../../assets/CuratedCorporateEvents.png';
+
+
 interface TabItem {
   id: string;
   pillLabel: string;
@@ -19,7 +25,7 @@ const tabData: TabItem[] = [
     title: 'App-Based Step Challenges',
     btnText: 'Activate Your Teams',
     description: 'Bring teams together through gamified walking challenges across local, regional and global teams on the fitze app.',
-    imageUrl: TeamBuilding
+    imageUrl: AppBasedStepChallenge
   },
   {
     id: 'Corporate-Sports-Tournaments',
@@ -27,7 +33,7 @@ const tabData: TabItem[] = [
     title: 'Corporate Sports Tournaments',
     btnText: 'Explore Sports Experiences',
     description: "High-energy sports experiences designed to strengthen culture, connection and team morale.",
-    imageUrl:TeamBuilding
+    imageUrl:CorporateSportTournament
   },
   {
     id: 'Wellness-Workshops',
@@ -35,7 +41,7 @@ const tabData: TabItem[] = [
     title: 'Wellness Workshops',
     btnText: 'Launch Wellness at Your Workplace',
     description: 'Mental wellbeing sessions, first-aiders programs, EAP support and workplace wellness experiences.',
-    imageUrl: TeamBuilding
+    imageUrl: WellnessWordshops
   },
   {
     id: 'Team-Building-&-Off-sites',
@@ -51,7 +57,7 @@ const tabData: TabItem[] = [
     title: 'Curated Corporate Events',
     btnText: 'Bring Your Teams Together',
     description: 'Employee-first experiences including family fun days, carnivals and large-scale corporate activations.',
-    imageUrl:TeamBuilding
+    imageUrl:CuratedCorporateEvents
   }
 ];
 
