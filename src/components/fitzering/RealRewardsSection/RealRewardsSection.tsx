@@ -58,7 +58,7 @@ export const RealRewardsSection: React.FC = () => {
           <Row className="g-4">
             
             {/* Card 1: Streaks */}
-            <Col lg={4} md={12} className="d-flex">
+            <Col lg={4} md={12}  className="d-flex mb-4 mb-lg-0 mb-md-0">
               <div className="pill-premium-card flex-fill">
                 {/* Visual Area */}
                 <div className="card-visual-header">
@@ -85,7 +85,7 @@ export const RealRewardsSection: React.FC = () => {
             </Col>
 
             {/* Card 2: Rewards */}
-            <Col lg={4} md={12} className="d-flex">
+            <Col lg={4} md={12} className="d-flex mb-4 mb-lg-0 mb-md-0">
               <div className="pill-premium-card flex-fill">
                 {/* Visual Area */}
                 <div className="card-visual-header">
@@ -111,7 +111,7 @@ export const RealRewardsSection: React.FC = () => {
             </Col>
 
             {/* Card 3: Challenges */}
-            <Col lg={4} md={12} className="d-flex">
+            <Col lg={4} md={12}  className="d-flex">
               <div className="pill-premium-card flex-fill">
                 {/* Visual Area */}
                 <div className="card-visual-header">

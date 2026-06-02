@@ -8,6 +8,7 @@ import paymentIcon from '../../../assets/payment-gateway.svg';
 import Instagram from '../../../assets/instagramicon.svg';  
 import LinkedIn from '../../../assets/linkedicon.svg';  
 import FooterLogo from '../../../assets/footer-logo-white.svg';
+import footerLogoMob from '../../../assets/footerLogoMob.svg';
 export const Footer: React.FC = () => {
   return (
     <footer className="footer-fitze" id="footer">
@@ -16,7 +17,8 @@ export const Footer: React.FC = () => {
           {/* Left Block - Massive Brand Logo */}
           <Col lg={7} md={12} className="footer-logo-col">
             {/* <h1 className="brand-logo-huge">fitze</h1> */}
-            <img src={FooterLogo} alt="footer logo" style={{maxWidth:'100%'}}/>
+            <img src={FooterLogo} alt="footer logo" style={{maxWidth:'100%'}} className='d-none d-md-block  d-lg-block'/>
+            <img src={footerLogoMob} alt="footer logo mobile" className="d-block d-md-none d-lg-none" style={{maxWidth:'100%'}}/>
           </Col>
 
           {/* Right Block - Navigation Columns and App Downloads */}
