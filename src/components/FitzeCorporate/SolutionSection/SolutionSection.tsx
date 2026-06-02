@@ -56,7 +56,7 @@ const tabData: TabItem[] = [
 ];
 
 export const SolutionSection: React.FC = () => {
-  const [activeTabId, setActiveTabId] = useState<string>('team-building');
+  const [activeTabId, setActiveTabId] = useState<string>('App-Based-Step-Challenges');
   const activeTab = tabData.find(tab => tab.id === activeTabId) || tabData[1];
   return (
     <section className="corp-solution-section" id="corp-solution">
@@ -86,18 +86,7 @@ export const SolutionSection: React.FC = () => {
               </button>
             ))}
           </div>
-          {/* <div className="tab-pills-row tab-row-2">
-            {tabData.slice(3).map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTabId(tab.id)}
-                className={`tab-switch-pill ${activeTabId === tab.id ? 'active-pill' : ''}`}
-                id={`tab-switch-${tab.id}`}
-              >
-                {tab.pillLabel}
-              </button>
-            ))}
-          </div> */}
+          
         </div>
 
         {/* Tab Showcase Premium Display Card with warm ivory background and responsive island layout */}

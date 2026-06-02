@@ -24,7 +24,7 @@
   color: #a0aec0;
   font-size: 0.95rem;
   font-weight: 700;
-  padding: 12px 32px;
+  padding: 12px 15px;
   border-radius: 12px;
   min-width: 130px;
   display: inline-flex;
@@ -35,11 +35,11 @@
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
-.trusted-logo-pill:hover {
+/* .trusted-logo-pill:hover {
   background-color: #ff5226;
   color: #ffffff;
   transform: scale(1.03);
-}
+} */
 
 @media (max-width: 576px) {
   .trusted-logo-pill {
