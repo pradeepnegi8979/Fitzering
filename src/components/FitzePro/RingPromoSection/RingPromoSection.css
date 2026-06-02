@@ -113,7 +113,6 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  max-width: 1040px;
   margin-bottom: 82px; /* Leaves clear breathing space for the background ring visual */
   z-index: 2;
 }
