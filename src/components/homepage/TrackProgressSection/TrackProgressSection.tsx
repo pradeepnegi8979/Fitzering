@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRight } from 'lucide-react';
 import './TrackProgressSection.css';
 import trackProgressBgImg from '../../../assets/track-your-progress.png';
 import CareemPAy from '../../../assets/icon-careem.svg';
@@ -27,7 +26,7 @@ export const TrackProgressSection: React.FC = () => {
               Earn real <span className="payout-colored">payouts.</span>
             </h1>
             
-            <p className="progress-wallet-sub mb-4 text-white">
+            <p className="progress-wallet-sub mb-md-4 text-white">
               in your connected <span className="wallet-brand font-weight-bold">
                   <img src={CareemPAy} alt="Careem pay" style={{maxWidth:'70px', transform:'translate(0px, -2px)'}}/>
                 </span> wallet.
@@ -36,7 +35,7 @@ export const TrackProgressSection: React.FC = () => {
             <div className="d-flex justify-content-center">
               <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="btn-fitze btn-progress-download">
                 Download The App
-                <ArrowRight size={18} />
+                
               </a>
             </div>
           </Col>
