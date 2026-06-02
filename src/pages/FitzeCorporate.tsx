@@ -14,6 +14,7 @@ import WellnessRingSection from "../components/FitzeCorporate/WellnessRingSectio
 import BentoMockupsSection from "../components/FitzeCorporate/BentoMockupsSection/BentoMockupsSection";
 import SocialHighlightsSection from "../components/FitzeCorporate/SocialHighlightsSection/SocialHighlightsSection";
 import CorporateLeadModal from "../components/corporateModal/CorporateLeadModal";
+import OrangeSectionF from '../components/FitzeCorporate/OrangeSectionF/OrangeSectionF';
 
 export const FitzeCorporate: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -70,6 +71,7 @@ export const FitzeCorporate: React.FC = () => {
       <SolutionSection/>
       <TickerSection/>
       <GallerySection/>
+      <OrangeSectionF/>
       <EffortlessSection/>
       <ProcessSection/>
       <SocialHighlightsSection/>  

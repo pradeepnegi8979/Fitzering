@@ -59,7 +59,7 @@ export const ProcessSection: React.FC = () => {
 
         {/* Master Heading */}
         <h2 className="section-headline-text text-center">
-          Simple to shape. Built to scale.
+          Simple to shape. <span>Built to scale.</span>
         </h2>
 
         {/* Subtitle text */}

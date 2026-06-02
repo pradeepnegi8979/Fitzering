@@ -15,7 +15,7 @@ export const BentoMockupsSection: React.FC = () => {
         <Row className="g-4 gy-5 justify-content-center">
           
           {/* LEFT COLUMN: BUILD HABITS (ZINC/DARK CARD WITH MOBILE MOCKUPS) */}
-          <Col lg={6} md={12} className="d-flex">
+          <Col lg={6} md={12} className="d-flex mb-4 mb-lg-0 mb-md-0">
             <div className="bento-showcase-card habits-card-theme flex-fill">
               
               <div className="bento-card-header text-start">

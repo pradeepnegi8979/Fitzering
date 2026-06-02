@@ -41,7 +41,7 @@
 /* Headline Styling with explicit split coloring */
 .social-highlights-headline-text {
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #111113;
   letter-spacing: -1.6px;
   line-height: 1.15;
@@ -50,6 +50,10 @@
 
 .social-highlights-headline-text .highlight-color {
   color: #ff5226; /* Fitze brand orange */
+  
+}
+.social-highlights-headline-text {
+  color:#1C1C1E;
 }
 
 /* Right side description positioning */

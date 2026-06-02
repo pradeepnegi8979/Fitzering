@@ -37,7 +37,7 @@
   font-size: 1.05rem;
   font-style: normal;
   color: #4a5568;
-  max-width: 720px;
+  
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -63,7 +63,7 @@
 
 .service-number {
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #ff5226;
   display: block;
   margin-bottom: 12px;
@@ -71,7 +71,7 @@
 
 .service-title {
   font-size: 1.25rem;
-  font-weight: 750;
+  font-weight: 600;
   color: #121212;
   letter-spacing: -0.5px;
   margin-bottom: 10px;
