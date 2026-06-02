@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Play, X } from 'lucide-react';
 import './VideoSection.css';
 import bgImg from '../../../assets/not-just-tracking.png';
+import videoPlaceholder from '../../../assets/video-image.png';
 export const VideoSection: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
@@ -44,11 +45,12 @@ export const VideoSection: React.FC = () => {
                 <X size={24} />
               </button>
               <div className="ratio ratio-16x9">
-                <iframe 
+                <img src={videoPlaceholder} alt="Video Placeholder" style={{maxWidth:'100%'}} />
+                {/* <iframe 
                   src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
                   title="fitze App Introduction" 
                   allowFullScreen
-                ></iframe>
+                ></iframe> */}
               </div>
             </div>
           </div>
