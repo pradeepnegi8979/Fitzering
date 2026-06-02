@@ -29,7 +29,7 @@ export const MovementFlowSection: React.FC = () => {
               <div className="stage-item text-center">
                 <div className="stage-heading-row">
                   <h3 className="stage-label-title">Wear</h3>
-                  <div className="stage-connector-arrow">
+                  <div className="stage-connector-arrow d-none d-lg-block d-md-block">
                     <ArrowRight size={22} className="connector-icon" />
                   </div>
                 </div>
@@ -81,6 +81,9 @@ export const MovementFlowSection: React.FC = () => {
               <div className="stage-item text-center">
                 <div className="stage-heading-row">
                   <h3 className="stage-label-title">Earn</h3>
+                  <div className="stage-connector-arrow d-lg-none d-md-none">
+                    <ArrowRight size={22} className="connector-icon" />
+                  </div>
                 </div>
                 
                 {/* Stage Image with custom rounding */}

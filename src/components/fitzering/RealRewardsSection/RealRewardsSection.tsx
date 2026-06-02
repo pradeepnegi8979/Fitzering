@@ -138,7 +138,7 @@ export const RealRewardsSection: React.FC = () => {
 
         {/* Bottom Call to Action Footer */}
         <div className="rewards-bottom-cta text-center">
-          <p className="cta-disclaimer-text"><span className="highlight-coral-bold"> consistency, rewarded.</span>
+          <p className="cta-disclaimer-text"><span className="highlight-coral-bold"> Consistency, rewarded.</span>
           </p>
           <div className="cta-btn-wrapper">
             <a href="https://www.fitze.ae/share/" target="_blank" rel="noopener noreferrer" className="premium-dark-btn">

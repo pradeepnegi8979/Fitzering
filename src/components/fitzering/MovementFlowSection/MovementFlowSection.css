@@ -118,8 +118,14 @@
 }
 
 @keyframes floatArrowMobile {
-  0% { transform: translateX(-50%) rotate(90deg) translateY(0px); opacity: 0.7; }
-  100% { transform: translateX(-50%) rotate(90deg) translateY(6px); opacity: 1; }
+  from {
+    transform: rotate(90deg) translateX(0);
+    opacity: 0.7;
+  }
+  to {
+    transform: rotate(90deg) translateX(6px);
+    opacity: 1;
+  }
 }
 
 .connector-icon {
@@ -193,7 +199,7 @@
     font-size: 1.65rem;
   }
   .stage-photo-wrapper {
-    max-width: 220px;
+    /* max-width: 220px; */
     border-radius: 28px;
   }
   .stage-caption {
@@ -206,8 +212,8 @@
   }
   .stage-connector-arrow {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
+    bottom: 50px;
+    left: calc(50% - 22px);
     right: auto;
     top: auto;
     transform: translateX(-50%) rotate(90deg);
@@ -238,7 +244,7 @@
     padding-bottom: 50px;
   }
   .stage-photo-wrapper {
-    max-width: 240px;
+    /* max-width: 240px; */
   }
   .stage-heading-row {
     margin-bottom: 15px;
@@ -250,7 +256,7 @@
     font-size: 1.8rem;
   }
   .stage-photo-wrapper {
-    max-width: 200px;
+    /* max-width: 200px; */
     border-radius: 24px;
   }
   .stage-label-title {
