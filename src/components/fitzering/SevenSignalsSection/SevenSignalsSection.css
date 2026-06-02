@@ -1212,7 +1212,13 @@
   {display:none;}
   .bento-card-title, .card-stress.bento-card-title, .card-content-heart {max-width: 100%!important;}
   .bento-badge{padding:3px 8px!important;}
-  .bento-card {min-height:400px!important;}
+  .bento-card {min-height:210px!important; justify-content:start!important; grid-gap:15px!important; padding:15px!important;}
+  .card-content-heart {position:unset!important;}
+  .card-content-heart .bento-card-title {text-align:left!important;}
+  .fitze-main-heading{margin-top:10px;}
+  .bento-card-desc {opacity:1; transform:translateY(0); pointer-events:auto;}
+ 
+  
 }
 
 @media (max-width: 479.98px) {
