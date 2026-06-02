@@ -315,12 +315,21 @@
   .corp-hero-text-col {
     padding-right: 0;
     margin-bottom: 35px;
+
   }
+  .corp-hero-text-col.text-start.col-md-12{
+    text-align:left!important;
+  }
+  
   .corp-hero-visual-col {
     min-height: auto;
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    display:none;
+  }
+  .corp-hero-bg-img {
+    object-position: 70% 50%;
   }
   .corp-diagram-sandbox {
     display: flex;
@@ -372,7 +381,7 @@
     border-radius: 30px;
   }
   .corp-hero-content-row {
-    padding: 40px 24px;
+    padding: 40px 0px;
   }
   .corp-hero-title {
     font-size: 2.1rem;

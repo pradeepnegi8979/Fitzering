@@ -205,36 +205,40 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Weight size={24} /></div>
-                    <span className="spec-metric-label">WEIGHT & SIZE</span>
-                    <h5 className="spec-metric-value">3.2 Grams & 2.5mm Thin</h5>
-                    <p className="spec-metric-desc">Lightweight aerospace composite titanium, comfortable enough for all-night sleep wear.</p>
+                    <span className="spec-metric-label ">Weight & Dimensions:</span>
+                      <p className="spec-metric-desc mb-2`">Thickness: <span style={{fontWeight:'600'}}>2.2mm</span></p>
+                      <p className="spec-metric-desc mb-2">Width: <span style={{fontWeight:'600'}}>8mm</span></p>
+                      <p className="spec-metric-desc ">Weight:  <span style={{fontWeight:'600'}}>3g</span></p>
                   </div>
                 </Col>
 
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Battery size={24} /></div>
-                    <span className="spec-metric-label">BATTERY LIFE</span>
-                    <h5 className="spec-metric-value">Up to 7 Days Autonomy</h5>
-                    <p className="spec-metric-desc">Ultra-fast charging that fully replenishes the ring in under 55 minutes using the included dock.</p>
+                    <span className="spec-metric-label">Battery Life</span>
+                    <p className="spec-metric-desc mb-2">Lasts 4 to 6 days on a full charge - depending on size</p>
+                    <p className="spec-metric-desc">120 mins for a full charge</p>
+
                   </div>
                 </Col>
 
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Droplet size={24} /></div>
-                    <span className="spec-metric-label">WATER RESISTANCE</span>
-                    <h5 className="spec-metric-value">100m / 10 ATM Waterproof</h5>
-                    <p className="spec-metric-desc">Perfectly sealed non-allergenic inner casing. Swim, surf, shower, or wash hands with zero stress.</p>
+                    <span className="spec-metric-label">Connectivity</span>
+                    <p className="spec-metric-desc mb-2">Bluetooth Low Energy (BLE5)</p>
+                    <p className="spec-metric-desc mb-2">Compatible with iPhones running iOS 15 or later and Android devices running Android 6 or later.</p>
+                    <p className="spec-metric-desc mb-2">EMF radiation safe</p>
+                    <p className="spec-metric-desc">Transmission Frequency: 2.4 GHz</p>
                   </div>
                 </Col>
 
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Cpu size={24} /></div>
-                    <span className="spec-metric-label">BIOMETRIC SENSORS</span>
-                    <h5 className="spec-metric-value">PPG Optical + Infrared</h5>
-                    <p className="spec-metric-desc">Dual HR, blood oxygen, skin temperature, and sleep movement patterns updated down to the minute.</p>
+                    <span className="spec-metric-label">Quality Materials</span>
+                    <p className="spec-metric-desc mb-2 ">Outer material: <span style={{fontWeight:'600'}}>Titanium</span></p>
+                    <p className="spec-metric-desc">Internal material: <span style={{fontWeight:'600'}}>Resin</span></p>
                   </div>
                 </Col>
               </Row>
