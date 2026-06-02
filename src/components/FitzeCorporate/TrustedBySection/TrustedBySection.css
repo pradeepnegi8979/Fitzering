@@ -20,7 +20,7 @@
 
 .trusted-logo-pill {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f6f7;
+  /* background-color: #f5f6f7; */
   color: #a0aec0;
   font-size: 0.95rem;
   font-weight: 700;
@@ -32,7 +32,7 @@
   align-items: center;
   transition: all 0.2s ease;
   cursor: default;
-  border: 1px solid rgba(0, 0, 0, 0.02);
+  /* border: 1px solid rgba(0, 0, 0, 0.02); */
 }
 
 /* .trusted-logo-pill:hover {
