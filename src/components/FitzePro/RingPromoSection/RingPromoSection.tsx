@@ -12,7 +12,7 @@ export const RingPromoSection: React.FC = () => {
             </span>
           </div>
           <h2 className="ring-display-main-headline" id="ring-main-heading">
-            Get FREE PRO with <span className="logo-brand-f">fitze</span> <span className="logo-brand-r">Ring</span>
+            Get FREE PRO  <span className="logo-brand-f"> with fitze</span> <span className="logo-brand-r">Ring</span>
           </h2>
           <p className="ring-display-subdescription" id="ring-subdescription">
             Track your body, build better habits and unlock the complete fitze experience.

@@ -358,8 +358,8 @@
     text-align: center;
   }
   .sizing-steps-list {
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
   }
   .find-fit-action-wrap {
     text-align: center;
@@ -438,7 +438,7 @@
     bottom: 35px;
   }
   .btn-find-fit-action {
-    width: 100%;
+    /* width: 100%; */
     font-size: 0.95rem;
     padding: 14px 44px;
   }

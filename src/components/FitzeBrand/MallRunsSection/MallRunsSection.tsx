@@ -43,13 +43,13 @@ export const MallRunsSection: React.FC = () => {
         <div className="mall-stats-row-grid" id="mall-stats-counters">
           <Row className="g-4">
             <Col lg={3} md={3} sm={12}>
-              <div className="mall-stat-card" id="mall-stat-card-1">
+              <div className="mall-stat-card mb-4 mb-lg-0 mb-md-0" id="mall-stat-card-1">
                 <span className="mall-stat-number">20+</span>
                 <span className="mall-stat-label">MALL & COMMUNITY RUNS</span>
               </div>
             </Col>
             <Col lg={3} md={3} sm={12}>
-              <div className="mall-stat-card" id="mall-stat-card-2">
+              <div className="mall-stat-card mb-4 mb-lg-0 mb-md-0" id="mall-stat-card-2">
                 <span className="mall-stat-number text-smaller-uae">UAE-wide</span>
                 <span className="mall-stat-label">PARTICIPATION</span>
               </div>

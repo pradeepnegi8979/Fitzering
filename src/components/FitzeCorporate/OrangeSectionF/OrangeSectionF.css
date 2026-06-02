@@ -26,5 +26,11 @@ margin-top:20px;
   font-size: 2.5rem ;
   line-height:50px;
   }
+}
 
+@media(max-width:575.98px){
+  .oragene-greadient-text h2{
+  font-size: 2rem ;
+  line-height:40px;
+  }
 }

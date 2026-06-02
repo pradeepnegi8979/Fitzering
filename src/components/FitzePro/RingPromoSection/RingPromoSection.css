@@ -74,7 +74,7 @@
    ========================================================================== */
 .ring-display-main-headline {
   font-size: 3.1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   letter-spacing: -2.1px;
   line-height: 1.2;
@@ -83,7 +83,7 @@
 }
 
 .logo-brand-f {
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -2.3px;
 }
 
@@ -196,7 +196,7 @@
 
 /* Bold orange lowercase logo element */
 .explore-brand-fitze {
-  font-weight: 900;
+  font-weight: 600;
   color: #ff5f38; /* brand orange red */
   text-transform: lowercase;
   margin-left: 2px;

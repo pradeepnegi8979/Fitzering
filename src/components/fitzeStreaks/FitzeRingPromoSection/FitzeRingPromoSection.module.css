@@ -264,7 +264,7 @@
     width: 100%;
   }
   .explore-fitzering-btn {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
 }

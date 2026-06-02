@@ -38,3 +38,18 @@ background: linear-gradient(180deg, #FFFFFF 39.44%, rgba(255, 255, 255, 0.6) 77.
 .explore-fitzering-btn:hover{
   background:var(--primary-orange);
 }
+@media(max-width:768.98px){
+  .orange-section{
+  padding:50px 0px
+  }
+  .oragene-greadient-text h2, .oragene-greadient-text h3{
+  font-size: 2.5rem!important;
+  line-height:50px!important;
+  }
+}
+@media(max-width:575.98px){
+  .oragene-greadient-text h2, .oragene-greadient-text h3{
+  font-size: 2rem!important;
+  line-height:40px!important;
+  }
+}

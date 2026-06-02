@@ -68,7 +68,7 @@ export const WhySection: React.FC = () => {
               lg={3}
               md={6}
               sm={12}
-              className={styles['why-card-col']}
+              className={`mb-4 mb-lg-0 mb-md-0 ${styles['why-card-col']}`}
               key={card.id}
             >
               <div
