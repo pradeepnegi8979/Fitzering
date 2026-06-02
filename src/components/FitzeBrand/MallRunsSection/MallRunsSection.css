@@ -117,27 +117,27 @@
 }
 
 .mall-stat-card {
-  background-color: #f7f6f4; /* Identical warm cream tone */
-  border-radius: 24px;
-  padding: 40px 30px;
+  /* Identical warm cream tone */
+  border-right:solid 1px #E5E5E4;
+  padding: 25px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 160px;
+  min-height: 100px;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
 }
-
+.mall-stats-row-grid .col-lg-3.col-md-3.col-sm-12:last-child .mall-stat-card{border-right:none;}
 .mall-stat-card:hover {
   transform: translateY(-3px);
-  background-color: #f0efe02; /* Seamless hover effect */
+ /* Seamless hover effect */
 }
 
 /* Giant statistics bold orange numbers */
 .mall-stat-number {
-  font-size: 3.8rem;
-  font-weight: 700;
+  font-size: 2.875rem;
+  font-weight: 600;
   color: #ff5e3a; /* Vibrant orange active digits */
   line-height: 1;
   letter-spacing: -2px;
@@ -145,14 +145,14 @@
 }
 
 .text-smaller-uae {
-  font-size: 3.35rem; /* Marginally downscale word length to avoid wrapping errors */
+  font-size: 2.875rem; /* Marginally downscale word length to avoid wrapping errors */
 }
 
 .mall-stat-label {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 400;
   color: #7c7c7c; /* Muted grey exact alignment uppercase */
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 /* Elegant Desktop Responsive Breakpoints */

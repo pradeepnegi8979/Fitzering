@@ -2,10 +2,13 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './CollaborationsSection.css';
 import collab1 from '../../../assets/collab1.png';
+import Athles from '../../../assets/athles.png';
+import garminWalkathon from '../../../assets/garmin-walkathon.png';
 export const CollaborationsSection: React.FC = () => {
   // Use a gorgeous, specific outdoor physical wellness community park image for all cards to match the design screenshot exactly
   const sharedAssetImage = collab1;
-
+  const athlesImage = Athles; 
+  const garminImage = garminWalkathon;
   const rowOne = [
     {
       badge: 'GEMS EDUCATION',
@@ -28,12 +31,12 @@ export const CollaborationsSection: React.FC = () => {
     {
       badge: "ATHLETE'S CO.",
       desc: "A lifestyle-led brand experience integrated into the fitze rewards and movement ecosystem.",
-      img: sharedAssetImage,
+      img: Athles,
     },
     {
       badge: 'GARMIN',
       desc: 'A movement-first community activation designed to bring fitness enthusiasts together through participation, challenges and shared experiences.',
-      img: sharedAssetImage,
+      img: garminImage,
     }
   ];
 

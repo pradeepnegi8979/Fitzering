@@ -19,7 +19,7 @@ export const UpgradeCtaSection: React.FC = () => {
 
         {/* Bottom solid orange upgrading pill with outlined badge inside */}
         <div className="final-cta-btn-wrapper" id="final-cta-btn-wrapper">
-          <button className="final-orange-btn-huge" id="final-cta-upgrade">
+          <button className="final-orange-btn-huge" id="final-cta-upgrade" onClick={() => window.open('https://www.fitze.ae/share/', '_blank')}>
             Upgrade to <span className="pro-pill-outline">pro</span>
           </button>
         </div>

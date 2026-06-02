@@ -99,7 +99,7 @@ export const RingPromoSection: React.FC = () => {
             </div>
             </div>
           <div className="ring-explore-action-block" id="ring-explore-action-block">
-            <button className="ring-explore-brand-btn" id="ring-explore-button">
+            <button className="ring-explore-brand-btn" id="ring-explore-button" onClick={() => window.open('/ring')}>
               Explore<span style={{marginLeft: '-6px'}}>{FitzeProLogo}</span>
             </button>
           </div>

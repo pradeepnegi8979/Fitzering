@@ -32,7 +32,7 @@
 /* Mixed colors Typography Hierarchy */
 .promo-title {
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.15;
   letter-spacing: -1.5px;
   margin-bottom: 18px;
@@ -41,7 +41,7 @@
 
 .promo-title-dark {
   color: #121212;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .promo-logo-fitze {
@@ -51,7 +51,7 @@
 
 .promo-logo-ring {
   font-weight: 800;
-  color: #103b49; /* Deep contrast dark teal-slate */
+  color: #4C4C4C; /* Deep contrast dark teal-slate */
 }
 
 /* Subtitle description paragraph */

@@ -20,7 +20,7 @@ export const HeroSection: React.FC = () => {
               Create high-impact brand experiences powered by rewards, movement and real-world participation.
             </p>
             <div className="hero-cta-wrapper">
-              <button className="btn-build-fitze" id="hero-btn-cta">
+              <button className="btn-build-fitze" id="hero-btn-cta" onClick={() => window.open('https://www.fitze.ae/share/', '_blank')}  >
                 Build with fitze
               </button>
             </div>

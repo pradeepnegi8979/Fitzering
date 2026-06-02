@@ -18,24 +18,28 @@ export const PlatformSection: React.FC = () => {
       desc: 'Turn rewards into real engagement. Offer exclusive discounts, vouchers and experiences that users unlock through movement and participation on fitze.',
       buttonText: 'Host your brand on fitze',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1200',
+      btnUrl: '/contact-us',
     },
     {
       title: 'Movement Challenges',
       desc: 'Drive daily habits by challenging users to hit step milestones, claim custom-branded streaks, and unlock physical rewards in a fun game-ready tracker.',
       buttonText: 'Initialize a movement challenge',
       image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=1200',
+      btnUrl: '/contact-us',
     },
     {
       title: 'Integrated Campaigns',
       desc: 'Form high-value partnerships across both physical placements and digital assets. Push your messaging to thousands of active, health-conscious users daily.',
       buttonText: 'Launch an integrated campaign',
       image: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1200',
+      btnUrl: '/contact-us',
     },
     {
       title: 'Community Experiences',
       desc: 'Host mass outdoor walkathons, company-wide relays, mall exploration health rallies, and shared public fitness milestones that associate your brand with health.',
       buttonText: 'Engage your community',
       image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=1200',
+      btnUrl: '/contact-us',
     }
   ];
 
@@ -82,7 +86,7 @@ export const PlatformSection: React.FC = () => {
                 <h3 className="tab-inner-title">{current.title}</h3>
                 <p className="tab-inner-desc">{current.desc}</p>
                 <div className="tab-btn-frame">
-                  <button className="btn-tab-cta" id={`tab-action-btn-${activeTab}`}>
+                  <button className="btn-tab-cta" id={`tab-action-btn-${activeTab}`} onClick={() => window.location.href = current.btnUrl}>
                     {current.buttonText}
                   </button>
                 </div>

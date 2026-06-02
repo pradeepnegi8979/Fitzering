@@ -19,7 +19,7 @@ export const ActionCtaSection: React.FC = () => {
             Create experiences people don't just see, they participate in.
           </p>
           <div className="action-btn-frame">
-            <button className="btn-plan-activation-pill" id="action-btn-trigger">
+            <button className="btn-plan-activation-pill" id="action-btn-trigger" onClick={() => window.open('https://www.fitze.ae/share/', '_blank')} >
               Plan Your Brand Activation
             </button>
           </div>

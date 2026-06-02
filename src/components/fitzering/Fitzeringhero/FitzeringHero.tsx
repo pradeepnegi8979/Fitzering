@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { ShoppingBag, X } from 'lucide-react';
 import './FitzeringHero.css';
@@ -9,6 +9,26 @@ import rightElement from '../../../assets/right-element.svg';
 import ShopRing from '../../../assets/shop-ring-image.png';
 export const FitzeringHero: React.FC = () => {
   const [showShopCard, setShowShopCard] = useState<boolean>(true);
+  const [isMobile, setIsMobile] = useState(false);
+useEffect(() => {
+    const checkScreen = () => {
+      const mobile = window.innerWidth <= 768;
+
+      setIsMobile(mobile);
+
+      if (mobile) {
+        setShowShopCard(false); // mobile: only bag icon initially
+      } else {
+        setShowShopCard(true); // desktop: card visible
+      }
+    };
+
+    checkScreen();
+
+    window.addEventListener('resize', checkScreen);
+
+    return () => window.removeEventListener('resize', checkScreen);
+  }, []);
 
   return (
     <div className="fitzering-hero-container">
@@ -96,7 +116,7 @@ export const FitzeringHero: React.FC = () => {
       </div>
 
       {/* Mini Shopping Bag trigger to restore dismissed card */}
-      {!showShopCard && (
+      {isMobile &&  !showShopCard && (
         <button 
           className="fitzering-floating-restore-trigger animate-pulse-coral" 
           onClick={() => setShowShopCard(true)}
