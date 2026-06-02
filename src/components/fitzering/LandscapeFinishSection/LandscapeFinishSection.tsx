@@ -164,7 +164,7 @@ export const LandscapeFinishSection: React.FC = () => {
 
             <div className="booking-action-btn-cell">
               <a
-                href="#order-ring"
+                href="https://fitze-ring.myshopify.com/" target="_blank"
                 className="booking-buy-now-btn"
                 onClick={(e) => {
                   const el =

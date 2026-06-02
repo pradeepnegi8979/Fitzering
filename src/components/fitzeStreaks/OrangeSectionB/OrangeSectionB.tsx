@@ -25,8 +25,9 @@ export const OrangeSectionB: React.FC = () => {
 
             <div className={styles['ring-action-col']}>
 
-              <button
+              <a
                 className={styles['explore-fitzering-btn']}
+                href="https://www.fitze.ae/share/" target="_blank"
                 id="btn-explore-fitzering"
                 style={{
                   backgroundColor: '#ff5226',
@@ -34,7 +35,7 @@ export const OrangeSectionB: React.FC = () => {
                 }}
               >
                 Explore fitze Ring
-              </button>
+              </a>
 
             </div>
           </Col>

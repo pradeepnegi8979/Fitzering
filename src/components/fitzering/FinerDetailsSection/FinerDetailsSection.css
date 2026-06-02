@@ -42,7 +42,7 @@
 
 .finer-details-main-title {
   font-size: 3.5rem;
-  font-weight: 500; /* Medium sleek weight */
+  font-weight: 400; /* Medium sleek weight */
   color: #121212;
   letter-spacing: -2px;
   line-height: 1.15;
@@ -51,7 +51,7 @@
 
 .finer-details-main-title .highlight-coral {
   color: #ff5e3a; /* Coral accents */
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .finer-details-lead-text {
@@ -186,22 +186,22 @@
 }
 
 .comparative-bento-card {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 24px;
-  padding: 45px 40px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.02);
-  border: 1.5px solid rgba(0, 0, 0, 0.015);
+  padding: 45px 0px;
+  /* box-shadow: 0 12px 35px rgba(0, 0, 0, 0.02);
+  border: 1.5px solid rgba(0, 0, 0, 0.015); */
   height: 100%;
   transition: all 0.4s ease;
 }
-
+/* 
 .comparative-bento-card.card-fitze {
-  border-top: 4px solid #ff5e3a; /* Aesthetic coral border highlight */
+  border-top: 4px solid #ff5e3a; 
 }
 
 .comparative-bento-card.card-others {
-  border-top: 4px solid #CBD5E0; /* Subdued gray border highlight */
-}
+  border-top: 4px solid #CBD5E0; 
+} */
 
 .card-badge-top {
   font-size: 1.35rem;
@@ -234,6 +234,8 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
+  border-bottom:solid 1px #E5E5E4;
+  padding-bottom: 16px;
 }
 
 .bullet-circle {
@@ -264,7 +266,7 @@
 
 .perk-info strong {
   font-size: 0.98rem;
-  font-weight: 650;
+  font-weight: 400;
   color: #1D2432;
   margin-bottom: 4px;
   letter-spacing: -0.1px;

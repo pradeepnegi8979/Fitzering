@@ -47,7 +47,7 @@ export const HeroSection: React.FC = () => {
 
             <div className={styles['hero-actions-container']}>
 
-              <button className={styles['primary-streak-btn']}>
+              <button className={styles['primary-streak-btn']} onClick={() => window.open('https://www.fitze.ae/share/', '_blank')} >
                 Start your first Streak{' '}
 
                 <span className={styles['free-badge']}>

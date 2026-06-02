@@ -38,7 +38,7 @@ export const FindYourPerfectFitSection: React.FC = () => {
             </div>
 
             <div className="find-fit-action-wrap">
-              <a href="#fitze-booking" className="btn-find-fit-action">
+              <a href="https://fitze-ring.myshopify.com/" target="_blank" className="btn-find-fit-action">
                 Find your perfect fit
               </a>
             </div>

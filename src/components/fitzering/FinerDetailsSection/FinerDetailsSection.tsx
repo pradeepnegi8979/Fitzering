@@ -122,72 +122,109 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
             <div className="finer-tab-pane pane-compare animate-fade-in-up">
               <div className="comparison-bento-grid">
                 <Row className="g-4 align-items-stretch">
-                  <Col md={6} xs={12}>
+                  <Col md={4} xs={12}>
                     <div className="comparative-bento-card card-fitze">
-                      <div className="card-badge-top fitze-accent">fitze Ring</div>
+                      <div className="card-badge-top fitze-accent">&nbsp; </div>
                       <ul className="comparison-perks">
                         <li>
-                          <div className="bullet-circle check"><Check size={16} /></div>
                           <div className="perk-info">
-                            <strong>Earn rewards daily</strong>
-                            <p>Get actual cash, premium brand discounts, and fitness coins just by meeting consistency goals.</p>
+                            <strong>Health tracking</strong>
                           </div>
                         </li>
                         <li>
-                          <div className="bullet-circle check"><Check size={16} /></div>
                           <div className="perk-info">
-                            <strong>One-time purchase, zero fees</strong>
-                            <p>No paywalls, no monthly subscription charges to view your heart rate or sleep statistics.</p>
+                            <strong>Rewards & cashbacks</strong>
                           </div>
                         </li>
                         <li>
-                          <div className="bullet-circle check"><Check size={16} /></div>
                           <div className="perk-info">
-                            <strong>Complimentary Sizing Kit</strong>
-                            <p>Free custom sizing ring set to ensure that your wearable fits perfectly day or night.</p>
+                            <strong>Built for UAE</strong>
                           </div>
                         </li>
                         <li>
-                          <div className="bullet-circle check"><Check size={16} /></div>
                           <div className="perk-info">
-                            <strong>Premium Aerospace Titanium</strong>
-                            <p>Luxury outer shell protecting high-precision health monitoring sensors.</p>
+                            <strong>Motivation system</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="perk-info">
+                            <strong>Price</strong>
                           </div>
                         </li>
                       </ul>
                     </div>
                   </Col>
 
-                  <Col md={6} xs={12}>
+                  <Col md={4} xs={12}>
                     <div className="comparative-bento-card card-others">
-                      <div className="card-badge-top other-accent">Generic Smart Rings</div>
+                      <div className="card-badge-top other-accent">Fitze Ring</div>
+                      <ul className="comparison-perks">
+                        <li>
+                            <div className="bullet-circle check"><Check size={16} /></div>
+                          <div className="perk-info">
+                            <strong>6 Signals + daily Score</strong>
+                            
+                          </div>
+                        </li>
+                        <li>
+                          <div className="bullet-circle check"><Check size={16} /></div>
+                          <div className="perk-info">
+                            <strong>Real. Every. Day.</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="bullet-circle check"><Check size={16} /></div>
+                          <div className="perk-info">
+                            <strong>UAE-first experience</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="bullet-circle check"><Check size={16} /></div>
+                          <div className="perk-info">
+                            <strong>Challenges + Streaks + Rewards</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="bullet-circle check"><Check size={16} /></div>
+                          <div className="perk-info">
+                            <strong>AED 699</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </Col>
+                  <Col md={4} xs={12}>
+                    <div className="comparative-bento-card card-others">
+                      <div className="card-badge-top other-accent">Other Smart  Ring</div>
                       <ul className="comparison-perks">
                         <li>
                           <div className="bullet-circle cross"><X size={16} /></div>
                           <div className="perk-info">
-                            <strong>Static tracking with zero motivation</strong>
-                            <p>Rings display stats on screens but never offer actual payouts or active tracking challenges.</p>
+                            <strong>Similar sensors</strong>
                           </div>
                         </li>
                         <li>
                           <div className="bullet-circle cross"><X size={16} /></div>
                           <div className="perk-info">
-                            <strong>Monthly recurring paywalls</strong>
-                            <p>Forced subscriptions ranging from $5.99 to $9.99/mo to access your own biometric details.</p>
+                            <strong>Doesn't exist</strong>
                           </div>
                         </li>
                         <li>
                           <div className="bullet-circle cross"><X size={16} /></div>
                           <div className="perk-info">
-                            <strong>Additional charge for sizing</strong>
-                            <p>Sizing packages cost extra or require returning a template prior to shipping.</p>
+                            <strong>Global. Generic.</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="bullet-circle cross"><X size={16} /></div>  
+                          <div className="perk-info">
+                            <strong> Data. Nothing more.</strong>
                           </div>
                         </li>
                         <li>
                           <div className="bullet-circle cross"><X size={16} /></div>
                           <div className="perk-info">
-                            <strong>Lower cost alloy configurations</strong>
-                            <p>Thin coatings that can scratch or wear down quickly under daily activities.</p>
+                            <strong> AED 1,200 – 1,800</strong>
                           </div>
                         </li>
                       </ul>
