@@ -51,7 +51,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
-
+.rp-card-quote-heading {
+  font-weight:600;
+}
 .real-people-right-col {
   flex: 1;
   max-width: 45%;
@@ -202,10 +204,12 @@
 /* Top stars row */
 .rp-card-star-rating-row {
   display: flex;
-  gap: 4px;
+  gap: 8px;
   margin-bottom: 22px;
 }
-
+.rp-card-star-rating-row img{
+  
+}
 /* Quote visual presentation */
 .rp-card-quote-paragraph {
   font-size: 0.95rem;

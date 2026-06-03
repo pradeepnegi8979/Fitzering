@@ -86,7 +86,7 @@
 .why-card-index {
   font-family: 'Poppins', sans-serif;
   font-size: 0.8rem;
-  font-weight: 750;
+  font-weight: 600;
   color: #c1cbd7; /* Very stylish muted slate numbers */
   letter-spacing: 0.5px;
   margin-bottom: 22px;
@@ -101,7 +101,7 @@
 .why-card-title {
   font-family: 'Poppins', sans-serif !important;
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.35;
   margin: 0 0 12px 0;

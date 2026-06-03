@@ -10,7 +10,7 @@ import HeroldCarreon from "../../../assets/HeroldCarreon.png";
 import vinod from "../../../assets/vinod.png";
 import Sunny from "../../../assets/SunnyD'Silva.png";
 import ShellyEustace from "../../../assets/ShelleyEustace.png";
-
+import staricon from "../../../assets/Staricon.svg";
 interface Testimonial {
   id: number;
   stars: number;
@@ -193,13 +193,7 @@ export const RealPeopleSection: React.FC<Props> = ({
               <div className="rp-testimonial-white-card">
                 <div className="rp-card-star-rating-row">
                   {Array.from({ length: item.stars }).map((_, sIdx) => (
-                    <Star
-                      key={sIdx}
-                      size={20}
-                      className="rp-star-coral-icon"
-                      fill="var(--color-primary, #ff5e3a)"
-                      stroke="none"
-                    />
+                    <img src={staricon} alt="star" className="rp-card-star-icon" key={sIdx} />
                   ))}
                 </div>
 
