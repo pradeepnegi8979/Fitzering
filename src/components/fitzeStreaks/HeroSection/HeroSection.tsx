@@ -20,8 +20,8 @@ export const HeroSection: React.FC = () => {
       </div> */}
 
       {/* Hero Content */}
-      <Container className={styles['fitze-hero-content-container']}>
-        <Row className="align-items-center g-5 w-100">
+      <Container className={styles['fitze-hero-content-container']} style={{justifyContent: 'center'}}>
+        <Row className="align-items-center g-5 w-100 m0-mobile">
 
           {/* Left Content */}
           <Col

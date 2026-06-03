@@ -10,7 +10,9 @@ letter-spacing: -3%;
 text-align: center;
 -webkit-background-clip: text!important;
   -webkit-text-fill-color: transparent;
+  /* opacity:70%; */
   background: linear-gradient(180deg, #FFFFFF 39.44%, rgba(255, 255, 255, 0.6) 77.78%);
+
 
 
 }

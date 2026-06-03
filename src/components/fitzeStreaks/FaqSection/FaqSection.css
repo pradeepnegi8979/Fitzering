@@ -40,7 +40,7 @@
 .faq-main-heading {
   font-size: 2.8rem;
   font-weight:400;
-  color: #121212;
+  color: #1c1c1e;
   letter-spacing: -1.5px;
   margin-bottom: 50px;
 }
@@ -68,7 +68,7 @@
 
 .faq-question-text {
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 500!important;
   color: #1a202c;
   line-height: 1.4;
   text-align: left;
@@ -76,7 +76,9 @@
   padding-right: 24px;
   transition: color 0.25s ease;
 }
-
+.expanded-item-state .faq-question-text{
+font-weight:600!important;
+}
 .faq-accordion-item:hover .faq-question-text {
   color: #ff5e3a;
 }
@@ -126,12 +128,13 @@
 
 .faq-answer-paragraph {
   font-size: 0.95rem;
-  color: #4a5568;
+  color: #1c1c1e;
   line-height: 1.6;
   font-weight: 400;
   text-align: left;
   margin: 0;
   max-width: 820px;
+  opacity:0.5;
 }
 
 /* RESPONSIVENESS */

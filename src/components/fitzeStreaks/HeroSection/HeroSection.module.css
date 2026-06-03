@@ -1,6 +1,7 @@
 /* ==========================================================================
    HeroSection.css - Fitzestreaks Premium Design System stylesheet
    ========================================================================== */
+   
 .fitze-hero-section {
   position: relative;
   width: 100%;
@@ -107,14 +108,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 .hero-headline {
   font-family: 'Poppins', sans-serif !important;
   font-size: 4.4rem;
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.2;
   color: #111111;
   letter-spacing: -3px;
   margin-bottom: 24px;
@@ -607,13 +608,14 @@
 }
 
 @media (max-width: 991px) {
+  .row.m0-mobile{margin:0!important;}
   .fitze-hero-section {
     padding: 0 0 100px 0;
   }
   .hero-text-col {
     text-align: center;
     align-items: center;
-    padding-right: 0;
+    /* padding-right: 0; */
     margin-bottom: 20px;
   }
   .hero-headline {
@@ -628,7 +630,7 @@
     width: 100%;
   }
   .hero-visuals-col {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 }
 

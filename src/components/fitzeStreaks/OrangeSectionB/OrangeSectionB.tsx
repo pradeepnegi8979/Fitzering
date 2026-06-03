@@ -34,7 +34,7 @@ export const OrangeSectionB: React.FC = () => {
                   marginTop: '20px',
                 }}
               >
-                Explore fitze Ring
+                Start your first Streak  FREE
               </a>
 
             </div>
