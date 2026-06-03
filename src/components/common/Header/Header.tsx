@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
             <Nav.Link href="/ring" className={location.pathname === '/ring' ? 'active-nav' : ''}> Ring</Nav.Link> 
             <Nav.Link href="/streaks" className={location.pathname === '/streaks' ? 'active-nav' : ''}> Streaks</Nav.Link> 
             <Nav.Link href="/corporates" className={location.pathname === '/corporates' ? 'active-nav' : ''}> Corporate</Nav.Link> 
-            <Nav.Link href="/brand" className={location.pathname === '/brand' ? 'active-nav' : ''}> Brand</Nav.Link> 
+            <Nav.Link href="/brand" className={location.pathname === '/brand' ? 'active-nav' : ''}> Brands</Nav.Link> 
             <Nav.Link href="/pro" className={location.pathname === '/pro' ? 'active-nav' : ''}> PRO</Nav.Link> 
           </Nav>
           <div className="nav-action-btn">
