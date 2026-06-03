@@ -275,6 +275,13 @@
 }
 
 @media (max-width: 991px) {
+  .plan-showcase-card {
+   
+    min-height: 140px;
+  }
+  .plan-card-bottom-pricing{
+    margin-top:20px;
+  }
   .fitzepro-plan-wrapper {
     padding: 80px 0 95px 0;
   }

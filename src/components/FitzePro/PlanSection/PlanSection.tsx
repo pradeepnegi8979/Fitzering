@@ -41,7 +41,7 @@ export const PlanSection: React.FC = () => {
         <Row className="g-4 align-items-stretch justify-content-center plan-cards-row">
           
           {/* PEAK PLAN CARD */}
-          <Col lg={4} md={12} className="d-flex card-col">
+          <Col lg={4} md={12} className="d-flex card-col mb-4 mb-lg-0 mb-md-0">
             <div className="plan-showcase-card is-white-theme flex-fill" id="plan-peak-card">
               <div className="plan-card-top-header">
                 <div className="plan-badge-pill is-primary-badge">
@@ -69,7 +69,7 @@ export const PlanSection: React.FC = () => {
           </Col>
 
           {/* MOMENTUM PLAN CARD (Vibrant Orange Highlight Card) */}
-          <Col lg={4} md={12} className="d-flex card-col">
+          <Col lg={4} md={12} className="d-flex card-col mb-4 mb-lg-0 mb-md-0">
             <div className="plan-showcase-card is-orange-theme flex-fill" id="plan-momentum-card">
               <div className="plan-card-top-header">
                 <div className="plan-badge-pill is-white-badge">
@@ -97,7 +97,7 @@ export const PlanSection: React.FC = () => {
           </Col>
 
           {/* STARTER PLAN CARD */}
-          <Col lg={4} md={12} className="d-flex card-col">
+          <Col lg={4} md={12} className="d-flex card-col mb-4 mb-lg-0 mb-md-0">
             <div className="plan-showcase-card is-white-theme flex-fill" id="plan-starter-card">
               <div className="plan-card-top-header">
                 <div className="plan-badge-pill is-primary-badge">
