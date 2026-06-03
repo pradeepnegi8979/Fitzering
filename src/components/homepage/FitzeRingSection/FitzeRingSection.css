@@ -154,6 +154,7 @@
      background-size:cover;
      min-height:600px;
      background-repeat: no-repeat;
+     background-position: center center;
     }
     .ring-action {
       margin-top:0px;
