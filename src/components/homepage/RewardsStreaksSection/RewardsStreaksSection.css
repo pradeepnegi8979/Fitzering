@@ -46,7 +46,7 @@
 
 /* Display Typography */
 .rewards-title-heading {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 400;
   color: #111111;
   letter-spacing: -1.5px;

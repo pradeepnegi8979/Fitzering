@@ -2,8 +2,8 @@
 /* Base section wrapper settings */
 .join-movement-section {
   background-color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -41,7 +41,7 @@
 }
 
 .movement-heading {
-  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+  font-size: clamp(2.2rem, 5.5vw, 3.25rem);
   font-weight: 400;
   color: #111111;
   letter-spacing: -1.5px;
@@ -64,7 +64,7 @@
 .stats-showcase-wrapper {
   border-top: 1.2px solid rgba(0, 0, 0, 0.06);
   border-bottom: 1.2px solid rgba(0, 0, 0, 0.06);
-  padding: 45px 0;
+  padding: 0px 0;
   background-color: #ffffff;
 }
 
@@ -145,8 +145,8 @@
 
 @media (max-width: 991.98px) {
   .join-movement-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .join-movement-header {
     margin-bottom: 50px;
@@ -164,8 +164,8 @@
 
 @media (max-width: 767.98px) {
   .join-movement-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .join-movement-header {
     margin-bottom: 40px;

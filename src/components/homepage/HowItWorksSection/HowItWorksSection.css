@@ -2,7 +2,7 @@
   
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  padding: 100px 0;
+  padding: 50px 0 10px;
   position: relative;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
   background: linear-gradient(145deg, #12141a 0%, #0d0f14 100%);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 32px;
-  padding: 85px 60px;
+  padding: 60px 60px;
   /* box-shadow: 0 45px 100px -20px rgba(0, 0, 0, 0.45); */
   overflow: hidden;
 }
@@ -162,11 +162,11 @@
 /* Responsiveness */
 @media (max-width: 991px) {
   .homepage-consistency-section {
-    padding: 60px 0;
+    padding: 30px 0 10px;
   }
   
   .consistency-wrapper-card {
-    padding: 55px 30px;
+    padding: 30px 30px;
     border-radius: 24px;
   }
   

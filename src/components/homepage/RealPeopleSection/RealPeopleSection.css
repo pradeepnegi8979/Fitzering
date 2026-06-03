@@ -80,7 +80,7 @@
 
 /* Core display typography with absolute alignment for trust icon badge */
 .real-people-main-heading {
-  font-size: clamp(2.6rem, 5.5vw, 4.1rem);
+  font-size: clamp(2.6rem, 5.5vw, 3.25rem);
   font-weight: 500;
   color: #111111; /* exact solid charcoal black as requested */
   margin: 0;

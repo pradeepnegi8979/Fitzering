@@ -7,13 +7,15 @@
 }
 
 .video-sec-title {
-  font-size: 2.5rem;
+  font-size: 3.25rem;
   font-weight: 600;
   color: var(--color-primary);
   line-height: 1.2;
   letter-spacing: -1px;
 }
-
+.video-sec-title span{
+  font-weight: 400;
+}
 .video-sec-text {
   font-size: 1.05rem;
   color: var(--color-gray-medium);
