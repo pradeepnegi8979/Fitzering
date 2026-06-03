@@ -644,15 +644,16 @@
   .hp-connect-brands-deck {
     max-width: 100%;
     align-items: center;
+    justify-content: center;
   }
   
   .hp-brands-grid-row {
     justify-content: center;
   }
 
-  .concentric-ripples-and-device-wrap {
+  /* .concentric-ripples-and-device-wrap {
     height: 440px;
-  }
+  } */
 
   .concentric-orange-ripple-background {
     width: 440px;
@@ -682,9 +683,9 @@
   }
 
   /* Compact ripples for tiny viewports */
-  .concentric-ripples-and-device-wrap {
+  /* .concentric-ripples-and-device-wrap {
     height: 360px;
-  }
+  } */
 
   .concentric-orange-ripple-background {
     width: 340px;

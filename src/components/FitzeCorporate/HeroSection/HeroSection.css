@@ -394,7 +394,7 @@
     margin-bottom: 24px;
   }
   .corp-hero-cta-btn {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding: 14px 24px;
     font-size: 0.95rem;

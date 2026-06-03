@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Play, X } from 'lucide-react';
 import './VideoSection.css';
-import bgImg from '../../../assets/not-just-tracking.png';
 import videoPlaceholder from '../../../assets/video-image.png';
 export const VideoSection: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -23,15 +22,15 @@ export const VideoSection: React.FC = () => {
           </Col>
           
           <Col lg={7} md={12}>
-            <div className="video-mock-card position-relative" onClick={() => setIsPlaying(true)}>
+             <div className="video-mock-card position-relative" > {/*onClick={() => setIsPlaying(true)} */}
               {/* Coffee walker background video clip visual */}
               <div className="video-thumbnail-placeholder">
                 <div className="overlay-dim">
-                  <img src={bgImg} alt="Video Thumbnail"  style={{maxWidth:"100%"}}/>
+                  <img src={videoPlaceholder} alt="Video Thumbnail"  style={{maxWidth:"100%"}}/>
                 </div>
-                <div className="glowing-play-btn">
+                {/* <div className="glowing-play-btn">
                   <Play size={28} className="play-triangle-gold" fill="#ffffff" />
-                </div>
+                </div> */}
               </div>
             </div>
           </Col>

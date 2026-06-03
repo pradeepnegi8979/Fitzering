@@ -270,7 +270,7 @@
     line-height: 1.25;
   }
   .tab-switch-pill {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding: 10px 16px;
     font-size: 0.85rem;
@@ -310,7 +310,7 @@
     margin-bottom: 24px;
   }
   .tab-showcase-explore-btn {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding: 12px 24px;
     font-size: 0.9rem;
