@@ -5,7 +5,7 @@
 .finer-details-section {
   position: relative;
   width: 100%;
-  padding: 110px 0;
+  padding: 100px 0 0px!important;
   background-color: #FAF9F6; /* Perfect premium warm cream off-white */
   font-family: 'Poppins', sans-serif;
   color: #121212;

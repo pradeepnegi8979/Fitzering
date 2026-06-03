@@ -7,7 +7,7 @@
 .fitze-why-section {
   position: relative;
   width: 100%;
-  padding: 100px 0;
+  padding: 0px 0px 100;
   background-color: #ffffff;
   font-family: 'Poppins', 'Poppins', sans-serif !important;
   box-sizing: border-box;
@@ -45,13 +45,13 @@
   letter-spacing: -2px;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Force block separate lines */
+   /* Force block separate lines */
 }
 
 .why-highlight-orange {
   color: #ff5226; /* Vibrant Orange-Red */
   font-weight: 600;
-  display: block;
+  
 }
 
 /* 2. DYNAMIC CARDS LINE */

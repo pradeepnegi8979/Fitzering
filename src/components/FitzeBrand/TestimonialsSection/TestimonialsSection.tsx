@@ -53,7 +53,7 @@ export const TestimonialsSection: React.FC = () => {
             </span>
           </div>
           <h2 className="testi-heading" id="testimonials-title">
-            Hear it from our brand partners.
+            Hear it from our Brand Partners.
           </h2>
         </div>
       </Container>

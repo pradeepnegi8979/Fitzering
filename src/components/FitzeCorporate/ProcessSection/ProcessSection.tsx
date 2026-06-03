@@ -28,7 +28,7 @@ const stepsData: ProcessStep[] = [
   {
     number: '03',
     badge: 'LAUNCH',
-    title: '* Encourage healthier lifestyles',
+    title: 'Encourage healthier lifestyles',
     desc: 'Go live across the fitze app, community partners, OOH and real-world activation points.',
     progressPercent: 100,
   },
@@ -71,7 +71,7 @@ export const ProcessSection: React.FC = () => {
       {/* Large Custom Rounded Flow Card Grid */}
       <Container className="process-flow-container">
         <div className="process-flow-mega-card" id="process-flow-mega-card">
-          <Row className="g-0">
+          <Row className="g-0 justify-content-center">
             {stepsData.map((step, idx) => (
               <Col lg={4} md={12} key={step.number} className="process-flow-col mb-4 mb-lg-0 mb-md-0 mb-md-0" id={`process-col-step-${step.number}`}>
                 <div className="process-card-content">

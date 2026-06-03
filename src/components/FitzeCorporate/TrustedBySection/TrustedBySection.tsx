@@ -14,8 +14,8 @@ export const TrustedBySection: React.FC = () => {
         <div className="trusted-logo-bar d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4">
           <div className="trusted-logo-pill"><img src={logo1} alt="logo1"></img></div>
           <div className="trusted-logo-pill"><img src={logo2} alt="logo2"></img></div>
-          <div className="trusted-logo-pill"><img src={logo3} alt="logo3"></img></div>
-          <div className="trusted-logo-pill"><img src={logo4} alt="logo4"></img></div>
+          <div className="trusted-logo-pill"><img src={logo3} alt="logo3" style={{maxWidth:'150px'}}></img></div>
+          <div className="trusted-logo-pill"><img src={logo4} alt="logo4" style={{maxWidth:'150px'}}></img></div>
           <div className="trusted-logo-pill"><img src={logo5} alt="logo5"></img></div>
           
         </div>

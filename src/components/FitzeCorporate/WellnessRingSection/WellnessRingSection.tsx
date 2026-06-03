@@ -113,8 +113,8 @@ export const WellnessRingSection: React.FC = () => {
 
         {/* Center aligned call to action button at the bottom */}
         <div className="ring-button-action-container text-center">
-          <button className="ring-cta-filled-button" id="streak-cta-banner">
-            Start your first Streak FREE
+          <button className="ring-cta-filled-button" id="streak-cta-banner" onClick={() => window.open('https://fitze-ring.myshopify.com/', '_blank')} >
+            Get Fitze Ring
           </button>
         </div>
       </Container>

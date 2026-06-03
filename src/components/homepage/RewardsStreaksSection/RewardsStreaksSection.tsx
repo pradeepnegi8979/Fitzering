@@ -105,7 +105,7 @@ export const RewardsStreaksSection: React.FC = () => {
               <span className="rewards-section-mini-tag">WALK TO EARN</span>
               <h3 className="rewards-card-title">Streaks</h3>
               <p className="rewards-card-description">
-                Get Paid to Walk. Join a Streak, hit your goals, and earn guaranteed payoutsin your Careem wallet.
+                Get Paid to Walk. Join a Streak, hit your goals, and earn guaranteed payouts in your Careem wallet.
               </p>
             </div>
           </div>

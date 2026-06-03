@@ -47,14 +47,13 @@ export const WhySection: React.FC = () => {
         <div
           className={`${styles['why-header-block']} text-start`}
         >
-          <span className={styles['why-eyebrow']}>
+          {/* <span className={styles['why-eyebrow']}>
             WHY FITZE STREAKS
-          </span>
+          </span> */}
 
           <h2 className={styles['why-main-title']}>
-            Built different.
-            <span className={styles['why-highlight-orange']}>
-              By design.
+            Built different.<span className={styles['why-highlight-orange']}>
+             &nbsp; By design.
             </span>
           </h2>
         </div>

@@ -24,7 +24,7 @@
 
 .mall-runs-heading {
   font-size: 3.9rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #121212;
   line-height: 1.1;
   letter-spacing: -2px;
@@ -128,7 +128,7 @@
   min-height: 100px;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
 }
-.mall-stats-row-grid .col-lg-3.col-md-3.col-sm-12:last-child .mall-stat-card{border-right:none;}
+.mall-stats-row-grid .col-lg-4.col-md-4.col-sm-12:last-child .mall-stat-card{border-right:none;}
 .mall-stat-card:hover {
   transform: translateY(-3px);
  /* Seamless hover effect */

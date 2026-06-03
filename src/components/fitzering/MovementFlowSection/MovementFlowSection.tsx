@@ -41,7 +41,11 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Image with custom rounding */}
+                 <p className="stage-caption mb-4">
+                  Slip it on and move through your day.
+                </p>
                 <div className="stage-photo-wrapper zoom-hover">
+                 
                   <img 
                     src={moment1} 
                     alt="Wearing smart ring while active" 
@@ -50,9 +54,7 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Caption */}
-                <p className="stage-caption">
-                  Slip it on and move through your day.
-                </p>
+                
               </div>
             </Col>
 
@@ -68,7 +70,11 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Image with custom rounding */}
+                <p className="stage-caption mb-4">
+                  Stay connected to your wellbeing. 
+                </p>
                 <div className="stage-photo-wrapper zoom-hover">
+                   
                   <img 
                     src={moment2} 
                     alt="Man with phone tracking movement" 
@@ -77,9 +83,7 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Caption */}
-                <p className="stage-caption">
-                  Stay connected to your wellbeing. 
-                </p>
+               
               </div>
             </Col>
 
@@ -95,7 +99,11 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Image with custom rounding */}
+                 <p className="stage-caption mb-4">
+                  Turn consistency into rewards.
+                </p>
                 <div className="stage-photo-wrapper zoom-hover">
+                 
                   <img 
                     src={moment3} 
                     alt="Cheering woman earning consistency rewards" 
@@ -104,9 +112,7 @@ export const MovementFlowSection: React.FC = () => {
                 </div>
                 
                 {/* Stage Caption */}
-                <p className="stage-caption">
-                  Turn consistency into rewards.
-                </p>
+                
               </div>
             </Col>
 

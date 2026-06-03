@@ -7,7 +7,7 @@ export const OwnConsistencySection: React.FC = () => {
     <section className="own-consistency-section" id="own-consistency">
       <Container className="own-consistency-container">
         {/* Dynamic Interactive Layout */}
-        <Row className="align-items-start gy-5 gx-md-5 own-consistency-content-row">
+        <Row className="align-items-end gy-5 gx-md-5 own-consistency-content-row">
           {/* Left Block: Heading and Landscape High-Fidelity Cover Photo */}
           <Col lg={6} md={12} className="own-consistency-left-pane">
             <h2 className="own-consistency-main-title">Own your consistency</h2>

@@ -34,7 +34,7 @@ export const CampaignsSection: React.FC = () => {
         {/* Header row with a clean responsive layout and plain "View all campaigns" link on the right */}
         <div className="campaigns-header-row" id="campaigns-header">
           <Row className="align-items-end g-4 justify-content-between">
-            <Col lg={9} md={9} xs={12}>
+            <Col lg={12} md={12} xs={12}>
               <div className="campaigns-badge-container">
                 <span className="campaigns-tag">
                   {label}
@@ -47,11 +47,11 @@ export const CampaignsSection: React.FC = () => {
                 High-energy moments powered by movement, community participation and real-world experiences.
               </p>
             </Col>
-            <Col lg={3} md={3} xs={12} className="text-md-end text-start">
+            {/* <Col lg={3} md={3} xs={12} className="text-md-end text-start">
               <span className="link-view-all-campaigns" id="btn-view-all-campaigns">
                 View all campaigns
               </span>
-            </Col>
+            </Col> */}
           </Row>
         </div>
 

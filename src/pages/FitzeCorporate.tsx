@@ -29,7 +29,7 @@ export const FitzeCorporate: React.FC = () => {
       const isCtaButton =
         target.closest('.corp-hero-cta-btn') ||
         target.closest('.bento-callback-pill-button') ||
-        target.closest('.ring-cta-filled-button') ||
+        // target.closest('.ring-cta-filled-button') ||
         target.closest('.gallery-cta-btn') ||
         target.closest('.tab-showcase-explore-btn') ||
         (

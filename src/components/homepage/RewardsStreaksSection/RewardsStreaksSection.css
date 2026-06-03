@@ -46,7 +46,7 @@
 
 /* Display Typography */
 .rewards-title-heading {
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 400;
   color: #111111;
   letter-spacing: -1.5px;
@@ -756,7 +756,6 @@
     width: 200px;
     height: 295px;
   }
-  .rewards-card-content{text-align:center;}
 }
 
 @media (max-width: 575.98px) {
@@ -801,3 +800,7 @@
     line-height: 1.5;
   }
 }
+
+
+
+

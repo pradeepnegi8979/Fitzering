@@ -42,19 +42,19 @@ export const MallRunsSection: React.FC = () => {
         {/* Lower Segment: Three rounded statistics boxes */}
         <div className="mall-stats-row-grid" id="mall-stats-counters">
           <Row className="g-4">
-            <Col lg={3} md={3} sm={12}>
+            <Col lg={4} md={4} sm={12}>
               <div className="mall-stat-card mb-4 mb-lg-0 mb-md-0" id="mall-stat-card-1">
                 <span className="mall-stat-number"><span style={{color:'#1C1C1E'}}>25</span>+</span>
                 <span className="mall-stat-label">Mall & community runs</span>
               </div>
             </Col>
-            <Col lg={3} md={3} sm={12}>
+            <Col lg={4} md={4} sm={12}>
               <div className="mall-stat-card mb-4 mb-lg-0 mb-md-0" id="mall-stat-card-2">
                 <span className="mall-stat-number text-smaller-uae"><span style={{color:'#1C1C1E'}}>UAE</span>-wide</span>
                 <span className="mall-stat-label">Participation</span>
               </div>
             </Col>
-            <Col lg={3} md={3} sm={12}>
+            <Col lg={4} md={4} sm={12}>
               <div className="mall-stat-card" id="mall-stat-card-3">
                 <span className="mall-stat-number"><span style={{color:'#1C1C1E'}}>360°</span></span>
                 <span className="mall-stat-label">Digital + on-graound engagement</span>

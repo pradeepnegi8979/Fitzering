@@ -242,7 +242,7 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Weight size={24} /></div>
-                    <span className="spec-metric-label ">Weight & Dimensions:</span>
+                    <span className="spec-metric-value  ">Weight & Dimensions:</span>
                       <p className="spec-metric-desc mb-2`">Thickness: <span style={{fontWeight:'600'}}>2.2mm</span></p>
                       <p className="spec-metric-desc mb-2">Width: <span style={{fontWeight:'600'}}>8mm</span></p>
                       <p className="spec-metric-desc ">Weight:  <span style={{fontWeight:'600'}}>3g</span></p>
@@ -252,7 +252,7 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Battery size={24} /></div>
-                    <span className="spec-metric-label">Battery Life</span>
+                    <span className="spec-metric-value ">Battery Life</span>
                     <p className="spec-metric-desc mb-2">Lasts 4 to 6 days on a full charge - depending on size</p>
                     <p className="spec-metric-desc">120 mins for a full charge</p>
 
@@ -262,7 +262,7 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Droplet size={24} /></div>
-                    <span className="spec-metric-label">Connectivity</span>
+                    <span className="spec-metric-value ">Connectivity</span>
                     <p className="spec-metric-desc mb-2">Bluetooth Low Energy (BLE5)</p>
                     <p className="spec-metric-desc mb-2">Compatible with iPhones running iOS 15 or later and Android devices running Android 6 or later.</p>
                     <p className="spec-metric-desc mb-2">EMF radiation safe</p>
@@ -273,7 +273,7 @@ export const FinerDetailsSection: React.FC<FinerDetailsSectionProps> = () => {
                 <Col lg={3} md={6} xs={12}>
                   <div className="spec-feature-box">
                     <div className="spec-icon-wrap"><Cpu size={24} /></div>
-                    <span className="spec-metric-label">Quality Materials</span>
+                    <span className="spec-metric-value ">Quality Materials</span>
                     <p className="spec-metric-desc mb-2 ">Outer material: <span style={{fontWeight:'600'}}>Titanium</span></p>
                     <p className="spec-metric-desc">Internal material: <span style={{fontWeight:'600'}}>Resin</span></p>
                   </div>
