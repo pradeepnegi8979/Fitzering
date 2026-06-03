@@ -22,8 +22,8 @@ export const WhyProSection: React.FC = () => {
         </div>
 
         {/* Central Display Title */}
-        <h2 className="why-display-headline" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-          Why Thousands Choose &nbsp;{FitzeProLogoWhite}
+        <h2 className="why-display-headline">
+          Why Thousands Choose &nbsp;<span className="fitze-pro-logo" style={{transform:'translate(-4px, -4px)', 'display':'inline-block'}}>{FitzeProLogoWhite}</span>
         </h2>
 
         {/* Horizontal Flows System */}

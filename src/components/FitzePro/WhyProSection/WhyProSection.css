@@ -141,6 +141,10 @@
 }
 
 @media (max-width: 991px) {
+  .fitze-pro-logo{
+    transform: translate(0px, 0px)!important;
+  }
+  .fitze-pro-logo svg{max-width:120px;}
   .fitzepro-why-section-wrapper {
     padding: 70px 0 80px 0;
   }
@@ -161,6 +165,7 @@
 }
 
 @media (max-width: 768px) {
+  .d-block-mob {display:block;}
   .fitzepro-why-section-wrapper {
     padding: 60px 0 70px 0;
   }

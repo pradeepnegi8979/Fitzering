@@ -63,7 +63,7 @@ export const FitzeCorporate: React.FC = () => {
     };
   }, []); 
   return (
-    <div className="fitzering-process-page">
+    <div>
       <Header />
       <HeroSection/>
       <StatsSection/>

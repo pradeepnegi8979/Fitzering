@@ -19,7 +19,7 @@ import '../styles/FitzeringProcess.css';
 import FaqSection from '../components/fitzering/FaqSection/FaqSection';
 export const FitzeringProcess: React.FC = () => {
   return (
-    <div className="fitzering-process-page">
+    <div>
       <Header />
       <FitzeringHero />
       <SevenSignalsSection />
