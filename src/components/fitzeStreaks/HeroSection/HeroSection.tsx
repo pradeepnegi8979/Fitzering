@@ -11,13 +11,13 @@ export const HeroSection: React.FC = () => {
       id="hero-section"
     >
       {/* Background Grid */}
-      <div className={styles['decor-grid-lines']}>
+      {/* <div className={styles['decor-grid-lines']}>
         <div className={styles['grid-line']}></div>
         <div className={styles['grid-line']}></div>
         <div className={styles['grid-line']}></div>
         <div className={styles['grid-line']}></div>
         <div className={styles['grid-line']}></div>
-      </div>
+      </div> */}
 
       {/* Hero Content */}
       <Container className={styles['fitze-hero-content-container']}>

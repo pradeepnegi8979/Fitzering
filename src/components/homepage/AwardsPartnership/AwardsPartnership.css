@@ -23,7 +23,7 @@
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 0px;
   position: relative;
   overflow: hidden;
   gap: 40px;
@@ -33,21 +33,22 @@
 .awards-partnership-left-box {
   flex-shrink: 0;
   width: 235px;
-  background-color: #f7f6f3; /* soft warm shaded cream off-white background */
+  background: linear-gradient(270deg, #F5F3F0 0%, #FFFFFF 100%);
+
   border-radius: 20px;
   padding: 24px 28px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.015);
-  border: 1px solid rgba(0, 0, 0, 0.02);
+  /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.02); */
   z-index: 15;
   position: relative;
 }
 
 .awards-partnership-title {
   font-size: 1.15rem;
-  font-weight: 750;
+  font-weight: 600;
   color: #1a1a1a;
   line-height: 1.35;
   margin: 0;
