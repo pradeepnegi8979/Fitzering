@@ -212,7 +212,7 @@ export const FitzeRingPromoSection: React.FC = () => {
 
                     <button
                       className={styles['explore-fitzering-btn']}
-                      onClick={() => window.open('https://fitze-ring.myshopify.com/', '_blank')}
+                      onClick={() => window.open('https://shop.fitze.ae/', '_blank')}
                       id="btn-explore-fitzering"
                     >
                       Explore fitze Ring

@@ -45,7 +45,7 @@ export const HeroSection: React.FC = () => {
         "Track sleep, stress, activity and more."
       ],
       buttonText: "Discover fitze Ring",
-      buttonLink: "https://fitze-ring.myshopify.com/"
+      buttonLink: "https://shop.fitze.ae/"
     }
   ];
 

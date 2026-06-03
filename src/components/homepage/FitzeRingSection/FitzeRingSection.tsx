@@ -21,7 +21,7 @@ export const FitzeRingSection: React.FC = () => {
             </div>
           </div>
           <div className="ring-action">
-            <a href="https://fitze-ring.myshopify.com/" className="btn-fitze-dark px-5">
+            <a href="https://shop.fitze.ae/" className="btn-fitze-dark px-5">
               Explore fitze Ring
             </a>
           </div>
