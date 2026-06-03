@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/common/Header/Header';
 import HeroSection from '../components/homepage/HeroSection/HeroSection';
 import StatsSection from '../components/homepage/StatsSection/StatsSection';
@@ -16,8 +16,13 @@ import PromiseSection from '../components/homepage/PromiseSection/PromiseSection
 import Footer from '../components/common/Footer/Footer';
 
 export const Home: React.FC = () => {
+
   return (
+    <Fragment>
+           
+    
     <div className="home-page-container">
+      
       {/* Header */}
       <Header />
       
@@ -63,6 +68,7 @@ export const Home: React.FC = () => {
       {/* Footer */}
       <Footer />
     </div>
+    </Fragment>
   );
 };
 
