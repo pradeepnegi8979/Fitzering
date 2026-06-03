@@ -59,7 +59,7 @@ export const CampaignsSection: React.FC = () => {
         <div className="campaigns-grid-wrapper" id="campaigns-grid">
           <Row className="g-4">
             {cards.map((card, idx) => (
-              <Col lg={4} md={6} xs={12} key={idx}>
+              <Col lg={4} md={6} xs={12} key={idx} className="mb-4 mb-lg-0 mb-md-0">
                 <div className="campaign-pastel-card" id={`campaign-card-${idx}`}>
                   {/* Top pastel part with steps index identifier precisely aligned to the top-left */}
                   <div className={`card-pastel-top bg-${card.bgType}`}>

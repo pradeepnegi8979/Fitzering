@@ -234,7 +234,7 @@
   .tab-filter-btn {
     font-size: 0.8rem;
     padding: 10px 20px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
   .platform-tabs-pills-row {

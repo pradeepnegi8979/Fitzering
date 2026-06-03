@@ -73,7 +73,7 @@ export const ProcessSection: React.FC = () => {
         <div className="process-flow-mega-card" id="process-flow-mega-card">
           <Row className="g-0">
             {stepsData.map((step, idx) => (
-              <Col lg={4} md={12} key={step.number} className="process-flow-col" id={`process-col-step-${step.number}`}>
+              <Col lg={4} md={12} key={step.number} className="process-flow-col mb-4 mb-lg-0 mb-md-0 mb-md-0" id={`process-col-step-${step.number}`}>
                 <div className="process-card-content">
                   {/* Staged top-border progress line matching step percentage */}
                   <div className="process-top-line-container">

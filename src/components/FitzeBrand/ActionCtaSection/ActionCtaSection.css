@@ -171,7 +171,7 @@
     padding: 0 10px;
   }
   .btn-plan-activation-pill {
-    width: 100%;
+    /* width: 100%; */
     padding: 14px 25px;
     font-size: 0.94rem;
   }

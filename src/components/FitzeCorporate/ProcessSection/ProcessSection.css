@@ -213,7 +213,7 @@ color:#ff5226;
   /* Stacking border behavior toggler: columns stack vertically */
   .process-flow-col {
     border-right: none;
-    border-bottom: 1.2px solid #e4e4e7;
+    /* border-bottom: 1.2px solid #e4e4e7; */
   }
 
   .process-flow-col:last-child {

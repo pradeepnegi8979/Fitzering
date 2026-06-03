@@ -181,6 +181,10 @@
   .ring-promo-visual-frame {
     aspect-ratio: 16 / 9;
   }
+  .promo-badge-container, .promo-title, .promo-description, .promo-pills-grid-wrap {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -207,10 +211,11 @@
     border-radius: 24px;
   }
   .btn-start-streak-pill {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding: 14px 25px;
     font-size: 0.94rem;
   }
+  
 }
 

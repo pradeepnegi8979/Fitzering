@@ -57,9 +57,9 @@ export const CollaborationsSection: React.FC = () => {
 
         {/* Row 1 Grid: 3 equal-width cards */}
         <div className="collab-row-wrapper mb-4" id="collab-row-1">
-          <Row className="g-4">
+          <Row className="g-4 " >
             {rowOne.map((card, idx) => (
-              <Col lg={4} md={6} xs={12} key={idx}>
+              <Col lg={4} md={6} xs={12} key={idx} className="mb-4 mb-lg-0 mb-md-0">
                 <div className="collab-image-card" id={`collab-row1-${idx}`}>
                   <img 
                     src={card.img} 
@@ -88,7 +88,7 @@ export const CollaborationsSection: React.FC = () => {
         <div className="collab-row-wrapper" id="collab-row-2">
           <Row className="g-4">
             {rowTwo.map((card, idx) => (
-              <Col lg={6} md={6} xs={12} key={idx}>
+              <Col lg={6} md={6} xs={12} key={idx} className="mb-4 mb-lg-0 mb-md-0">
                 <div className="collab-image-card card-double-wide" id={`collab-row2-${idx}`}>
                   <img 
                     src={card.img} 
