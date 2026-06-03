@@ -151,8 +151,9 @@
 @media(max-width:767px){
    .ring-container-card {
      background:url(../../../assets/ring-for-mobile.png);
-     background-size:100%;
+     background-size:cover;
      min-height:600px;
+     background-repeat: no-repeat;
     }
     .ring-action {
       margin-top:0px;
