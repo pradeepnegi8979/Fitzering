@@ -108,7 +108,7 @@ export const Footer: React.FC = () => {
           {/* Left: Copyright text */}
           <Col lg={7} md={12} className="text-lg-start text-md-center mb-md-4 mb-lg-0 change-order">
             <span className="copyright-text-fitze">
-              © Copyright 2026. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;<span className="mobile_block">Hub71 Member.</span>
+              © Copyright 2026. All Rights Reserved.
             </span>
           </Col>
 
