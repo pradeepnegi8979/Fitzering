@@ -304,7 +304,7 @@
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     height: 100%;
   }
   .hero-slide-big-heading {
