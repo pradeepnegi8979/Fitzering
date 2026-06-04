@@ -67,7 +67,7 @@ export const BentoMockupsSection: React.FC = () => {
         {/* BOTTOM MASTER CTA: Request a Callback */}
         <div className="bento-section-cta-row text-center">
           <button className="bento-callback-pill-button" id="bento-callback-cta">
-            Request a Callback
+            Design Your Wellness Experience
           </button>
         </div>
 

@@ -14,38 +14,25 @@ const stepsData: ProcessStep[] = [
   {
     number: '01',
     badge: 'START',
-    title: 'Increase participation',
-    desc: 'Brand awareness, community acquisition, product engagement — we build the challenge around your objective.',
+    title: 'Start with a goal',
+    desc: 'Awareness, footfall, loyalty, community, launch momentum or employee engagement.',
     progressPercent: 33,
   },
   {
     number: '02',
     badge: 'BUILD',
-    title: 'Improve employee engagement',
-    desc: 'Shape it with rewards, shakeouts, challenges and streaks — digital and physical working as one.',
+    title: 'Build the experience',
+    desc: 'Shape the right mix of rewards, challenges, events and digital touchpoints.',
     progressPercent: 66,
   },
   {
     number: '03',
     badge: 'LAUNCH',
-    title: 'Encourage healthier lifestyles',
-    desc: 'Go live across the fitze app, community partners, OOH and real-world activation points.',
+    title: 'Launch with energy',
+    desc: 'Bring it to life through the fitze app, social channels and on-ground moments.',
     progressPercent: 100,
   },
-  {
-    number: '04',
-    badge: 'LAUNCH',
-    title: 'Strengthen team culture',
-    desc: 'Go live across the fitze app, community partners, OOH and real-world activation points.',
-    progressPercent: 100,
-  },
-  {
-    number: '05',
-    badge: 'LAUNCH',
-    title: 'Deliver measurable wellness initiatives',
-    desc: 'Go live across the fitze app, community partners, OOH and real-world activation points.',
-    progressPercent: 100,
-  },
+  
 ];
 
 export const ProcessSection: React.FC = () => {

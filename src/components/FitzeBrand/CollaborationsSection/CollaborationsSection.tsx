@@ -11,8 +11,8 @@ export const CollaborationsSection: React.FC = () => {
   const garminImage = garminWalkathon;
   const rowOne = [
     {
-      badge: 'GEMS EDUCATION',
-      desc: 'A community-first wellness experience designed for families, schools and shared participation.',
+      badge: 'Dubai Islamic Bank',
+      desc: 'Workforce engagement through large-scale movement and reward-led participation.',
       img: sharedAssetImage,
     },
     {
@@ -21,8 +21,8 @@ export const CollaborationsSection: React.FC = () => {
       img: sharedAssetImage,
     },
     {
-      badge: 'DUBAI ISLAMIC BANK',
-      desc: 'Workforce engagement through large-scale movement and reward-led participation.',
+      badge: 'GEMS Education',
+      desc: 'A community-first wellness experience designed for families, schools and shared participation.',
       img: sharedAssetImage,
     }
   ];

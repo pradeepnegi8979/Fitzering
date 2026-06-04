@@ -15,28 +15,28 @@ export const PlatformSection: React.FC = () => {
   const tabContents = [
     {
       title: 'Reward-Led Experiences',
-      desc: 'Turn rewards into real engagement. Offer exclusive discounts, vouchers and experiences that users unlock through movement and participation on fitze.',
+      desc: 'Offer rewards, discounts and exclusive experiences users can unlock through movement.',
       buttonText: 'Host your brand on fitze',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1200',
       btnUrl: '/contact-us',
     },
     {
       title: 'Movement Challenges',
-      desc: 'Drive daily habits by challenging users to hit step milestones, claim custom-branded streaks, and unlock physical rewards in a fun game-ready tracker.',
+      desc: 'Launch branded challenges built around participation, consistency and achievement.',
       buttonText: 'Initialize a movement challenge',
       image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=1200',
       btnUrl: '/contact-us',
     },
     {
       title: 'Integrated Campaigns',
-      desc: 'Form high-value partnerships across both physical placements and digital assets. Push your messaging to thousands of active, health-conscious users daily.',
+      desc: 'Extend campaigns across the fitze app, events and real-world activations.',
       buttonText: 'Launch an integrated campaign',
       image: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1200',
       btnUrl: '/contact-us',
     },
     {
       title: 'Community Experiences',
-      desc: 'Host mass outdoor walkathons, company-wide relays, mall exploration health rallies, and shared public fitness milestones that associate your brand with health.',
+      desc: 'Create movement-led experiences that bring communities together.',
       buttonText: 'Engage your community',
       image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=1200',
       btnUrl: '/contact-us',

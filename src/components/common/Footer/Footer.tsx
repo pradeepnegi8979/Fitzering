@@ -40,8 +40,8 @@ export const Footer: React.FC = () => {
               <Col xs={6} className="links-subcol">
                 <h5 className="footer-link-title">Partner with fitze</h5>
                 <ul className="footer-link-list">
-                  <li><a href="#wellness">Employee Wellness & Corporate Engagement</a></li>
-                  <li><a href="#marketing">Market your Brand on Fitze</a></li>
+                  <li><a href="/corporates">Employee Wellness & Corporate Engagement</a></li>
+                  <li><a href="/brand">Market your Brand on Fitze</a></li>
                   <li><a href="#ambassador">Become an Ambassador</a></li>
                   <li><a href="#community">Fitze Community</a></li>
                 </ul>

@@ -14,13 +14,16 @@ import TrackProgressSection from '../components/homepage/TrackProgressSection/Tr
 import SliderSection from '../components/homepage/SliderSection/SliderSection';
 import PromiseSection from '../components/homepage/PromiseSection/PromiseSection';
 import Footer from '../components/common/Footer/Footer';
-import HomePageHelmet from '../components/homepage/HomePageHelmet';
+import { Helmet } from "react-helmet-async";
 
 export const Home: React.FC = () => {
-
   return (
     <Fragment>
-      <HomePageHelmet/>
+      <Helmet>
+        <title>Fitness Rewards App in UAE - Get Rewards For Walking | Fitze</title>
+        <meta name="description" content="Discover Fitze, the ultimate fitness rewards app that motivates you to stay active and earn rewards. Track, achieve, and be rewarded for your fitness goals!"
+        />
+      </Helmet>
     <div className="home-page-container">
       
       {/* Header */}
@@ -45,7 +48,7 @@ export const Home: React.FC = () => {
       <CallToActionSection />
       
       {/* Partnerships */}
-      <AwardsPartnership />
+      {/* <AwardsPartnership /> */}
       
       {/* Fite Ring smart wear */}
       <FitzeRingSection />
@@ -71,5 +74,4 @@ export const Home: React.FC = () => {
     </Fragment>
   );
 };
-
 export default Home;

@@ -42,8 +42,8 @@
 .ring-logo-wordmark .part-fitze {
   color: var(--color-primary);
 }
-.ring-action {
-  margin-top:150px;
+.ring-outer-action .ring-metrics-pills-row{
+margin-bottom:30px!important;
 }
 /* Rings replications in pure custom CSS with glorious metallic gradients */
 .ring-mesh-wrapper {
@@ -71,7 +71,7 @@
   background: radial-gradient(circle, transparent 40%, #3a3a3c 70%, #111 100%);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
-
+.btn-fitze-dark {background:#ff5f38!important;}
 /* Arabian Silver Premium Look */
 .ring-3d-replica.silver {
   border: 14px solid #d1d5db;

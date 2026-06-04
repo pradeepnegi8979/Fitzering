@@ -31,18 +31,9 @@ export const RealPeopleSection: React.FC<Props> = ({
   variant = "white",
 }) => {
   const testimonials: Testimonial[] = [
+    
     {
       id: 1,
-      stars: 5,
-      heading: "Walking Became A Habit",
-      quote:
-        "Before fitze, walking was something I often struggled to stay consistent with. The challenges, rewards and leaderboards added just enough excitement to keep me motivated daily. Now it feels like a natural and enjoyable part of my routine.",
-      name: "Anthony Bare",
-      role: "",
-      avatar: Default,
-    },
-    {
-      id: 2,
       stars: 5,
       heading: "Won A Car Just By Walking",
       quote:
@@ -52,17 +43,7 @@ export const RealPeopleSection: React.FC<Props> = ({
       avatar: SyedBaset,
     },
     {
-      id: 3,
-      stars: 5,
-      heading: "More Than Just Step Tracking",
-      quote:
-        "I downloaded Fitze out of curiosity, but it quickly became part of my daily routine. The app is easy to use, tracks accurately and keeps me motivated with rewards and simple challenges. Getting rewarded for walking definitely makes staying active more enjoyable.",
-      name: "Yassin Amir",
-      role: "",
-      avatar: Default,
-    },
-    {
-      id: 4,
+      id: 2,
       stars: 5,
       heading: "Rewards That Kept Surprising Me",
       quote:
@@ -72,15 +53,51 @@ export const RealPeopleSection: React.FC<Props> = ({
       avatar: TerilyanAndres,
     },
     {
+      id: 3,
+      stars: 5,
+      heading: "Walking Finally Felt Rewarding",
+      quote: "I've been using Fitze for over a year now, and it genuinely made staying active more exciting for me. Winning a year of free Chipotle vouchers through the challenge was such a fun surprise. I love that something as simple as walking can lead to rewards you actually enjoy.",
+      name: "Sunny D'Silva",
+      role: "",
+      avatar: Sunny,
+    },
+    {
+      id: 4,
+      stars: 5,
+      heading: "Unexpected Wins Hit Different",
+      quote: "I joined Fitze during the Dubai Fitness Challenge and quickly got hooked on the step challenges inside the app. Winning art gallery vouchers was completely unexpected and made the experience even more enjoyable. Now I’m always looking forward to the next challenge and reward.",
+      name: "Shelley Eustace",
+      role: "",
+      avatar: ShellyEustace,
+    },
+    {
       id: 5,
       stars: 5,
-      heading: "Daily Movement, Better Rewarded",
-      quote:
-        "Fitze takes everyday walking and turns it into something far more engaging. The challenges are fun, the rewards feel meaningful and the app gives you that extra motivation to stay moving consistently. It’s a simple concept that genuinely works.",
-      name: "Ivy Angela",
+      heading: "A More Rewarding Ramadan",
+      quote: "The Ramadan Step-a-thon gave me an extra push to stay active throughout the holy month. Completing the challenge and winning a Bioderma skincare hamper made the experience feel even more special. It’s the kind of motivation that keeps you coming back for the next challenge.",
+      name: "Bhavna",
       role: "",
-      avatar: Default,
+      avatar: Bhavna,
     },
+    {
+      id: 6,
+      stars: 5,
+      heading: "Motivation Beyond Marathon Training",
+      quote: "Fitness has always been part of my lifestyle, but Fitze gave me another reason to stay consistent every day. Winning the Samsung X7 phone through the Lulu challenge came as a complete surprise and made the whole experience even more rewarding. It’s motivation that genuinely stays with you.",
+      name: "Herold Carreon",
+      role: "",
+      avatar: HeroldCarreon,
+    },
+    {
+      id: 7,
+      stars: 5,
+      heading: "Challenges Worth Showing Up For",
+      quote: "I’ve been part of the Fitze community since the early days, and the challenges still keep me engaged every week. Winning the Garmin Fenix 7 was definitely exciting, but what stands out most is how the app keeps fitness fun, competitive and rewarding without ever feeling repetitive.",
+      name: "Vinod",
+      role: "",
+      avatar: vinod,
+    },
+    
   ];
 
   const displayTestimonials = [
@@ -222,9 +239,9 @@ export const RealPeopleSection: React.FC<Props> = ({
                       {item.name}
                     </span>
 
-                    <span className="rp-card-author-role">
+                    {/* <span className="rp-card-author-role">
                       {item.role}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </div>

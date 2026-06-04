@@ -24,7 +24,7 @@ const tabData: TabItem[] = [
     pillLabel: 'App-Based Step Challenges',
     title: 'App-Based Step Challenges',
     btnText: 'Activate Your Teams',
-    description: 'Bring teams together through gamified walking challenges across local, regional and global teams on the fitze app.',
+    description: 'Gamified walking challenges across local, regional and global teams.',
     imageUrl: AppBasedStepChallenge
   },
   {
@@ -32,7 +32,7 @@ const tabData: TabItem[] = [
     pillLabel: 'Corporate Sports Tournaments',
     title: 'Corporate Sports Tournaments',
     btnText: 'Explore Sports Experiences',
-    description: "High-energy sports experiences designed to strengthen culture, connection and team morale.",
+    description: "High-energy sports experiences designed to strengthen culture, connection and morale.",
     imageUrl:CorporateSportTournament
   },
   {
@@ -48,7 +48,7 @@ const tabData: TabItem[] = [
     pillLabel: 'Team Building & Off-sites',
     title: 'Team Building & Off-sites',
     btnText: 'Explore Team Experiences',
-    description: 'Outdoor activations, bootcamps, retreats, movement-led team bonding experiences and more.',
+    description: 'Outdoor activations, bootcamps, retreats and team bonding experiences.',
     imageUrl:TeamBuilding
   },
   {
@@ -77,6 +77,7 @@ export const SolutionSection: React.FC = () => {
         <h2 className="solution-headline text-center">
           Movement that <span className="highlight-color">brings teams together</span>
         </h2>
+        <p className="solution-para text-center">Pick one experience or build a complete engagement ecosystem for your workforce.</p>
 
         {/* Categories Tab Switches - Grouped beautifully on multiple rows on smaller/medium screens */}
         <div className="tab-pills-horizontal-grid">

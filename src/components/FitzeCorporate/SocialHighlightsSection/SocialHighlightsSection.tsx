@@ -93,7 +93,7 @@ export const SocialHighlightsSection: React.FC = () => {
     <section className="corp-social-highlights-section" id="corporate-social-moments">
       <Container className="social-highlights-header-container">
         <Row className="align-items-start gy-3">
-          <Col lg={8} md={12} className="text-start">
+          <Col lg={12} md={12} className="text-center">
             {/* Custom Outline Capsule Eyebrow Label */}
             <div className="social-eyebrow-wrapper">
               <span className="social-eyebrow-pill">SOCIAL HIGHLIGHTS</span>
@@ -103,7 +103,7 @@ export const SocialHighlightsSection: React.FC = () => {
               <span className="highlight-color">Corporate Energy,</span> Captured.
             </h2>
           </Col>
-          <Col lg={4} md={12} className="text-start text-lg-end d-flex align-items-center justify-content-start justify-content-lg-end social-side-desc-col">
+          <Col lg={12} md={12} className="text-center d-flex align-items-center justify-content-center social-side-desc-col">
             <p className="social-side-description-text">
               What workforce engagement looks like at fitze.
             </p>

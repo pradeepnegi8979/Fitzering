@@ -7,23 +7,23 @@ export const CampaignsSection: React.FC = () => {
     {
       id: '01',
       bgType: 'peach',
-      tag: 'JUMEIRAH BEACH WALK',
+      tag: 'Garmin community event',
       title: 'Hamdan Walkathon',
-      desc: 'A city-scale movement event powered by community participation, streaks and shared rewards across 40,000+ participants.'
+      desc: 'A large-scale community fitness experience designed around movement, participation and shared milestones.'
     },
     {
       id: '02',
       bgType: 'blue',
-      tag: 'MALL PROMENADE DUBAI',
+      tag: 'Mall run crowd visual',
       title: 'Run for Unity',
-      desc: 'A run built to bring communities together with step-tracking, brand jerseys and city-wide streaks driving 12K daily check-ins.'
+      desc: 'A mall run experience bringing communities together through movement, energy and UAE spirit.'
     },
     {
       id: '03',
       bgType: 'green',
-      tag: 'DUBAI CENTRAL MALL',
-      title: 'Walk to Win',
-      desc: 'A grocery-linked activation using step-counting to drive footfall, reward loyalty and turn daily habits into brand recall.'
+      tag: 'DIB campaign visual',
+      title: 'DIB Walk to Win',
+      desc: 'A workforce wellness campaign powered by movement, rewards and large-scale employee participation.'
     }
   ];
   const label = "SOCIAL MEDIA HIGHLIGHTS";

@@ -105,12 +105,16 @@ export const RewardsStreaksSection: React.FC = () => {
               <span className="rewards-section-mini-tag">WALK TO EARN</span>
               <h3 className="rewards-card-title">Streaks</h3>
               <p className="rewards-card-description">
-                Get Paid to Walk. Join a Streak, hit your goals, and earn guaranteed payouts in your Careem wallet.
+               Join a Streak, hit your goals, and earn guaranteed payouts in your Careem wallet.
               </p>
             </div>
           </div>
 
         </div>
+          <div className="rewardAction">
+           <a href="https://www.fitze.ae/share/" target="_blank" className="btn-fitze-dark px-5">Get Paid to Walk </a>
+           </div>
+
       </div>
     </section>
   );

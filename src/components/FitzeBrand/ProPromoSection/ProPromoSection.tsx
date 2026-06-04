@@ -33,17 +33,17 @@ export const ProPromoSection: React.FC = () => {
           <Col lg={6} md={12} className="promo-info-col">
             <div className="promo-context-wrapper">
               <div className="promo-badge-container">
-                <span className="promo-badge-tag">BETTER TOGETHER</span>
+                <span className="promo-badge-tag">The first ring that rewards movement.</span>
               </div>
               
               <h2 className="promo-title">
-                Get FREE PRO <span className="promo-title-dark">with</span><br />
-                 {fitzeLogo}
-                {/* <span className="promo-logo-fitze">fitze</span><span className="promo-logo-ring">ring</span> */}
+                Wellness experiences, reimagined.
+
               </h2>
 
               <p className="promo-description">
-                Track your body, stay more aware and unlock the complete fitze experience.
+A wearable layer that unlocks smarter activations.
+
               </p>
 
               {/* Flex block wrapping the 6 status pills smoothly */}

@@ -23,6 +23,7 @@ export const FitzeringProcess: React.FC = () => {
 
   return (
         <Fragment>
+          
       {/* Floating Shop Widget in Bottom Right */}
       <div className="floting_outer">
           <div className={`fitzering-floating-shop-card ${showShopCard ? 'visible-active' : 'hidden-dismissed'}`}>

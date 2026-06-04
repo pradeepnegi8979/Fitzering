@@ -127,7 +127,9 @@ export const HeroSection: React.FC = () => {
                     {slide.buttonText}
                   </a>
 
-                  {/* Inline Vector-Perfect Badges for App Store, Google Play, AppGallery */}
+                  
+                </div>
+                {/* Inline Vector-Perfect Badges for App Store, Google Play, AppGallery */}
                   <div className="hero-stores-badges-container">
                     
                     {/* App Store */}
@@ -146,7 +148,6 @@ export const HeroSection: React.FC = () => {
                     </a>
 
                   </div>
-                </div>
               </div>
             </div>
           ))}

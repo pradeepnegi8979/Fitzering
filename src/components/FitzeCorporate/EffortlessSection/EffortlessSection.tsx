@@ -21,16 +21,16 @@ export const EffortlessSection: React.FC = () => {
     <section className="corp-effortless-outer-container" id="why-choose-us">
       <Container className="effortless-container py-5">
         <div className="effortless-eyebrow-container text-center mb-2">
-          <span className="effortless-eyebrow">WHY CHOOSE FITZE</span>
+          <span className="effortless-eyebrow">WHY CORPORATES CHOOSE FITZE</span>
         </div>
 
-        <h2 className="effortless-headline text-center mb-4">
+        <h2 className="effortless-headline text-center mb-5">
           Built to make engagement <span className="highlight-color">effortless</span>
         </h2>
-
+{/* 
         <p className="effortless-sub-desc text-center mb-5">
           We handle the execution so you can focus on the results. One integrated platform to drive consistency.
-        </p>
+        </p> */}
 
         {/* 3x2 Grid */}
         <Row className="g-20">
@@ -38,43 +38,48 @@ export const EffortlessSection: React.FC = () => {
             <ServiceCard 
               num="01." 
               title="End-to-End Execution" 
-              desc="We plan, manage and deliver your wellness events seamlessly."
+              desc="We plan, manage and deliver your events."
             />
           </Col>
           <Col lg={4} md={6} xs={12}>
             <ServiceCard 
               num="02." 
               title="One Integrated Platform" 
-              desc="Interactive challenges, health rewards, events and live tracking."
+              desc="Events, challenges, rewards and tracking."
             />
           </Col>
           <Col lg={4} md={6} xs={12}>
             <ServiceCard 
               num="03." 
               title="Built to Scale" 
-              desc="Engage from 20 core employees up to 20,000+ custom users."
+              desc="From 20 employees to 20,000+."
             />
           </Col>
           <Col lg={4} md={6} xs={12}>
             <ServiceCard 
               num="04." 
               title="CSR & Purpose Programs" 
-              desc="Empower philanthropic causes with step-anchored donation matches."
+              desc="Wellness initiatives that create real impact."
             />
           </Col>
           <Col lg={4} md={6} xs={12}>
             <ServiceCard 
               num="05." 
               title="In-House Team" 
-              desc="Design, logistics, and tech assets running together under one roof."
+              desc="Events, marketing and logistics under one roof."
             />
           </Col>
           <Col lg={4} md={6} xs={12}>
             <ServiceCard 
               num="06." 
               title="10+ Years Experience" 
-              desc="Trusted workforce fitness expertise across corporate UAE."
+              desc="Proven workforce engagement expertise across the UAE."
             />
+          </Col>
+          <Col lg={12} md={12} xs={12} className='mt-5'>
+            <div className="gallery-cta-wrapper">
+              <button className="gallery-cta-btn" > DESIGN YOUR WELLNESS EXPERIENCE</button>
+            </div>
           </Col>
         </Row>
       </Container>
