@@ -14,13 +14,13 @@ import TrackProgressSection from '../components/homepage/TrackProgressSection/Tr
 import SliderSection from '../components/homepage/SliderSection/SliderSection';
 import PromiseSection from '../components/homepage/PromiseSection/PromiseSection';
 import Footer from '../components/common/Footer/Footer';
+import HomePageHelmet from '../components/homepage/HomePageHelmet';
 
 export const Home: React.FC = () => {
 
   return (
     <Fragment>
-           
-    
+      <HomePageHelmet/>
     <div className="home-page-container">
       
       {/* Header */}

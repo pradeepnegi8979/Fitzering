@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import { useLocation } from "react-router-dom";
+
 import { Download } from 'lucide-react';
 import './Header.css';
 import logo from '../../../assets/logo-orange.svg';
 export const Header: React.FC = () => {
+  const location = useLocation();
+
   return (
     <Navbar expand="lg" className="navbar-fitze sticky-top bg-white py-2">
       <Container>

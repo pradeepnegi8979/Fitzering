@@ -9,11 +9,25 @@ import WhySection from '../components/fitzeStreaks/WhySection/WhySection';
 import FitzeRingPromoSection from '../components/fitzeStreaks/FitzeRingPromoSection/FitzeRingPromoSection';
 import FaqSection from '../components/fitzeStreaks/FaqSection/FaqSection';
 import OrangeSectionB from '../components/fitzeStreaks/OrangeSectionB/OrangeSectionB';
-
+import { Helmet } from "react-helmet-async";
 
 export const FitzeStreaks: React.FC = () => {
   return (
     <div className="home-page-container">
+      <Helmet>
+        <title>Fitze Streaks | Build Healthy Habits Daily</title>
+
+        <meta
+          name="description"
+          content="Join Fitze Streaks to stay consistent with your fitness goals, track progress, and earn rewards through healthy habits."
+        />
+
+        <meta property="og:title" content="Fitze Streaks" />
+        <meta
+          property="og:description"
+          content="Track fitness habits, maintain streaks, and stay motivated."
+        />
+      </Helmet>
       {/* Header */}
       <Header />
         <HeroSection/>
