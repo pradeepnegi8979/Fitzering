@@ -58,7 +58,7 @@ export const TestimonialsSection: React.FC = () => {
         <Row className="">
           
           {testimonials.map((testi, idx) => (
-            <Col lg={4} md={4} xs={12}>
+            <Col lg={4} md={4} xs={12} className={`${idx !== testimonials.length - 1 ? "mb-4" : ""} mb-md-0 mb-lg-0`}>
             <div 
               className="testimonials-carousel-card" 
               key={`${testi.id}-${idx}`}

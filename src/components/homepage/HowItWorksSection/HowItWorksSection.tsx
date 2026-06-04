@@ -30,9 +30,9 @@ export const HowItWorksSection: React.FC = () => {
                 <div className="step-icon-wrapper mb-4">
                   <Download size={44} className="icon-coral" />
                 </div>
-                <h3 className="step-box-title font-sans">Download</h3>
+                <h3 className="step-box-title font-sans">Get Started</h3>
                 <p className="step-box-desc">
-                  Get started for free in just a few seconds.
+                  Join for free in just a few seconds.
                   </p>
               </div>
             </div>
