@@ -104,6 +104,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Slide Core Content Wrapper */}
               <div className="hero-slide-body-content">
+                <div>
                 <h1 className="hero-slide-big-heading">
                   {slide.title}
                   {slide.titleAccent && (
@@ -113,21 +114,20 @@ export const HeroSection: React.FC = () => {
                     </>
                   )}
                 </h1>
-
                 {/* Iterate multi-line subtitles / slogans if applicable */}
                 <div className="hero-slide-subtitles-stack">
                   {slide.subtitles.map((sub, sIdx) => (
                     <p key={sIdx} className="hero-slide-sub-line">{sub}</p>
                   ))}
                 </div>
-
                 <div className="hero-slide-actions-row">
                   {/* Premium customized visual pill buttons */}
                   <a href={slide.buttonLink} className="hero-slide-primary-button" target="_blank" rel="noopener noreferrer">
                     {slide.buttonText}
                   </a>
-
-                  {/* Inline Vector-Perfect Badges for App Store, Google Play, AppGallery */}
+                  </div>
+                </div>
+                {/* Inline Vector-Perfect Badges for App Store, Google Play, AppGallery */}
                   <div className="hero-stores-badges-container">
                     
                     {/* App Store */}
@@ -146,7 +146,6 @@ export const HeroSection: React.FC = () => {
                     </a>
 
                   </div>
-                </div>
               </div>
             </div>
           ))}
