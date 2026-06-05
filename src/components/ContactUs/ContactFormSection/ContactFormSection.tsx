@@ -1,111 +1,66 @@
-import React, { useState } from 'react';
-import { Form, Row, Col } from 'react-bootstrap';
-import { ArrowRight } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 import './ContactFormSection.css';
 
+declare global {
+  interface Window {
+    hbspt: any;
+  }
+}
+
 export const ContactFormSection: React.FC = () => {
-  const [topic, setTopic] = useState('');
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Static UI only, as requested. Do not connect API.
-  };
+  const formLoaded = useRef(false);
+
+  useEffect(() => {
+    if (formLoaded.current) return;
+
+    const createForm = () => {
+      if (formLoaded.current) return;
+
+      const container = document.getElementById('hubspot-form');
+
+      if (!container) return;
+
+      formLoaded.current = true;
+
+      window.hbspt.forms.create({
+        region: 'eu1',
+        portalId: '148620512',
+        formId: '35307c60-339d-46bd-885f-784cbf542746',
+        target: '#hubspot-form',
+      });
+    };
+
+    if (window.hbspt) {
+      createForm();
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://js-eu1.hsforms.net/forms/embed/v2.js';
+    script.async = true;
+    script.onload = createForm;
+
+    document.body.appendChild(script);
+  }, []);
 
   return (
-    <div className="contact-form-card" id="contact-form-card-pane">
-      
-      {/* Small Badge / Header */}
-      <span className="contact-form-badge">SEND A MESSAGE</span>
-      <h3 className="contact-form-title">Tell us what you need</h3>
-      <p className="contact-form-subtitle">Fill in the form and our team will get back to you shortly.</p>
+    <div
+      className="contact-form-card"
+      id="contact-form-card-pane"
+    >
+      <span className="contact-form-badge">
+        SEND A MESSAGE
+      </span>
 
-      {/* Form Area */}
-      <Form onSubmit={handleSubmit} className="mt-4">
-        
-        {/* Name Fields (First & Last side-by-side) */}
-        <Row className="mb-4">
-          <Col xs={12} sm={6} className="mb-3 mb-sm-0">
-            <Form.Group controlId="con-first-name">
-              <Form.Label className="contact-lbl">FIRST NAME</Form.Label>
-              <Form.Control 
-                type="text" 
-                placeholder="John" 
-                className="contact-inp"
-                required
-              />
-            </Form.Group>
-          </Col>
-          <Col xs={12} sm={6}>
-            <Form.Group controlId="con-last-name">
-              <Form.Label className="contact-lbl">LAST NAME</Form.Label>
-              <Form.Control 
-                type="text" 
-                placeholder="Doe" 
-                className="contact-inp"
-                required
-              />
-            </Form.Group>
-          </Col>
-        </Row>
+      <h3 className="contact-form-title">
+        Tell us what you need
+      </h3>
 
-        {/* Email Field */}
-        <Form.Group controlId="con-email" className="mb-4">
-          <Form.Label className="contact-lbl">EMAIL ADDRESS</Form.Label>
-          <Form.Control 
-            type="email" 
-            placeholder="you@example.com" 
-            className="contact-inp"
-            required
-          />
-        </Form.Group>
+      <p className="contact-form-subtitle">
+        Fill in the form and our team will get back to you shortly.
+      </p>
 
-        {/* Phone Field */}
-        <Form.Group controlId="con-phone" className="mb-4">
-          <Form.Label className="contact-lbl">PHONE NUMBER</Form.Label>
-          <Form.Control 
-            type="tel" 
-            placeholder="+971 50 000 0000" 
-            className="contact-inp"
-          />
-        </Form.Group>
-
-        {/* Topic dropdown */}
-        <Form.Group controlId="con-topic" className="mb-4">
-          <Form.Label className="contact-lbl">I'M INTERESTED IN</Form.Label>
-          <Form.Select 
-            value={topic}
-            onChange={(e) => setTopic(e.target.value)}
-            className="contact-inp custom-select-style"
-            required
-          >
-            <option value="" disabled hidden>Select a topic</option>
-            <option value="Inquiry">Inquiry</option>
-            <option value="Complaint">Complaint</option>
-            <option value="Corporate Programs">Corporate Programs</option>
-            <option value="List your Brand">List your Brand</option>
-            <option value="other">Other Queries</option>
-          </Form.Select>
-        </Form.Group>
-
-        {/* Message Input */}
-        <Form.Group controlId="con-message" className="mb-4">
-          <Form.Label className="contact-lbl">MESSAGE</Form.Label>
-          <Form.Control 
-            as="textarea" 
-            rows={5} 
-            placeholder="Tell us about your fitness goals or any questions you have..." 
-            className="contact-inp textarea-inp"
-            required
-          />
-        </Form.Group>
-
-        {/* Submit Action Block */}
-        <button type="submit" className="contact-action-btn">
-          SEND MESSAGE <ArrowRight size={16} className="button-arrow" />
-        </button>
-
-      </Form>
-
+      <div id="hubspot-form"></div>
     </div>
   );
 };

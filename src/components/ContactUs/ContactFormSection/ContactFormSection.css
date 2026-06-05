@@ -128,3 +128,9 @@
     padding: 25px 20px;
   }
 }
+#hubspot-form .hs-form-iframe-container + div,
+#hubspot-form .hubspot-link__container,
+#hubspot-form .hs-form__virality-link,
+#hubspot-form .legal-consent-container + div {
+  display: none !important;
+}
