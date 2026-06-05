@@ -23,6 +23,7 @@ export const CorporateLeadModal: React.FC<CorporateLeadModalProps> = ({ show, on
   const [recaptchaChecked, setRecaptchaChecked] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errMessage, setErrMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   // Reset states on opening modal
   useEffect(() => {
@@ -78,32 +79,115 @@ export const CorporateLeadModal: React.FC<CorporateLeadModalProps> = ({ show, on
     setRecaptchaChecked(!recaptchaChecked);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleFormSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // Mandated validations (Your Name*, Company Name*, Email ID*)
-    if (!formData.name.trim()) {
-      setErrMessage('Your Name is a required field.');
-      return;
-    }
-    if (!formData.companyName.trim()) {
-      setErrMessage('Company Name is a required field.');
-      return;
-    }
-    if (!formData.emailId.trim() || !formData.emailId.includes('@')) {
-      setErrMessage('Please enter a valid Email ID.');
-      return;
-    }
+  if (!formData.name.trim()) {
+    setErrMessage('Your Name is a required field.');
+    return;
+  }
 
-    // reCAPTCHA validation
-    if (!recaptchaChecked) {
-      setErrMessage("Please confirm you are not a robot.");
-      return;
-    }
+  if (!formData.companyName.trim()) {
+    setErrMessage('Company Name is a required field.');
+    return;
+  }
 
+  if (!formData.emailId.trim() || !formData.emailId.includes('@')) {
+    setErrMessage('Please enter a valid Email ID.');
+    return;
+  }
+
+  try {
+    setLoading(true);
     setErrMessage('');
+
+    const response = await fetch(
+      'https://api.hsforms.com/submissions/v3/integration/submit/148620512/53dad8ad-beda-4f92-b546-94e1394d0dba',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fields: [
+            {
+              name: 'firstname',
+              value: formData.name,
+            },
+            {
+              name: 'emirates',
+              value: formData.emirates,
+            },
+            {
+              name: 'company',
+              value: formData.companyName,
+            },
+            {
+              name: 'phone',
+              value: formData.contactNumber,
+            },
+            {
+              name: 'email',
+              value: formData.emailId,
+            },
+            {
+              name: 'website',
+              value: formData.website,
+            },
+            {
+              name: 'numemployees',
+              value: formData.numberOfEmployees,
+            },
+            {
+              name: 'message',
+              value: formData.comments,
+            },
+          ],
+
+          context: {
+            pageUri: window.location.href,
+            pageName: document.title,
+          },
+        }),
+      }
+    );
+
+    if (!response.ok) {
+      const errorData = await response.json();
+
+      console.log('======================');
+      console.log('HUBSPOT ERROR');
+      console.log(errorData);
+      console.log('======================');
+
+      throw new Error(
+        errorData?.message || 'Submission failed'
+      );
+    }
+
     setIsSubmitted(true);
-  };
+
+    setFormData({
+      name: '',
+      emirates: 'Abu Dhabi',
+      companyName: '',
+      contactNumber: '',
+      emailId: '',
+      website: '',
+      numberOfEmployees: '',
+      comments: '',
+    });
+  } catch (error: any) {
+    console.error(error);
+
+    setErrMessage(
+      error?.message ||
+      'Something went wrong. Please try again.'
+    );
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <Modal
@@ -255,60 +339,17 @@ export const CorporateLeadModal: React.FC<CorporateLeadModalProps> = ({ show, on
                 />
               </Form.Group>
 
-              {/* Pixel Perfect reCAPTCHA Google Mockup */}
-              {/* <div className="recaptcha-mockup-wrapper" onClick={toggleRecaptcha}>
-                <div className="recaptcha-left-side">
-                  <div className={`recaptcha-custom-checkbox-box ${recaptchaChecked ? 'recaptcha-is-checked' : ''}`}>
-                    {recaptchaChecked && (
-                      <svg className="recaptcha-checkmark-svg" viewBox="0 0 24 24">
-                        <path
-                          fill="none"
-                          stroke="#009688"
-                          strokeWidth="3.5"
-                          strokeLinecap="round"
-                          d="M4.5 12.5l5.5 5.5L20 6"
-                        />
-                      </svg>
-                    )}
-                  </div>
-                  <span className="recaptcha-not-a-robot-text">I'm not a robot</span>
-                </div>
 
-                <div className="recaptcha-right-side">
-                  <div className="recaptcha-logo-visual">
-                    <svg className="recaptcha-spinner-arrows" width="30" height="30" viewBox="0 0 24 24">
-                      <path
-                        fill="#4285F4"
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10H12V2z"
-                        opacity="0.15"
-                      />
-                      <path
-                        fill="#4285F4"
-                        d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6s-2.69 6-6 6c-1.66 0-3.16-.67-4.24-1.76l-1.42 1.42C8.26 19.58 10.02 20 12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8z"
-                      />
-                      <path
-                        fill="#0F9D58"
-                        d="M6.35 7.76l1.42 1.42C6.67 10.26 6 11.76 6 13.42c0 3.31 2.69 6 6 6v3c-4.42 0-8-3.58-8-8 0-2.42.98-4.62 2.58-6.22z"
-                        opacity="0.7"
-                      />
-                    </svg>
-                  </div>
-                  <span className="recaptcha-title-brand">reCAPTCHA</span>
-                  <div className="recaptcha-sub-terms-row">
-                    <span className="recaptcha-anchor-link">Privacy</span>
-                    <span className="recaptcha-divider-dot">-</span>
-                    <span className="recaptcha-anchor-link">Terms</span>
-                  </div>
-                </div>
-              </div> */}
-
-              <Button type="submit" className="corp-lead-submit-btn-pill">
-                Submit
-              </Button>
+              <Button
+  type="submit"
+  className="corp-lead-submit-btn-pill"
+  disabled={loading}
+>
+  {loading ? 'Submitting...' : 'Submit'}
+</Button>
             </Form>
           </>
         ) : (
-          /* Thank You / Success visual state matching pixel perfect guidelines */
           <div className="corp-lead-success-screen text-center py-5">
             <div className="success-circle-checkmark-box mb-4">
               <svg className="success-checkmark-draw-svg" viewBox="0 0 52 52">
